@@ -71,10 +71,8 @@ test('all root-relative internal links resolve to generated files', () => {
   assert.deepEqual(missing, []);
 });
 
-test('Phase 3 and later runtime code is absent', () => {
-  for (const path of ['api', 'functions']) assert.ok(!existsSync(join(root, path)), path);
+test('Phase 4 advertising and analytics code is absent', () => {
   const scripts = files().filter(path => /\.(?:js|mjs)$/.test(path)).map(path => readFileSync(path, 'utf8')).join('\n');
-  assert.ok(!/\/api\//.test(scripts));
   assert.ok(!/analytics|adsbygoogle|doubleclick/i.test(scripts));
 });
 

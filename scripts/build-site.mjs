@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from './lib/inputs.mjs';
 import { breadcrumb, escapeHtml, formatDate, layout, SITE_URL } from './lib/html.mjs';
@@ -146,7 +146,7 @@ export function buildSite() {
 
   write('about/index.html', policyPage('버림뚝딱 소개', '공식 자료를 바탕으로 생활폐기물 배출방법을 안내하는 버림뚝딱 서비스를 소개합니다.', '/about/', `<p>버림뚝딱은 생활 속에서 버리기 어려운 물건의 배출방법을 빠르게 찾을 수 있도록 공식 기관의 공개 자료를 이해하기 쉬운 형태로 정리하는 생활정보 서비스입니다.</p><p>품목별 기본 배출원칙, 주의사항, 폐가전 수거 가능 여부와 공식 출처를 함께 제공합니다.</p><p>폐기물 배출 요일, 수거 장소, 대형폐기물 수수료 등은 지역에 따라 다를 수 있으므로 지역별 정보가 필요한 경우 거주지 지방자치단체의 최신 안내도 함께 확인해 주세요.</p><section id="contact"><h2>문의</h2><p>운영자 연락 경로를 준비하고 있습니다. 연락처가 확정되기 전에는 개인정보를 받지 않습니다.</p></section>`));
   write('source-policy/index.html', policyPage('정보 출처 및 검증 정책', '버림뚝딱이 공식 출처를 확인하고 생활폐기물 정보를 관리하는 원칙을 안내합니다.', '/source-policy/', `<p>버림뚝딱은 다음 원칙으로 정보를 관리합니다.</p><ol><li>기후에너지환경부, 지방자치단체, E-순환거버넌스 등 공식 자료를 우선 사용합니다.</li><li>출처를 확인하지 못한 배출방법을 임의로 생성하지 않습니다.</li><li>검증된 품목에는 출처와 확인일을 표시합니다.</li><li>지역에 따라 달라질 수 있는 내용은 전국 공통사항처럼 단정하지 않습니다.</li><li>공식 기준이 변경된 경우 확인 후 정보를 갱신합니다.</li></ol><p>버림뚝딱의 정보는 생활 편의를 위한 안내이며, 실제 수거 가능 여부·배출일·수수료는 관할 지방자치단체 또는 수거기관의 최신 기준이 우선합니다.</p>`));
-  write('privacy/index.html', policyPage('개인정보처리방침', '버림뚝딱의 현재 개인정보 처리 범위와 외부 링크 정책을 안내합니다.', '/privacy/', `<p>버림뚝딱은 서비스 운영에 필요한 범위에서 최소한의 정보만 처리하는 것을 원칙으로 합니다.</p><h2>현재 처리하는 정보</h2><p>현재 사이트는 회원가입, 로그인, 분석 도구, 광고, 검색어 전송 기능을 사용하지 않습니다. 검색은 사용자의 브라우저 안에서 처리되며 서버나 데이터베이스로 전송하지 않습니다.</p><h2>외부 링크</h2><p>정부기관과 폐가전 수거기관 등 외부 사이트 링크를 열면 해당 사이트의 개인정보처리방침이 적용됩니다.</p><h2>문의와 시행일</h2><p>운영자 연락 경로와 공개 시행일은 정식 공개 전에 확정해 반영합니다.</p>`));
+  write('privacy/index.html', policyPage('개인정보처리방침', '버림뚝딱의 현재 개인정보 처리 범위와 외부 링크 정책을 안내합니다.', '/privacy/', `<p>버림뚝딱은 서비스 운영에 필요한 범위에서 최소한의 정보만 처리하는 것을 원칙으로 합니다.</p><h2>현재 처리하는 정보</h2><p>현재 사이트는 회원가입, 로그인, 외부 분석 도구와 광고를 사용하지 않습니다. 사이트 검색은 브라우저에서 처리합니다. 검색 결과가 실제로 없는 경우에만 품목 추가 우선순위를 정하기 위해 정리된 검색어, 검색 횟수, 최초·최근 검색 시각을 집계할 수 있습니다.</p><p>버림뚝딱 애플리케이션 데이터베이스에는 이름, 이메일 주소, IP 주소, User-Agent 원문, 쿠키 식별자, fingerprint 또는 정확한 위치를 저장하지 않습니다. Cloudflare 인프라 수준의 로그는 Cloudflare의 정책에 따라 별도로 처리될 수 있습니다.</p><h2>외부 링크</h2><p>정부기관과 폐가전 수거기관 등 외부 사이트 링크를 열면 해당 사이트의 개인정보처리방침이 적용됩니다.</p><h2>문의와 시행일</h2><p>운영자 연락 경로와 공개 시행일은 정식 공개 전에 확정해 반영합니다.</p>`));
   write('affiliate-disclosure/index.html', policyPage('제휴 마케팅 안내', '버림뚝딱의 제휴 마케팅 적용 여부와 향후 고지 원칙을 안내합니다.', '/affiliate-disclosure/', `<p>현재 버림뚝딱에는 제휴 링크, 상품 배너 또는 광고가 없습니다.</p><p>향후 제휴 기능을 사용하게 되면 사용자가 링크를 누르기 전에 경제적 이해관계를 분명하게 알 수 있도록 해당 링크 가까이에 표시하고 이 안내를 갱신합니다.</p>`));
   write('search/index.html', searchPage());
   write('404.html', layout({ title: '페이지를 찾을 수 없습니다 | 버림뚝딱', description: '요청한 페이지를 찾을 수 없습니다. 버림뚝딱에서 품목을 다시 검색해 주세요.', robots: 'noindex,nofollow', mainClass: 'narrow not-found', search: true, content: `<p class="eyebrow">404</p><h1>찾으시는 페이지가 없어요.</h1><p>주소를 다시 확인하거나 아래에서 물건을 검색해 주세요.</p>${searchBox()}<h2>자주 찾는 품목</h2><ul class="related-list"><li><a href="/item/frying-pan/">후라이팬</a></li><li><a href="/item/battery/">건전지</a></li><li><a href="/item/refrigerator/">냉장고</a></li></ul>` }));
@@ -160,6 +160,7 @@ export function buildSite() {
   mkdirSync(new URL('assets/', output), { recursive: true });
   cpSync(new URL('../src/styles.css', import.meta.url), new URL('assets/style.css', output));
   cpSync(new URL('../src/app.mjs', import.meta.url), new URL('assets/app.js', output));
+  write('assets/missing-search.js', readFileSync(new URL('../src/missing-search.mjs', import.meta.url), 'utf8').replace("'./search.mjs'", "'./search.js'"));
   cpSync(new URL('../src/search.mjs', import.meta.url), new URL('assets/search.js', output));
   write('assets/search-index.json', JSON.stringify(createSearchIndex(seed.items)));
   return { items: verified.length, categories: categories.length, other: 7, sitemap: indexablePaths.length };

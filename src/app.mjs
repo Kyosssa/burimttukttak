@@ -1,4 +1,5 @@
 import { search } from './search.js';
+import { createMissingSearchReporter } from './missing-search.js';
 
 const form = document.querySelector('#search-form');
 const input = document.querySelector('#item-search');
@@ -7,6 +8,7 @@ const message = document.querySelector('#search-message');
 let index = [];
 let results = [];
 let active = -1;
+const reportMissing = createMissingSearchReporter();
 
 const stateText = {
   verified_item: '공식 자료 확인 완료',
@@ -43,7 +45,8 @@ function showMessage(result) {
   } else if (result.state === 'missing') {
     const strong = document.createElement('strong');
     strong.textContent = '아직 등록되지 않은 품목이에요.';
-    message.append(strong, document.createElement('br'), document.createTextNode('현재는 검색어를 전송하거나 저장하지 않습니다.'));
+    message.append(strong, document.createElement('br'), document.createTextNode('품목 추가 우선순위를 정하기 위해 검색어와 횟수만 익명 집계할 수 있어요.'));
+    void reportMissing(input.value, result.state);
   }
 }
 
