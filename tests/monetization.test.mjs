@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { runInNewContext } from 'node:vm';
 import seed from '../docs/prebuild/burimttukttak-seed-v1.1.json' with { type: 'json' };
 import categories from '../docs/prebuild/10-categories-v1.json' with { type: 'json' };
 import { itemPage } from '../scripts/build-site.mjs';
@@ -46,10 +47,41 @@ test('carousel client config loads one official loader and initializes responsiv
   assert.match(client, /id: 1032289/);
   assert.match(client, /template: 'carousel'/);
   assert.match(client, /trackingCode: 'AF4293553'/);
-  assert.match(client, /width: '728', height: '90', container: desktop\.id/);
-  assert.match(client, /width: '320', height: '100', container: mobile\.id/);
+  assert.match(client, /width: '728', height: '90', container: desktop \}/);
+  assert.match(client, /width: '320', height: '100', container: mobile \}/);
   assert.match(client, /function waitForPartner\(timeoutMs = 3000\)/);
   assert.match(html('index.html'), /data-coupang-partners-loader="true"/);
+});
+
+test('carousel initializes the official container option with DOM elements', async () => {
+  const containers = [{ nodeType: 1 }, { nodeType: 1 }];
+  const calls = [];
+  const frames = [];
+  const banner = {
+    hidden: true,
+    querySelector(selector) { return selector.includes('desktop') ? containers[0] : containers[1]; },
+    querySelectorAll() { return frames; },
+    remove() { throw new Error('valid carousel must not be removed'); },
+  };
+  const context = {
+    document: { querySelectorAll: () => [banner] },
+    window: {
+      PartnersCoupang: { G: class {
+        constructor(options) {
+          assert.ok(containers.includes(options.container));
+          calls.push(options);
+          frames.push({ getAttribute: name => name === 'width' ? options.width : options.height });
+        }
+      } },
+      setTimeout: () => 0,
+    },
+    MutationObserver: class { observe() {} disconnect() {} },
+    requestAnimationFrame: callback => callback(),
+  };
+  runInNewContext(html('assets/coupang-carousel.js'), context);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.deepEqual(calls.map(call => [call.width, call.height]), [['728', '90'], ['320', '100']]);
+  assert.equal(banner.hidden, false);
 });
 
 test('existing ad and product-link components remain inactive without explicit settings', () => {

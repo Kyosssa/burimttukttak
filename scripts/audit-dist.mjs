@@ -71,7 +71,7 @@ export async function auditDist() {
     if ([...content.matchAll(/src="\/assets\/coupang-carousel\.js"/g)].length !== 1) fail(`Coupang carousel client count: ${path}`);
   }
   const coupangClient = readFileSync(join(root, 'assets', 'coupang-carousel.js'), 'utf8');
-  for (const text of ["id: 1032289", "template: 'carousel'", "trackingCode: 'AF4293553'", "width: '728', height: '90', container: desktop.id", "width: '320', height: '100', container: mobile.id"]) {
+  for (const text of ["id: 1032289", "template: 'carousel'", "trackingCode: 'AF4293553'", "width: '728', height: '90', container: desktop", "width: '320', height: '100', container: mobile"]) {
     if (!coupangClient.includes(text)) fail(`Coupang carousel configuration: ${text}`);
   }
   if (permittedCoupangRequests.length !== coupangTargets.length) fail('official Coupang loader count');
