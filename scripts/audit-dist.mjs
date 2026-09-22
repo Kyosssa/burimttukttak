@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from './lib/inputs.mjs';
 import { SITE_URL } from './lib/html.mjs';
+import { coupangCarouselAsset } from './lib/monetization.mjs';
 import { createPreviewServer } from './preview.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -68,9 +69,9 @@ export async function auditDist() {
     const content = readFileSync(fileFor(path), 'utf8');
     if ([...content.matchAll(/data-component="CoupangCarousel"/g)].length !== 1) fail(`Coupang carousel count: ${path}`);
     if ([...content.matchAll(/src="https:\/\/ads-partners\.coupang\.com\/g\.js"/g)].length !== 1) fail(`Coupang loader count: ${path}`);
-    if ([...content.matchAll(/src="\/assets\/coupang-carousel\.js"/g)].length !== 1) fail(`Coupang carousel client count: ${path}`);
+    if ([...content.matchAll(new RegExp(`src="/assets/${coupangCarouselAsset}"`, 'g'))].length !== 1) fail(`Coupang carousel client count: ${path}`);
   }
-  const coupangClient = readFileSync(join(root, 'assets', 'coupang-carousel.js'), 'utf8');
+  const coupangClient = readFileSync(join(root, 'assets', coupangCarouselAsset), 'utf8');
   for (const text of ["id: 1032289", "template: 'carousel'", "trackingCode: 'AF4293553'", "width: '728', height: '90', container: desktop", "width: '320', height: '100', container: mobile"]) {
     if (!coupangClient.includes(text)) fail(`Coupang carousel configuration: ${text}`);
   }

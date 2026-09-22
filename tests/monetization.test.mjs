@@ -6,7 +6,7 @@ import { runInNewContext } from 'node:vm';
 import seed from '../docs/prebuild/burimttukttak-seed-v1.1.json' with { type: 'json' };
 import categories from '../docs/prebuild/10-categories-v1.json' with { type: 'json' };
 import { itemPage } from '../scripts/build-site.mjs';
-import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from '../scripts/lib/monetization.mjs';
+import { coupangCarouselAsset, monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from '../scripts/lib/monetization.mjs';
 
 const verified = seed.items.filter(item => item.verification_status === 'verified');
 const needsResearch = seed.items.filter(item => item.verification_status === 'needs_research');
@@ -29,7 +29,7 @@ test('Coupang carousel is emitted once on home and every verified detail page', 
     const page = html(path);
     assert.equal(count(page, /data-component="CoupangCarousel"/g), 1, path);
     assert.equal(count(page, /src="https:\/\/ads-partners\.coupang\.com\/g\.js"/g), 1, path);
-    assert.equal(count(page, /src="\/assets\/coupang-carousel\.js"/g), 1, path);
+    assert.equal(count(page, new RegExp(`src="/assets/${coupangCarouselAsset}"`, 'g')), 1, path);
     assert.match(page, /경제적 이해관계 안내/);
     assert.match(page, /id="coupang-carousel-desktop"/);
     assert.match(page, /id="coupang-carousel-mobile"/);
@@ -43,7 +43,7 @@ test('Coupang carousel is absent from non-target public and non-public pages', (
 });
 
 test('carousel client config loads one official loader and initializes responsive containers', () => {
-  const client = html('assets/coupang-carousel.js');
+  const client = html(`assets/${coupangCarouselAsset}`);
   assert.match(client, /id: 1032289/);
   assert.match(client, /template: 'carousel'/);
   assert.match(client, /trackingCode: 'AF4293553'/);
@@ -78,7 +78,7 @@ test('carousel initializes the official container option with DOM elements', asy
     MutationObserver: class { observe() {} disconnect() {} },
     requestAnimationFrame: callback => callback(),
   };
-  runInNewContext(html('assets/coupang-carousel.js'), context);
+  runInNewContext(html(`assets/${coupangCarouselAsset}`), context);
   await new Promise(resolve => setImmediate(resolve));
   assert.deepEqual(calls.map(call => [call.width, call.height]), [['728', '90'], ['320', '100']]);
   assert.equal(banner.hidden, false);

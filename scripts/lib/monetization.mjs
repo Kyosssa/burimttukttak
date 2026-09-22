@@ -1,4 +1,9 @@
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { escapeHtml } from './html.mjs';
+
+const carouselSource = readFileSync(new URL('../../src/coupang-carousel.mjs', import.meta.url));
+export const coupangCarouselAsset = `coupang-carousel-${createHash('sha256').update(carouselSource).digest('hex').slice(0, 12)}.js`;
 
 export const monetizationConfig = Object.freeze({
   ads: Object.freeze({ enabled: false }),
@@ -46,5 +51,5 @@ export function renderAffiliateBlock(item, config = monetizationConfig) {
 
 export function renderCoupangCarousel(config = monetizationConfig) {
   if (config?.affiliate?.enabled !== true || typeof config.affiliate.disclosure !== 'string' || !config.affiliate.disclosure.trim()) return '';
-  return `<section class="affiliate-block coupang-carousel" data-component="CoupangCarousel" data-coupang-carousel hidden aria-label="쿠팡 제휴 배너"><p class="affiliate-disclosure"><strong>경제적 이해관계 안내</strong> ${escapeHtml(config.affiliate.disclosure)}</p><div class="coupang-carousel-frame"><div id="coupang-carousel-desktop" class="coupang-carousel-container coupang-carousel-desktop" data-coupang-container="desktop"></div><div id="coupang-carousel-mobile" class="coupang-carousel-container coupang-carousel-mobile" data-coupang-container="mobile"></div></div><script src="https://ads-partners.coupang.com/g.js" data-coupang-partners-loader="true"></script><script type="module" src="/assets/coupang-carousel.js"></script></section>`;
+  return `<section class="affiliate-block coupang-carousel" data-component="CoupangCarousel" data-coupang-carousel hidden aria-label="쿠팡 제휴 배너"><p class="affiliate-disclosure"><strong>경제적 이해관계 안내</strong> ${escapeHtml(config.affiliate.disclosure)}</p><div class="coupang-carousel-frame"><div id="coupang-carousel-desktop" class="coupang-carousel-container coupang-carousel-desktop" data-coupang-container="desktop"></div><div id="coupang-carousel-mobile" class="coupang-carousel-container coupang-carousel-mobile" data-coupang-container="mobile"></div></div><script src="https://ads-partners.coupang.com/g.js" data-coupang-partners-loader="true"></script><script type="module" src="/assets/${coupangCarouselAsset}"></script></section>`;
 }
