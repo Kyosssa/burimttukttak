@@ -148,10 +148,17 @@ test('D1 schema and Worker omit personal/request tracking fields', () => {
   assert.match(migration, /search_count INTEGER NOT NULL DEFAULT 1/);
 });
 
-test('Wrangler config exposes the DB binding for local Pages development', () => {
+test('Wrangler config keeps DB bound to isolated production and preview databases', () => {
   const config = JSON.parse(readFileSync(new URL('../wrangler.jsonc', import.meta.url), 'utf8'));
   assert.equal(config.pages_build_output_dir, './dist');
-  assert.deepEqual(config.d1_databases.map(({ binding, preview_database_id, migrations_dir }) => ({ binding, preview_database_id, migrations_dir })), [
-    { binding: 'DB', preview_database_id: 'DB', migrations_dir: 'migrations' },
-  ]);
+  assert.deepEqual(config.d1_databases.map(({ binding, database_name, database_id, preview_database_id, migrations_dir }) => ({ binding, database_name, database_id, preview_database_id, migrations_dir })), [{
+    binding: 'DB', database_name: 'burimttukttak-missing-search-prod', database_id: 'e6d5d8eb-426f-4621-995a-22bbd887b328', preview_database_id: 'burimttukttak-missing-search-local', migrations_dir: 'migrations',
+  }]);
+  assert.deepEqual(config.env.production.d1_databases, [{
+    binding: 'DB', database_name: 'burimttukttak-missing-search-prod', database_id: 'e6d5d8eb-426f-4621-995a-22bbd887b328', migrations_dir: 'migrations',
+  }]);
+  assert.deepEqual(config.env.preview.d1_databases, [{
+    binding: 'DB', database_name: 'burimttukttak-missing-search-preview', database_id: 'a7a271fb-1e15-4bbc-a6db-23e5c36263e3', migrations_dir: 'migrations',
+  }]);
+  assert.notEqual(config.env.production.d1_databases[0].database_id, config.env.preview.d1_databases[0].database_id);
 });

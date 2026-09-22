@@ -5,10 +5,32 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "burimttukttak-missing-search",
-      "database_id": "00000000-0000-0000-0000-000000000000",
-      "preview_database_id": "DB",
+      "database_name": "burimttukttak-missing-search-prod",
+      "database_id": "e6d5d8eb-426f-4621-995a-22bbd887b328",
+      "preview_database_id": "burimttukttak-missing-search-local",
       "migrations_dir": "migrations"
     }
-  ]
+  ],
+  "env": {
+    "production": {
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "burimttukttak-missing-search-prod",
+          "database_id": "e6d5d8eb-426f-4621-995a-22bbd887b328",
+          "migrations_dir": "migrations"
+        }
+      ]
+    },
+    "preview": {
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "burimttukttak-missing-search-preview",
+          "database_id": "a7a271fb-1e15-4bbc-a6db-23e5c36263e3",
+          "migrations_dir": "migrations"
+        }
+      ]
+    }
+  }
 }
