@@ -71,9 +71,9 @@ test('all root-relative internal links resolve to generated files', () => {
   assert.deepEqual(missing, []);
 });
 
-test('Phase 4 advertising and analytics code is absent', () => {
+test('external advertising, affiliate integrations and analytics code are absent', () => {
   const scripts = files().filter(path => /\.(?:js|mjs)$/.test(path)).map(path => readFileSync(path, 'utf8')).join('\n');
-  assert.ok(!/analytics|adsbygoogle|doubleclick/i.test(scripts));
+  assert.ok(!/analytics|adsbygoogle|doubleclick|googlesyndication|coupang|partners\/external/i.test(scripts));
 });
 
 test('local preview returns real 404 status and serves the custom page', async () => {

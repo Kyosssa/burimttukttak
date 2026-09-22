@@ -76,7 +76,7 @@ h2 { line-height: 1.3; letter-spacing: -.035em; }
 .breadcrumb a { color: inherit; }
 .detail { padding-bottom: 80px; }
 .detail > h1, .policy > h1 { margin-bottom: 24px; font-size: clamp(2rem, 7vw, 3.25rem); }
-.answer-card, .content-card, .collection-card, .feedback, .notice, .empty-state { margin-block: 18px; padding: clamp(20px, 5vw, 30px); border: 1px solid var(--line); border-radius: 20px; }
+.answer-card, .content-card, .collection-card, .affiliate-block, .feedback, .notice, .empty-state { margin-block: 18px; padding: clamp(20px, 5vw, 30px); border: 1px solid var(--line); border-radius: 20px; }
 .answer-card { border-color: #a8d8b8; background: linear-gradient(135deg, #effaf3, #e6f5eb); }
 .answer-card h2 { margin: 0 0 8px; font-size: clamp(1.45rem, 5vw, 2rem); }
 .answer-card p:last-child { margin: 0; font-size: 1.05rem; }
@@ -88,6 +88,14 @@ h2 { line-height: 1.3; letter-spacing: -.035em; }
 .steps li::marker { color: var(--green-dark); font-weight: 900; }
 .warning { border-color: #f1d694; background: var(--warning); }
 .collection-card { border-color: #b8d5ec; background: #eef7ff; }
+.ad-slot, .affiliate-block { width: 100%; max-width: 100%; overflow: hidden; }
+.ad-slot { contain: layout paint; }
+.ad-slot > * { max-width: 100%; }
+.affiliate-block { background: #fffaf0; border-color: #ead8ac; }
+.affiliate-block h2 { margin-top: 0; font-size: 1.25rem; }
+.affiliate-block ul { margin: 0; padding: 0; list-style: none; }
+.affiliate-block a { display: block; min-height: 48px; padding: 12px 14px; border: 1px solid #ddc78c; border-radius: 12px; background: var(--white); font-weight: 800; text-decoration: none; overflow-wrap: anywhere; }
+.affiliate-disclosure { color: var(--muted); font-size: .9rem; }
 .button.secondary { background: #1c5d87; }
 .button.muted { background: #eef1ef; color: var(--muted); cursor: default; }
 .related-list, .sources ul { margin: 0; padding: 0; list-style: none; }
@@ -133,7 +141,8 @@ footer small { color: var(--muted); }
   .search-control button { width: 100%; }
   .item-grid, .category-grid, .related-list { grid-template-columns: 1fr; }
   .section { padding-block: 38px; }
-  .answer-card, .content-card, .collection-card, .feedback, .notice, .empty-state { border-radius: 16px; }
+  .answer-card, .content-card, .collection-card, .affiliate-block, .feedback, .notice, .empty-state { border-radius: 16px; }
+  .ad-slot, .affiliate-block { min-width: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
