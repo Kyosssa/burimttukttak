@@ -27,6 +27,7 @@ test('Coupang carousel is emitted once on home and every verified detail page', 
   for (const path of targets) {
     const page = html(path);
     assert.equal(count(page, /data-component="CoupangCarousel"/g), 1, path);
+    assert.equal(count(page, /src="https:\/\/ads-partners\.coupang\.com\/g\.js"/g), 1, path);
     assert.equal(count(page, /src="\/assets\/coupang-carousel\.js"/g), 1, path);
     assert.match(page, /경제적 이해관계 안내/);
     assert.match(page, /id="coupang-carousel-desktop"/);
@@ -42,13 +43,12 @@ test('Coupang carousel is absent from non-target public and non-public pages', (
 
 test('carousel client config loads one official loader and initializes responsive containers', () => {
   const client = html('assets/coupang-carousel.js');
-  assert.equal(count(client, /https:\/\/ads-partners\.coupang\.com\/g\.js/g), 1);
   assert.match(client, /id: 1032289/);
   assert.match(client, /template: 'carousel'/);
   assert.match(client, /trackingCode: 'AF4293553'/);
   assert.match(client, /width: '728', height: '90', container: desktop\.id/);
   assert.match(client, /width: '320', height: '100', container: mobile\.id/);
-  assert.match(client, /data-coupang-partners-loader/);
+  assert.match(html('index.html'), /data-coupang-partners-loader="true"/);
 });
 
 test('existing ad and product-link components remain inactive without explicit settings', () => {

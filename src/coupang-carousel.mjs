@@ -1,24 +1,4 @@
-const LOADER_URL = 'https://ads-partners.coupang.com/g.js';
 const CONFIG = Object.freeze({ id: 1032289, template: 'carousel', trackingCode: 'AF4293553', tsource: '' });
-
-function loadPartnerScript() {
-  const existing = document.querySelector('script[data-coupang-partners-loader="true"]');
-  if (existing?.dataset.loaded === 'true') return Promise.resolve();
-  if (existing?.dataset.failed === 'true') return Promise.reject(new Error('Coupang loader unavailable'));
-  if (existing) return new Promise((resolve, reject) => {
-    existing.addEventListener('load', resolve, { once: true });
-    existing.addEventListener('error', reject, { once: true });
-  });
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = LOADER_URL;
-    script.async = true;
-    script.dataset.coupangPartnersLoader = 'true';
-    script.addEventListener('load', () => { script.dataset.loaded = 'true'; resolve(); }, { once: true });
-    script.addEventListener('error', () => { script.dataset.failed = 'true'; reject(new Error('Coupang loader unavailable')); }, { once: true });
-    document.head.append(script);
-  });
-}
 
 function hasFrame(banner) {
   return Boolean(banner.querySelector('iframe'));
@@ -38,5 +18,9 @@ function initializeBanner(banner) {
 }
 
 for (const banner of document.querySelectorAll('[data-coupang-carousel]')) {
-  void loadPartnerScript().then(() => initializeBanner(banner)).catch(() => banner.remove());
+  try {
+    initializeBanner(banner);
+  } catch {
+    banner.remove();
+  }
 }
