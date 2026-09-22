@@ -20,6 +20,7 @@ const testFiles = readdirSync(new URL('../tests/', import.meta.url)).filter(name
 const tests = spawnSync(process.execPath, ['--test', ...testFiles], { cwd: root, stdio: 'inherit' });
 if (tests.error || tests.status !== 0) process.exit(tests.status || 1);
 
-const functionsBundle = spawnSync(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['run', 'check:pages-functions'], { cwd: root, stdio: 'inherit' });
+const wranglerBin = fileURLToPath(new URL('../node_modules/wrangler/bin/wrangler.js', import.meta.url));
+const functionsBundle = spawnSync(process.execPath, [wranglerBin, 'pages', 'functions', 'build', 'functions', '--outdir', '.tmp/pages-functions'], { cwd: root, stdio: 'inherit' });
 if (functionsBundle.error || functionsBundle.status !== 0) process.exit(functionsBundle.status || 1);
 console.log('Build passed.');

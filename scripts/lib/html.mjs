@@ -28,6 +28,7 @@ export function layout({ title, description, canonical, content, mainClass = '',
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="${escapeHtml(robots)}">${social}
+  <meta name="naver-site-verification" content="60090dcb1b94d4cc123aee5341a4cef1aff3c592" />
   <link rel="stylesheet" href="/assets/style.css">
   ${jsonLd.map(value => `<script type="application/ld+json">${safeJson(value)}</script>`).join('\n  ')}
 </head>

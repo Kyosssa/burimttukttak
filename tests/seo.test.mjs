@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
@@ -35,6 +35,16 @@ test('every public canonical page has unique absolute canonical, metadata, OG an
     titles.add(title);
   }
   assert.equal(canonicals.size, 43);
+});
+
+test('every generated HTML page has exactly one Naver site verification tag', () => {
+  const htmlFiles = readdirSync(root, { recursive: true }).filter(file => file.endsWith('.html'));
+  assert.ok(htmlFiles.length > 0);
+  for (const file of htmlFiles) {
+    const content = readFileSync(join(root, file), 'utf8');
+    const tags = [...content.matchAll(/<meta name="naver-site-verification" content="60090dcb1b94d4cc123aee5341a4cef1aff3c592" \/>/g)];
+    assert.equal(tags.length, 1, file);
+  }
 });
 
 test('home JSON-LD is valid WebSite and Organization without SearchAction', () => {
