@@ -9,6 +9,7 @@ const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const { seed, categories } = loadInputs();
 const verified = seed.items.filter(item => item.verification_status === 'verified');
 const expectedPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/'];
+const ADSENSE_LOADER = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740';
 
 function files(directory = root) {
   return readdirSync(directory).flatMap(name => {
@@ -31,6 +32,11 @@ export async function auditDist() {
   const htmlFiles = files().filter(path => path.endsWith('.html'));
   const missingLinks = [];
   const automaticExternalRequests = [];
+  const permittedAdSenseRequests = [];
+  const recordExternalRequest = (path, target) => {
+    if (target === ADSENSE_LOADER) permittedAdSenseRequests.push(`${path}: ${target}`);
+    else automaticExternalRequests.push(`${path}: ${target}`);
+  };
   for (const path of htmlFiles) {
     const content = readFileSync(path, 'utf8');
     for (const match of content.matchAll(/href="(\/[^"#?]*(?:[?#][^"]*)?)"/g)) {
@@ -41,17 +47,18 @@ export async function auditDist() {
     }
     for (const match of content.matchAll(/<(?:script|img|iframe)[^>]+src="([^"]+)"/gi)) {
       const target = match[1];
-      if (/^https?:\/\//i.test(target)) automaticExternalRequests.push(`${path}: ${target}`);
+      if (/^https?:\/\//i.test(target)) recordExternalRequest(path, target);
     }
     for (const match of content.matchAll(/<link\b[^>]*>/gi)) {
       const tag = match[0];
       if (!/rel="(?:stylesheet|preload|modulepreload|icon)"/i.test(tag)) continue;
       const target = tag.match(/href="([^"]+)"/i)?.[1];
-      if (target && /^https?:\/\//i.test(target)) automaticExternalRequests.push(`${path}: ${target}`);
+      if (target && /^https?:\/\//i.test(target)) recordExternalRequest(path, target);
     }
   }
   if (missingLinks.length) fail(`broken internal links\n${missingLinks.join('\n')}`);
   if (automaticExternalRequests.length) fail(`automatic external requests\n${automaticExternalRequests.join('\n')}`);
+  if (permittedAdSenseRequests.length !== htmlFiles.length) fail('official AdSense loader count');
 
   const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
@@ -80,13 +87,13 @@ export async function auditDist() {
     await new Promise(resolve => server.close(resolve));
   }
 
-  return { sitemapUrls: urls.length, internalLinks: 'ok', indexing: 'ok', real404: 'ok', automaticExternalRequests: 0 };
+  return { sitemapUrls: urls.length, internalLinks: 'ok', indexing: 'ok', real404: 'ok', automaticExternalRequests: 0, permittedAdSenseRequests: permittedAdSenseRequests.length };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   try {
     const result = await auditDist();
-    console.log(`Artifact audit passed: ${result.sitemapUrls} sitemap URLs / internal links OK / index policy OK / real 404 OK / 0 automatic external requests`);
+    console.log(`Artifact audit passed: ${result.sitemapUrls} sitemap URLs / internal links OK / index policy OK / real 404 OK / ${result.permittedAdSenseRequests} permitted AdSense loader requests / 0 other automatic external requests`);
   } catch (error) {
     console.error(error.message);
     process.exitCode = 1;

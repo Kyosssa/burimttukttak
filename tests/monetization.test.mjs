@@ -29,7 +29,7 @@ test('disabled monetization config emits no empty advertising or affiliate marku
   for (const item of verified) {
     const html = readFileSync(join('dist', 'item', item.slug, 'index.html'), 'utf8');
     assert.doesNotMatch(html, /data-component="(?:AdSlotTop|AdSlotBottom|AffiliateBlock)"/);
-    assert.doesNotMatch(html, /adsbygoogle|googlesyndication|coupang|partners\/external/i);
+    assert.doesNotMatch(html, /adsbygoogle\.push|data-ad-client|data-ad-slot|coupang|partners\/external/i);
   }
 });
 
@@ -62,8 +62,8 @@ test('footer policy links resolve and published policy text matches the disconne
   for (const href of ['/privacy/', '/source-policy/', '/affiliate-disclosure/']) assert.match(html, new RegExp(`href="${href}"`));
   const disclosure = readFileSync(join('dist', 'affiliate-disclosure', 'index.html'), 'utf8');
   const privacy = readFileSync(join('dist', 'privacy', 'index.html'), 'utf8');
-  assert.match(disclosure, /현재 버림뚝딱에는 제휴 링크, 상품 배너 또는 광고가 없습니다/);
-  assert.match(privacy, /외부 분석 도구와 광고를 사용하지 않습니다/);
+  assert.match(disclosure, /현재 버림뚝딱에는 쿠팡을 포함한 제휴 링크와 상품 배너가 없습니다/);
+  assert.match(privacy, /Google AdSense 검토 및 광고 제공 준비를 위해 공식 AdSense 스크립트를 불러오며/);
 });
 
 test('mobile styles constrain future slots and affiliate content at 360px', () => {

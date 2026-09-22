@@ -40,7 +40,7 @@
 - [ ] Production 홈·품목·카테고리·정책 페이지는 `index,follow`
 - [ ] Production 검색은 `noindex,follow`, 404는 `noindex,nofollow`
 - [ ] sitemap에는 43개 canonical URL만 존재
-- [ ] 브라우저 Network 패널에서 미등록 검색 API 외 광고·제휴·Analytics 요청 0건
+- [ ] 브라우저 Network 패널에서 공식 Google AdSense loader와 미등록 검색 API 외 광고·제휴·Analytics 요청 0건
 - [ ] Production에 Preview용 noindex 응답 헤더가 없음
 
 ## 출시 승인 기록

@@ -62,7 +62,7 @@ D1은 `/api/missing-search`의 집계에만 사용합니다. 홈, 상세, 카테
 - 실제 missing만 Preview DB count를 증가시킴
 - API 오류를 만들어도 검색 UI가 유지됨
 - 없는 item slug는 실제 HTTP 404
-- 광고·제휴·Analytics 외부 요청 없음
+- 공식 Google AdSense loader 외 광고·제휴·Analytics 외부 요청 없음
 
 ## 6. Custom domain과 Production 검증
 

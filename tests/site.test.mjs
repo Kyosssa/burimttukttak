@@ -29,7 +29,7 @@ test('generates exactly 30 verified item pages and zero unverified item pages', 
 test('generates all eight fixed categories and required standalone pages', () => {
   assert.equal(categories.categories.length, 8);
   for (const category of categories.categories) assert.ok(existsSync(join(root, 'category', category.slug, 'index.html')), category.slug);
-  for (const page of ['index.html', 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html']) {
+  for (const page of ['index.html', 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html', 'ads.txt']) {
     assert.ok(existsSync(join(root, page)), page);
   }
 });
@@ -74,6 +74,10 @@ test('all root-relative internal links resolve to generated files', () => {
 test('external advertising, affiliate integrations and analytics code are absent', () => {
   const scripts = files().filter(path => /\.(?:js|mjs)$/.test(path)).map(path => readFileSync(path, 'utf8')).join('\n');
   assert.ok(!/analytics|adsbygoogle|doubleclick|googlesyndication|coupang|partners\/external/i.test(scripts));
+});
+
+test('ads.txt contains only the approved Google AdSense publisher record', () => {
+  assert.equal(html('ads.txt'), 'google.com, pub-7564661082214740, DIRECT, f08c47fec0942fa0\n');
 });
 
 test('local preview returns real 404 status and serves the custom page', async () => {

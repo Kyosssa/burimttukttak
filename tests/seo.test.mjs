@@ -47,6 +47,16 @@ test('every generated HTML page has exactly one Naver site verification tag', ()
   }
 });
 
+test('every generated HTML page has exactly one official AdSense loader without ad placement code', () => {
+  const script = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>';
+  const htmlFiles = readdirSync(root, { recursive: true }).filter(file => file.endsWith('.html'));
+  for (const file of htmlFiles) {
+    const content = readFileSync(join(root, file), 'utf8');
+    assert.equal(content.split(script).length - 1, 1, file);
+    assert.doesNotMatch(content, /adsbygoogle\.push|data-ad-client|data-ad-slot/i, file);
+  }
+});
+
 test('home JSON-LD is valid WebSite and Organization without SearchAction', () => {
   const content = contentFor('/');
   const types = jsonLd(content).map(value => value['@type']);
