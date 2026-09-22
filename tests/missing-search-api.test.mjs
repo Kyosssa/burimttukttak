@@ -4,7 +4,9 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import seed from '../docs/prebuild/burimttukttak-seed-v1.1.json' with { type: 'json' };
 import fixtures from '../docs/prebuild/14-search-quality-fixtures.json' with { type: 'json' };
-import { handleMissingSearch, isAllowedOrigin, isKnownMissingSearchQuery, normalizeMissingQuery, UPSERT_SQL } from '../functions/api/missing-search.js';
+import { createMissingSearchApi, isAllowedOrigin, normalizeMissingQuery, UPSERT_SQL } from '../functions/api/missing-search-core.mjs';
+
+const { handleMissingSearch, isKnownMissingSearchQuery } = createMissingSearchApi(seed, fixtures);
 
 const endpoint = 'https://burimttukttak.com/api/missing-search';
 const request = (body, options = {}) => new Request(endpoint, {
@@ -139,13 +141,19 @@ test('D1 failures return a generic error without SQL or internal details', async
 
 test('D1 schema and Worker omit personal/request tracking fields', () => {
   const migration = readFileSync(new URL('../migrations/0001_missing_searches.sql', import.meta.url), 'utf8');
-  const worker = readFileSync(new URL('../functions/api/missing-search.js', import.meta.url), 'utf8');
+  const worker = readFileSync(new URL('../functions/api/missing-search-core.mjs', import.meta.url), 'utf8');
   for (const forbidden of ['ip_address', 'user_agent', 'email', 'fingerprint', 'latitude', 'longitude', 'cookie_id', 'referer']) {
     assert.ok(!migration.toLowerCase().includes(forbidden), forbidden);
   }
   for (const forbidden of ['request.cf', "get('user-agent')", "get('referer')", "get('cookie')"]) assert.ok(!worker.toLowerCase().includes(forbidden.toLowerCase()), forbidden);
   assert.match(migration, /normalized_query TEXT NOT NULL UNIQUE/);
   assert.match(migration, /search_count INTEGER NOT NULL DEFAULT 1/);
+});
+
+test('Pages Function entrypoint uses Wrangler 3 compatible JSON import assertions', () => {
+  const worker = readFileSync(new URL('../functions/api/missing-search.js', import.meta.url), 'utf8');
+  assert.match(worker, /\.json' assert \{ type: 'json' \}/);
+  assert.doesNotMatch(worker, /\.json' with \{ type: 'json' \}/);
 });
 
 test('Wrangler config keeps DB bound to isolated production and preview databases', () => {

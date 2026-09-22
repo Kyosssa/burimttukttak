@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "validate:data": "node scripts/validate-data.mjs",
     "test:search": "node --test tests/search.test.mjs",
     "test": "node --test tests/*.test.mjs",
     "build": "node scripts/build.mjs",
+    "check:pages-functions": "wrangler pages functions build functions --outdir .tmp/pages-functions",
     "audit:dist": "node scripts/audit-dist.mjs",
     "check:sources": "node scripts/source-health.mjs",
     "preflight": "node scripts/preflight.mjs",
@@ -16,6 +19,7 @@
   },
   "devDependencies": {
     "ajv": "8.17.1",
-    "ajv-formats": "3.0.1"
+    "ajv-formats": "3.0.1",
+    "wrangler": "3.114.17"
   }
 }

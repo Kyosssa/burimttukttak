@@ -19,4 +19,7 @@ if (!seedArg) {
 const testFiles = readdirSync(new URL('../tests/', import.meta.url)).filter(name => name.endsWith('.test.mjs')).map(name => `tests/${name}`);
 const tests = spawnSync(process.execPath, ['--test', ...testFiles], { cwd: root, stdio: 'inherit' });
 if (tests.error || tests.status !== 0) process.exit(tests.status || 1);
+
+const functionsBundle = spawnSync(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['run', 'check:pages-functions'], { cwd: root, stdio: 'inherit' });
+if (functionsBundle.error || functionsBundle.status !== 0) process.exit(functionsBundle.status || 1);
 console.log('Build passed.');
