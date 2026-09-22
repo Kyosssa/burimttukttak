@@ -19,9 +19,9 @@ function files(directory = root) {
   });
 }
 
-test('generates exactly 60 verified item pages and zero unverified item pages', () => {
+test('generates exactly 80 verified item pages and zero unverified item pages', () => {
   const itemPages = files(join(root, 'item')).filter(path => path.endsWith('index.html'));
-  assert.equal(itemPages.length, 60);
+  assert.equal(itemPages.length, 80);
   for (const item of verified) assert.ok(existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
   for (const item of unverified) assert.ok(!existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
 });
@@ -41,7 +41,7 @@ test('item pages contain required Seed-backed sections and CTA only when eligibl
       assert.ok(page.includes(content.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')), `${item.slug}: ${content}`);
     }
     for (const heading of ['현재 위치', '한눈에 보는 배출방법', '버리는 순서', '공식 출처', '정보가 달라졌나요?']) assert.ok(page.includes(heading), `${item.slug}: ${heading}`);
-    const hasCta = page.includes('폐가전 무상방문수거');
+    const hasCta = page.includes('<h2>🔌 폐가전 무상방문수거</h2>');
     assert.equal(hasCta, item.collection_service?.type === 'free_home_pickup', item.slug);
   }
 });
@@ -87,7 +87,7 @@ test('local preview returns real 404 status and serves the custom page', async (
     const { port } = server.address();
     const found = await fetch(`http://127.0.0.1:${port}/item/frying-pan/`);
     const missing = await fetch(`http://127.0.0.1:${port}/definitely-missing/`);
-    const unverified = await fetch(`http://127.0.0.1:${port}/item/mattress/`);
+    const unverified = await fetch(`http://127.0.0.1:${port}/item/kitchen-knife/`);
     assert.equal(found.status, 200);
     assert.equal(missing.status, 404);
     assert.equal(unverified.status, 404);

@@ -273,18 +273,44 @@
       "category": "주방/조리도구",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "종량제봉투·특수규격마대 등 지자체 조례",
+      "summary": "사기·도자기 접시는 유리병 재활용 대상이 아닙니다. 종량제봉투·특수규격마대 또는 대형폐기물 등 관할 지자체 조례에 따라 배출합니다.",
+      "steps": [
+        "유리병 재활용품과 구분합니다.",
+        "재질과 크기에 맞는 관할 지자체 배출 방법을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "금속·플라스틱 접시는 재질별 기준을 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "ceramic-mug",
+        "broken-glass"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "접시 버리는 법 | 종량제봉투·특수규격마대 등 지자체 조례 - 버림뚝딱",
+        "description": "접시을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-009",
@@ -316,18 +342,45 @@
         "머그컵",
         "머그잔"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "종량제봉투·특수규격마대 등 지자체 조례",
+      "summary": "도자기컵은 유리병 재활용 대상이 아닙니다. 종량제봉투·특수규격마대 또는 대형폐기물 등 관할 지자체 조례에 따라 배출합니다.",
+      "steps": [
+        "유리병 재활용품과 구분합니다.",
+        "깨진 경우 다치지 않도록 포장합니다.",
+        "관할 지자체 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "내열유리·크리스탈·도자기는 유리병 재활용품에 섞지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "plate",
+        "broken-glass"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "도자기컵 버리는 법 | 종량제봉투·특수규격마대 등 지자체 조례 - 버림뚝딱",
+        "description": "도자기컵을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-011",
@@ -336,18 +389,45 @@
       "category": "주방/조리도구",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "plastic_container",
+      "disposal_label": "합성수지 용기·트레이류",
+      "summary": "플라스틱 밀폐용기는 내용물을 비우고 이물질을 제거한 뒤 합성수지 용기·트레이류로 배출합니다. 다른 재질 부속품은 분리 가능한 경우 분리합니다.",
+      "steps": [
+        "내용물을 비우고 이물질을 제거합니다.",
+        "본체와 다른 재질의 부속품은 분리 가능한 경우 분리합니다.",
+        "합성수지 용기·트레이류로 배출합니다."
+      ],
+      "warnings": [
+        "재질이 플라스틱이 아닌 밀폐용기는 해당 재질 또는 관할 지자체 기준을 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "plastic-container",
+        "toothpaste-tube"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "밀폐용기 버리는 법 | 합성수지 용기·트레이류 - 버림뚝딱",
+        "description": "밀폐용기을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-012",
@@ -694,18 +774,45 @@
       "category": "포장재/재활용",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "plastic_container",
+      "disposal_label": "합성수지 용기·트레이류",
+      "summary": "플라스틱컵은 내용물을 비우고 이물질을 제거한 뒤 합성수지 용기·트레이류로 배출합니다.",
+      "steps": [
+        "내용물을 비우고 이물질을 제거합니다.",
+        "본체와 다른 재질의 뚜껑·빨대는 분리 가능한 경우 분리합니다.",
+        "합성수지 용기·트레이류로 배출합니다."
+      ],
+      "warnings": [
+        "종이컵·복합재질 컵은 플라스틱컵과 구분하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "plastic-container",
+        "paper-cup"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "플라스틱컵 버리는 법 | 합성수지 용기·트레이류 - 버림뚝딱",
+        "description": "플라스틱컵을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-022",
@@ -776,18 +883,45 @@
       "aliases": [
         "유색 페트병"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "plastic_container",
+      "disposal_label": "합성수지 용기·트레이류",
+      "summary": "무색 투명한 먹는샘물·음료 PET병 이외의 PET 용기는 합성수지 용기·트레이류 배출 대상입니다. 내용물을 비우고 부착상표와 다른 재질 부속품을 분리합니다.",
+      "steps": [
+        "내용물을 비우고 이물질을 제거합니다.",
+        "부착상표와 다른 재질의 부속품을 분리 가능한 경우 분리합니다.",
+        "합성수지 용기·트레이류로 배출합니다."
+      ],
+      "warnings": [
+        "무색 투명한 먹는샘물·음료 PET병은 별도 PET병 기준을 따르세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "clear-pet-bottle",
+        "plastic-container"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "유색페트병 버리는 법 | 합성수지 용기·트레이류 - 버림뚝딱",
+        "description": "유색페트병을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-024",
@@ -909,18 +1043,45 @@
       "category": "포장재/재활용",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "material_based_container",
+      "disposal_label": "재질별 분리배출",
+      "summary": "플라스틱 일회용도시락은 내용물을 비우고 이물질을 제거한 뒤 합성수지 용기·트레이류로 배출합니다. 플라스틱이 아닌 재질이나 분리가 어려운 복합재질은 관할 지자체 기준을 확인합니다.",
+      "steps": [
+        "내용물을 비우고 이물질을 제거합니다.",
+        "분리 가능한 뚜껑과 부속품을 재질별로 분리합니다.",
+        "플라스틱 본체는 합성수지 용기·트레이류로 배출합니다."
+      ],
+      "warnings": [
+        "재질 표시와 지역의 복합재질 배출 기준을 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "takeout-container",
+        "food-container"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "일회용도시락 버리는 법 | 재질별 분리배출 - 버림뚝딱",
+        "description": "일회용도시락을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-027",
@@ -3532,18 +3693,51 @@
         "침대틀",
         "침대 프레임"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "mattress",
+        "sofa"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "침대프레임 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "침대프레임을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-083",
@@ -3552,18 +3746,51 @@
       "category": "가구/대형폐기물",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "bed-frame",
+        "chair"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "소파 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "소파을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-084",
@@ -3572,18 +3799,51 @@
       "category": "가구/대형폐기물",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "desk",
+        "dining-table"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "의자 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "의자을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-085",
@@ -3592,18 +3852,51 @@
       "category": "가구/대형폐기물",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "chair",
+        "bookshelf"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "책상 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "책상을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-086",
@@ -3612,18 +3905,51 @@
       "category": "가구/대형폐기물",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "chair",
+        "drawer-chest"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "식탁 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "식탁을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-087",
@@ -3635,18 +3961,51 @@
         "서랍",
         "수납장"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "wardrobe",
+        "bookshelf"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "서랍장 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "서랍장을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-088",
@@ -3658,18 +4017,51 @@
         "장롱",
         "장농"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "drawer-chest",
+        "shoe-cabinet"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "옷장 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "옷장을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-089",
@@ -3678,18 +4070,51 @@
       "category": "가구/대형폐기물",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "desk",
+        "drawer-chest"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "책장 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "책장을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-090",
@@ -3698,18 +4123,51 @@
       "category": "가구/대형폐기물",
       "priority": "C",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "mirror",
+        "drawer-chest"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "화장대 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "화장대을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-091",
@@ -3718,18 +4176,51 @@
       "category": "가구/대형폐기물",
       "priority": "C",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "wardrobe",
+        "drawer-chest"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "신발장 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "신발장을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-092",
@@ -3738,18 +4229,51 @@
       "category": "가구/대형폐기물",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "관할 지자체 대형폐기물 기준 확인",
+      "summary": "가구류는 폐가전 무상방문수거 대상이 아닙니다. 관할 주민센터 등 지자체의 현재 대형폐기물 기준을 확인해 배출합니다.",
+      "steps": [
+        "폐가전 무상방문수거 대상이 아님을 확인합니다.",
+        "관할 주민센터 등 지자체의 현재 대형폐기물 안내를 확인합니다.",
+        "확인한 지역 기준에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수수료·신고·수거일은 지역마다 다르므로 전국 공통으로 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "vanity-table",
+        "flower-pot"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "거울 버리는 법 | 관할 지자체 대형폐기물 기준 확인 - 버림뚝딱",
+        "description": "거울을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-093",
@@ -4316,18 +4840,44 @@
         "보냉팩",
         "젤아이스팩"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "local_collection_point",
+      "disposal_label": "지역별 아이스팩 수거 장소 확인",
+      "summary": "아이스팩은 기후에너지환경부 분리의 정석의 지역별 분리배출 장소 지도에서 수거 장소가 운영되는지 확인할 수 있습니다. 수거 장소와 배출 가능 여부는 지역마다 다릅니다.",
+      "steps": [
+        "분리의 정석 지도에서 시·도와 군·구를 선택합니다.",
+        "아이스팩 수거 장소가 표시되는지 확인합니다.",
+        "해당 장소 또는 관할 지자체의 현재 안내에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수거 장소가 없는 지역의 처리 방법은 관할 지자체에 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 분리배출 장소 지도",
+          "url": "https://xn--oy2b29bd3a601b.kr/front/region/location.do",
+          "authority": "기후에너지환경부",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "plastic-film",
+        "food-container"
+      ],
+      "verification_level": "official_local_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "수거 장소와 허용 품목은 지역별로 다릅니다. 분리의 정석 지도와 관할 지자체의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "아이스팩 버리는 법 | 지역별 아이스팩 수거 장소 확인 - 버림뚝딱",
+        "description": "아이스팩을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-111",
@@ -4567,18 +5117,45 @@
         "에어로졸캔",
         "스프레이통"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "special_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "metal_can_or_hazardous_waste",
+      "disposal_label": "내용물 제거 후 캔류 또는 지자체 유해폐기물",
+      "summary": "스프레이캔은 내용물을 완전히 제거한 경우 캔류로 배출합니다. 폐페인트·폐광택제·폐접착제처럼 폭발성·인화성 내용물이 남은 캔은 생활계 유해폐기물 전용수거함 또는 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "통풍이 되는 안전한 장소에서 내용물이 남아 있는지 확인합니다.",
+        "내용물을 완전히 제거할 수 있는 캔은 캔류로 배출합니다.",
+        "위험성이 있는 내용물이 남은 캔은 지자체 유해폐기물 기준을 확인합니다."
+      ],
+      "warnings": [
+        "내용물이 남은 캔을 임의로 훼손하거나 일반 재활용품에 섞지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "butane-can",
+        "lighter"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통으로 정해진 수수료·배출일·신고 방법은 안내하지 않습니다. 관할 지자체 또는 공동주택의 현재 대형폐기물·종량제 기준을 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "스프레이캔 버리는 법 | 내용물 제거 후 캔류 또는 지자체 유해폐기물 - 버림뚝딱",
+        "description": "스프레이캔을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-117",
@@ -4591,18 +5168,44 @@
         "유통기한지난약",
         "약"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "special_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "local_collection_point",
+      "disposal_label": "지역별 폐의약품 수거함 확인",
+      "summary": "폐의약품은 기후에너지환경부 분리의 정석의 지역별 분리배출 장소 지도에서 폐의약품 수거함 위치를 확인할 수 있습니다. 수거함 설치·운영 여부는 지역마다 다릅니다.",
+      "steps": [
+        "분리의 정석 지도에서 시·도와 군·구를 선택합니다.",
+        "폐의약품 수거함이 표시되는지 확인합니다.",
+        "해당 수거함 또는 관할 지자체의 현재 안내에 따라 배출합니다."
+      ],
+      "warnings": [
+        "수거함 위치와 접수 가능 품목은 방문 전에 지역 안내를 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 분리배출 장소 지도",
+          "url": "https://xn--oy2b29bd3a601b.kr/front/region/location.do",
+          "authority": "기후에너지환경부",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "cosmetics",
+        "perfume"
+      ],
+      "verification_level": "official_local_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "수거 장소와 허용 품목은 지역별로 다릅니다. 분리의 정석 지도와 관할 지자체의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "폐의약품 버리는 법 | 지역별 폐의약품 수거함 확인 - 버림뚝딱",
+        "description": "폐의약품을(를) 어떻게 버려야 하는지 공식 출처와 지역별 확인 사항을 바탕으로 안내합니다."
+      }
     },
     {
       "id": "item-118",
@@ -4668,8 +5271,8 @@
       "related_items": []
     }
   ],
-  "verified_item_count": 60,
-  "needs_research_count": 60,
+  "verified_item_count": 80,
+  "needs_research_count": 40,
   "verification_policy": {
     "verified": "현재 공식 지침·공식 서비스 자료로 배출 원칙을 확인한 품목",
     "official_category_rule": "품목 전용 문구보다 해당 재질/분류의 최신 공식 배출 규칙으로 검증",

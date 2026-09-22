@@ -75,6 +75,23 @@
       "used_for": [
         "향후 공식데이터 동기화"
       ]
+    },
+    {
+      "id": "official-disposal-location-map",
+      "name": "분리의 정석 - 분리배출 장소 지도",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://xn--oy2b29bd3a601b.kr/front/region/location.do",
+      "review_interval_days": 14,
+      "expected_content": [
+        "분리배출",
+        "장소"
+      ],
+      "used_for": [
+        "폐의약품",
+        "아이스팩",
+        "지역별 수거 장소"
+      ]
     }
   ]
 }

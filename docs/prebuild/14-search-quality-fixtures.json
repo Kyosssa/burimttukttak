@@ -116,8 +116,8 @@
     {
       "query": "장농",
       "expected_slug": "wardrobe",
-      "expected_state": "unverified_item",
-      "reason": "alias"
+      "expected_state": "verified_item",
+      "reason": "Phase 7 verified alias"
     },
     {
       "query": "폐건전지",
