@@ -19,9 +19,9 @@ function files(directory = root) {
   });
 }
 
-test('generates exactly 30 verified item pages and zero unverified item pages', () => {
+test('generates exactly 60 verified item pages and zero unverified item pages', () => {
   const itemPages = files(join(root, 'item')).filter(path => path.endsWith('index.html'));
-  assert.equal(itemPages.length, 30);
+  assert.equal(itemPages.length, 60);
   for (const item of verified) assert.ok(existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
   for (const item of unverified) assert.ok(!existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
 });
@@ -87,7 +87,7 @@ test('local preview returns real 404 status and serves the custom page', async (
     const { port } = server.address();
     const found = await fetch(`http://127.0.0.1:${port}/item/frying-pan/`);
     const missing = await fetch(`http://127.0.0.1:${port}/definitely-missing/`);
-    const unverified = await fetch(`http://127.0.0.1:${port}/item/air-fryer/`);
+    const unverified = await fetch(`http://127.0.0.1:${port}/item/mattress/`);
     assert.equal(found.status, 200);
     assert.equal(missing.status, 404);
     assert.equal(unverified.status, 404);

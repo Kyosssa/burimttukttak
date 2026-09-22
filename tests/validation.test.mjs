@@ -5,13 +5,13 @@ import { createValidator } from '../scripts/lib/validate.mjs';
 
 const inputs = loadInputs();
 const validate = createValidator(inputs);
-test('Pack baseline: 120 / 30 / 90, validation does not mutate Seed', () => {
+test('Phase 6 baseline: 120 / 60 / 60, validation does not mutate Seed', () => {
   const seed = structuredClone(inputs.seed);
   assert.deepEqual(validate(seed), []);
   assert.deepEqual(seed, inputs.seed);
   assert.equal(seed.items.length, 120);
-  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 30);
-  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 90);
+  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 60);
+  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 60);
 });
 
 const mutations = [
@@ -28,8 +28,8 @@ const mutations = [
   ['unknown category', s => { s.items[0].category = 'unknown'; }, 'category'],
   ['invalid keywords', s => { s.items[0].search_keywords = 'wrong'; }, 'keywords'],
   ['wrong metadata count', s => { s.item_count = 119; }, 'count'],
-  ['wrong verified count', s => { s.verified_item_count = 29; }, 'count'],
-  ['wrong research count', s => { s.needs_research_count = 91; }, 'count'],
+  ['wrong verified count', s => { s.verified_item_count = 59; }, 'count'],
+  ['wrong research count', s => { s.needs_research_count = 61; }, 'count'],
   ['missing required field', s => { delete s.items[0].aliases; }, 'schema'],
   ['invalid slug', s => { s.items[0].slug = '../bad'; }, 'schema'],
   ['wrong type', s => { s.items[0].steps = 'wrong'; }, 'schema'],

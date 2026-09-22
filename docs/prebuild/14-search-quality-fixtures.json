@@ -86,26 +86,26 @@
     {
       "query": "김냉",
       "expected_slug": "kimchi-refrigerator",
-      "expected_state": "unverified_item",
-      "reason": "known but unverified"
+      "expected_state": "verified_item",
+      "reason": "Phase 6 verified alias"
     },
     {
       "query": "핸드폰",
       "expected_slug": "mobile-phone",
-      "expected_state": "unverified_item",
-      "reason": "known but unverified"
+      "expected_state": "verified_item",
+      "reason": "Phase 6 verified alias"
     },
     {
       "query": "스마트폰",
       "expected_slug": "mobile-phone",
-      "expected_state": "unverified_item",
-      "reason": "known but unverified"
+      "expected_state": "verified_item",
+      "reason": "Phase 6 verified alias"
     },
     {
       "query": "에어후라이기",
       "expected_slug": "air-fryer",
-      "expected_state": "unverified_item",
-      "reason": "known but unverified"
+      "expected_state": "verified_item",
+      "reason": "Phase 6 verified alias"
     },
     {
       "query": "메트리스",

@@ -286,5 +286,297 @@
       "me-recycling-guideline",
       "official-disposal-portal"
     ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "rubber-gloves",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "kimchi-refrigerator",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "electric-oven",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "dishwasher",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "water-purifier",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "water-dispenser",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "treadmill",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "copier",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "vacuum-cleaner",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "air-fryer",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "laptop",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "desktop-computer",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "computer-monitor",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "printer",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "mobile-phone",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "tablet",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "wifi-router",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "game-console",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "hair-dryer",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "electric-iron",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "coffee-maker",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "blender",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "electric-kettle",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "blanket",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "pillow",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "clothes-hanger",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "toothbrush",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "toothpaste-tube",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "toy",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "broken-glass",
+    "type": "verified",
+    "summary": "Phase 6 공식 출처 재확인 후 verified 승격",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
   }
 ]

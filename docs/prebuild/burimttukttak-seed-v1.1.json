@@ -396,18 +396,44 @@
       "category": "주방/조리도구",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "종량제봉투 등 지자체 조례",
+      "summary": "고무장갑은 비닐류 분리배출 대상이 아닙니다. 종량제봉투·특수규격마대 또는 대형폐기물 등 관할 지자체 조례에 따라 배출합니다.",
+      "steps": [
+        "오염물질을 제거합니다.",
+        "관할 지자체 조례에 따른 종량제봉투·특수규격마대 또는 대형폐기물 방법을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "비닐포장재와 섞어 재활용품으로 배출하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "scrubber",
+        "plastic-film"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "고무장갑 버리는 법 | 종량제봉투 등 지자체 조례 - 버림뚝딱",
+        "description": "고무장갑을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-015",
@@ -1482,18 +1508,55 @@
       "aliases": [
         "김냉"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "large_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "김치냉장고은 공식 지침에 예시된 대형 전기·전자제품입니다. 신제품 구매 시 판매업자 역회수, 폐가전 무상방문수거 또는 지자체 대형폐기물 수거체계 중 현재 가능한 방법으로 배출합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+        "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "무상방문수거 가능 여부와 수거 기준은 제품 규격·설치 상태에 따라 달라질 수 있습니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "refrigerator",
+        "water-dispenser"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "size_or_weight_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "김치냉장고 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "김치냉장고을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-048",
@@ -1803,18 +1866,55 @@
       "category": "대형/생활가전",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "large_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "전기오븐은 공식 지침에 예시된 대형 전기·전자제품입니다. 신제품 구매 시 판매업자 역회수, 폐가전 무상방문수거 또는 지자체 대형폐기물 수거체계 중 현재 가능한 방법으로 배출합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+        "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "무상방문수거 가능 여부와 수거 기준은 제품 규격·설치 상태에 따라 달라질 수 있습니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "microwave",
+        "dishwasher"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "size_or_weight_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "전기오븐 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "전기오븐을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-054",
@@ -1823,18 +1923,55 @@
       "category": "대형/생활가전",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "large_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "식기세척기은 공식 지침에 예시된 대형 전기·전자제품입니다. 신제품 구매 시 판매업자 역회수, 폐가전 무상방문수거 또는 지자체 대형폐기물 수거체계 중 현재 가능한 방법으로 배출합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+        "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "무상방문수거 가능 여부와 수거 기준은 제품 규격·설치 상태에 따라 달라질 수 있습니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "electric-oven",
+        "water-purifier"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "size_or_weight_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "식기세척기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "식기세척기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-055",
@@ -1964,18 +2101,55 @@
       "aliases": [
         "전기정수기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "large_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "정수기은 공식 지침에 예시된 대형 전기·전자제품입니다. 신제품 구매 시 판매업자 역회수, 폐가전 무상방문수거 또는 지자체 대형폐기물 수거체계 중 현재 가능한 방법으로 배출합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+        "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "설치·고정된 정수기는 수거 전에 철거되어 있어야 합니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "water-dispenser",
+        "dishwasher"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "size_or_weight_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "정수기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "정수기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-058",
@@ -1984,18 +2158,55 @@
       "category": "대형/생활가전",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "large_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "냉온수기은 공식 지침에 예시된 대형 전기·전자제품입니다. 신제품 구매 시 판매업자 역회수, 폐가전 무상방문수거 또는 지자체 대형폐기물 수거체계 중 현재 가능한 방법으로 배출합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+        "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "설치·고정된 냉온수기는 수거 전에 철거되어 있어야 합니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "water-purifier",
+        "refrigerator"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "size_or_weight_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "냉온수기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "냉온수기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-059",
@@ -2004,18 +2215,55 @@
       "category": "대형/생활가전",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "large_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "러닝머신은 공식 지침에 예시된 대형 전기·전자제품입니다. 신제품 구매 시 판매업자 역회수, 폐가전 무상방문수거 또는 지자체 대형폐기물 수거체계 중 현재 가능한 방법으로 배출합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+        "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "무상방문수거 가능 여부와 수거 기준은 제품 규격·설치 상태에 따라 달라질 수 있습니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "vacuum-cleaner",
+        "air-conditioner"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "size_or_weight_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "러닝머신 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "러닝머신을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-060",
@@ -2024,18 +2272,55 @@
       "category": "대형/생활가전",
       "priority": "C",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "large_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "복사기은 공식 지침에 예시된 대형 전기·전자제품입니다. 신제품 구매 시 판매업자 역회수, 폐가전 무상방문수거 또는 지자체 대형폐기물 수거체계 중 현재 가능한 방법으로 배출합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+        "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "잉크·토너가 새지 않도록 고정하거나 밀봉해 배출합니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "printer",
+        "desktop-computer"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "size_or_weight_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "복사기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "복사기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-061",
@@ -2223,18 +2508,55 @@
       "category": "대형/생활가전",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "청소기은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "hair-dryer",
+        "electric-fan"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "청소기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "청소기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-065",
@@ -2247,18 +2569,55 @@
         "에어후라이기",
         "에어프라이기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "에어프라이어은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "microwave",
+        "electric-oven"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "에어프라이어 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "에어프라이어을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-066",
@@ -2267,18 +2626,55 @@
       "category": "소형전자/배터리",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "노트북은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "computer-monitor",
+        "desktop-computer"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "노트북 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "노트북을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-067",
@@ -2292,18 +2688,55 @@
         "PC본체",
         "컴퓨터본체"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "데스크탑컴퓨터는 본체와 모니터를 함께 배출하는 데스크탑 PC 세트가 공식 무상방문수거 기준에 명시되어 있습니다. 세트가 아닌 경우에는 제품의 크기·중량과 관할 수거 기준을 확인하세요.",
+      "steps": [
+        "본체와 모니터를 함께 배출할 수 있는지 확인합니다.",
+        "제품 안의 개인정보를 삭제하고 부속품·내용물을 제거합니다.",
+        "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "무상방문수거 가능 여부와 수거 기준은 제품 규격·설치 상태에 따라 달라질 수 있습니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "computer-monitor",
+        "laptop"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "데스크탑컴퓨터 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "데스크탑컴퓨터을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-068",
@@ -2315,18 +2748,55 @@
         "모니터",
         "PC모니터"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "컴퓨터모니터은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "desktop-computer",
+        "printer"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "컴퓨터모니터 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "컴퓨터모니터을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-069",
@@ -2335,18 +2805,55 @@
       "category": "소형전자/배터리",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "프린터은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "잉크·토너가 새지 않도록 고정하거나 밀봉해 배출합니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "copier",
+        "computer-monitor"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "프린터 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "프린터을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-070",
@@ -2359,18 +2866,55 @@
         "스마트폰",
         "휴대전화"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "휴대폰은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "tablet",
+        "power-bank"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "휴대폰 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "휴대폰을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-071",
@@ -2382,18 +2926,55 @@
         "태블릿PC",
         "아이패드"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "태블릿은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "mobile-phone",
+        "laptop"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "태블릿 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "태블릿을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-072",
@@ -2405,18 +2986,55 @@
         "와이파이 공유기",
         "무선공유기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "공유기은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "desktop-computer",
+        "mobile-phone"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "공유기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "공유기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-073",
@@ -2425,18 +3043,55 @@
       "category": "소형전자/배터리",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "게임기은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "computer-monitor",
+        "wifi-router"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "게임기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "게임기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-074",
@@ -2448,18 +3103,55 @@
         "드라이기",
         "헤어드라이기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "헤어드라이어은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "vacuum-cleaner",
+        "electric-iron"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "헤어드라이어 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "헤어드라이어을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-075",
@@ -2468,18 +3160,55 @@
       "category": "소형전자/배터리",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "전기다리미은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "hair-dryer",
+        "electric-kettle"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "전기다리미 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "전기다리미을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-076",
@@ -2488,18 +3217,55 @@
       "category": "소형전자/배터리",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "커피메이커은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "blender",
+        "electric-kettle"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "커피메이커 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "커피메이커을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-077",
@@ -2511,18 +3277,55 @@
         "블렌더",
         "주서기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "믹서기은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "coffee-maker",
+        "electric-kettle"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "믹서기 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "믹서기을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-078",
@@ -2531,18 +3334,55 @@
       "category": "소형전자/배터리",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "e_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "small_e_waste",
+      "disposal_label": "전기·전자제품",
+      "summary": "전기주전자은 소형 전기·전자제품으로 전용수거함에 배출합니다. 전용수거함이 없으면 폐가전 무상방문수거나 지자체가 정한 방법을 이용합니다.",
+      "steps": [
+        "제품 안의 내용물과 분리 가능한 전지를 확인합니다.",
+        "전용수거함에 배출합니다.",
+        "전용수거함이 없으면 무상방문수거 또는 관할 지자체의 현재 배출 방법을 확인합니다."
+      ],
+      "warnings": [
+        "무상방문수거의 소형 제품 수량·규격 조건은 접수 전에 공식 사이트에서 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        },
+        {
+          "name": "폐가전 무상방문수거 - 수거품목 및 수거기준",
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "authority": "E-순환거버넌스",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "coffee-maker",
+        "blender"
+      ],
+      "verification_level": "official_current_service",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "free_home_pickup",
+        "eligible": "conditional",
+        "mode": "quantity_or_size_based",
+        "provider": "E-순환거버넌스",
+        "url": "https://www.15990903.or.kr/"
+      },
+      "seo": {
+        "title": "전기주전자 버리는 법 | 전기·전자제품 배출 방법 - 버림뚝딱",
+        "description": "전기주전자을(를) 어떻게 버려야 하는지 확인하세요. 공식 전기·전자제품 배출 경로와 수거 조건, 주의사항을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-079",
@@ -3102,18 +3942,44 @@
         "침구",
         "담요"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "종량제봉투·대형폐기물 등 지자체 조례",
+      "summary": "이불은 의류수거함 대상에서 제외됩니다. 종량제봉투·특수규격마대 또는 대형폐기물 등 관할 지자체 조례에 따라 배출합니다.",
+      "steps": [
+        "의류수거함에 넣지 않습니다.",
+        "크기와 지역 기준을 확인해 종량제봉투·특수규격마대 또는 대형폐기물 방식으로 배출합니다."
+      ],
+      "warnings": [
+        "의류 전용수거함에 이불을 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "pillow",
+        "clothes"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "이불 버리는 법 | 종량제봉투·대형폐기물 등 지자체 조례 - 버림뚝딱",
+        "description": "이불을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-101",
@@ -3122,18 +3988,44 @@
       "category": "생활/의류/욕실",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "종량제봉투·대형폐기물 등 지자체 조례",
+      "summary": "베개는 의류수거함 대상에서 제외됩니다. 종량제봉투·특수규격마대 또는 대형폐기물 등 관할 지자체 조례에 따라 배출합니다.",
+      "steps": [
+        "의류수거함에 넣지 않습니다.",
+        "크기와 지역 기준을 확인해 종량제봉투·특수규격마대 또는 대형폐기물 방식으로 배출합니다."
+      ],
+      "warnings": [
+        "의류 전용수거함에 베개를 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "blanket",
+        "clothes"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "베개 버리는 법 | 종량제봉투·대형폐기물 등 지자체 조례 - 버림뚝딱",
+        "description": "베개을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-102",
@@ -3146,18 +4038,44 @@
         "철제옷걸이",
         "플라스틱옷걸이"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "종량제봉투·대형폐기물 등 지자체 조례",
+      "summary": "옷걸이는 합성수지 용기·트레이류 분리배출 대상이 아닙니다. 종량제봉투 또는 대형폐기물 등 관할 지자체 조례에 따라 배출합니다.",
+      "steps": [
+        "플라스틱 용기류와 구분합니다.",
+        "재질과 크기에 맞는 관할 지자체 배출 방법을 확인해 배출합니다."
+      ],
+      "warnings": [
+        "플라스틱 옷걸이를 플라스틱 용기·트레이류에 섞지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "clothes",
+        "toothbrush"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "옷걸이 버리는 법 | 종량제봉투·대형폐기물 등 지자체 조례 - 버림뚝딱",
+        "description": "옷걸이을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-103",
@@ -3166,18 +4084,44 @@
       "category": "생활/의류/욕실",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "종량제봉투·대형폐기물 등 지자체 조례",
+      "summary": "칫솔은 합성수지 용기·트레이류 분리배출 대상이 아닙니다. 종량제봉투 또는 대형폐기물 등 관할 지자체 조례에 따라 배출합니다.",
+      "steps": [
+        "플라스틱 용기류와 구분합니다.",
+        "관할 지자체 조례에 따른 방법으로 배출합니다."
+      ],
+      "warnings": [
+        "칫솔을 플라스틱 용기·트레이류에 섞지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "toothpaste-tube",
+        "clothes-hanger"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "칫솔 버리는 법 | 종량제봉투·대형폐기물 등 지자체 조례 - 버림뚝딱",
+        "description": "칫솔을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-104",
@@ -3186,18 +4130,45 @@
       "category": "생활/의류/욕실",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "plastic_container",
+      "disposal_label": "합성수지 용기·트레이류",
+      "summary": "치약튜브는 내용물을 비운 뒤 합성수지 용기·트레이류로 배출합니다. 물로 헹굴 수 없는 구조라면 내용물을 비운 뒤 배출하라는 공식 지침을 따릅니다.",
+      "steps": [
+        "치약 내용물을 비웁니다.",
+        "본체와 다른 재질의 부속품은 분리 가능한 경우 분리합니다.",
+        "합성수지 용기·트레이류로 배출합니다."
+      ],
+      "warnings": [
+        "내용물이 남아 있으면 재활용이 어려울 수 있습니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "toothbrush",
+        "plastic-container"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "치약튜브 버리는 법 | 합성수지 용기·트레이류 - 버림뚝딱",
+        "description": "치약튜브을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-105",
@@ -3295,18 +4266,45 @@
         "플라스틱장난감",
         "아이장난감"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "plastic_or_e_waste",
+      "disposal_label": "재질·전지 여부에 따른 분리배출",
+      "summary": "전지나 전기를 사용하지 않는 플라스틱 장난감은 합성수지 용기·트레이류와 함께 배출합니다. 전지·전기를 사용하는 장난감은 이 방법에서 제외되므로 전지 또는 전기·전자제품 수거 기준을 따릅니다.",
+      "steps": [
+        "전지나 전기를 사용하는지 확인합니다.",
+        "비전기·전자 플라스틱 장난감은 이물질을 제거해 합성수지 용기·트레이류와 함께 배출합니다.",
+        "전지·전기를 사용하는 장난감은 전지 또는 전기·전자제품 수거 기준을 확인합니다."
+      ],
+      "warnings": [
+        "플라스틱 이외 재질이 붙어 분리되지 않는 장난감은 지자체 조례에 따른 별도 배출이 필요합니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "battery",
+        "power-bank"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "장난감 버리는 법 | 재질·전지 여부에 따른 분리배출 - 버림뚝딱",
+        "description": "장난감을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-110",
@@ -3341,18 +4339,44 @@
         "깨진 유리",
         "유리조각"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "special_waste_official",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "신문지 포장 후 종량제봉투 등",
+      "summary": "깨진 유리는 신문지 등에 싸서 종량제봉투에 배출합니다. 지역 기준에 따라 특수규격마대 또는 다른 방식이 적용될 수 있습니다.",
+      "steps": [
+        "다치지 않도록 신문지와 테이프로 감쌉니다.",
+        "관할 지자체 기준에 따라 종량제봉투 또는 특수규격마대에 배출합니다."
+      ],
+      "warnings": [
+        "유리병 재활용품과 섞어 배출하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "glass-bottle",
+        "ceramic-mug"
+      ],
+      "verification_level": "official_category_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "전국 공통 분리배출 원칙을 안내합니다. 전용수거함 위치, 무상방문수거 접수 가능 여부와 지역 대형폐기물 절차는 관할 지자체 또는 수거기관의 현재 안내를 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "깨진유리 버리는 법 | 신문지 포장 후 종량제봉투 등 - 버림뚝딱",
+        "description": "깨진유리을(를) 어떻게 버려야 하는지 확인하세요. 공식 분리배출 지침과 지역별 확인이 필요한 내용을 버림뚝딱이 정리합니다."
+      }
     },
     {
       "id": "item-112",
@@ -3644,8 +4668,8 @@
       "related_items": []
     }
   ],
-  "verified_item_count": 30,
-  "needs_research_count": 90,
+  "verified_item_count": 60,
+  "needs_research_count": 60,
   "verification_policy": {
     "verified": "현재 공식 지침·공식 서비스 자료로 배출 원칙을 확인한 품목",
     "official_category_rule": "품목 전용 문구보다 해당 재질/분류의 최신 공식 배출 규칙으로 검증",
