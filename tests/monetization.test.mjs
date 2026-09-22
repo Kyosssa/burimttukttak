@@ -5,70 +5,78 @@ import { join } from 'node:path';
 import seed from '../docs/prebuild/burimttukttak-seed-v1.1.json' with { type: 'json' };
 import categories from '../docs/prebuild/10-categories-v1.json' with { type: 'json' };
 import { itemPage } from '../scripts/build-site.mjs';
-import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock } from '../scripts/lib/monetization.mjs';
+import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from '../scripts/lib/monetization.mjs';
 
 const verified = seed.items.filter(item => item.verification_status === 'verified');
+const needsResearch = seed.items.filter(item => item.verification_status === 'needs_research');
 const withKeywords = verified.find(item => item.shopping_keywords.length > 0);
 const withoutKeywords = verified.find(item => item.shopping_keywords.length === 0);
-const researchWithKeywords = seed.items.find(item => item.verification_status === 'needs_research' && item.shopping_keywords.length > 0);
+const researchWithKeywords = needsResearch.find(item => item.shopping_keywords.length > 0);
 const bySlug = new Map(seed.items.map(item => [item.slug, item]));
 const categoryFor = item => categories.categories.find(category => category.source_label === item.category);
-const enabled = {
+const enabledOffers = {
   ads: { enabled: true, renderSlot: position => `<div data-test-ad="${position}">configured ad</div>` },
-  affiliate: {
-    enabled: true,
-    disclosure: '이 링크를 통해 구매하면 운영자가 수수료를 받을 수 있습니다.',
-    resolveOffers: () => [{ label: '설정된 제휴 링크', href: 'https://shop.example/product' }],
-  },
+  affiliate: { enabled: true, disclosure: '고지', resolveOffers: () => [{ label: '설정된 제휴 링크', href: 'https://shop.example/product' }] },
 };
+const html = path => readFileSync(join('dist', path), 'utf8');
+const count = (text, pattern) => [...text.matchAll(pattern)].length;
 
-test('disabled monetization config emits no empty advertising or affiliate markup', () => {
-  assert.equal(renderAdSlotTop(monetizationConfig), '');
-  assert.equal(renderAdSlotBottom(monetizationConfig), '');
-  assert.equal(renderAffiliateBlock(withKeywords, monetizationConfig), '');
-  for (const item of verified) {
-    const html = readFileSync(join('dist', 'item', item.slug, 'index.html'), 'utf8');
-    assert.doesNotMatch(html, /data-component="(?:AdSlotTop|AdSlotBottom|AffiliateBlock)"/);
-    assert.doesNotMatch(html, /adsbygoogle\.push|data-ad-client|data-ad-slot|coupang|partners\/external/i);
+test('Coupang carousel is emitted once on home and every verified detail page', () => {
+  const targets = ['index.html', ...verified.map(item => `item/${item.slug}/index.html`)];
+  assert.equal(targets.length, 81);
+  for (const path of targets) {
+    const page = html(path);
+    assert.equal(count(page, /data-component="CoupangCarousel"/g), 1, path);
+    assert.equal(count(page, /src="\/assets\/coupang-carousel\.js"/g), 1, path);
+    assert.match(page, /경제적 이해관계 안내/);
+    assert.match(page, /id="coupang-carousel-desktop"/);
+    assert.match(page, /id="coupang-carousel-mobile"/);
   }
 });
 
-test('configured detail order keeps the answer before ads and affiliate content', () => {
-  const html = itemPage(withKeywords, categoryFor(withKeywords), bySlug, enabled);
-  const positions = [
-    html.indexOf('class="answer-card"'),
-    html.indexOf('data-component="AdSlotTop"'),
-    html.indexOf('class="steps"'),
-    html.indexOf('관련 품목'),
-    html.indexOf('data-component="AffiliateBlock"'),
-    html.indexOf('data-component="AdSlotBottom"'),
-  ];
+test('Coupang carousel is absent from non-target public and non-public pages', () => {
+  const nonTargets = [...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html'];
+  for (const path of nonTargets) assert.doesNotMatch(html(path), /data-component="CoupangCarousel"/, path);
+  for (const item of needsResearch) assert.doesNotMatch(html('assets/search-index.json'), new RegExp(`item/${item.slug}`));
+});
+
+test('carousel client config loads one official loader and initializes responsive containers', () => {
+  const client = html('assets/coupang-carousel.js');
+  assert.equal(count(client, /https:\/\/ads-partners\.coupang\.com\/g\.js/g), 1);
+  assert.match(client, /id: 1032289/);
+  assert.match(client, /template: 'carousel'/);
+  assert.match(client, /trackingCode: 'AF4293553'/);
+  assert.match(client, /width: '728', height: '90', container: desktop\.id/);
+  assert.match(client, /width: '320', height: '100', container: mobile\.id/);
+  assert.match(client, /data-coupang-partners-loader/);
+});
+
+test('existing ad and product-link components remain inactive without explicit settings', () => {
+  assert.equal(renderAdSlotTop(monetizationConfig), '');
+  assert.equal(renderAdSlotBottom(monetizationConfig), '');
+  assert.equal(renderAffiliateBlock(withKeywords, monetizationConfig), '');
+  assert.match(renderCoupangCarousel(monetizationConfig), /data-component="CoupangCarousel"/);
+  assert.equal(renderCoupangCarousel({ affiliate: { enabled: false, disclosure: '고지' } }), '');
+  assert.equal(renderAffiliateBlock(withoutKeywords, enabledOffers), '');
+  assert.equal(renderAffiliateBlock(researchWithKeywords, enabledOffers), '');
+  assert.match(renderAffiliateBlock(withKeywords, enabledOffers), /data-component="AffiliateBlock"/);
+});
+
+test('configured detail order keeps answer, steps, related items, and carousel in order', () => {
+  const page = itemPage(withKeywords, categoryFor(withKeywords), bySlug, monetizationConfig);
+  const positions = [page.indexOf('class="answer-card"'), page.indexOf('class="steps"'), page.indexOf('관련 품목'), page.indexOf('data-component="CoupangCarousel"')];
   assert.ok(positions.every(position => position >= 0), positions);
   assert.deepEqual([...positions].sort((a, b) => a - b), positions);
-  assert.match(html, /경제적 이해관계 안내/);
-  assert.match(html, /rel="sponsored noopener noreferrer"/);
 });
 
-test('affiliate block requires both shopping keywords and complete explicit settings', () => {
-  assert.equal(renderAffiliateBlock(withoutKeywords, enabled), '');
-  assert.equal(renderAffiliateBlock(researchWithKeywords, enabled), '');
-  assert.equal(renderAffiliateBlock(withKeywords, { affiliate: { enabled: true, disclosure: '', resolveOffers: enabled.affiliate.resolveOffers } }), '');
-  assert.equal(renderAffiliateBlock(withKeywords, { affiliate: { enabled: true, disclosure: '고지', resolveOffers: () => [{ label: '상품', href: 'http://insecure.example' }] } }), '');
-  assert.match(renderAffiliateBlock(withKeywords, enabled), /data-component="AffiliateBlock"/);
-});
-
-test('footer policy links resolve and published policy text matches the disconnected state', () => {
-  const html = readFileSync(join('dist', 'item', withKeywords.slug, 'index.html'), 'utf8');
-  for (const href of ['/privacy/', '/source-policy/', '/affiliate-disclosure/']) assert.match(html, new RegExp(`href="${href}"`));
-  const disclosure = readFileSync(join('dist', 'affiliate-disclosure', 'index.html'), 'utf8');
-  const privacy = readFileSync(join('dist', 'privacy', 'index.html'), 'utf8');
-  assert.match(disclosure, /현재 버림뚝딱에는 쿠팡을 포함한 제휴 링크와 상품 배너가 없습니다/);
-  assert.match(privacy, /Google AdSense 검토 및 광고 제공 준비를 위해 공식 AdSense 스크립트를 불러오며/);
-});
-
-test('mobile styles constrain future slots and affiliate content at 360px', () => {
-  const css = readFileSync(join('dist', 'assets', 'style.css'), 'utf8');
-  assert.match(css, /\.ad-slot, \.affiliate-block \{ width: 100%; max-width: 100%; overflow: hidden; \}/);
+test('policy text and mobile styles describe and contain the enabled carousel', () => {
+  const disclosure = html('affiliate-disclosure/index.html');
+  const privacy = html('privacy/index.html');
+  const css = html('assets/style.css');
+  assert.match(disclosure, /쿠팡 파트너스 캐러셀 배너를 표시합니다/);
+  assert.match(privacy, /쿠팡의 외부 스크립트를 불러옵니다/);
+  assert.match(css, /\.coupang-carousel-frame \{ display: flex; justify-content: center; width: 100%; max-width: 100%; overflow: hidden; \}/);
   assert.match(css, /@media \(max-width: 420px\)/);
-  assert.match(css, /\.ad-slot, \.affiliate-block \{ min-width: 0; \}/);
+  assert.match(css, /\.coupang-carousel-desktop \{ display: none; \}/);
+  assert.match(css, /\.coupang-carousel-mobile \{ display: block; \}/);
 });

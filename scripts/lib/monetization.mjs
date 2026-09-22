@@ -2,7 +2,10 @@ import { escapeHtml } from './html.mjs';
 
 export const monetizationConfig = Object.freeze({
   ads: Object.freeze({ enabled: false }),
-  affiliate: Object.freeze({ enabled: false }),
+  affiliate: Object.freeze({
+    enabled: true,
+    disclosure: '이 배너는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.',
+  }),
 });
 
 function renderAdSlot(position, config) {
@@ -39,4 +42,9 @@ export function renderAffiliateBlock(item, config = monetizationConfig) {
   const offers = config.affiliate.resolveOffers(item);
   if (!Array.isArray(offers) || offers.length === 0 || !offers.every(validAffiliateOffer)) return '';
   return `<section class="affiliate-block" data-component="AffiliateBlock"><h2>관련 생활용품</h2><p class="affiliate-disclosure"><strong>경제적 이해관계 안내</strong> ${escapeHtml(disclosure)}</p><ul>${offers.map(offer => `<li><a href="${escapeHtml(offer.href)}" target="_blank" rel="sponsored noopener noreferrer">${escapeHtml(offer.label)}<span class="sr-only"> (제휴 링크, 새 창)</span></a></li>`).join('')}</ul></section>`;
+}
+
+export function renderCoupangCarousel(config = monetizationConfig) {
+  if (config?.affiliate?.enabled !== true || typeof config.affiliate.disclosure !== 'string' || !config.affiliate.disclosure.trim()) return '';
+  return `<section class="affiliate-block coupang-carousel" data-component="CoupangCarousel" data-coupang-carousel hidden aria-label="쿠팡 제휴 배너"><p class="affiliate-disclosure"><strong>경제적 이해관계 안내</strong> ${escapeHtml(config.affiliate.disclosure)}</p><div class="coupang-carousel-frame"><div id="coupang-carousel-desktop" class="coupang-carousel-container coupang-carousel-desktop" data-coupang-container="desktop"></div><div id="coupang-carousel-mobile" class="coupang-carousel-container coupang-carousel-mobile" data-coupang-container="mobile"></div></div><script type="module" src="/assets/coupang-carousel.js"></script></section>`;
 }

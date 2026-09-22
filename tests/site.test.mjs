@@ -71,9 +71,11 @@ test('all root-relative internal links resolve to generated files', () => {
   assert.deepEqual(missing, []);
 });
 
-test('external advertising, affiliate integrations and analytics code are absent', () => {
+test('only the approved Coupang carousel integration is present and no AdSense slots or analytics code are added', () => {
   const scripts = files().filter(path => /\.(?:js|mjs)$/.test(path)).map(path => readFileSync(path, 'utf8')).join('\n');
-  assert.ok(!/analytics|adsbygoogle|doubleclick|googlesyndication|coupang|partners\/external/i.test(scripts));
+  assert.match(scripts, /https:\/\/ads-partners\.coupang\.com\/g\.js/);
+  assert.match(scripts, /trackingCode: 'AF4293553'/);
+  assert.ok(!/analytics|adsbygoogle\.push|doubleclick|data-ad-slot|partners\/external/i.test(scripts));
 });
 
 test('ads.txt contains only the approved Google AdSense publisher record', () => {

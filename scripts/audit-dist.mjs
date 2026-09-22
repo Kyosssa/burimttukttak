@@ -10,6 +10,7 @@ const { seed, categories } = loadInputs();
 const verified = seed.items.filter(item => item.verification_status === 'verified');
 const expectedPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/'];
 const ADSENSE_LOADER = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740';
+const COUPANG_LOADER = 'https://ads-partners.coupang.com/g.js';
 
 function files(directory = root) {
   return readdirSync(directory).flatMap(name => {
@@ -60,6 +61,18 @@ export async function auditDist() {
   if (automaticExternalRequests.length) fail(`automatic external requests\n${automaticExternalRequests.join('\n')}`);
   if (permittedAdSenseRequests.length !== htmlFiles.length) fail('official AdSense loader count');
 
+  const coupangTargets = ['/', ...verified.map(item => `/item/${item.slug}/`)];
+  for (const path of coupangTargets) {
+    const content = readFileSync(fileFor(path), 'utf8');
+    if ([...content.matchAll(/data-component="CoupangCarousel"/g)].length !== 1) fail(`Coupang carousel count: ${path}`);
+    if ([...content.matchAll(/src="\/assets\/coupang-carousel\.js"/g)].length !== 1) fail(`Coupang carousel client count: ${path}`);
+  }
+  const coupangClient = readFileSync(join(root, 'assets', 'coupang-carousel.js'), 'utf8');
+  if ([...coupangClient.matchAll(/https:\/\/ads-partners\.coupang\.com\/g\.js/g)].length !== 1) fail('Coupang loader count');
+  for (const text of ["id: 1032289", "template: 'carousel'", "trackingCode: 'AF4293553'", "width: '728', height: '90', container: desktop.id", "width: '320', height: '100', container: mobile.id"]) {
+    if (!coupangClient.includes(text)) fail(`Coupang carousel configuration: ${text}`);
+  }
+
   const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
   const expectedUrls = expectedPaths.map(path => `${SITE_URL}${path}`);
@@ -87,13 +100,13 @@ export async function auditDist() {
     await new Promise(resolve => server.close(resolve));
   }
 
-  return { sitemapUrls: urls.length, internalLinks: 'ok', indexing: 'ok', real404: 'ok', automaticExternalRequests: 0, permittedAdSenseRequests: permittedAdSenseRequests.length };
+  return { sitemapUrls: urls.length, internalLinks: 'ok', indexing: 'ok', real404: 'ok', automaticExternalRequests: 0, permittedAdSenseRequests: permittedAdSenseRequests.length, permittedCoupangCarouselPages: coupangTargets.length };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   try {
     const result = await auditDist();
-    console.log(`Artifact audit passed: ${result.sitemapUrls} sitemap URLs / internal links OK / index policy OK / real 404 OK / ${result.permittedAdSenseRequests} permitted AdSense loader requests / 0 other automatic external requests`);
+    console.log(`Artifact audit passed: ${result.sitemapUrls} sitemap URLs / internal links OK / index policy OK / real 404 OK / ${result.permittedAdSenseRequests} permitted AdSense loader requests / ${result.permittedCoupangCarouselPages} permitted Coupang carousel pages / 0 other static external requests`);
   } catch (error) {
     console.error(error.message);
     process.exitCode = 1;
