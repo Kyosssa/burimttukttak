@@ -1,14 +1,22 @@
 import { spawnSync } from 'node:child_process';
+import { readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
+import { buildSite } from './build-site.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 // Phase 0 has no public artifacts. This gate stays mandatory in later builders.
-const steps = [
-  ['scripts/validate-data.mjs', ...process.argv.slice(2)],
-  ['--test', 'tests/search.test.mjs', 'tests/validation.test.mjs', 'tests/build.test.mjs'],
-];
-for (const args of steps) {
-  const result = spawnSync(process.execPath, args, { cwd: root, stdio: 'inherit' });
-  if (result.error || result.status !== 0) process.exit(result.status || 1);
+const seedArg = process.argv[2];
+const validation = spawnSync(process.execPath, ['scripts/validate-data.mjs', ...(seedArg ? [seedArg] : [])], { cwd: root, stdio: 'inherit' });
+if (validation.error || validation.status !== 0) process.exit(validation.status || 1);
+
+// Only the canonical Pack Seed can produce public pages. Alternate paths are
+// supported solely for validation/failure-gate tests.
+if (!seedArg) {
+  const stats = buildSite();
+  console.log(`Static site generated: ${stats.items} item pages / ${stats.categories} category pages / ${stats.other} other pages`);
 }
-console.log('Phase 0 build passed. No pages or deployment artifacts generated.');
+
+const testFiles = readdirSync(new URL('../tests/', import.meta.url)).filter(name => name.endsWith('.test.mjs')).map(name => `tests/${name}`);
+const tests = spawnSync(process.execPath, ['--test', ...testFiles], { cwd: root, stdio: 'inherit' });
+if (tests.error || tests.status !== 0) process.exit(tests.status || 1);
+console.log('Build passed.');

@@ -1,0 +1,95 @@
+import { cpSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { loadInputs } from './lib/inputs.mjs';
+import { breadcrumb, escapeHtml, formatDate, layout } from './lib/html.mjs';
+import { createSearchIndex } from '../src/search.mjs';
+
+const root = new URL('../', import.meta.url);
+const output = new URL('../dist/', import.meta.url);
+const write = (relative, content) => {
+  const url = new URL(relative, output);
+  mkdirSync(new URL('./', url), { recursive: true });
+  writeFileSync(url, content);
+};
+const pagePath = (prefix, slug) => `${prefix}/${slug}/index.html`;
+const card = item => `<li><a class="item-card" href="/item/${escapeHtml(item.slug)}/"><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.disposal_label)}</span></a></li>`;
+
+function searchBox() {
+  return `<section class="search-panel" aria-labelledby="search-title">
+    <h2 id="search-title" class="sr-only">품목 검색</h2>
+    <form id="search-form" role="search" novalidate>
+      <label for="item-search">버릴 물건을 검색해보세요</label>
+      <div class="search-control"><input id="item-search" name="q" type="search" placeholder="예: 후라이팬, 건전지, 냉장고" autocomplete="off" maxlength="60" role="combobox" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false"><button type="submit">검색</button></div>
+    </form>
+    <div id="search-message" class="search-message" role="status" aria-live="polite"></div>
+    <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+  </section>`;
+}
+
+function home(seed, categories, bySlug) {
+  const popular = ['frying-pan', 'battery', 'clear-pet-bottle', 'refrigerator', 'styrofoam', 'power-bank'].map(slug => bySlug.get(slug));
+  const categoryCards = categories.map(category => `<li><a class="category-card" href="/category/${escapeHtml(category.slug)}/"><span class="category-icon" aria-hidden="true">${category.icon}</span><strong>${escapeHtml(category.name)}</strong><span>${escapeHtml(category.description)}</span></a></li>`).join('');
+  return layout({ title: '버림뚝딱', mainClass: 'home', search: true, content: `
+    <section class="hero wide"><p class="eyebrow">공식 자료로 확인한 생활폐기물 안내</p><h1>이거, 어떻게 버리지?</h1><p>버릴 물건을 검색하면 배출방법을 바로 알려드려요.</p>${searchBox()}</section>
+    <section class="wide section"><div class="section-heading"><h2>자주 찾는 품목</h2><p>공식 자료로 확인된 품목부터 안내합니다.</p></div><ul class="card-grid item-grid">${popular.map(card).join('')}</ul></section>
+    <section id="categories" class="wide section"><div class="section-heading"><h2>카테고리로 찾기</h2><p>생활 속 물건을 종류별로 살펴보세요.</p></div><ul class="card-grid category-grid">${categoryCards}</ul></section>
+    <section class="trust"><div class="wide"><div><p class="eyebrow">정보 원칙</p><h2>확인된 정보만 답합니다</h2></div><p>공식 출처를 확인한 품목에만 배출방법을 제공합니다. 지역마다 달라질 수 있는 내용은 관할 지방자치단체의 최신 안내를 함께 확인해 주세요.</p><a href="/source-policy/">정보 출처 및 검증 정책 보기</a></div></section>` });
+}
+
+function itemPage(item, category, bySlug) {
+  const related = item.related_items.map(slug => bySlug.get(slug)).filter(target => target?.verification_status === 'verified');
+  const sources = item.sources.map(source => `<li><div><strong>${escapeHtml(source.name)}</strong><span>${escapeHtml(source.authority)}</span><span>확인일 ${formatDate(source.checked_at)}</span></div><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">공식 자료 보기<span class="sr-only"> (새 창)</span></a></li>`).join('');
+  const regional = item.regional_variation ? `<aside class="notice"><h2>📍 지역에 따라 달라질 수 있어요</h2><p>${escapeHtml(item.regional_note)}</p></aside>` : '';
+  const warnings = item.warnings.length ? `<section class="content-card warning"><h2>주의사항</h2><ul>${item.warnings.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ul></section>` : '';
+  const cta = item.collection_service?.type === 'free_home_pickup' ? `<section class="collection-card"><p class="eyebrow">공식 수거 서비스</p><h2>🔌 폐가전 무상방문수거</h2><p>${item.collection_service.eligible === true ? '무료 방문수거 대상입니다.' : '조건에 따라 무료수거가 가능합니다.'}</p>${item.collection_service.eligible === 'conditional' ? '<p>제품 크기 또는 수량 조건을 공식 사이트에서 확인하세요.</p>' : ''}<a class="button secondary" href="${escapeHtml(item.collection_service.url)}" target="_blank" rel="noopener noreferrer">공식 사이트에서 신청 조건 확인<span class="sr-only"> (새 창)</span></a></section>` : '';
+  const relatedBlock = related.length ? `<section class="content-card"><h2>관련 품목</h2><ul class="related-list">${related.map(target => `<li><a href="/item/${escapeHtml(target.slug)}/">${escapeHtml(target.name)} <span>${escapeHtml(target.disposal_label)}</span></a></li>`).join('')}</ul></section>` : '';
+  return layout({ title: `${item.name} 버리는 법 | 버림뚝딱`, mainClass: 'detail narrow', content: `
+    ${breadcrumb([{ label: '홈', href: '/' }, { label: category.name, href: `/category/${category.slug}/` }, { label: item.name }])}
+    <h1>${escapeHtml(item.name)} 버리는 법</h1>
+    <section class="answer-card"><p class="eyebrow">한눈에 보는 배출방법</p><h2>✓ ${escapeHtml(item.disposal_label)}</h2><p>${escapeHtml(item.summary)}</p></section>
+    ${regional}
+    <section class="content-card"><h2>버리는 순서</h2><ol class="steps">${item.steps.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ol></section>
+    ${warnings}${cta}${relatedBlock}
+    <section class="content-card sources"><h2>공식 출처</h2><ul>${sources}</ul><p class="updated">정보 확인: ${formatDate(item.verified_at)}</p></section>
+    <section class="feedback" id="feedback"><h2>정보가 달라졌나요?</h2><p>공식 기준이 변경되었거나 잘못된 내용을 발견했다면 알려주세요.</p><span class="button muted" aria-disabled="true">수정 제보 경로 준비 중</span></section>` });
+}
+
+function categoryPage(category, items) {
+  return layout({ title: `${category.name} | 버림뚝딱`, mainClass: 'wide category-page', content: `
+    ${breadcrumb([{ label: '홈', href: '/' }, { label: category.name }])}
+    <header class="page-intro"><span class="category-icon" aria-hidden="true">${category.icon}</span><h1>${escapeHtml(category.name)}</h1><p>${escapeHtml(category.description)}</p></header>
+    <section class="section"><div class="section-heading"><h2>확인된 품목</h2><p>${items.length ? `공식 자료로 확인된 ${items.length}개 품목입니다.` : '현재 공식 자료를 확인한 품목을 준비하고 있습니다.'}</p></div>${items.length ? `<ul class="card-grid item-grid">${items.map(card).join('')}</ul>` : '<div class="empty-state"><p>확인되지 않은 배출방법은 안내하지 않습니다.</p><a href="/">홈에서 다른 품목 검색하기</a></div>'}</section>` });
+}
+
+function policyPage(title, sections) {
+  return layout({ title: `${title} | 버림뚝딱`, mainClass: 'narrow policy', content: `${breadcrumb([{ label: '홈', href: '/' }, { label: title }])}<h1>${escapeHtml(title)}</h1>${sections}` });
+}
+
+export function buildSite() {
+  const { seed, categories: categoryData } = loadInputs();
+  const verified = seed.items.filter(item => item.verification_status === 'verified');
+  const categories = categoryData.categories;
+  const bySlug = new Map(seed.items.map(item => [item.slug, item]));
+  const byCategory = new Map(categories.map(category => [category.source_label, category]));
+  rmSync(output, { recursive: true, force: true });
+  mkdirSync(output, { recursive: true });
+
+  write('index.html', home(seed, categories, bySlug));
+  for (const item of verified) write(pagePath('item', item.slug), itemPage(item, byCategory.get(item.category), bySlug));
+  for (const category of categories) write(pagePath('category', category.slug), categoryPage(category, verified.filter(item => item.category === category.source_label)));
+
+  write('about/index.html', policyPage('버림뚝딱 소개', `<p>버림뚝딱은 생활 속에서 버리기 어려운 물건의 배출방법을 빠르게 찾을 수 있도록 공식 기관의 공개 자료를 이해하기 쉬운 형태로 정리하는 생활정보 서비스입니다.</p><p>품목별 기본 배출원칙, 주의사항, 폐가전 수거 가능 여부와 공식 출처를 함께 제공합니다.</p><p>폐기물 배출 요일, 수거 장소, 대형폐기물 수수료 등은 지역에 따라 다를 수 있으므로 지역별 정보가 필요한 경우 거주지 지방자치단체의 최신 안내도 함께 확인해 주세요.</p><section id="contact"><h2>문의</h2><p>운영자 연락 경로를 준비하고 있습니다. 연락처가 확정되기 전에는 개인정보를 받지 않습니다.</p></section>`));
+  write('source-policy/index.html', policyPage('정보 출처 및 검증 정책', `<p>버림뚝딱은 다음 원칙으로 정보를 관리합니다.</p><ol><li>기후에너지환경부, 지방자치단체, E-순환거버넌스 등 공식 자료를 우선 사용합니다.</li><li>출처를 확인하지 못한 배출방법을 임의로 생성하지 않습니다.</li><li>검증된 품목에는 출처와 확인일을 표시합니다.</li><li>지역에 따라 달라질 수 있는 내용은 전국 공통사항처럼 단정하지 않습니다.</li><li>공식 기준이 변경된 경우 확인 후 정보를 갱신합니다.</li></ol><p>버림뚝딱의 정보는 생활 편의를 위한 안내이며, 실제 수거 가능 여부·배출일·수수료는 관할 지방자치단체 또는 수거기관의 최신 기준이 우선합니다.</p>`));
+  write('privacy/index.html', policyPage('개인정보처리방침', `<p>버림뚝딱은 서비스 운영에 필요한 범위에서 최소한의 정보만 처리하는 것을 원칙으로 합니다.</p><h2>현재 처리하는 정보</h2><p>현재 사이트는 회원가입, 로그인, 분석 도구, 광고, 검색어 전송 기능을 사용하지 않습니다. 검색은 사용자의 브라우저 안에서 처리되며 서버나 데이터베이스로 전송하지 않습니다.</p><h2>외부 링크</h2><p>정부기관과 폐가전 수거기관 등 외부 사이트 링크를 열면 해당 사이트의 개인정보처리방침이 적용됩니다.</p><h2>문의와 시행일</h2><p>운영자 연락 경로와 공개 시행일은 정식 공개 전에 확정해 반영합니다.</p>`));
+  write('affiliate-disclosure/index.html', policyPage('제휴 마케팅 안내', `<p>현재 버림뚝딱에는 제휴 링크, 상품 배너 또는 광고가 없습니다.</p><p>향후 제휴 기능을 사용하게 되면 사용자가 링크를 누르기 전에 경제적 이해관계를 분명하게 알 수 있도록 해당 링크 가까이에 표시하고 이 안내를 갱신합니다.</p>`));
+  write('404.html', layout({ title: '페이지를 찾을 수 없습니다 | 버림뚝딱', mainClass: 'narrow not-found', content: `<p class="eyebrow">404</p><h1>찾으시는 페이지가 없어요.</h1><p>주소를 다시 확인하거나 홈에서 물건을 검색해 주세요.</p><a class="button" href="/#search-form">물건 검색하기</a>` }));
+
+  mkdirSync(new URL('assets/', output), { recursive: true });
+  cpSync(new URL('../src/styles.css', import.meta.url), new URL('assets/style.css', output));
+  cpSync(new URL('../src/app.mjs', import.meta.url), new URL('assets/app.js', output));
+  cpSync(new URL('../src/search.mjs', import.meta.url), new URL('assets/search.js', output));
+  write('assets/search-index.json', JSON.stringify(createSearchIndex(seed.items)));
+  return { items: verified.length, categories: categories.length, other: 6 };
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) console.log(buildSite());
