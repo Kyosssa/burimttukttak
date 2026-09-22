@@ -1,15 +1,35 @@
 const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 export const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ESCAPES[char]);
 export const formatDate = value => value.replaceAll('-', '.');
+export const SITE_URL = 'https://burimttukttak.com';
 
-export function layout({ title, content, mainClass = '', search = false }) {
+function safeJson(value) {
+  return JSON.stringify(value).replace(/</g, '\\u003c');
+}
+
+export function layout({ title, description, canonical, content, mainClass = '', search = false, robots = 'index,follow', jsonLd = [] }) {
+  const absoluteCanonical = canonical ? `${SITE_URL}${canonical}` : null;
+  const social = absoluteCanonical ? `
+  <link rel="canonical" href="${escapeHtml(absoluteCanonical)}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="버림뚝딱">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="${escapeHtml(title)}">
+  <meta property="og:description" content="${escapeHtml(description)}">
+  <meta property="og:url" content="${escapeHtml(absoluteCanonical)}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="${escapeHtml(title)}">
+  <meta name="twitter:description" content="${escapeHtml(description)}">` : '';
   return `<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(title)}</title>
+  <meta name="description" content="${escapeHtml(description)}">
+  <meta name="robots" content="${escapeHtml(robots)}">${social}
   <link rel="stylesheet" href="/assets/style.css">
+  ${jsonLd.map(value => `<script type="application/ld+json">${safeJson(value)}</script>`).join('\n  ')}
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>

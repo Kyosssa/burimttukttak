@@ -120,6 +120,13 @@ try {
   const response = await fetch('/assets/search-index.json');
   if (!response.ok) throw new Error('검색 자료를 불러올 수 없습니다.');
   index = await response.json();
+  const initialQuery = new URLSearchParams(window.location.search).get('q');
+  if (initialQuery) {
+    input.value = initialQuery;
+    const initialResult = search(index, initialQuery);
+    if (initialResult.state === 'empty_or_invalid' || initialResult.state === 'missing') showMessage(initialResult);
+    else render(initialResult);
+  }
 } catch {
   input.disabled = true;
   message.textContent = '검색을 준비하지 못했어요. 잠시 후 다시 시도해 주세요.';

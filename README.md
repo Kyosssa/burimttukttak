@@ -1,6 +1,6 @@
-# 버림뚝딱 — Phase 1
+# 버림뚝딱 — Phase 2
 
-Seed 검증, 검색 회귀 테스트, 광고 없는 정적 사이트를 구현한 로컬 프로젝트입니다. Node.js 22 이상이 필요합니다.
+Seed 검증, 검색 회귀 테스트, 광고 없는 정적 사이트와 SEO/색인 정책을 구현한 로컬 프로젝트입니다. Node.js 22 이상이 필요합니다.
 
 ```sh
 npm ci --ignore-scripts
@@ -22,11 +22,13 @@ npm run preview
 - 로컬 Preview: `scripts/preview.mjs`
 - 순수 검색 함수: `src/search.mjs`
 - 홈 검색 UI: `src/app.mjs`
+- SEO·sitemap·headers·redirect 생성: `scripts/build-site.mjs`
+- 색인 정책 회귀 테스트: `tests/seo.test.mjs`
 - 회귀/실패 검증: `tests/`
 
 Seed를 중복 복사하지 않고 Pack 안의 원본을 직접 읽습니다. 검증기는 입력을 변경하지 않습니다.
 별도 데이터 검증은 `node scripts/validate-data.mjs <seed.json>`으로 실행할 수 있습니다.
 `npm run build -- <seed.json>`도 가능하며, 지정 데이터의 검증 후 원본 Pack 기반 회귀 테스트를 실행합니다.
 
-현재 Phase 1에는 홈, verified 30개 상세 페이지, 8개 카테고리, 정책 페이지와 custom 404가 포함됩니다.
-광고·제휴 링크·분석·Worker/D1·외부 API와 Phase 2의 구조화 데이터·sitemap·robots·headers는 포함하지 않습니다.
+현재 Phase 2에는 홈, verified 30개 상세 페이지, 8개 카테고리, 정책 페이지, 검색 경로, custom 404와 metadata·JSON-LD·sitemap·robots·Cloudflare headers/redirects가 포함됩니다.
+광고·제휴 링크·분석·Worker/D1·외부 API는 포함하지 않습니다.

@@ -13,7 +13,7 @@ if (validation.error || validation.status !== 0) process.exit(validation.status 
 // supported solely for validation/failure-gate tests.
 if (!seedArg) {
   const stats = buildSite();
-  console.log(`Static site generated: ${stats.items} item pages / ${stats.categories} category pages / ${stats.other} other pages`);
+  console.log(`Static site generated: ${stats.items} item pages / ${stats.categories} category pages / ${stats.other} other pages / ${stats.sitemap} sitemap URLs`);
 }
 
 const testFiles = readdirSync(new URL('../tests/', import.meta.url)).filter(name => name.endsWith('.test.mjs')).map(name => `tests/${name}`);

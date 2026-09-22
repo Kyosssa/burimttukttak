@@ -13,6 +13,10 @@ export function createPreviewServer() {
     catch { pathname = '/404.html'; }
     const relative = normalize(pathname).replace(/^([/\\])+/, '');
     let target = join(root, relative);
+    if (pathname !== '/' && !pathname.endsWith('/') && existsSync(target) && statSync(target).isDirectory()) {
+      response.writeHead(301, { Location: `${pathname}/${new URL(request.url, 'http://localhost').search}` });
+      return response.end();
+    }
     if (existsSync(target) && statSync(target).isDirectory()) target = join(target, 'index.html');
     const found = existsSync(target) && statSync(target).isFile() && target.startsWith(root);
     if (!found) target = join(root, '404.html');

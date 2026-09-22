@@ -29,7 +29,7 @@ test('generates exactly 30 verified item pages and zero unverified item pages', 
 test('generates all eight fixed categories and required standalone pages', () => {
   assert.equal(categories.categories.length, 8);
   for (const category of categories.categories) assert.ok(existsSync(join(root, 'category', category.slug, 'index.html')), category.slug);
-  for (const page of ['index.html', 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', '404.html']) {
+  for (const page of ['index.html', 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html']) {
     assert.ok(existsSync(join(root, page)), page);
   }
 });
@@ -71,13 +71,8 @@ test('all root-relative internal links resolve to generated files', () => {
   assert.deepEqual(missing, []);
 });
 
-test('Phase 2 and later artifacts/code are absent', () => {
-  for (const path of ['sitemap.xml', 'robots.txt', '_headers', 'api', 'functions']) assert.ok(!existsSync(join(root, path)), path);
-  for (const page of files().filter(path => path.endsWith('.html'))) {
-    const content = readFileSync(page, 'utf8');
-    assert.ok(!content.includes('application/ld+json'), page);
-    assert.ok(!content.includes('rel="canonical"'), page);
-  }
+test('Phase 3 and later runtime code is absent', () => {
+  for (const path of ['api', 'functions']) assert.ok(!existsSync(join(root, path)), path);
   const scripts = files().filter(path => /\.(?:js|mjs)$/.test(path)).map(path => readFileSync(path, 'utf8')).join('\n');
   assert.ok(!/\/api\//.test(scripts));
   assert.ok(!/analytics|adsbygoogle|doubleclick/i.test(scripts));
