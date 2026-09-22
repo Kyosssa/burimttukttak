@@ -1,4 +1,4 @@
-# 버림뚝딱 — Phase 4
+# 버림뚝딱 — Phase 5
 
 Seed 검증, 정적 안내 사이트, SEO/색인 정책과 미등록 검색어 집계 API를 구현한 로컬 프로젝트입니다. Node.js 22 이상이 필요합니다.
 
@@ -7,6 +7,7 @@ npm ci --ignore-scripts
 npm run validate:data
 npm run test:search
 npm run build
+npm run preflight
 npm run preview
 ```
 
@@ -27,6 +28,13 @@ npm run preview
 - 로컬 D1 migration: `migrations/0001_missing_searches.sql`
 - Pages/D1 설정: `wrangler.jsonc`
 - 비활성 광고·제휴 컴포넌트: `scripts/lib/monetization.mjs`
+- 한 번에 실행하는 출시 검사: `scripts/preflight.mjs`
+- 정적 산출물 감사: `scripts/audit-dist.mjs`
+- 출처 재검토 예정일 보고: `scripts/source-health.mjs`
+- 운영 출시 안내: `docs/LAUNCH-RUNBOOK.md`
+- 수동 확인 목록: `docs/MANUAL-LAUNCH-CHECKLIST.md`
+- 데이터·수정 제보 절차: `docs/DATA-MAINTENANCE.md`
+- GitHub Actions 품질 검사: `.github/workflows/quality.yml`
 - SEO·sitemap·headers·redirect 생성: `scripts/build-site.mjs`
 - 색인 정책 회귀 테스트: `tests/seo.test.mjs`
 - 회귀/실패 검증: `tests/`

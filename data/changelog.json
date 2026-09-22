@@ -1,0 +1,290 @@
+[
+  {
+    "date": "2026-09-22",
+    "item_slug": "frying-pan",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "official-disposal-portal"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "pot",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "official-disposal-portal"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "styrofoam",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "plastic-film",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "cardboard-box",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "paper-cup",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "clear-pet-bottle",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "official-disposal-portal"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "plastic-container",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "takeout-container",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "official-disposal-portal"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "milk-carton",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "aseptic-carton",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "glass-bottle",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "metal-can",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "refrigerator",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "washing-machine",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "dryer",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "air-conditioner",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "television",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "microwave",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "air-purifier",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "dehumidifier",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "electric-fan",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "humidifier",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "rice-cooker",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "battery",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "official-disposal-portal"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "power-bank",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "official-disposal-portal"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "clothes",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "fluorescent-lamp",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "led-bulb",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "item_slug": "butane-can",
+    "type": "verified",
+    "summary": "Seed v1.1 최초 공식 검증 기준선",
+    "source_ids": [
+      "me-recycling-guideline",
+      "official-disposal-portal"
+    ]
+  }
+]
