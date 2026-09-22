@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://burimttukttak.com/schemas/item.schema.json",
+  "title": "버림뚝딱 Item",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "slug",
+    "category",
+    "priority",
+    "aliases",
+    "verification_status",
+    "disposal_type",
+    "disposal_label",
+    "summary",
+    "steps",
+    "warnings",
+    "regional_variation",
+    "sources",
+    "shopping_keywords",
+    "related_items"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^item-[0-9]{3,}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "priority": {
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "verification_status": {
+      "enum": [
+        "verified",
+        "needs_research"
+      ]
+    },
+    "verification_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verified_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "research_track": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "disposal_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "disposal_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 10
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 10
+    },
+    "regional_variation": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "regional_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "free_collection": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "collection_service": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "eligible": {
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "mode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "url"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "authority": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effective_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "checked_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "format": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cost": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "shopping_keywords": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "related_items": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "uniqueItems": true
+    },
+    "seo": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verification_status": {
+            "const": "verified"
+          }
+        },
+        "required": [
+          "verification_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "steps": {
+            "minItems": 1
+          },
+          "sources": {
+            "minItems": 1
+          },
+          "verified_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "disposal_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disposal_label": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "verified_at",
+          "seo"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

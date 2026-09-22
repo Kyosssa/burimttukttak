@@ -1,0 +1,28 @@
+# Cloudflare Pages static response headers
+# Place as public/_headers (or final static output directory)
+# IMPORTANT: Pages Functions responses must set their own headers.
+
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Resource-Policy: same-site
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSP:
+# Do NOT hard-code a strict CSP until AdSense/Coupang domains used by the real implementation
+# have been confirmed. Start by generating a candidate CSP in report-only mode in Preview,
+# then promote it after ads and analytics have been tested.
+#
+# HSTS:
+# Prefer enabling/configuring HSTS at the Cloudflare domain level after HTTPS/custom-domain
+# behavior is confirmed. Do not preload on first deploy.

@@ -1,0 +1,69 @@
+{
+  "version": "v1",
+  "categories": [
+    {
+      "id": "kitchen",
+      "source_label": "주방/조리도구",
+      "name": "주방·조리도구",
+      "slug": "kitchen",
+      "description": "후라이팬, 냄비, 칼, 식기처럼 주방에서 사용하는 물건의 배출방법을 확인합니다.",
+      "icon": "🍳"
+    },
+    {
+      "id": "packaging-recycling",
+      "source_label": "포장재/재활용",
+      "name": "포장재·재활용",
+      "slug": "packaging-recycling",
+      "description": "페트병, 비닐, 종이팩, 캔, 스티로폼 등 포장재와 재활용품의 분리배출 방법을 확인합니다.",
+      "icon": "♻️"
+    },
+    {
+      "id": "food-waste",
+      "source_label": "음식물/식재료",
+      "name": "음식물·식재료",
+      "slug": "food-waste",
+      "description": "껍질, 뼈, 씨앗 등 음식물인지 일반쓰레기인지 헷갈리는 품목을 확인합니다.",
+      "icon": "🍌"
+    },
+    {
+      "id": "home-appliances",
+      "source_label": "대형/생활가전",
+      "name": "생활가전",
+      "slug": "home-appliances",
+      "description": "냉장고, 세탁기, 에어컨, TV 등 생활가전의 폐가전 배출 및 무상수거 방법을 확인합니다.",
+      "icon": "🔌"
+    },
+    {
+      "id": "electronics-batteries",
+      "source_label": "소형전자/배터리",
+      "name": "전자제품·배터리",
+      "slug": "electronics-batteries",
+      "description": "휴대폰, 노트북, 소형전자제품, 건전지와 보조배터리의 안전한 배출방법을 확인합니다.",
+      "icon": "🔋"
+    },
+    {
+      "id": "furniture-bulky",
+      "source_label": "가구/대형폐기물",
+      "name": "가구·대형폐기물",
+      "slug": "furniture-bulky",
+      "description": "매트리스, 소파, 책상 등 대형폐기물의 기본 처리방법과 지역별 확인사항을 안내합니다.",
+      "icon": "🛋️"
+    },
+    {
+      "id": "household",
+      "source_label": "생활/의류/욕실",
+      "name": "생활용품·의류",
+      "slug": "household",
+      "description": "우산, 의류, 이불, 욕실용품 등 일상생활 물품의 배출방법을 확인합니다.",
+      "icon": "🏠"
+    },
+    {
+      "id": "special-waste",
+      "source_label": "특수/주의품목",
+      "name": "주의가 필요한 품목",
+      "slug": "special-waste",
+      "description": "깨진 유리, 형광등, 가스용기, 폐의약품처럼 안전과 별도 배출기준이 중요한 품목을 확인합니다.",
+      "icon": "⚠️"
+    }
+  ]
+}

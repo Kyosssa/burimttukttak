@@ -1,0 +1,204 @@
+{
+  "version": "v1",
+  "rules": {
+    "verified_item": "상세 페이지로 이동",
+    "unverified_item": "준비 중 표시, 배출법 생성 금지, missing 집계 금지",
+    "missing": "등록되지 않음 표시, missing-search 집계",
+    "empty_or_invalid": "집계하지 않고 입력 안내"
+  },
+  "cases": [
+    {
+      "query": "후라이팬",
+      "expected_slug": "frying-pan",
+      "expected_state": "verified_item",
+      "reason": "canonical"
+    },
+    {
+      "query": "프라이팬",
+      "expected_slug": "frying-pan",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "후라이펜",
+      "expected_slug": "frying-pan",
+      "expected_state": "verified_item",
+      "reason": "typo alias"
+    },
+    {
+      "query": "냄비",
+      "expected_slug": "pot",
+      "expected_state": "verified_item"
+    },
+    {
+      "query": "스티로폼",
+      "expected_slug": "styrofoam",
+      "expected_state": "verified_item"
+    },
+    {
+      "query": "스티로폴",
+      "expected_slug": "styrofoam",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "택배박스",
+      "expected_slug": "cardboard-box",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "우유곽",
+      "expected_slug": "milk-carton",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "두유팩",
+      "expected_slug": "aseptic-carton",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "생수병",
+      "expected_slug": "clear-pet-bottle",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "티비",
+      "expected_slug": "television",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "전자렌지",
+      "expected_slug": "microwave",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "공청기",
+      "expected_slug": "air-purifier",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "김냉",
+      "expected_slug": "kimchi-refrigerator",
+      "expected_state": "unverified_item",
+      "reason": "known but unverified"
+    },
+    {
+      "query": "핸드폰",
+      "expected_slug": "mobile-phone",
+      "expected_state": "unverified_item",
+      "reason": "known but unverified"
+    },
+    {
+      "query": "스마트폰",
+      "expected_slug": "mobile-phone",
+      "expected_state": "unverified_item",
+      "reason": "known but unverified"
+    },
+    {
+      "query": "에어후라이기",
+      "expected_slug": "air-fryer",
+      "expected_state": "unverified_item",
+      "reason": "known but unverified"
+    },
+    {
+      "query": "메트리스",
+      "expected_slug": "mattress",
+      "expected_state": "unverified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "장농",
+      "expected_slug": "wardrobe",
+      "expected_state": "unverified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "폐건전지",
+      "expected_slug": "battery",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "휴대용배터리",
+      "expected_slug": "power-bank",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "가스캔",
+      "expected_slug": "butane-can",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "폐형광등",
+      "expected_slug": "fluorescent-lamp",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "엘이디전구",
+      "expected_slug": "led-bulb",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "헌옷",
+      "expected_slug": "clothes",
+      "expected_state": "verified_item",
+      "reason": "alias"
+    },
+    {
+      "query": "골프공",
+      "expected_slug": null,
+      "expected_state": "missing"
+    },
+    {
+      "query": "규조토매트",
+      "expected_slug": null,
+      "expected_state": "missing"
+    },
+    {
+      "query": "벽시계",
+      "expected_slug": null,
+      "expected_state": "missing"
+    },
+    {
+      "query": "자석",
+      "expected_slug": null,
+      "expected_state": "missing"
+    },
+    {
+      "query": "CD",
+      "expected_slug": null,
+      "expected_state": "missing"
+    },
+    {
+      "query": "",
+      "expected_slug": null,
+      "expected_state": "empty_or_invalid"
+    },
+    {
+      "query": "   ",
+      "expected_slug": null,
+      "expected_state": "empty_or_invalid"
+    },
+    {
+      "query": "<script>alert(1)</script>",
+      "expected_slug": null,
+      "expected_state": "empty_or_invalid"
+    },
+    {
+      "query": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_slug": null,
+      "expected_state": "empty_or_invalid"
+    }
+  ]
+}

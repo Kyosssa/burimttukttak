@@ -1,0 +1,80 @@
+{
+  "version": "v1",
+  "policy": {
+    "tier_1": "정부·지자체·법령·공공기관의 현재 공식 자료. 배출방법의 1차 근거.",
+    "tier_2": "공공기관 위탁/공식 운영기관의 현재 서비스 안내. 수거 가능 조건과 신청 CTA 근거.",
+    "tier_3": "보조 설명용 자료. 단독 근거로 verified 승격 금지."
+  },
+  "sources": [
+    {
+      "id": "me-recycling-guideline",
+      "name": "재활용가능자원의 분리수거 등에 관한 지침",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+      "review_interval_days": 30,
+      "expected_content": [
+        "분리수거",
+        "지침"
+      ],
+      "used_for": [
+        "재활용품",
+        "종이팩",
+        "PET",
+        "비닐",
+        "캔",
+        "전지류",
+        "조명제품"
+      ]
+    },
+    {
+      "id": "official-disposal-portal",
+      "name": "분리의 정석",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://xn--oy2b29bd3a601b.kr/",
+      "review_interval_days": 14,
+      "expected_content": [
+        "분리배출"
+      ],
+      "used_for": [
+        "품목사전",
+        "생활폐기물 안내"
+      ]
+    },
+    {
+      "id": "ewaste-pickup",
+      "name": "폐가전 무상방문수거",
+      "authority": "E-순환거버넌스",
+      "tier": 2,
+      "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+      "review_interval_days": 14,
+      "expected_content": [
+        "수거",
+        "품목"
+      ],
+      "used_for": [
+        "냉장고",
+        "세탁기",
+        "에어컨",
+        "TV",
+        "소형폐가전"
+      ]
+    },
+    {
+      "id": "public-data-api",
+      "name": "기후에너지환경부_분리배출 정보조회 서비스",
+      "authority": "기후에너지환경부 / 공공데이터포털",
+      "tier": 1,
+      "url": "https://www.data.go.kr/data/15156866/openapi.do?recommendDataYn=Y",
+      "review_interval_days": 30,
+      "expected_content": [
+        "분리배출",
+        "OpenAPI"
+      ],
+      "used_for": [
+        "향후 공식데이터 동기화"
+      ]
+    }
+  ]
+}
