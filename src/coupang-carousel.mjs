@@ -4,6 +4,18 @@ function hasFrame(banner) {
   return Boolean(banner.querySelector('iframe'));
 }
 
+function waitForPartner(timeoutMs = 3000) {
+  return new Promise((resolve, reject) => {
+    const startedAt = Date.now();
+    const check = () => {
+      if (window.PartnersCoupang?.G) return resolve();
+      if (Date.now() - startedAt >= timeoutMs) return reject(new Error('Coupang loader unavailable'));
+      window.setTimeout(check, 25);
+    };
+    check();
+  });
+}
+
 function initializeBanner(banner) {
   const desktop = banner.querySelector('[data-coupang-container="desktop"]');
   const mobile = banner.querySelector('[data-coupang-container="mobile"]');
@@ -18,9 +30,5 @@ function initializeBanner(banner) {
 }
 
 for (const banner of document.querySelectorAll('[data-coupang-carousel]')) {
-  try {
-    initializeBanner(banner);
-  } catch {
-    banner.remove();
-  }
+  void waitForPartner().then(() => initializeBanner(banner)).catch(() => banner.remove());
 }

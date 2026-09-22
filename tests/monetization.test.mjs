@@ -48,6 +48,7 @@ test('carousel client config loads one official loader and initializes responsiv
   assert.match(client, /trackingCode: 'AF4293553'/);
   assert.match(client, /width: '728', height: '90', container: desktop\.id/);
   assert.match(client, /width: '320', height: '100', container: mobile\.id/);
+  assert.match(client, /function waitForPartner\(timeoutMs = 3000\)/);
   assert.match(html('index.html'), /data-coupang-partners-loader="true"/);
 });
 
