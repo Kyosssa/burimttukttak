@@ -8,11 +8,11 @@ import { createMissingSearchApi, isAllowedOrigin, normalizeMissingQuery, UPSERT_
 
 const { handleMissingSearch, isKnownMissingSearchQuery } = createMissingSearchApi(seed, fixtures);
 
-const endpoint = 'https://burimttukttak.com/api/missing-search';
+const endpoint = 'https://beorimttukttak.com/api/missing-search';
 const request = (body, options = {}) => new Request(endpoint, {
   method: options.method ?? 'POST',
   headers: {
-    Origin: options.origin ?? 'https://burimttukttak.com',
+    Origin: options.origin ?? 'https://beorimttukttak.com',
     'Content-Type': options.contentType ?? 'application/json',
     ...(options.headers ?? {}),
   },
@@ -58,8 +58,8 @@ test('normalizes Korean/English and repeated spaces while rejecting unsafe input
 });
 
 test('allows only production, project preview and local development origins', () => {
-  for (const origin of ['https://burimttukttak.com', 'https://burimttukttak.pages.dev', 'https://feature.burimttukttak.pages.dev', 'http://localhost:8788', 'http://127.0.0.1:8788']) assert.equal(isAllowedOrigin(origin), true, origin);
-  for (const origin of [null, '', 'https://www.burimttukttak.com', 'https://evil.example', 'https://burimttukttak.pages.dev.evil.example', 'file:///tmp']) assert.equal(isAllowedOrigin(origin), false, String(origin));
+  for (const origin of ['https://beorimttukttak.com', 'https://burimttukttak.pages.dev', 'https://feature.burimttukttak.pages.dev', 'http://localhost:8788', 'http://127.0.0.1:8788']) assert.equal(isAllowedOrigin(origin), true, origin);
+  for (const origin of [null, '', 'https://www.beorimttukttak.com', 'https://evil.example', 'https://burimttukttak.pages.dev.evil.example', 'file:///tmp']) assert.equal(isAllowedOrigin(origin), false, String(origin));
 });
 
 test('canonical names, every alias, needs_research and known fixture matches perform zero D1 work', async () => {

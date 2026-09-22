@@ -101,8 +101,8 @@ test('Cloudflare headers isolate preview noindex from production security header
 
 test('redirect rules enforce HTTPS, apex host and explicit trailing slashes without aliases', () => {
   const redirects = readFileSync(join(root, '_redirects'), 'utf8');
-  assert.match(redirects, /^http:\/\/burimttukttak\.com\/\* https:\/\/burimttukttak\.com\/:splat 301/m);
-  assert.match(redirects, /^https:\/\/www\.burimttukttak\.com\/\* https:\/\/burimttukttak\.com\/:splat 301/m);
+  assert.match(redirects, /^http:\/\/beorimttukttak\.com\/\* https:\/\/beorimttukttak\.com\/:splat 301/m);
+  assert.match(redirects, /^https:\/\/www\.beorimttukttak\.com\/\* https:\/\/beorimttukttak\.com\/:splat 301/m);
   for (const path of publicPaths.filter(path => path !== '/').concat('/search/')) assert.ok(redirects.includes(`${path.slice(0, -1)} ${path} 301`), path);
   for (const item of seed.items) for (const alias of item.aliases) assert.ok(!redirects.includes(`/item/${alias}`), alias);
 });

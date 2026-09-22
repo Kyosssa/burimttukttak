@@ -24,7 +24,7 @@ export function isAllowedOrigin(value) {
   if (!value) return false;
   try {
     const origin = new URL(value);
-    if (origin.origin === 'https://burimttukttak.com') return true;
+    if (origin.origin === 'https://beorimttukttak.com') return true;
     if (/^https:\/\/(?:[a-z0-9-]+\.)?burimttukttak\.pages\.dev$/i.test(origin.origin)) return true;
     return (origin.hostname === 'localhost' || origin.hostname === '127.0.0.1') && origin.protocol === 'http:';
   } catch {

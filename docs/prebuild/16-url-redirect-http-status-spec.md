@@ -3,9 +3,9 @@
 ## 대표 호스트
 
 production 도메인은 정확히 하나만 사용:
-`https://burimttukttak.com`
+`https://beorimttukttak.com`
 
-`www.burimttukttak.com`을 연결한다면 production에서는 한 쪽으로 HTTP 301.
+`www.beorimttukttak.com`을 연결한다면 production에서는 한 쪽으로 HTTP 301.
 JavaScript redirect 사용 금지.
 
 Cloudflare Preview / `*.pages.dev`:

@@ -66,13 +66,13 @@ D1은 `/api/missing-search`의 집계에만 사용합니다. 홈, 상세, 카테
 
 ## 6. Custom domain과 Production 검증
 
-1. Pages 프로젝트의 Custom domains에서 `burimttukttak.com`을 추가합니다.
+1. Pages 프로젝트의 Custom domains에서 `beorimttukttak.com`을 추가합니다.
 2. apex domain은 Cloudflare zone과 nameserver 설정이 필요합니다. Cloudflare 화면에서 인증서와 도메인이 Active가 될 때까지 기다립니다.
 3. `www` 사용 여부를 결정하고 현재 `_redirects` 규칙대로 apex 하나로 통일합니다.
 4. Production 배포 전 사용자 검토를 완료합니다.
 5. 배포 후 운영 도메인에서 수동 체크리스트를 다시 수행합니다.
 6. Production 응답에 Preview용 `X-Robots-Tag: noindex, nofollow`가 적용되지 않았는지 확인합니다.
-7. 마지막으로 Search Console과 네이버 서치어드바이저에 운영 도메인을 등록하고 `https://burimttukttak.com/sitemap.xml`을 제출합니다.
+7. 마지막으로 Search Console과 네이버 서치어드바이저에 운영 도메인을 등록하고 `https://beorimttukttak.com/sitemap.xml`을 제출합니다.
 
 참고 문서:
 

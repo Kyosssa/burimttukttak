@@ -70,7 +70,7 @@ robots.txt 예시:
 User-agent: *
 Allow: /
 Disallow: /search/
-Sitemap: https://burimttukttak.com/sitemap.xml
+Sitemap: https://beorimttukttak.com/sitemap.xml
 
 `Disallow`만으로 검색 결과의 색인 제거를 보장하지 않으므로
 검색 페이지 HTML에는 `meta robots=noindex,follow`도 넣는다.

@@ -1,6 +1,6 @@
 # 운영 전 수동 확인 체크리스트
 
-아래의 `{BASE_URL}`을 Preview URL 또는 `https://burimttukttak.com`으로 바꿔 확인합니다. Preview와 Production에서 각각 한 번 수행합니다.
+아래의 `{BASE_URL}`을 Preview URL 또는 `https://beorimttukttak.com`으로 바꿔 확인합니다. Preview와 Production에서 각각 한 번 수행합니다.
 
 ## 주요 URL
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://burimttukttak.com/schemas/item.schema.json",
+  "$id": "https://beorimttukttak.com/schemas/item.schema.json",
   "title": "버림뚝딱 Item",
   "type": "object",
   "required": [

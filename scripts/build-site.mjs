@@ -132,7 +132,7 @@ https://:version.:project.pages.dev/*
 
 function redirectsFile(indexablePaths) {
   const slashRedirects = indexablePaths.filter(path => path !== '/').concat('/search/').map(path => `${path.slice(0, -1)} ${path} 301`);
-  return [`http://burimttukttak.com/* https://burimttukttak.com/:splat 301`, `https://www.burimttukttak.com/* https://burimttukttak.com/:splat 301`, ...slashRedirects].join('\n') + '\n';
+  return [`http://beorimttukttak.com/* https://beorimttukttak.com/:splat 301`, `https://www.beorimttukttak.com/* https://beorimttukttak.com/:splat 301`, ...slashRedirects].join('\n') + '\n';
 }
 
 export function buildSite() {
