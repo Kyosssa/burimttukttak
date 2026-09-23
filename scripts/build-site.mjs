@@ -1,7 +1,7 @@
 import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from './lib/inputs.mjs';
-import { breadcrumb, escapeHtml, formatDate, layout, SITE_URL } from './lib/html.mjs';
+import { breadcrumb, escapeHtml, formatDate, layout, SITE_URL, styleAsset } from './lib/html.mjs';
 import { coupangCarouselAsset, monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from './lib/monetization.mjs';
 import { createSearchIndex } from '../src/search.mjs';
 
@@ -165,7 +165,7 @@ export function buildSite() {
   write('_redirects', redirectsFile(indexablePaths));
 
   mkdirSync(new URL('assets/', output), { recursive: true });
-  cpSync(new URL('../src/styles.css', import.meta.url), new URL('assets/style.css', output));
+  cpSync(new URL('../src/styles.css', import.meta.url), new URL(`assets/${styleAsset}`, output));
   cpSync(new URL('../src/app.mjs', import.meta.url), new URL('assets/app.js', output));
   cpSync(new URL('../src/coupang-carousel.mjs', import.meta.url), new URL(`assets/${coupangCarouselAsset}`, output));
   write('assets/missing-search.js', readFileSync(new URL('../src/missing-search.mjs', import.meta.url), 'utf8').replace("'./search.mjs'", "'./search.js'"));

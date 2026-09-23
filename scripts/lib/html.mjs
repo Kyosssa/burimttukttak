@@ -1,3 +1,9 @@
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
+
+const styleSource = readFileSync(new URL('../../src/styles.css', import.meta.url));
+export const styleAsset = `style-${createHash('sha256').update(styleSource).digest('hex').slice(0, 12)}.css`;
+
 const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 export const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ESCAPES[char]);
 export const formatDate = value => value.replaceAll('-', '.');
@@ -30,7 +36,7 @@ export function layout({ title, description, canonical, content, mainClass = '',
   <meta name="robots" content="${escapeHtml(robots)}">${social}
   <meta name="naver-site-verification" content="60090dcb1b94d4cc123aee5341a4cef1aff3c592" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/${styleAsset}">
   ${jsonLd.map(value => `<script type="application/ld+json">${safeJson(value)}</script>`).join('\n  ')}
 </head>
 <body>

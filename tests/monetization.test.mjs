@@ -6,6 +6,7 @@ import { runInNewContext } from 'node:vm';
 import seed from '../docs/prebuild/burimttukttak-seed-v1.1.json' with { type: 'json' };
 import categories from '../docs/prebuild/10-categories-v1.json' with { type: 'json' };
 import { itemPage } from '../scripts/build-site.mjs';
+import { styleAsset } from '../scripts/lib/html.mjs';
 import { coupangCarouselAsset, monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from '../scripts/lib/monetization.mjs';
 
 const verified = seed.items.filter(item => item.verification_status === 'verified');
@@ -105,7 +106,7 @@ test('configured detail order keeps answer, steps, related items, and carousel i
 test('policy text and mobile styles describe and contain the enabled carousel', () => {
   const disclosure = html('affiliate-disclosure/index.html');
   const privacy = html('privacy/index.html');
-  const css = html('assets/style.css');
+  const css = html(`assets/${styleAsset}`);
   assert.match(disclosure, /쿠팡 파트너스 캐러셀 배너를 표시합니다/);
   assert.match(privacy, /쿠팡의 외부 스크립트를 불러옵니다/);
   assert.match(css, /\.coupang-carousel-frame \{ display: flex; justify-content: center; width: 100%; max-width: 100%; overflow: hidden; \}/);
