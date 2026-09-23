@@ -149,7 +149,7 @@ footer small { color: var(--muted); }
   .section { padding-block: 38px; }
   .answer-card, .content-card, .collection-card, .affiliate-block, .feedback, .notice, .empty-state { border-radius: 16px; }
   .ad-slot, .affiliate-block { min-width: 0; }
-  .coupang-carousel { padding: 16px; }
+  .coupang-carousel { padding: 8px; }
   .coupang-carousel-desktop { display: none; }
   .coupang-carousel-mobile { display: block; }
 }
