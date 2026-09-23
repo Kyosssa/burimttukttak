@@ -96,7 +96,7 @@ h2 { line-height: 1.3; letter-spacing: -.035em; }
 .affiliate-block ul { margin: 0; padding: 0; list-style: none; }
 .affiliate-block a { display: block; min-height: 48px; padding: 12px 14px; border: 1px solid #ddc78c; border-radius: 12px; background: var(--white); font-weight: 800; text-decoration: none; overflow-wrap: anywhere; }
 .affiliate-disclosure { color: var(--muted); font-size: .9rem; }
-.coupang-carousel { margin-block: 24px; }
+.coupang-carousel { margin-block: 24px; padding: 14px; }
 .coupang-carousel[hidden] { display: none; }
 .coupang-carousel-frame { display: flex; justify-content: center; width: 100%; max-width: 100%; overflow: hidden; }
 .coupang-carousel-container { width: 100%; max-width: 100%; min-height: 0; }
