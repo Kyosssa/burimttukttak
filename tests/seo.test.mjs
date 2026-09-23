@@ -20,6 +20,7 @@ const jsonLd = content => [...content.matchAll(/<script type="application\/ld\+j
 test('every public canonical page has unique absolute canonical, metadata, OG and Twitter fields', () => {
   const canonicals = new Set();
   const titles = new Set();
+  const descriptions = new Set();
   for (const path of publicPaths) {
     const content = contentFor(path);
     const canonical = attr(content, /<link rel="canonical" href="([^"]+)">/);
@@ -27,14 +28,16 @@ test('every public canonical page has unique absolute canonical, metadata, OG an
     const description = attr(content, /<meta name="description" content="([^"]+)">/);
     assert.equal(canonical, `${SITE_URL}${path}`, path);
     assert.ok(title && !titles.has(title), `duplicate/missing title: ${path}`);
-    assert.ok(description, `description: ${path}`);
+    assert.ok(description && !descriptions.has(description), `duplicate/missing description: ${path}`);
     assert.match(content, /<meta name="robots" content="index,follow">/);
     for (const name of ['og:title', 'og:description', 'og:url', 'twitter:card', 'twitter:title', 'twitter:description']) assert.ok(content.includes(`${name}"`), `${path}: ${name}`);
     assert.ok(!canonicals.has(canonical), `duplicate canonical: ${canonical}`);
     canonicals.add(canonical);
     titles.add(title);
+    descriptions.add(description);
   }
   assert.equal(canonicals.size, 113);
+  assert.equal(descriptions.size, 113);
 });
 
 test('every generated HTML page has exactly one Naver site verification tag', () => {

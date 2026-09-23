@@ -4,6 +4,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
+import { relatedItems } from '../scripts/lib/related-items.mjs';
 import { searchAssets } from '../scripts/lib/html.mjs';
 import { createPreviewServer } from '../scripts/preview.mjs';
 
@@ -77,6 +78,34 @@ test('only the approved Coupang carousel integration is present and no AdSense s
   assert.match(html('index.html'), /src="https:\/\/ads-partners\.coupang\.com\/g\.js"/);
   assert.match(scripts, /trackingCode: 'AF4293553'/);
   assert.ok(!/analytics|adsbygoogle\.push|doubleclick|data-ad-slot|partners\/external/i.test(scripts));
+});
+
+test('verified related navigation is deterministic, unique, self-free and canonical', () => {
+  const paths = new Set(verified.map(item => `/item/${item.slug}/`));
+  for (const item of verified) {
+    const first = relatedItems(item, seed.items);
+    assert.deepEqual(first, relatedItems(item, [...seed.items].reverse()), item.slug);
+    assert.ok(first.length <= 6, item.slug);
+    assert.equal(new Set(first.map(target => target.slug)).size, first.length, item.slug);
+    assert.ok(first.every(target => target.slug !== item.slug && paths.has(`/item/${target.slug}/`)), item.slug);
+    const page = html(`item/${item.slug}/index.html`);
+    const block = page.match(/<section class="content-card" data-section="related-items">([\s\S]*?)<\/section>/)?.[1];
+    assert.ok(block, item.slug);
+    const links = [...block.matchAll(/href="(\/item\/[^\"]+\/?)"/g)].map(match => match[1]);
+    assert.deepEqual(links, first.map(target => `/item/${target.slug}/`), item.slug);
+    assert.ok(block.includes('/category/'), item.slug);
+  }
+});
+
+test('missing-search next steps are present but hidden until a true missing state', () => {
+  for (const page of ['index.html', 'search/index.html']) {
+    const content = html(page);
+    assert.match(content, /id="missing-next-steps"[^>]* hidden>/);
+    assert.match(content, /href="\/#categories"/);
+  }
+  const app = html(`assets/${searchAssets.app}`);
+  assert.match(app, /missingNextSteps\.hidden = result\.state !== 'missing'/);
+  assert.match(app, /void reportMissing\(input\.value, result\.state\)/);
 });
 
 test('search assets use one content version so long-lived browser caches cannot mix old code and Seed', () => {

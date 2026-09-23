@@ -5,6 +5,7 @@ const form = document.querySelector('#search-form');
 const input = document.querySelector('#item-search');
 const list = document.querySelector('#search-results');
 const message = document.querySelector('#search-message');
+const missingNextSteps = document.querySelector('#missing-next-steps');
 let index = [];
 let results = [];
 let active = -1;
@@ -35,6 +36,7 @@ function activate(next) {
 function showMessage(result) {
   closeList();
   message.replaceChildren();
+  missingNextSteps.hidden = result.state !== 'missing';
   if (result.state === 'empty_or_invalid') {
     message.textContent = '품목 이름을 입력해 주세요. 개인정보·URL·긴 문장은 집계하지 않아요. 등록된 1글자 품목은 바로 검색할 수 있어요.';
   } else if (result.state === 'unverified_item') {
@@ -60,6 +62,7 @@ function render(result) {
   active = -1;
   list.replaceChildren();
   message.replaceChildren();
+  missingNextSteps.hidden = true;
   if (!results.length) return closeList();
   for (const [position, item] of results.entries()) {
     const option = document.createElement('li');
@@ -92,10 +95,12 @@ input.addEventListener('input', () => {
   const result = search(index, input.value);
   if (!input.value.trim()) {
     message.replaceChildren();
+    missingNextSteps.hidden = true;
     return closeList();
   }
   if (result.state === 'empty_or_invalid') {
     results = [];
+    missingNextSteps.hidden = true;
     return closeList();
   }
   render(result);

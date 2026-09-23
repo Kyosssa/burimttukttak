@@ -2,6 +2,7 @@ import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from './lib/inputs.mjs';
 import { sourceContext } from './lib/source-context.mjs';
+import { relatedItems } from './lib/related-items.mjs';
 import { breadcrumb, escapeHtml, formatDate, layout, searchAssets, SITE_URL, styleAsset } from './lib/html.mjs';
 import { coupangCarouselAsset, monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from './lib/monetization.mjs';
 import { createSearchIndex } from '../src/search.mjs';
@@ -25,6 +26,7 @@ function searchBox() {
     </form>
     <div id="search-message" class="search-message" role="status" aria-live="polite"></div>
     <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+    <aside id="missing-next-steps" class="missing-next-steps" aria-label="다른 품목 찾기" hidden><h3>다른 방법으로 찾아보세요</h3><p>띄어쓰기나 다른 이름으로 다시 검색하거나, 확인된 품목을 둘러보세요.</p><ul><li><a href="/item/frying-pan/">후라이팬</a></li><li><a href="/item/battery/">건전지</a></li><li><a href="/item/refrigerator/">냉장고</a></li></ul><a class="browse-link" href="/#categories">카테고리에서 전체 품목 보기</a></aside>
   </section>`;
 }
 
@@ -54,14 +56,14 @@ function home(seed, categories, bySlug) {
 }
 
 export function itemPage(item, category, bySlug, monetization = monetizationConfig, registry = loadInputs().registry) {
-  const related = item.related_items.map(slug => bySlug.get(slug)).filter(target => target?.verification_status === 'verified');
+  const related = relatedItems(item, [...bySlug.values()]);
   const context = sourceContext(item, registry);
   const scopeLabel = context.jurisdiction ? `${context.jurisdiction} 공식 기준이에요. 거주 지역에 따라 다를 수 있어요.` : '전국 단위 공식 자료를 기준으로 안내해요.';
   const sources = context.sources.map(source => `<li><div><strong>${escapeHtml(source.name)}</strong><span>출처 기관: ${escapeHtml(source.authority)}</span><span>적용 범위: ${escapeHtml(source.scope === 'local' ? source.jurisdiction : '전국 기준')}</span><span>확인일: ${formatDate(source.checked_at)}</span><span>다음 검토 예정일: ${formatDate(source.nextReview)}</span></div><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.authority)}의 ${escapeHtml(source.name)} 원문 보기<span class="sr-only"> (새 창)</span></a></li>`).join('');
   const regional = context.jurisdiction ? `<aside class="notice regional-notice" aria-labelledby="regional-notice-title"><h2 id="regional-notice-title">${escapeHtml(context.jurisdiction)} 기준을 확인해 주세요</h2><p>이 페이지는 ${escapeHtml(context.jurisdiction)} 공식 자료를 참고합니다. 다른 지역에서는 배출 방식·신고 방법·수수료가 다를 수 있어요.</p><p>${escapeHtml(item.regional_note)}</p><p>거주 지역의 시·군·구 홈페이지에서도 확인해 주세요.</p><a href="#official-sources">이 페이지의 공식 출처로 이동</a></aside>` : '';
   const warnings = item.warnings.length ? `<section class="content-card warning"><h2>주의사항</h2><ul>${item.warnings.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ul></section>` : '';
   const cta = item.collection_service?.type === 'free_home_pickup' ? `<section class="collection-card"><p class="eyebrow">공식 수거 서비스</p><h2>🔌 폐가전 무상방문수거</h2><p>${item.collection_service.eligible === true ? '무료 방문수거 대상입니다.' : '조건에 따라 무료수거가 가능합니다.'}</p>${item.collection_service.eligible === 'conditional' ? '<p>제품 크기 또는 수량 조건을 공식 사이트에서 확인하세요.</p>' : ''}<a class="button secondary" href="${escapeHtml(item.collection_service.url)}" target="_blank" rel="noopener noreferrer">공식 사이트에서 신청 조건 확인<span class="sr-only"> (새 창)</span></a></section>` : '';
-  const relatedBlock = related.length ? `<section class="content-card"><h2>관련 품목</h2><ul class="related-list">${related.map(target => `<li><a href="/item/${escapeHtml(target.slug)}/">${escapeHtml(target.name)} <span>${escapeHtml(target.disposal_label)}</span></a></li>`).join('')}</ul></section>` : '';
+  const relatedBlock = related.length ? `<section class="content-card" data-section="related-items"><h2>함께 찾는 품목</h2><p>같은 배출 분류나 품목 관계로 연결된 확인된 품목이에요. 세부 기준은 각 페이지에서 확인해 주세요.</p><ul class="related-list">${related.map(target => `<li><a href="/item/${escapeHtml(target.slug)}/">${escapeHtml(target.name)} <span>${escapeHtml(target.disposal_label)}</span></a></li>`).join('')}</ul><a class="browse-link" href="/category/${escapeHtml(category.slug)}/">${escapeHtml(category.name)} 더 보기</a></section>` : `<section class="content-card" data-section="related-items"><h2>다른 품목 찾아보기</h2><p>이 품목과 직접 연결된 확인 품목은 아직 없어요.</p><a class="browse-link" href="/category/${escapeHtml(category.slug)}/">${escapeHtml(category.name)} 품목 둘러보기</a></section>`;
   const adSlotTop = renderAdSlotTop(monetization);
   const affiliateBlock = renderAffiliateBlock(item, monetization);
   const coupangCarousel = renderCoupangCarousel(monetization);

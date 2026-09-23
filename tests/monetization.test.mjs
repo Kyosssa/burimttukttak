@@ -98,7 +98,7 @@ test('existing ad and product-link components remain inactive without explicit s
 
 test('configured detail order keeps answer, steps, related items, and carousel in order', () => {
   const page = itemPage(withKeywords, categoryFor(withKeywords), bySlug, monetizationConfig);
-  const positions = [page.indexOf('class="answer-card"'), page.indexOf('class="steps"'), page.indexOf('관련 품목'), page.indexOf('data-component="CoupangCarousel"')];
+  const positions = [page.indexOf('class="answer-card"'), page.indexOf('class="steps"'), page.indexOf('data-section="related-items"'), page.indexOf('data-component="CoupangCarousel"')];
   assert.ok(positions.every(position => position >= 0), positions);
   assert.deepEqual([...positions].sort((a, b) => a - b), positions);
 });
