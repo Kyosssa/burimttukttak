@@ -79,10 +79,13 @@ h2 { line-height: 1.3; letter-spacing: -.035em; }
 .answer-card, .content-card, .collection-card, .affiliate-block, .feedback, .notice, .empty-state { margin-block: 18px; padding: clamp(20px, 5vw, 30px); border: 1px solid var(--line); border-radius: 20px; }
 .answer-card { border-color: #a8d8b8; background: linear-gradient(135deg, #effaf3, #e6f5eb); }
 .answer-card h2 { margin: 0 0 8px; font-size: clamp(1.45rem, 5vw, 2rem); }
-.answer-card p:last-child { margin: 0; font-size: 1.05rem; }
+.answer-card > p:not(.eyebrow):not(.source-scope) { font-size: 1.05rem; }
+.source-scope { display: inline-block; max-width: 100%; margin: 14px 0 0; padding: 7px 11px; border: 1px solid #a8d8b8; border-radius: 12px; background: #fff; font-size: .9rem; font-weight: 700; overflow-wrap: anywhere; }
 .notice { background: var(--cream); }
 .notice h2, .content-card h2, .collection-card h2, .feedback h2 { margin-top: 0; font-size: 1.25rem; }
 .notice p, .feedback p { margin-bottom: 0; }
+.regional-notice { border-color: #d9dfd1; }
+.regional-notice a { display: inline-block; margin-top: 12px; font-weight: 700; }
 .steps { padding-left: 1.5rem; }
 .steps li { min-height: 38px; padding: 5px 0 14px 8px; }
 .steps li::marker { color: var(--green-dark); font-weight: 900; }
@@ -111,6 +114,7 @@ h2 { line-height: 1.3; letter-spacing: -.035em; }
 .sources li { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 14px; border-bottom: 1px solid var(--line); }
 .sources li div { display: grid; }
 .sources li span { color: var(--muted); font-size: .82rem; }
+.sources li a { overflow-wrap: anywhere; }
 .updated { margin: 20px 0 0; color: var(--muted); font-size: .9rem; }
 .feedback { text-align: center; }
 

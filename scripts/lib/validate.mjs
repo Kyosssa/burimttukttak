@@ -150,7 +150,7 @@ export function createValidator({ schema, registry, categories }) {
         else {
           if (!source.name.includes(registered.name)) fail('source_name', `${path}/name`, 'Source name differs from registry');
           if (registered.authority !== source.authority) fail('source_authority', `${path}/authority`, 'Authority differs from registry');
-          if (registered.geographic_scope === 'local' && (!item.regional_variation || !item.regional_note?.includes(registered.jurisdiction))) {
+          if (registered.geographic_scope === 'local' && (!item.regional_variation || !item.regional_note?.includes(registered.jurisdiction.split(' ').at(-1)))) {
             fail('local_scope', `${root}/regional_note`, `Local source requires a regional warning naming ${registered.jurisdiction}`);
           }
           if (validDate(source.checked_at) && Number.isInteger(registered.review_interval_days)) {

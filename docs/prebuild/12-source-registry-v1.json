@@ -103,7 +103,7 @@
       "name": "음식물쓰레기 분리배출 요령",
       "authority": "서초구청",
       "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
-      "jurisdiction": "서초구",
+      "jurisdiction": "서울 서초구",
       "used_for": [
         "음식물류 폐기물 제외 품목"
       ],
@@ -119,7 +119,7 @@
       "name": "음식물쓰레기 배출요령",
       "authority": "파주시청",
       "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_06.jsp",
-      "jurisdiction": "파주시",
+      "jurisdiction": "경기 파주시",
       "used_for": [
         "과일 껍질 분류"
       ],
@@ -135,7 +135,7 @@
       "name": "대형폐기물 배출",
       "authority": "파주시청",
       "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
-      "jurisdiction": "파주시",
+      "jurisdiction": "경기 파주시",
       "used_for": [
         "품목별 대형폐기물 수수료 및 배출신청"
       ],
