@@ -110,7 +110,7 @@
     {
       "query": "메트리스",
       "expected_slug": "mattress",
-      "expected_state": "unverified_item",
+      "expected_state": "verified_item",
       "reason": "alias"
     },
     {

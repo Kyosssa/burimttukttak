@@ -1,17 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
-import { createValidator } from '../scripts/lib/validate.mjs';
+import { createValidator, duplicateDisposalBodies } from '../scripts/lib/validate.mjs';
 
 const inputs = loadInputs();
 const validate = createValidator(inputs);
-test('Phase 7 baseline: 120 / 80 / 40, validation does not mutate Seed', () => {
+test('Phase 8 baseline: 120 / 100 / 20, validation does not mutate Seed', () => {
   const seed = structuredClone(inputs.seed);
   assert.deepEqual(validate(seed), []);
   assert.deepEqual(seed, inputs.seed);
   assert.equal(seed.items.length, 120);
-  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 80);
-  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 40);
+  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 100);
+  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 20);
 });
 
 const mutations = [
@@ -48,6 +48,7 @@ const mutations = [
   ['source checked_at null', s => { s.items[0].sources[0].checked_at = null; }, 'source_required'],
   ['source checked_at invalid', s => { s.items[0].sources[0].checked_at = 'yesterday'; }, 'schema'],
   ['source authority mismatch', s => { s.items[0].sources[0].authority = 'unknown'; }, 'source_authority'],
+  ['source name mismatch', s => { s.items[0].sources[0].name = 'Unrelated source'; }, 'source_name'],
   ['source registry mismatch', s => { s.items[0].sources[0].url = 'https://example.org/'; }, 'source_registry'],
   ['source lookalike domain', s => { s.items[0].sources[0].url += '.example.org'; }, 'source_registry'],
   ['source javascript URL', s => { s.items[0].sources[0].url = 'javascript:alert(1)'; }, 'source_registry'],
@@ -77,6 +78,36 @@ test('registered tier 3 alone cannot establish verified status', () => {
   const changed = structuredClone(inputs);
   changed.registry.sources.forEach(s => { s.tier = 3; });
   assert.ok(createValidator(changed)(changed.seed).some(e => e.code === 'source_tier'));
+});
+
+test('registry identity, official URL, review schedule and local jurisdiction are enforced', () => {
+  for (const [mutate, code] of [
+    [r => { r.sources[0].url = 'https://example.org/'; }, 'registry_url'],
+    [r => { r.sources[0].review_interval_days = 0; }, 'review_interval'],
+    [r => { r.sources.at(-1).jurisdiction = ''; }, 'source_scope'],
+  ]) {
+    const changed = structuredClone(inputs);
+    mutate(changed.registry);
+    assert.ok(createValidator(changed)(changed.seed).some(e => e.code === code), code);
+  }
+  const seed = structuredClone(inputs.seed);
+  seed.items.find(item => item.slug === 'eggshell').regional_note = '전국 공통 배출 방법입니다.';
+  assert.ok(validate(seed).some(e => e.code === 'local_scope'));
+});
+
+test('duplicate verified metadata and empty warnings fail validation', () => {
+  const seed = structuredClone(inputs.seed);
+  seed.items[1].seo.title = seed.items[0].seo.title;
+  assert.ok(validate(seed).some(e => e.code === 'seo_duplicate'));
+  seed.items[1].seo.title = inputs.seed.items[1].seo.title;
+  seed.items[1].warnings = [];
+  assert.ok(validate(seed).some(e => e.code === 'verified_required'));
+});
+
+test('identical complete disposal answers are reported for editorial review', () => {
+  const groups = duplicateDisposalBodies(inputs.seed);
+  assert.ok(groups.some(slugs => slugs.includes('bed-frame') && slugs.includes('sofa')));
+  assert.ok(groups.every(slugs => slugs.length > 1));
 });
 
 test('related needs_research items are valid references, not publish authorization', () => {

@@ -769,5 +769,194 @@
     "source_ids": [
       "official-disposal-location-map"
     ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "eggshell",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "chicken-bone",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "pork-bone",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "fish-bone",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "shellfish-shell",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "crab-shell",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "onion-skin",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "garlic-skin",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "corn-husk",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "corn-cob",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "peach-pit",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "seocho-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "banana-peel",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "watermelon-rind",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-food-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "cutting-board",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-bulky-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "mattress",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-bulky-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "carpet",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-bulky-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "drying-rack",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-bulky-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "stroller",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-bulky-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "umbrella",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-bulky-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "flower-pot",
+    "type": "verified",
+    "summary": "Phase 8: 관할 지자체의 품목별 공식 배출 안내를 직접 확인하고 지역 범위를 명시하여 승격",
+    "source_ids": [
+      "paju-bulky-waste"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "item_slug": "metal-can",
+    "type": "content_review",
+    "summary": "기존 지역별 차이 안내를 주의사항에도 명시하여 검증 필수 조건 충족",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
   }
 ]

@@ -34,7 +34,7 @@ test('every public canonical page has unique absolute canonical, metadata, OG an
     canonicals.add(canonical);
     titles.add(title);
   }
-  assert.equal(canonicals.size, 93);
+  assert.equal(canonicals.size, 113);
 });
 
 test('every generated HTML page has exactly one Naver site verification tag', () => {
@@ -93,11 +93,11 @@ test('search and 404 are noindex and have no canonical or JSON-LD', () => {
   }
 });
 
-test('sitemap has exactly 93 unique, complete, live canonical URLs', () => {
+test('sitemap has exactly 113 unique, complete, live canonical URLs', () => {
   const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-  assert.equal(urls.length, 93);
-  assert.equal(new Set(urls).size, 93);
+  assert.equal(urls.length, 113);
+  assert.equal(new Set(urls).size, 113);
   assert.deepEqual(new Set(urls), new Set(publicPaths.map(path => `${SITE_URL}${path}`)));
   assert.ok(!urls.some(url => url.includes('/search/') || url.includes('404')));
   for (const item of unverified) assert.ok(!urls.includes(`${SITE_URL}/item/${item.slug}/`), item.slug);

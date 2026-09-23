@@ -9,6 +9,26 @@ const safeURL = value => {
     return url.protocol === 'https:' && !url.username && !url.password;
   } catch { return false; }
 };
+const validDate = value => {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+};
+const officialHost = value => {
+  if (!safeURL(value)) return false;
+  const host = new URL(value).hostname;
+  return host.endsWith('.go.kr') || host === 'go.kr'
+    || ['xn--oy2b29bd3a601b.kr', 'www.xn--oy2b29bd3a601b.kr', 'www.15990903.or.kr'].includes(host);
+};
+
+export function duplicateDisposalBodies(seed) {
+  const bodies = new Map();
+  for (const item of seed.items.filter(item => item.verification_status === 'verified')) {
+    const body = JSON.stringify([item.summary, item.steps, item.warnings]);
+    bodies.set(body, [...(bodies.get(body) ?? []), item.slug]);
+  }
+  return [...bodies.values()].filter(slugs => slugs.length > 1);
+}
 
 export function createValidator({ schema, registry, categories }) {
   // The supplied conditional subschemas omit local type declarations;
@@ -22,6 +42,19 @@ export function createValidator({ schema, registry, categories }) {
   return function validate(seed) {
     const errors = [];
     const fail = (code, path, message) => errors.push({ code, path, message });
+    const registryIds = new Set();
+    const registryUrls = new Set();
+    registry.sources.forEach((source, index) => {
+      const path = `/registry/sources/${index}`;
+      if (!text(source.id) || registryIds.has(source.id)) fail('registry_id', `${path}/id`, 'Source ID must be unique and nonblank');
+      registryIds.add(source.id);
+      if (!officialHost(source.url) || registryUrls.has(source.url)) fail('registry_url', `${path}/url`, 'Unique official HTTPS URL required');
+      registryUrls.add(source.url);
+      if (!text(source.name) || !text(source.authority)) fail('registry_identity', path, 'Source name and authority required');
+      if (!Number.isInteger(source.review_interval_days) || source.review_interval_days < 1 || source.review_interval_days > 365) fail('review_interval', `${path}/review_interval_days`, 'Review interval must be 1–365 days');
+      if (!['national', 'local'].includes(source.geographic_scope)) fail('source_scope', `${path}/geographic_scope`, 'Source scope required');
+      if (source.geographic_scope === 'local' && !text(source.jurisdiction)) fail('source_scope', `${path}/jurisdiction`, 'Local source jurisdiction required');
+    });
     if (!seed || typeof seed !== 'object' || !Array.isArray(seed.items) || !seed.items.length) {
       fail('seed', '/items', 'Seed must contain a non-empty items array');
       return errors;
@@ -48,6 +81,8 @@ export function createValidator({ schema, registry, categories }) {
     const seen = { id: new Map(), name: new Map(), slug: new Map() };
     const slugs = new Set(seed.items.map(i => i.slug));
     const terms = new Map();
+    const seoTitles = new Map();
+    const seoDescriptions = new Map();
     seed.items.forEach((item, index) => {
       const root = `/items/${index}`;
       for (const field of ['id', 'name', 'slug']) {
@@ -96,7 +131,12 @@ export function createValidator({ schema, registry, categories }) {
       }
       for (const field of ['title', 'description']) {
         if (!text(item.seo?.[field])) fail('verified_required', `${root}/seo/${field}`, 'Verified SEO field required');
+        const seenSeo = field === 'title' ? seoTitles : seoDescriptions;
+        const value = item.seo?.[field]?.trim();
+        if (value && seenSeo.has(value)) fail('seo_duplicate', `${root}/seo/${field}`, `Duplicates ${seenSeo.get(value)}`);
+        else if (value) seenSeo.set(value, item.slug);
       }
+      if (!item.steps.length || !item.warnings.length) fail('verified_required', root, 'Verified steps and warnings required');
       if (typeof item.regional_variation !== 'boolean') fail('verified_required', `${root}/regional_variation`, 'Boolean required');
       if (item.regional_variation && !text(item.regional_note)) fail('verified_required', `${root}/regional_note`, 'Regional explanation required');
       let authoritative = false;
@@ -108,7 +148,15 @@ export function createValidator({ schema, registry, categories }) {
         const registered = official.get(source.url);
         if (!safeURL(source.url) || !registered) fail('source_registry', `${path}/url`, 'HTTPS URL must exactly match the supplied source registry');
         else {
+          if (!source.name.includes(registered.name)) fail('source_name', `${path}/name`, 'Source name differs from registry');
           if (registered.authority !== source.authority) fail('source_authority', `${path}/authority`, 'Authority differs from registry');
+          if (registered.geographic_scope === 'local' && (!item.regional_variation || !item.regional_note?.includes(registered.jurisdiction))) {
+            fail('local_scope', `${root}/regional_note`, `Local source requires a regional warning naming ${registered.jurisdiction}`);
+          }
+          if (validDate(source.checked_at) && Number.isInteger(registered.review_interval_days)) {
+            const nextReview = new Date(Date.parse(`${source.checked_at}T00:00:00Z`) + registered.review_interval_days * 86_400_000);
+            if (Number.isNaN(nextReview.getTime()) || nextReview.getUTCFullYear() > 9999) fail('review_date', `${path}/checked_at`, 'Next review date cannot be computed');
+          }
           if ([1, 2].includes(registered.tier)) authoritative = true;
         }
       });

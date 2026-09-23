@@ -23,14 +23,14 @@ test('source health is deterministic, report-only and never mutates Seed', () =>
   assert.equal(due.sources.find(source => source.id === 'ewaste-pickup').status, 'review_due');
 });
 
-test('data changelog establishes one source-backed baseline per verified item', () => {
+test('data changelog keeps a source-backed history for every verified item', () => {
   const changes = JSON.parse(readFileSync(new URL('../data/changelog.json', import.meta.url), 'utf8'));
   const verified = seed.items.filter(item => item.verification_status === 'verified');
   const sourceIds = new Set(registry.sources.map(source => source.id));
-  assert.equal(changes.length, verified.length);
+  assert.ok(changes.length >= verified.length);
   assert.deepEqual(new Set(changes.map(change => change.item_slug)), new Set(verified.map(item => item.slug)));
   for (const change of changes) {
-    assert.equal(change.type, 'verified');
+    assert.ok(['verified', 'content_review'].includes(change.type));
     assert.ok(change.source_ids.length > 0, change.item_slug);
     assert.ok(change.source_ids.every(id => sourceIds.has(id)), change.item_slug);
   }

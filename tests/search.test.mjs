@@ -76,7 +76,7 @@ test('invalid/short input cannot trigger missing collection; known one-character
 });
 
 test('index and results contain no disposal content, even from contaminated unverified input', () => {
-  const item = structuredClone(seed.items.find(i => i.slug === 'mattress'));
+  const item = structuredClone(seed.items.find(i => i.slug === 'tea-bag'));
   // Sentinel text only: no invented disposal guidance.
   item.summary = 'PRIVATE_SENTINEL';
   item.steps = ['PRIVATE_SENTINEL'];

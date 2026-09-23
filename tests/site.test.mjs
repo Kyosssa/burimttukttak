@@ -19,9 +19,9 @@ function files(directory = root) {
   });
 }
 
-test('generates exactly 80 verified item pages and zero unverified item pages', () => {
+test('generates exactly 100 verified item pages and zero unverified item pages', () => {
   const itemPages = files(join(root, 'item')).filter(path => path.endsWith('index.html'));
-  assert.equal(itemPages.length, 80);
+  assert.equal(itemPages.length, 100);
   for (const item of verified) assert.ok(existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
   for (const item of unverified) assert.ok(!existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
 });

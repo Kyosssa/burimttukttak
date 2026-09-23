@@ -213,18 +213,42 @@
       "category": "주방/조리도구",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "대형폐기물 (파주시 기준)",
+      "summary": "파주시는 도마를 모든 규격의 대형폐기물 수수료 품목으로 안내합니다.",
+      "steps": [
+        "도마가 파주시의 대형폐기물 신청 품목에 해당하는지 확인합니다.",
+        "파주시 배출 안내에 따라 품목을 신고하고 수수료를 확인합니다."
+      ],
+      "warnings": [
+        "도마의 재질이나 다른 지역의 배출 기준을 파주시 기준으로 일반화하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "대형폐기물 배출",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "frying-pan"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "도마 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "도마 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-006",
@@ -1258,7 +1282,9 @@
         "플라스틱 뚜껑 등 다른 재질을 제거합니다.",
         "금속캔 수거함에 배출합니다."
       ],
-      "warnings": [],
+      "warnings": [
+        "금속캔 수거일과 수거함 위치는 관할 지자체 또는 공동주택 안내를 확인하세요."
+      ],
       "regional_variation": true,
       "free_collection": null,
       "sources": [
@@ -1299,18 +1325,42 @@
         "달걀껍질",
         "계란 껍데기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "달걀 등 알껍데기는 서초구 음식물류 폐기물 배출 대상이 아닙니다.",
+      "steps": [
+        "달걀 내용물과 껍질을 구분합니다.",
+        "껍질은 서초구 기준 일반 종량제 봉투에 담아 배출합니다."
+      ],
+      "warnings": [
+        "알껍데기를 음식물 전용 수거용기에 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "chicken-bone"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "계란껍질 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "계란껍질 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-032",
@@ -1319,18 +1369,43 @@
       "category": "음식물/식재료",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "닭의 뼈다귀는 서초구 기준 일반폐기물입니다.",
+      "steps": [
+        "남은 음식과 닭뼈를 구분합니다.",
+        "뼈는 서초구 기준 일반 종량제 봉투에 담습니다."
+      ],
+      "warnings": [
+        "살코기와 뼈를 한데 섞어 음식물로 배출하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "pork-bone",
+        "eggshell"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "닭뼈 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "닭뼈 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-033",
@@ -1339,18 +1414,42 @@
       "category": "음식물/식재료",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "돼지 뼈다귀는 서초구 음식물류 폐기물 대상에서 제외됩니다.",
+      "steps": [
+        "고기와 단단한 돼지뼈를 구분합니다.",
+        "돼지뼈는 서초구 기준 일반 종량제 봉투에 배출합니다."
+      ],
+      "warnings": [
+        "뼈다귀를 음식물 전용 용기에 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "chicken-bone"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "돼지뼈 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "돼지뼈 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-034",
@@ -1359,18 +1458,42 @@
       "category": "음식물/식재료",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "생선뼈는 서초구 기준 음식물류 폐기물이 아닙니다.",
+      "steps": [
+        "생선 살과 뼈를 구분합니다.",
+        "생선뼈는 서초구 기준 일반 종량제 봉투에 배출합니다."
+      ],
+      "warnings": [
+        "생선뼈가 음식물 수거용기에 섞이지 않게 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "shellfish-shell"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "생선뼈 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "생선뼈 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-035",
@@ -1381,18 +1504,43 @@
       "aliases": [
         "조개껍질"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "조개 등 패류의 껍데기는 서초구 기준 일반폐기물입니다.",
+      "steps": [
+        "조개 살과 껍데기를 구분합니다.",
+        "껍데기는 서초구 기준 일반 종량제 봉투에 담습니다."
+      ],
+      "warnings": [
+        "단단한 패각을 음식물 전용 용기에 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "crab-shell",
+        "fish-bone"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "조개껍데기 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "조개껍데기 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-036",
@@ -1401,18 +1549,42 @@
       "category": "음식물/식재료",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "게 등 갑각류의 껍데기는 서초구 음식물류 폐기물 배출 대상이 아닙니다.",
+      "steps": [
+        "게살과 껍데기를 구분합니다.",
+        "게껍데기는 서초구 기준 일반 종량제 봉투에 배출합니다."
+      ],
+      "warnings": [
+        "갑각류 껍데기를 음식물 수거용기에 섞지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "shellfish-shell"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "게껍데기 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "게껍데기 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-037",
@@ -1443,18 +1615,42 @@
       "aliases": [
         "바나나 껍데기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "food_waste_local",
+      "disposal_label": "음식물류 폐기물 (파주시 기준)",
+      "summary": "바나나 껍질은 파주시 배출 안내에서 음식물쓰레기로 분류됩니다.",
+      "steps": [
+        "바나나 껍질과 비닐 등 이물질을 구분합니다.",
+        "파주시 기준 음식물 종량제봉투 또는 해당 수거 방식에 맞춰 배출합니다."
+      ],
+      "warnings": [
+        "말린 과일 껍질은 파주시 기준 일반쓰레기로 분류되므로 상태를 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 배출요령",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_06.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "watermelon-rind"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "바나나껍질 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "바나나껍질 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-039",
@@ -1463,18 +1659,42 @@
       "category": "음식물/식재료",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "양파 껍질은 서초구 기준 일반 종량제 봉투 배출 대상입니다.",
+      "steps": [
+        "양파 내용물과 마른 껍질을 구분합니다.",
+        "껍질은 서초구 기준 일반 종량제 봉투에 담습니다."
+      ],
+      "warnings": [
+        "양파 껍질을 음식물 전용 용기에 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "garlic-skin"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "양파껍질 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "양파껍질 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-040",
@@ -1483,18 +1703,42 @@
       "category": "음식물/식재료",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "마늘 껍질은 서초구 기준 음식물류 폐기물에 넣지 않습니다.",
+      "steps": [
+        "마늘 알맹이와 껍질을 구분합니다.",
+        "껍질은 서초구 기준 일반 종량제 봉투에 배출합니다."
+      ],
+      "warnings": [
+        "마늘 껍질을 음식물과 섞지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "onion-skin"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "마늘껍질 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "마늘껍질 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-041",
@@ -1503,18 +1747,42 @@
       "category": "음식물/식재료",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "옥수수 껍질은 서초구 기준 일반폐기물입니다.",
+      "steps": [
+        "옥수수 알갱이와 겉껍질을 구분합니다.",
+        "껍질은 서초구 기준 일반 종량제 봉투에 담습니다."
+      ],
+      "warnings": [
+        "섬유질의 옥수수 껍질을 음식물 수거용기에 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "corn-cob"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "옥수수껍질 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "옥수수껍질 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-042",
@@ -1523,18 +1791,42 @@
       "category": "음식물/식재료",
       "priority": "A",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "옥수수대는 서초구 기준 음식물류 폐기물에 넣을 수 없습니다.",
+      "steps": [
+        "옥수수 알갱이를 먹고 남은 대를 구분합니다.",
+        "옥수수대는 서초구 기준 일반 종량제 봉투에 배출합니다."
+      ],
+      "warnings": [
+        "단단한 옥수수대를 음식물 전용 용기에 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "corn-husk"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "옥수수대 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "옥수수대 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-043",
@@ -1545,18 +1837,42 @@
       "aliases": [
         "복숭아 씨"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "general_waste_local",
+      "disposal_label": "일반폐기물 (서초구 기준)",
+      "summary": "복숭아처럼 단단한 핵과류의 씨는 서초구 기준 일반폐기물입니다.",
+      "steps": [
+        "복숭아 과육과 단단한 씨를 분리합니다.",
+        "씨는 서초구 기준 일반 종량제 봉투에 담습니다."
+      ],
+      "warnings": [
+        "복숭아씨를 음식물 전용 용기에 넣지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 분리배출 요령",
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "authority": "서초구청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "banana-peel"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "서초구 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "복숭아씨 버리는 법 | 서초구 공식 기준 - 버림뚝딱",
+        "description": "복숭아씨 배출 방법을 서초구 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-044",
@@ -1567,18 +1883,42 @@
       "aliases": [
         "수박 껍데기"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "food_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "food_waste_local",
+      "disposal_label": "음식물류 폐기물 (파주시 기준)",
+      "summary": "수박 껍질은 파주시 배출 안내에서 음식물쓰레기로 분류됩니다.",
+      "steps": [
+        "수박 껍질에서 이물질을 제거합니다.",
+        "파주시 기준 음식물 종량제봉투 또는 해당 수거 방식에 맞춰 배출합니다."
+      ],
+      "warnings": [
+        "말린 수박 껍질은 파주시 기준 일반쓰레기로 분류되므로 상태를 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "음식물쓰레기 배출요령",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_06.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "banana-peel"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "수박껍질 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "수박껍질 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-045",
@@ -3670,18 +4010,42 @@
         "침대매트리스",
         "메트리스"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "대형폐기물 (파주시 기준)",
+      "summary": "파주시는 유아용·1인용·2인용 이상 매트리스를 대형폐기물 품목으로 안내합니다.",
+      "steps": [
+        "매트리스 규격을 확인합니다.",
+        "파주시 대형폐기물 배출 절차에서 해당 규격으로 신청합니다."
+      ],
+      "warnings": [
+        "침대 프레임과 매트리스는 파주시 수수료표에서 별도 품목입니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "대형폐기물 배출",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "bed-frame"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "매트리스 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "매트리스 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-082",
@@ -4282,18 +4646,42 @@
       "category": "가구/대형폐기물",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "대형폐기물 (파주시 기준)",
+      "summary": "파주시는 카펫류를 길이에 따른 대형폐기물 품목으로 안내합니다.",
+      "steps": [
+        "카펫의 길이를 확인합니다.",
+        "파주시 대형폐기물 배출 절차에서 카펫류 규격으로 신청합니다."
+      ],
+      "warnings": [
+        "1m 미만과 이상은 파주시 수수료 기준이 다릅니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "대형폐기물 배출",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "mattress"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "카펫 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "카펫 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-094",
@@ -4305,18 +4693,42 @@
         "건조대",
         "세탁건조대"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "대형폐기물 (파주시 기준)",
+      "summary": "파주시는 빨래건조대를 모든 규격의 대형폐기물 품목으로 안내합니다.",
+      "steps": [
+        "버릴 빨래건조대를 확인합니다.",
+        "파주시 대형폐기물 배출 절차에서 빨래건조대 품목으로 신청합니다."
+      ],
+      "warnings": [
+        "다른 지자체의 재질별 수거 방식은 별도로 확인해야 합니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "대형폐기물 배출",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "carpet"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "빨래건조대 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "빨래건조대 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-095",
@@ -4325,18 +4737,42 @@
       "category": "가구/대형폐기물",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "bulky_waste_local_check",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "대형폐기물 (파주시 기준)",
+      "summary": "파주시는 유모차를 1인용과 2인용으로 나눈 대형폐기물 품목으로 안내합니다.",
+      "steps": [
+        "유모차의 1인용·2인용 규격을 확인합니다.",
+        "파주시 대형폐기물 배출 절차에서 해당 유모차 규격으로 신청합니다."
+      ],
+      "warnings": [
+        "규격에 따라 파주시 수수료가 달라집니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "대형폐기물 배출",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "umbrella"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "유모차 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "유모차 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-096",
@@ -4348,18 +4784,42 @@
         "장우산",
         "접이식우산"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "대형폐기물 (파주시 기준)",
+      "summary": "파주시는 우산을 모든 규격의 대형폐기물 품목으로 안내합니다.",
+      "steps": [
+        "배출할 우산을 확인합니다.",
+        "파주시 대형폐기물 배출 절차에서 우산 품목으로 신청합니다."
+      ],
+      "warnings": [
+        "우산의 분리배출 방식은 지역마다 다르므로 거주지 기준을 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "대형폐기물 배출",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "stroller"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "우산 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "우산 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-097",
@@ -4767,18 +5227,42 @@
         "플라스틱화분",
         "도자기화분"
       ],
-      "verification_status": "needs_research",
+      "verification_status": "verified",
       "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "disposal_type": "bulky_waste_local",
+      "disposal_label": "대형폐기물 (파주시 기준)",
+      "summary": "파주시는 화분을 크기별 대형폐기물 품목으로 안내하며 흙은 별도 배출을 명시합니다.",
+      "steps": [
+        "화분의 크기를 확인하고 흙을 별도로 구분합니다.",
+        "파주시 대형폐기물 배출 절차에서 화분 규격으로 신청합니다."
+      ],
+      "warnings": [
+        "파주시 안내에서 화분 흙은 건설폐기물용 봉투로 따로 배출하도록 명시합니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "대형폐기물 배출",
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "authority": "파주시청",
+          "checked_at": "2026-09-23"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "umbrella"
+      ],
+      "verification_level": "official_local_item_rule",
+      "verified_at": "2026-09-23",
+      "regional_note": "파주시 공식 안내에 근거한 내용입니다. 다른 지역의 품목 분류, 수수료와 배출 방식은 관할 지자체에 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "seo": {
+        "title": "화분 버리는 법 | 파주시 공식 기준 - 버림뚝딱",
+        "description": "화분 배출 방법을 파주시 공식 안내에 근거해 확인하세요. 다른 지역은 관할 지자체 기준을 확인해야 합니다."
+      }
     },
     {
       "id": "item-109",
@@ -5271,8 +5755,8 @@
       "related_items": []
     }
   ],
-  "verified_item_count": 80,
-  "needs_research_count": 40,
+  "verified_item_count": 100,
+  "needs_research_count": 20,
   "verification_policy": {
     "verified": "현재 공식 지침·공식 서비스 자료로 배출 원칙을 확인한 품목",
     "official_category_rule": "품목 전용 문구보다 해당 재질/분류의 최신 공식 배출 규칙으로 검증",

@@ -25,7 +25,7 @@ const count = (text, pattern) => [...text.matchAll(pattern)].length;
 
 test('Coupang carousel is emitted once on home and every verified detail page', () => {
   const targets = ['index.html', ...verified.map(item => `item/${item.slug}/index.html`)];
-  assert.equal(targets.length, 81);
+  assert.equal(targets.length, 101);
   for (const path of targets) {
     const page = html(path);
     assert.equal(count(page, /data-component="CoupangCarousel"/g), 1, path);
