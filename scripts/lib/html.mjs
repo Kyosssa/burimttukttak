@@ -3,6 +3,8 @@ import { readFileSync } from 'node:fs';
 
 const styleSource = readFileSync(new URL('../../src/styles.css', import.meta.url));
 export const styleAsset = `style-${createHash('sha256').update(styleSource).digest('hex').slice(0, 12)}.css`;
+const visitorSource = readFileSync(new URL('../../src/today-visitors.mjs', import.meta.url));
+export const visitorAsset = `today-visitors-${createHash('sha256').update(visitorSource).digest('hex').slice(0, 12)}.js`;
 const searchSources = [
   '../../src/app.mjs', '../../src/search.mjs', '../../src/missing-search.mjs',
   '../../docs/prebuild/burimttukttak-seed-v1.1.json',
@@ -56,8 +58,9 @@ export function layout({ title, description, canonical, content, mainClass = '',
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
   <header class="site-header"><div class="wide"><a class="brand" href="/" aria-label="버림뚝딱 홈">버림뚝딱</a><nav aria-label="주요 메뉴"><a href="/#categories">카테고리</a><a href="/source-policy/">정보 검증</a><a href="/about/">소개</a></nav></div></header>
   <main id="main" class="${escapeHtml(mainClass)}">${content}</main>
-  <footer><div class="wide"><strong>버림뚝딱</strong><nav aria-label="하단 메뉴"><a href="/about/">소개</a><a href="/source-policy/">정보 출처 및 검증 정책</a><a href="/privacy/">개인정보처리방침</a><a href="/affiliate-disclosure/">제휴 마케팅 안내</a><a href="/about/#contact">문의</a></nav><small>© 버림뚝딱</small></div></footer>
+  <footer><div class="wide"><strong>버림뚝딱</strong><nav aria-label="하단 메뉴"><a href="/about/">소개</a><a href="/source-policy/">정보 출처 및 검증 정책</a><a href="/privacy/">개인정보처리방침</a><a href="/affiliate-disclosure/">제휴 마케팅 안내</a><a href="/about/#contact">문의</a></nav><small>© 버림뚝딱</small><p id="today-visitors" class="today-visitors" role="status" aria-live="polite">TODAY —</p></div></footer>
   ${search ? `<script type="module" src="/assets/${searchAssets.app}"></script>` : ''}
+  <script type="module" src="/assets/${visitorAsset}"></script>
 </body>
 </html>`;
 }
