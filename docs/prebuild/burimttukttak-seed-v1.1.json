@@ -1323,7 +1323,8 @@
       "priority": "A",
       "aliases": [
         "달걀껍질",
-        "계란 껍데기"
+        "계란 껍데기",
+        "달걀껍데기"
       ],
       "verification_status": "verified",
       "research_track": "food_waste_local_check",
@@ -3185,6 +3186,9 @@
       "priority": "B",
       "aliases": [
         "데스크탑",
+        "데스크톱",
+        "데스크톱컴퓨터",
+        "본체컴퓨터",
         "본체",
         "PC본체",
         "컴퓨터본체"

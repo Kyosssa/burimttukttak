@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { loadInputs, readJson, pack } from '../scripts/lib/inputs.mjs';
-import { createSearchIndex, search } from '../src/search.mjs';
+import { createSearchIndex, normalize, search } from '../src/search.mjs';
 
 const { seed } = loadInputs();
 const index = createSearchIndex(seed.items);
@@ -18,12 +18,15 @@ for (const [i, fixture] of fixtures.cases.entries()) {
 }
 
 test('all 120 canonical names and every alias resolve to their own item', () => {
+  assert.equal(seed.items.filter(item => item.verification_status === 'verified').length, 100);
+  assert.equal(seed.items.filter(item => item.verification_status === 'needs_research').length, 20);
   for (const item of seed.items) {
     for (const query of [item.name, ...item.aliases]) {
       const result = search(index, query);
       assert.equal(result.slug, item.slug, query);
       assert.equal(result.shouldTrackMissing, false, query);
       assert.equal(result.state, item.verification_status === 'verified' ? 'verified_item' : 'unverified_item');
+      assert.equal(result.results[0].match, normalize(query) === normalize(item.name) ? 'name_exact' : 'alias_exact', query);
     }
   }
 });
@@ -33,7 +36,7 @@ test('normalization, prefix, substring and genuine non-alias fuzzy match', () =>
     [' ＴＶ ', 'television', 'name_exact'],
     ['투명 페트 병', 'clear-pet-bottle', 'name_exact'],
     ['후라이팬'.normalize('NFD'), 'frying-pan', 'name_exact'],
-    ['후라이', 'frying-pan', 'prefix'],
+    ['후라이', 'frying-pan', 'name_prefix'],
     ['라이팬', 'frying-pan', 'substring'],
     ['후라아팬', 'frying-pan', 'fuzzy'],
   ]) {
@@ -43,18 +46,37 @@ test('normalization, prefix, substring and genuine non-alias fuzzy match', () =>
   }
 });
 
-test('ranking is name > alias > prefix > substring > fuzzy, independent of data order/status', () => {
+test('ranking is canonical exact > alias exact > canonical prefix > alias prefix > substring > fuzzy, independent of data order/status', () => {
   const entries = [
     ['fuzzy', '가나마라', [], 'verified'],
     ['substring', '물건가나다라물건', [], 'verified'],
-    ['prefix', '가나다라물건', [], 'verified'],
+    ['alias-prefix', '별칭품목둘', ['가나다라물건'], 'verified'],
+    ['name-prefix', '가나다라물건', [], 'verified'],
     ['alias', '별칭품목', ['가나다라'], 'verified'],
     ['exact', '가나다라', [], 'needs_research'],
   ].map(([slug, name, aliases, verification_status]) => ({ id: slug, slug, name, aliases, verification_status, category: '분류' }));
   const result = search(createSearchIndex(entries), '가나다라');
-  assert.deepEqual(result.results.map(i => i.slug), ['exact', 'alias', 'prefix', 'substring', 'fuzzy']);
+  assert.deepEqual(result.results.map(i => i.slug), ['exact', 'alias', 'name-prefix', 'alias-prefix', 'substring', 'fuzzy']);
   assert.equal(result.state, 'unverified_item');
   assert.equal(result.shouldTrackMissing, false);
+});
+
+test('safe everyday aliases find only their existing item, including spacing variants', () => {
+  for (const [query, slug] of [
+    ['달걀껍데기', 'eggshell'], ['달걀 껍데기', 'eggshell'],
+    ['데스크톱', 'desktop-computer'], ['데스크톱 컴퓨터', 'desktop-computer'], ['본체컴퓨터', 'desktop-computer'],
+    ['김치 냉장고', 'kimchi-refrigerator'], ['형광램프', 'fluorescent-lamp'],
+    ['휴대용배터리', 'power-bank'], ['에어후라이어', 'air-fryer'], ['휴대전화', 'mobile-phone'],
+  ]) assert.equal(search(index, query).slug, slug, query);
+});
+
+test('personal data, URLs and long prose are never missing transmission candidates', () => {
+  for (const query of ['abc@example.com', 'https://example.com', 'www.example.com', '010-1234-5678', '900101-1234567', '검색할 물건이 무엇인지 모르겠는데 이렇게 긴 문장을 입력해도 되는지 확인하고 싶습니다']) {
+    const result = search(index, query);
+    assert.equal(result.state, 'empty_or_invalid', query);
+    assert.equal(result.shouldTrackMissing, false, query);
+  }
+  assert.equal(search(index, '18650 배터리').state, 'missing');
 });
 
 test('category/optional keywords work after item matching; ties are stable', () => {
@@ -72,7 +94,8 @@ test('invalid/short input cannot trigger missing collection; known one-character
     assert.equal(search(index, query).shouldTrackMissing, false);
   }
   for (const query of ['옷', '캔', '칼', '약', '팬']) assert.notEqual(search(index, query).state, 'empty_or_invalid');
-  assert.equal(search(index, '가'.repeat(60)).state, 'missing');
+  assert.equal(search(index, '가'.repeat(60)).state, 'empty_or_invalid');
+  assert.equal(search(index, '가나'.repeat(30)).state, 'missing');
 });
 
 test('index and results contain no disposal content, even from contaminated unverified input', () => {

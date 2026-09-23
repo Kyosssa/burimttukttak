@@ -36,7 +36,7 @@ function showMessage(result) {
   closeList();
   message.replaceChildren();
   if (result.state === 'empty_or_invalid') {
-    message.textContent = '품목 이름을 2글자 이상 입력해 주세요. 등록된 1글자 품목은 바로 검색할 수 있어요.';
+    message.textContent = '품목 이름을 입력해 주세요. 개인정보·URL·긴 문장은 집계하지 않아요. 등록된 1글자 품목은 바로 검색할 수 있어요.';
   } else if (result.state === 'unverified_item') {
     const name = result.results[0].name;
     const strong = document.createElement('strong');

@@ -6,7 +6,7 @@ import { runInNewContext } from 'node:vm';
 import seed from '../docs/prebuild/burimttukttak-seed-v1.1.json' with { type: 'json' };
 import categories from '../docs/prebuild/10-categories-v1.json' with { type: 'json' };
 import { itemPage } from '../scripts/build-site.mjs';
-import { styleAsset } from '../scripts/lib/html.mjs';
+import { searchAssets, styleAsset } from '../scripts/lib/html.mjs';
 import { coupangCarouselAsset, monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from '../scripts/lib/monetization.mjs';
 
 const verified = seed.items.filter(item => item.verification_status === 'verified');
@@ -40,7 +40,7 @@ test('Coupang carousel is emitted once on home and every verified detail page', 
 test('Coupang carousel is absent from non-target public and non-public pages', () => {
   const nonTargets = [...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html'];
   for (const path of nonTargets) assert.doesNotMatch(html(path), /data-component="CoupangCarousel"/, path);
-  for (const item of needsResearch) assert.doesNotMatch(html('assets/search-index.json'), new RegExp(`item/${item.slug}`));
+  for (const item of needsResearch) assert.doesNotMatch(html(`assets/${searchAssets.index}`), new RegExp(`item/${item.slug}`));
 });
 
 test('carousel client config loads one official loader and initializes responsive containers', () => {

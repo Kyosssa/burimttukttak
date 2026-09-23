@@ -4,6 +4,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
+import { searchAssets } from '../scripts/lib/html.mjs';
 import { createPreviewServer } from '../scripts/preview.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -47,13 +48,13 @@ test('item pages contain required Seed-backed sections and CTA only when eligibl
 });
 
 test('generated search index exposes no disposal guidance and keeps all known items', () => {
-  const data = JSON.parse(html('assets/search-index.json'));
+  const data = JSON.parse(html(`assets/${searchAssets.index}`));
   assert.equal(data.length, 120);
   const allowed = ['aliases', 'category', 'id', 'keywords', 'name', 'normalizedName', 'slug', 'verification_status'];
   for (const item of data) assert.deepEqual(Object.keys(item).sort(), allowed);
-  assert.ok(!html('assets/search-index.json').includes('summary'));
-  assert.ok(!html('assets/search-index.json').includes('steps'));
-  assert.ok(!html('assets/search-index.json').includes('sources'));
+  assert.ok(!html(`assets/${searchAssets.index}`).includes('summary'));
+  assert.ok(!html(`assets/${searchAssets.index}`).includes('steps'));
+  assert.ok(!html(`assets/${searchAssets.index}`).includes('sources'));
 });
 
 test('all root-relative internal links resolve to generated files', () => {
@@ -76,6 +77,21 @@ test('only the approved Coupang carousel integration is present and no AdSense s
   assert.match(html('index.html'), /src="https:\/\/ads-partners\.coupang\.com\/g\.js"/);
   assert.match(scripts, /trackingCode: 'AF4293553'/);
   assert.ok(!/analytics|adsbygoogle\.push|doubleclick|data-ad-slot|partners\/external/i.test(scripts));
+});
+
+test('search assets use one content version so long-lived browser caches cannot mix old code and Seed', () => {
+  for (const page of ['index.html', 'search/index.html', '404.html']) {
+    assert.ok(html(page).includes(`/assets/${searchAssets.app}`), page);
+  }
+  const app = html(`assets/${searchAssets.app}`);
+  const reporter = html(`assets/${searchAssets.reporter}`);
+  assert.ok(app.includes('개인정보·URL·긴 문장은 집계하지 않아요.'));
+  assert.ok(app.includes(`./${searchAssets.search}`));
+  assert.ok(app.includes(`./${searchAssets.reporter}`));
+  assert.ok(app.includes(`/assets/${searchAssets.index}`));
+  assert.ok(reporter.includes(`./${searchAssets.search}`));
+  for (const asset of Object.values(searchAssets)) assert.ok(existsSync(join(root, 'assets', asset)));
+  for (const stale of ['app.js', 'search.js', 'missing-search.js', 'search-index.json']) assert.ok(!existsSync(join(root, 'assets', stale)));
 });
 
 test('ads.txt contains only the approved Google AdSense publisher record', () => {

@@ -54,7 +54,7 @@ test('normalizes Korean/English and repeated spaces while rejecting unsafe input
   assert.deepEqual(normalizeMissingQuery('  New   ITEM  '), { displayQuery: 'New ITEM', normalizedQuery: 'new item' });
   assert.equal(normalizeMissingQuery('e\u0301').displayQuery, 'é');
   for (const value of [null, 1, {}, '', '   ', '<b>골프공</b>', '골프\n공', '골프\u200b공', '가'.repeat(61)]) assert.equal(normalizeMissingQuery(value), null, String(value));
-  assert.equal([...normalizeMissingQuery('가'.repeat(60)).displayQuery].length, 60);
+  assert.equal([...normalizeMissingQuery('가나'.repeat(30)).displayQuery].length, 60);
 });
 
 test('allows only production, project preview and local development origins', () => {
@@ -130,6 +130,29 @@ test('rejects malformed bodies, invalid input, methods, content types and origin
   assert.equal(db.runs, 0);
 });
 
+test('private or non-search input is rejected without D1 or reflected values', async () => {
+  const db = mockD1();
+  for (const query of [
+    'person@example.com', '이메일 person@example.com',
+    'http://example.com/item', 'https://example.com/item', 'www.example.com',
+    '010-1234-5678', '010 1234 5678', '(010)1234-5678',
+    '900101-1234567', '9001011234567',
+    '줄바꿈\n입력', 'NULL\u0000문자', '\u200b', '', '   ',
+    '가'.repeat(61), '이 물건이 어디에 해당하는지 잘 모르겠고 배출 방법도 길게 설명하고 싶습니다',
+  ]) {
+    const result = await handleMissingSearch(request({ query }), { DB: db });
+    assert.equal(result.status, 400, query);
+    const body = await result.text();
+    assert.deepEqual(JSON.parse(body), { error: 'invalid_request' });
+    if (query) assert.ok(!body.includes(query), query);
+  }
+  assert.equal(db.prepares, 0);
+  assert.equal(db.runs, 0);
+  const shortNumeric = await handleMissingSearch(request({ query: '18650 배터리' }), { DB: db });
+  assert.equal(shortNumeric.status, 204);
+  assert.equal(db.runs, 1);
+});
+
 test('D1 failures return a generic error without SQL or internal details', async () => {
   const db = mockD1({ fail: true });
   const result = await handleMissingSearch(request({ query: '새품목' }), { DB: db });
@@ -146,6 +169,7 @@ test('D1 schema and Worker omit personal/request tracking fields', () => {
     assert.ok(!migration.toLowerCase().includes(forbidden), forbidden);
   }
   for (const forbidden of ['request.cf', "get('user-agent')", "get('referer')", "get('cookie')"]) assert.ok(!worker.toLowerCase().includes(forbidden.toLowerCase()), forbidden);
+  assert.doesNotMatch(worker, /console\.|localStorage|document\.cookie/);
   assert.match(migration, /normalized_query TEXT NOT NULL UNIQUE/);
   assert.match(migration, /search_count INTEGER NOT NULL DEFAULT 1/);
 });

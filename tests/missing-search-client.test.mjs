@@ -19,6 +19,7 @@ test('client limits repeated normalized queries in memory without an identifier'
   let clock = 1_000;
   const report = createMissingSearchReporter({ fetchImpl: async (...args) => { calls.push(args); return { ok: true }; }, now: () => clock, cooldownMs: 30_000 });
   assert.equal(await report('골프 공', 'missing'), true);
+  assert.deepEqual(JSON.parse(calls[0][1].body), { query: '골프 공' });
   assert.equal(await report(' 골프   공 ', 'missing'), false);
   clock += 30_001;
   assert.equal(await report('골프공', 'missing'), true);
@@ -34,4 +35,13 @@ test('network and HTTP failures never reject or change the caller state', async 
   const httpFailure = createMissingSearchReporter({ fetchImpl: async () => ({ ok: false }) });
   await assert.doesNotReject(() => networkFailure('골프공', 'missing'));
   assert.equal(await httpFailure('새품목', 'missing'), false);
+});
+
+test('client does not transmit private or non-search input even if passed a missing state', async () => {
+  let calls = 0;
+  const report = createMissingSearchReporter({ fetchImpl: async () => { calls++; return { ok: true }; } });
+  for (const query of ['person@example.com', 'https://example.com', 'www.example.com', '010-1234-5678', '900101-1234567', '줄\n바꿈', '가'.repeat(61)]) {
+    assert.equal(await report(query, 'missing'), false, query);
+  }
+  assert.equal(calls, 0);
 });

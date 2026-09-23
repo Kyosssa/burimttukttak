@@ -1,4 +1,4 @@
-import { createSearchIndex, normalize as normalizeForSearch, search } from '../../src/search.mjs';
+import { createSearchIndex, isSearchLikeInput, normalize as normalizeForSearch, search } from '../../src/search.mjs';
 
 export const UPSERT_SQL = `INSERT INTO missing_searches
   (normalized_query, display_query, search_count, first_seen, last_seen)
@@ -13,10 +13,12 @@ DO UPDATE SET
 const MAX_BODY_LENGTH = 512;
 
 export function normalizeMissingQuery(value) {
-  if (typeof value !== 'string' || /[\p{Cc}\p{Cf}]/u.test(value) || /[<>]/u.test(value)) return null;
+  if (!isSearchLikeInput(value)) return null;
   const displayQuery = value.normalize('NFC').trim().replace(/\s+/gu, ' ');
   const length = [...displayQuery].length;
   if (length < 1 || length > 60) return null;
+  const normalizedQuery = normalizeForSearch(displayQuery);
+  if (!/^[\p{L}\p{N}·()\-]+$/u.test(normalizedQuery)) return null;
   return { displayQuery, normalizedQuery: displayQuery.toLowerCase() };
 }
 
@@ -71,6 +73,7 @@ export function createMissingSearchApi(seed, fixtures) {
     const query = normalizeMissingQuery(body.query);
     if (!query) return response(400, 'invalid_request');
     if (isKnownMissingSearchQuery(query.displayQuery)) return response(204);
+    if (normalizeForSearch(query.displayQuery).length < 2) return response(400, 'invalid_request');
     if (!env?.DB || typeof env.DB.prepare !== 'function') return response(500, 'internal_error');
 
     try {

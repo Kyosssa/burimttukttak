@@ -14,6 +14,7 @@
     "check:pages-functions": "wrangler pages functions build functions --outdir .tmp/pages-functions",
     "audit:dist": "node scripts/audit-dist.mjs",
     "check:sources": "node scripts/source-health.mjs",
+    "report:missing-searches": "node scripts/report-missing-searches.mjs",
     "preflight": "node scripts/preflight.mjs",
     "preview": "node scripts/preview.mjs"
   },

@@ -2,7 +2,7 @@ import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from './lib/inputs.mjs';
 import { sourceContext } from './lib/source-context.mjs';
-import { breadcrumb, escapeHtml, formatDate, layout, SITE_URL, styleAsset } from './lib/html.mjs';
+import { breadcrumb, escapeHtml, formatDate, layout, searchAssets, SITE_URL, styleAsset } from './lib/html.mjs';
 import { coupangCarouselAsset, monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock, renderCoupangCarousel } from './lib/monetization.mjs';
 import { createSearchIndex } from '../src/search.mjs';
 
@@ -169,11 +169,14 @@ export function buildSite() {
 
   mkdirSync(new URL('assets/', output), { recursive: true });
   cpSync(new URL('../src/styles.css', import.meta.url), new URL(`assets/${styleAsset}`, output));
-  cpSync(new URL('../src/app.mjs', import.meta.url), new URL('assets/app.js', output));
+  write(`assets/${searchAssets.app}`, readFileSync(new URL('../src/app.mjs', import.meta.url), 'utf8')
+    .replace("'./search.js'", `'./${searchAssets.search}'`)
+    .replace("'./missing-search.js'", `'./${searchAssets.reporter}'`)
+    .replace("'/assets/search-index.json'", `'/assets/${searchAssets.index}'`));
   cpSync(new URL('../src/coupang-carousel.mjs', import.meta.url), new URL(`assets/${coupangCarouselAsset}`, output));
-  write('assets/missing-search.js', readFileSync(new URL('../src/missing-search.mjs', import.meta.url), 'utf8').replace("'./search.mjs'", "'./search.js'"));
-  cpSync(new URL('../src/search.mjs', import.meta.url), new URL('assets/search.js', output));
-  write('assets/search-index.json', JSON.stringify(createSearchIndex(seed.items)));
+  write(`assets/${searchAssets.reporter}`, readFileSync(new URL('../src/missing-search.mjs', import.meta.url), 'utf8').replace("'./search.mjs'", `'./${searchAssets.search}'`));
+  cpSync(new URL('../src/search.mjs', import.meta.url), new URL(`assets/${searchAssets.search}`, output));
+  write(`assets/${searchAssets.index}`, JSON.stringify(createSearchIndex(seed.items)));
   return { items: verified.length, categories: categories.length, other: 8, sitemap: indexablePaths.length };
 }
 
