@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 112" role="img" aria-labelledby="title desc">
+  <title id="title">버림뚝딱</title>
+  <desc id="desc">생활 폐기 안내</desc>
+  <g fill="none" stroke="#145C45" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 32h52M45 22h12" stroke-width="9"/>
+    <path d="M27 40l5 52h36l5-52" stroke-width="9"/>
+    <path d="M35 57l13 14 21-26" stroke="#2FA66A" stroke-width="10"/>
+  </g>
+  <path fill="#2FA66A" d="M68 43c6-5 12-4 16-1-2 6-8 10-15 9z"/>
+  <text x="103" y="58" fill="#145C45" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="42" font-weight="800" letter-spacing="-2">버림</text>
+  <text x="203" y="58" fill="#2FA66A" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="42" font-weight="800" letter-spacing="-2">뚝딱</text>
+  <text x="105" y="86" fill="#607168" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="16" font-weight="700">생활 폐기 안내</text>
+</svg>

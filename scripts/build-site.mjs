@@ -170,6 +170,7 @@ export function buildSite() {
   write('_redirects', redirectsFile(indexablePaths));
 
   mkdirSync(new URL('assets/', output), { recursive: true });
+  cpSync(new URL('../public/', import.meta.url), output, { recursive: true });
   cpSync(new URL('../src/styles.css', import.meta.url), new URL(`assets/${styleAsset}`, output));
   cpSync(new URL('../src/today-visitors.mjs', import.meta.url), new URL(`assets/${visitorAsset}`, output));
   write(`assets/${searchAssets.app}`, readFileSync(new URL('../src/app.mjs', import.meta.url), 'utf8')
