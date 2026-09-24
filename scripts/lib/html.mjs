@@ -58,8 +58,7 @@ export function layout({ title, description, canonical, content, mainClass = '',
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="${escapeHtml(robots)}">${social}
   <meta name="naver-site-verification" content="60090dcb1b94d4cc123aee5341a4cef1aff3c592" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/assets/${styleAsset}">
