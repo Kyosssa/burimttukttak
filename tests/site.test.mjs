@@ -42,7 +42,7 @@ test('item pages contain required Seed-backed sections and CTA only when eligibl
     for (const content of [item.name, item.disposal_label, item.summary, ...item.steps, ...item.warnings, ...item.sources.map(source => source.name)]) {
       assert.ok(page.includes(content.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')), `${item.slug}: ${content}`);
     }
-    for (const heading of ['현재 위치', '한눈에 보는 배출방법', '버리는 순서', '공식 출처', '정보가 달라졌나요?']) assert.ok(page.includes(heading), `${item.slug}: ${heading}`);
+    for (const heading of ['현재 위치', '한눈에 보는 배출방법', '버리는 순서', '공식 출처']) assert.ok(page.includes(heading), `${item.slug}: ${heading}`);
     const hasCta = page.includes('<h2>🔌 폐가전 무상방문수거</h2>');
     assert.equal(hasCta, item.collection_service?.type === 'free_home_pickup', item.slug);
   }
@@ -73,10 +73,10 @@ test('all root-relative internal links resolve to generated files', () => {
   assert.deepEqual(missing, []);
 });
 
-test('only the approved Coupang carousel integration is present and no AdSense slots or analytics code are added', () => {
+test('generic affiliate requests and AdSense slots or analytics are absent', () => {
   const scripts = files().filter(path => /\.(?:js|mjs)$/.test(path)).map(path => readFileSync(path, 'utf8')).join('\n');
-  assert.match(html('index.html'), /src="https:\/\/ads-partners\.coupang\.com\/g\.js"/);
-  assert.match(scripts, /trackingCode: 'AF4293553'/);
+  assert.doesNotMatch(html('index.html'), /ads-partners\.coupang\.com/);
+  assert.doesNotMatch(scripts, /AF4293553|PartnersCoupang/);
   assert.ok(!/analytics|adsbygoogle\.push|doubleclick|data-ad-slot|partners\/external/i.test(scripts));
 });
 

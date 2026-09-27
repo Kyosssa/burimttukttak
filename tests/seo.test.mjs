@@ -5,6 +5,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
 import { SITE_URL } from '../scripts/lib/html.mjs';
+import { isIndexable } from '../scripts/lib/index-quality.mjs';
 import { createPreviewServer } from '../scripts/preview.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -12,6 +13,7 @@ const { seed, categories } = loadInputs();
 const verified = seed.items.filter(item => item.verification_status === 'verified');
 const unverified = seed.items.filter(item => item.verification_status === 'needs_research');
 const publicPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/'];
+const indexablePaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/'];
 const fileFor = path => path === '/' ? join(root, 'index.html') : join(root, path.slice(1), 'index.html');
 const contentFor = path => readFileSync(fileFor(path), 'utf8');
 const attr = (content, pattern) => content.match(pattern)?.[1] ?? null;
@@ -21,7 +23,7 @@ test('every public canonical page has unique absolute canonical, metadata, OG an
   const canonicals = new Set();
   const titles = new Set();
   const descriptions = new Set();
-  for (const path of publicPaths) {
+  for (const path of indexablePaths) {
     const content = contentFor(path);
     const canonical = attr(content, /<link rel="canonical" href="([^"]+)">/);
     const title = attr(content, /<title>([^<]+)<\/title>/);
@@ -36,8 +38,8 @@ test('every public canonical page has unique absolute canonical, metadata, OG an
     titles.add(title);
     descriptions.add(description);
   }
-  assert.equal(canonicals.size, 113);
-  assert.equal(descriptions.size, 113);
+  assert.equal(canonicals.size, 100);
+  assert.equal(descriptions.size, 100);
 });
 
 test('every generated HTML page has exactly one Naver site verification tag', () => {
@@ -96,19 +98,42 @@ test('search and 404 are noindex and have no canonical or JSON-LD', () => {
   }
 });
 
-test('sitemap has exactly 113 unique, complete, live canonical URLs', () => {
+test('sitemap has exactly 100 unique, indexable canonical URLs', () => {
   const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-  assert.equal(urls.length, 113);
-  assert.equal(new Set(urls).size, 113);
-  assert.deepEqual(new Set(urls), new Set(publicPaths.map(path => `${SITE_URL}${path}`)));
+  assert.equal(urls.length, 100);
+  assert.equal(new Set(urls).size, 100);
+  assert.deepEqual(new Set(urls), new Set(indexablePaths.map(path => `${SITE_URL}${path}`)));
   assert.ok(!urls.some(url => url.includes('/search/') || url.includes('404')));
   for (const item of unverified) assert.ok(!urls.includes(`${SITE_URL}/item/${item.slug}/`), item.slug);
   for (const url of urls) assert.ok(existsSync(fileFor(new URL(url).pathname)), url);
 });
 
-test('robots allows the site, excludes search and points to the absolute sitemap', () => {
-  assert.equal(readFileSync(join(root, 'robots.txt'), 'utf8'), `User-agent: *\nAllow: /\nDisallow: /search/\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+test('robots allows crawling search noindex and points to the absolute sitemap', () => {
+  assert.equal(readFileSync(join(root, 'robots.txt'), 'utf8'), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+});
+
+test('held duplicate and legal pages retain self canonical but are noindex and excluded from sitemap', () => {
+  const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
+  const held = verified.filter(item => !isIndexable(item));
+  assert.equal(held.length, 11);
+  for (const path of [...held.map(item => `/item/${item.slug}/`), '/privacy/', '/affiliate-disclosure/']) {
+    const content = contentFor(path);
+    assert.match(content, /<meta name="robots" content="noindex,follow">/);
+    assert.ok(content.includes(`<link rel="canonical" href="${SITE_URL}${path}">`));
+    assert.ok(!sitemap.includes(`<loc>${SITE_URL}${path}</loc>`));
+  }
+  const headers = readFileSync(join(root, '_headers'), 'utf8');
+  for (const path of [...held.map(item => `/item/${item.slug}/`), '/privacy/', '/affiliate-disclosure/', '/search/']) {
+    assert.ok(headers.includes(`${path}*\n  X-Robots-Tag: noindex, follow`), path);
+  }
+});
+
+test('all generated public pages have no launch placeholders or malformed Korean SEO particles', () => {
+  for (const path of [...publicPaths, '/search/']) {
+    const content = contentFor(path);
+    assert.doesNotMatch(content, /준비 중|정식 공개 전에|연락 경로를 준비|을\(를\)/, path);
+  }
 });
 
 test('Cloudflare headers isolate preview noindex from production security headers', () => {

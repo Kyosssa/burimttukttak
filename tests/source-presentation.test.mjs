@@ -17,7 +17,7 @@ test('all 100 verified pages show registry-derived scope and complete source pro
     assert.equal((page.match(/class="source-scope"/g) ?? []).length, 1, item.slug);
     assert.equal((page.match(/class="notice regional-notice"/g) ?? []).length, jurisdiction ? 1 : 0, item.slug);
     assert.ok(page.indexOf('class="answer-card"') < page.indexOf('class="source-scope"'), item.slug);
-    assert.ok(page.indexOf('class="source-scope"') < page.indexOf('data-component="CoupangCarousel"'), item.slug);
+    assert.ok(page.indexOf('class="source-scope"') < page.indexOf('class="steps"'), item.slug);
     assert.match(page, /id="official-sources"/);
     if (jurisdiction) {
       local++;
@@ -41,12 +41,12 @@ test('all 100 verified pages show registry-derived scope and complete source pro
   assert.equal(local, 20);
 });
 
-test('non-detail pages have no regional card and verified sitemap remains 113 URLs', () => {
+test('non-detail pages have no regional card and quality-gated sitemap has 100 URLs', () => {
   for (const path of ['index.html', 'search/index.html', 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', '404.html']) {
     assert.ok(!html(path).includes('regional-notice'), path);
   }
   for (const item of seed.items.filter(item => item.verification_status === 'needs_research')) {
     assert.ok(!html('sitemap.xml').includes(`/item/${item.slug}/`), item.slug);
   }
-  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 113);
+  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 100);
 });

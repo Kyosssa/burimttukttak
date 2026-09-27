@@ -3,15 +3,14 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadInputs } from './lib/inputs.mjs';
 import { SITE_URL } from './lib/html.mjs';
-import { coupangCarouselAsset } from './lib/monetization.mjs';
+import { isIndexable } from './lib/index-quality.mjs';
 import { createPreviewServer } from './preview.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const { seed, categories } = loadInputs();
 const verified = seed.items.filter(item => item.verification_status === 'verified');
-const expectedPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/'];
+const expectedPaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/'];
 const ADSENSE_LOADER = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740';
-const COUPANG_LOADER = 'https://ads-partners.coupang.com/g.js';
 
 function files(directory = root) {
   return readdirSync(directory).flatMap(name => {
@@ -37,12 +36,12 @@ export async function auditDist() {
   const permittedAdSenseRequests = [];
   const recordExternalRequest = (path, target) => {
     if (target === ADSENSE_LOADER) permittedAdSenseRequests.push(`${path}: ${target}`);
-    else if (target === COUPANG_LOADER) permittedCoupangRequests.push(`${path}: ${target}`);
     else automaticExternalRequests.push(`${path}: ${target}`);
   };
-  const permittedCoupangRequests = [];
   for (const path of htmlFiles) {
     const content = readFileSync(path, 'utf8');
+    if (/준비 중|정식 공개 전에|을\(를\)/.test(content)) fail(`public placeholder or broken description: ${path}`);
+    if (/CoupangCarousel|ads-partners\.coupang\.com|coupang-carousel/.test(content)) fail(`generic affiliate carousel: ${path}`);
     for (const match of content.matchAll(/href="(\/[^"#?]*(?:[?#][^"]*)?)"/g)) {
       const pathname = match[1].split(/[?#]/)[0];
       if (!pathname) continue;
@@ -64,18 +63,7 @@ export async function auditDist() {
   if (automaticExternalRequests.length) fail(`automatic external requests\n${automaticExternalRequests.join('\n')}`);
   if (permittedAdSenseRequests.length !== htmlFiles.length) fail('official AdSense loader count');
 
-  const coupangTargets = ['/', ...verified.map(item => `/item/${item.slug}/`)];
-  for (const path of coupangTargets) {
-    const content = readFileSync(fileFor(path), 'utf8');
-    if ([...content.matchAll(/data-component="CoupangCarousel"/g)].length !== 1) fail(`Coupang carousel count: ${path}`);
-    if ([...content.matchAll(/src="https:\/\/ads-partners\.coupang\.com\/g\.js"/g)].length !== 1) fail(`Coupang loader count: ${path}`);
-    if ([...content.matchAll(new RegExp(`src="/assets/${coupangCarouselAsset}"`, 'g'))].length !== 1) fail(`Coupang carousel client count: ${path}`);
-  }
-  const coupangClient = readFileSync(join(root, 'assets', coupangCarouselAsset), 'utf8');
-  for (const text of ["id: 1032289", "template: 'carousel'", "trackingCode: 'AF4293553'", "width: '728', height: '90', container: desktop", "width: '320', height: '100', container: mobile"]) {
-    if (!coupangClient.includes(text)) fail(`Coupang carousel configuration: ${text}`);
-  }
-  if (permittedCoupangRequests.length !== coupangTargets.length) fail('official Coupang loader count');
+  if (files().some(path => /coupang-carousel/i.test(path))) fail('obsolete carousel asset');
 
   const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
@@ -89,6 +77,14 @@ export async function auditDist() {
     if (!content.includes('<meta name="robots" content="index,follow">')) fail(`index policy: ${path}`);
     if (!content.includes(`<link rel="canonical" href="${SITE_URL}${path}">`)) fail(`canonical: ${path}`);
   }
+  for (const path of [...verified.filter(item => !isIndexable(item)).map(item => `/item/${item.slug}/`), '/privacy/', '/affiliate-disclosure/']) {
+    const content = readFileSync(fileFor(path), 'utf8');
+    if (!content.includes('<meta name="robots" content="noindex,follow">')) fail(`hold/legal noindex policy: ${path}`);
+    if (!content.includes(`<link rel="canonical" href="${SITE_URL}${path}">`)) fail(`hold/legal canonical: ${path}`);
+    if (urls.includes(`${SITE_URL}${path}`)) fail(`noindex URL in sitemap: ${path}`);
+  }
+  const robots = readFileSync(join(root, 'robots.txt'), 'utf8');
+  if (/Disallow:\s*\/search\//.test(robots)) fail('search must be crawlable for noindex');
   const search = readFileSync(fileFor('/search/'), 'utf8');
   const notFound = readFileSync(join(root, '404.html'), 'utf8');
   if (!search.includes('<meta name="robots" content="noindex,follow">')) fail('search noindex policy');
@@ -104,13 +100,13 @@ export async function auditDist() {
     await new Promise(resolve => server.close(resolve));
   }
 
-  return { sitemapUrls: urls.length, internalLinks: 'ok', indexing: 'ok', real404: 'ok', automaticExternalRequests: 0, permittedAdSenseRequests: permittedAdSenseRequests.length, permittedCoupangCarouselPages: coupangTargets.length, permittedCoupangRequests: permittedCoupangRequests.length };
+  return { sitemapUrls: urls.length, internalLinks: 'ok', indexing: 'ok', real404: 'ok', automaticExternalRequests: 0, permittedAdSenseRequests: permittedAdSenseRequests.length };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   try {
     const result = await auditDist();
-    console.log(`Artifact audit passed: ${result.sitemapUrls} sitemap URLs / internal links OK / index policy OK / real 404 OK / ${result.permittedAdSenseRequests} permitted AdSense loader requests / ${result.permittedCoupangRequests} permitted Coupang loader requests on ${result.permittedCoupangCarouselPages} pages / 0 other static external requests`);
+    console.log(`Artifact audit passed: ${result.sitemapUrls} sitemap URLs / internal links OK / index policy OK / real 404 OK / ${result.permittedAdSenseRequests} permitted AdSense loader requests / 0 other static external requests`);
   } catch (error) {
     console.error(error.message);
     process.exitCode = 1;

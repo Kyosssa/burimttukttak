@@ -1,0 +1,17 @@
+{
+  "version": "adsense-prevention-v1.9",
+  "reason": "공식 자료가 동일한 일반 대형폐기물 절차만 뒷받침해 품목별 고유 설명을 확인하기 전까지 색인을 보류합니다.",
+  "slugs": [
+    "bed-frame",
+    "sofa",
+    "chair",
+    "desk",
+    "dining-table",
+    "drawer-chest",
+    "wardrobe",
+    "bookshelf",
+    "vanity-table",
+    "shoe-cabinet",
+    "mirror"
+  ]
+}
