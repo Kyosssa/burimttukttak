@@ -59,6 +59,7 @@ export function itemPage(item, category, bySlug, monetization = monetizationConf
   const related = relatedItems(item, [...bySlug.values()]);
   const context = sourceContext(item, registry);
   const scopeLabel = context.jurisdiction ? `${context.jurisdiction} 공식 기준이에요. 거주 지역에 따라 다를 수 있어요.` : '전국 단위 공식 자료를 기준으로 안내해요.';
+  const evidenceBasis = item.verification_level === 'official_category_rule' ? '<p class="evidence-basis">근거 범위: 공식 지침의 재질·품목군 기준을 적용했어요. 제품의 실제 재질·구조가 다르면 공식 원문과 거주 지역 기준을 다시 확인해 주세요.</p>' : '';
   const sources = context.sources.map(source => `<li><div><strong>${escapeHtml(source.name)}</strong><span>출처 기관: ${escapeHtml(source.authority)}</span><span>적용 범위: ${escapeHtml(source.scope === 'local' ? source.jurisdiction : '전국 기준')}</span><span>확인일: ${formatDate(source.checked_at)}</span><span>다음 검토 예정일: ${formatDate(source.nextReview)}</span></div><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.authority)}의 ${escapeHtml(source.name)} 원문 보기<span class="sr-only"> (새 창)</span></a></li>`).join('');
   const regional = context.jurisdiction ? `<aside class="notice regional-notice" aria-labelledby="regional-notice-title"><h2 id="regional-notice-title">${escapeHtml(context.jurisdiction)} 기준을 확인해 주세요</h2><p>이 페이지는 ${escapeHtml(context.jurisdiction)} 공식 자료를 참고합니다. 다른 지역에서는 배출 방식·신고 방법·수수료가 다를 수 있어요.</p><p>${escapeHtml(item.regional_note)}</p><p>거주 지역의 시·군·구 홈페이지에서도 확인해 주세요.</p><a href="#official-sources">이 페이지의 공식 출처로 이동</a></aside>` : '';
   const warnings = item.warnings.length ? `<section class="content-card warning"><h2>주의사항</h2><ul>${item.warnings.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ul></section>` : '';
@@ -76,7 +77,7 @@ export function itemPage(item, category, bySlug, monetization = monetizationConf
   ], content: `
     ${breadcrumb([{ label: '홈', href: '/' }, { label: category.name, href: `/category/${category.slug}/` }, { label: item.name }])}
     <h1>${escapeHtml(item.name)} 버리는 법</h1>
-    <section class="answer-card"><p class="eyebrow">한눈에 보는 배출방법</p><h2>✓ ${escapeHtml(item.disposal_label)}</h2><p>${escapeHtml(item.summary)}</p><p class="source-scope">${escapeHtml(scopeLabel)}</p></section>
+    <section class="answer-card"><p class="eyebrow">한눈에 보는 배출방법</p><h2>✓ ${escapeHtml(item.disposal_label)}</h2><p>${escapeHtml(item.summary)}</p><p class="source-scope">${escapeHtml(scopeLabel)}</p>${evidenceBasis}</section>
     ${adSlotTop}${regional}
     <section class="content-card"><h2>버리는 순서</h2><ol class="steps">${item.steps.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ol></section>
     ${warnings}${cta}${relatedBlock}${affiliateBlock}${adSlotBottom}

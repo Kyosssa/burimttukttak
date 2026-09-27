@@ -977,5 +977,225 @@
       "me-recycling-guideline",
       "ewaste-pickup"
     ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "kimchi-refrigerator",
+    "type": "content_update",
+    "summary": "첫 답변의 조사 오류를 고치고, 공식 원문에 직접 예시되지 않은 품목이라는 점을 반영해 접수 가능 여부 확인으로 범위를 한정",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "microwave",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "dishwasher",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "air-purifier",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "dehumidifier",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "water-purifier",
+    "type": "content_update",
+    "summary": "첫 답변의 조사 오류를 고치고 공식 예시가 전기정수기에 한정됨을 명시",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "water-dispenser",
+    "type": "content_update",
+    "summary": "첫 답변의 조사 오류를 고치고 공식 예시 품목이라는 과장된 표현을 제거하여 제품 규격별 접수 확인으로 한정",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "copier",
+    "type": "content_update",
+    "summary": "공식 수거기관의 프린터·복사기 잉크/토너 탈착·밀봉 기준을 명시",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "electric-fan",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "humidifier",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "vacuum-cleaner",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "air-fryer",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "computer-monitor",
+    "type": "content_update",
+    "summary": "모니터 단독 수거의 31인치 이상·30인치 이하 기준과 PC 세트와의 구분을 공식 원문에 맞게 명시",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "printer",
+    "type": "content_update",
+    "summary": "공식 수거기관의 프린터·복사기 잉크/토너 탈착·밀봉 기준을 명시",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "wifi-router",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "game-console",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "hair-dryer",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "electric-iron",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "coffee-maker",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "blender",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "electric-kettle",
+    "type": "content_update",
+    "summary": "첫 답변의 잘못된 조사를 바로잡음; 배출 사실은 동일",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "item_slug": "television",
+    "type": "content_update",
+    "summary": "30인치 이하 TV의 5개 이상 다량 조건을 명시하고 무조건적 수거 가능 표시를 바로잡음",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
   }
 ]

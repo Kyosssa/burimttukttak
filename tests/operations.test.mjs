@@ -30,7 +30,7 @@ test('data changelog keeps a source-backed history for every verified item', () 
   assert.ok(changes.length >= verified.length);
   assert.deepEqual(new Set(changes.map(change => change.item_slug)), new Set(verified.map(item => item.slug)));
   for (const change of changes) {
-    assert.ok(['verified', 'content_review'].includes(change.type));
+    assert.ok(['verified', 'content_review', 'content_update'].includes(change.type));
     assert.ok(change.source_ids.length > 0, change.item_slug);
     assert.ok(change.source_ids.every(id => sourceIds.has(id)), change.item_slug);
   }
