@@ -73,10 +73,10 @@ test('all root-relative internal links resolve to generated files', () => {
   assert.deepEqual(missing, []);
 });
 
-test('generic affiliate requests and AdSense slots or analytics are absent', () => {
+test('affiliate asset is limited to its intended scope and AdSense slots or analytics remain absent', () => {
   const scripts = files().filter(path => /\.(?:js|mjs)$/.test(path)).map(path => readFileSync(path, 'utf8')).join('\n');
   assert.doesNotMatch(html('index.html'), /ads-partners\.coupang\.com/);
-  assert.doesNotMatch(scripts, /AF4293553|PartnersCoupang/);
+  assert.equal((scripts.match(/ads-partners\.coupang\.com\/g\.js/g) ?? []).length, 1);
   assert.ok(!/analytics|adsbygoogle\.push|doubleclick|data-ad-slot|partners\/external/i.test(scripts));
 });
 

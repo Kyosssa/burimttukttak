@@ -4,7 +4,7 @@ import { loadInputs } from './lib/inputs.mjs';
 import { sourceContext } from './lib/source-context.mjs';
 import { relatedItems } from './lib/related-items.mjs';
 import { isIndexable } from './lib/index-quality.mjs';
-import { breadcrumb, escapeHtml, formatDate, layout, searchAssets, SITE_URL, styleAsset, visitorAsset } from './lib/html.mjs';
+import { breadcrumb, carouselAsset, escapeHtml, formatDate, layout, searchAssets, SITE_URL, styleAsset, visitorAsset } from './lib/html.mjs';
 import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock } from './lib/monetization.mjs';
 import { createSearchIndex } from '../src/search.mjs';
 
@@ -17,6 +17,7 @@ const write = (relative, content) => {
 };
 const pagePath = (prefix, slug) => `${prefix}/${slug}/index.html`;
 const card = item => `<li><a class="item-card" href="/item/${escapeHtml(item.slug)}/"><strong>${escapeHtml(item.name)}</strong><span>${escapeHtml(item.disposal_label)}</span></a></li>`;
+const carousel = () => `<section class="coupang-carousel" data-coupang-carousel hidden aria-label="광고"><p class="coupang-carousel__label">광고</p><p class="coupang-carousel__disclosure">이 사이트는 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받을 수 있습니다.</p><p class="coupang-carousel__context">광고 상품은 폐기물 배출 기준이나 품목별 상품 적합성을 뜻하지 않습니다.</p><div class="coupang-carousel__slot" data-coupang-slot aria-label="쿠팡 파트너스 광고"></div></section><script type="module" src="/assets/${carouselAsset}"></script>`;
 
 function searchBox() {
   return `<section class="search-panel" aria-labelledby="search-title">
@@ -52,7 +53,7 @@ function home(seed, categories, bySlug) {
     <section class="hero wide"><p class="eyebrow">공식 자료로 확인한 생활폐기물 안내</p><h1>이거, 어떻게 버리지?</h1><p>버릴 물건을 검색하면 배출방법을 바로 알려드려요.</p>${searchBox()}</section>
     <section class="wide section"><div class="section-heading"><h2>자주 찾는 품목</h2><p>공식 자료로 확인된 품목부터 안내합니다.</p></div><ul class="card-grid item-grid">${popular.map(card).join('')}</ul></section>
     <section id="categories" class="wide section"><div class="section-heading"><h2>카테고리로 찾기</h2><p>생활 속 물건을 종류별로 살펴보세요.</p></div><ul class="card-grid category-grid">${categoryCards}</ul></section>
-    <section class="trust"><div class="wide"><div><p class="eyebrow">정보 원칙</p><h2>확인된 정보만 답합니다</h2></div><p>공식 출처를 확인한 품목에만 배출방법을 제공합니다. 지역마다 달라질 수 있는 내용은 관할 지방자치단체의 최신 안내를 함께 확인해 주세요.</p><a href="/source-policy/">정보 출처 및 검증 정책 보기</a></div></section>` });
+    <section class="trust"><div class="wide"><div><p class="eyebrow">정보 원칙</p><h2>확인된 정보만 답합니다</h2></div><p>공식 출처를 확인한 품목에만 배출방법을 제공합니다. 지역마다 달라질 수 있는 내용은 관할 지방자치단체의 최신 안내를 함께 확인해 주세요.</p><a href="/source-policy/">정보 출처 및 검증 정책 보기</a></div></section>${carousel()}` });
 }
 
 export function itemPage(item, category, bySlug, monetization = monetizationConfig, registry = loadInputs().registry) {
@@ -82,6 +83,7 @@ export function itemPage(item, category, bySlug, monetization = monetizationConf
     <section class="content-card"><h2>버리는 순서</h2><ol class="steps">${item.steps.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ol></section>
     ${warnings}${cta}${relatedBlock}${affiliateBlock}${adSlotBottom}
     <section class="content-card sources" id="official-sources"><h2>공식 출처</h2><ul>${sources}</ul><p class="updated">정보 확인: ${formatDate(item.verified_at)}</p></section>
+    ${isIndexable(item) ? carousel() : ''}
     ` });
 }
 
@@ -163,8 +165,8 @@ export function buildSite() {
 
   write('about/index.html', policyPage('버림뚝딱 소개', '공식 자료를 바탕으로 생활폐기물 배출방법을 안내하는 버림뚝딱 서비스를 소개합니다.', '/about/', `<p>버림뚝딱은 생활 속에서 버리기 어려운 물건의 배출방법을 빠르게 찾을 수 있도록 공식 기관의 공개 자료를 이해하기 쉬운 형태로 정리하는 생활정보 서비스입니다.</p><p>품목별 기본 배출원칙, 주의사항, 폐가전 수거 가능 여부와 공식 출처를 함께 제공합니다.</p><p>폐기물 배출 요일, 수거 장소, 대형폐기물 수수료 등은 지역에 따라 다를 수 있으므로 지역별 정보가 필요한 경우 거주지 지방자치단체의 최신 안내도 함께 확인해 주세요.</p>`));
   write('source-policy/index.html', policyPage('정보 출처 및 검증 정책', '버림뚝딱이 공식 출처를 확인하고 생활폐기물 정보를 관리하는 원칙을 안내합니다.', '/source-policy/', `<p>버림뚝딱은 다음 원칙으로 정보를 관리합니다.</p><ol><li>기후에너지환경부, 지방자치단체, E-순환거버넌스 등 공식 자료를 우선 사용합니다.</li><li>출처를 확인하지 못한 배출방법을 임의로 생성하지 않습니다.</li><li>검증된 품목에는 출처와 확인일을 표시합니다.</li><li>지역에 따라 달라질 수 있는 내용은 전국 공통사항처럼 단정하지 않습니다.</li><li>공식 기준이 변경된 경우 확인 후 정보를 갱신합니다.</li><li>배출방법 본문이 여러 품목에서 완전히 중복될 경우 품목별 근거를 검토하고, 차이를 확인할 수 없으면 해당 페이지의 검색엔진 색인을 보류합니다.</li></ol><p>버림뚝딱의 정보는 생활 편의를 위한 안내이며, 실제 수거 가능 여부·배출일·수수료는 관할 지방자치단체 또는 수거기관의 최신 기준이 우선합니다.</p>`));
-  write('privacy/index.html', policyPage('개인정보처리방침', '버림뚝딱의 개인정보 처리 범위와 외부 링크 정책을 안내합니다.', '/privacy/', `<p>버림뚝딱은 서비스 운영에 필요한 범위에서 최소한의 정보만 처리하는 것을 원칙으로 합니다.</p><h2>현재 처리하는 정보</h2><p>현재 사이트는 회원가입, 로그인과 외부 분석 도구를 사용하지 않습니다. Google AdSense 스크립트를 불러오며, Google의 데이터 처리는 Google의 정책에 따릅니다. 현재 사이트에는 AdSense 광고 슬롯이나 Auto ads를 활성화하지 않았습니다. 사이트 검색은 브라우저에서 처리합니다. 검색 결과가 실제로 없는 경우에만 품목 추가 우선순위를 정하기 위해 정리된 검색어, 검색 횟수, 최초·최근 검색 시각을 집계할 수 있습니다.</p><p>footer의 TODAY는 한국 날짜별 익명 브라우저 탭 세션 방문 횟수로, 정확한 고유 사용자 수가 아닌 참고 수치입니다. 같은 탭에서 중복 증가를 막기 위해 sessionStorage에 해당 날짜의 임시·완료 표시만 보관합니다. 이 정보는 탭 세션 범위에서만 사용하며 localStorage나 식별용 쿠키를 만들지 않습니다.</p><p>버림뚝딱 애플리케이션 데이터베이스에는 이름, 이메일 주소, IP 주소, User-Agent 원문, 쿠키 식별자, fingerprint 또는 정확한 위치를 저장하지 않습니다. TODAY 집계에는 날짜·횟수·마지막 갱신 시각만 저장합니다. Cloudflare 등 외부 서비스의 인프라 수준 데이터 처리는 각 서비스의 정책에 따라 별도로 처리될 수 있습니다.</p><h2>외부 링크</h2><p>정부기관과 폐가전 수거기관 등 외부 사이트 링크를 열면 해당 사이트의 개인정보처리방침이 적용됩니다.</p>`, 'noindex,follow'));
-  write('affiliate-disclosure/index.html', policyPage('제휴 마케팅 안내', '버림뚝딱의 제휴 마케팅 운영 여부와 경제적 이해관계를 안내합니다.', '/affiliate-disclosure/', `<p>현재 버림뚝딱은 쿠팡 파트너스 배너나 개별 상품 추천·제휴 링크를 표시하지 않습니다.</p><p>향후 제휴 링크가 제공된다면 해당 위치에 경제적 이해관계를 명확히 고지합니다.</p><p>Google AdSense 스크립트는 유지하지만 AdSense 광고 슬롯과 Auto ads는 활성화하지 않았습니다.</p>`, 'noindex,follow'));
+  write('privacy/index.html', policyPage('개인정보처리방침', '버림뚝딱의 개인정보 처리 범위와 외부 링크 정책을 안내합니다.', '/privacy/', `<p>버림뚝딱은 서비스 운영에 필요한 범위에서 최소한의 정보만 처리하는 것을 원칙으로 합니다.</p><h2>현재 처리하는 정보</h2><p>현재 사이트는 회원가입, 로그인과 외부 분석 도구를 사용하지 않습니다. Google AdSense 스크립트를 불러오며, Google의 데이터 처리는 Google의 정책에 따릅니다. 현재 사이트에는 AdSense 광고 슬롯이나 Auto ads를 활성화하지 않았습니다. 홈과 색인 가능한 verified 품목 상세에서는 쿠팡 파트너스 배너 스크립트를 불러올 수 있으며, 쿠팡 측의 데이터 처리는 쿠팡의 정책에 따릅니다. 사이트 검색은 브라우저에서 처리합니다. 검색 결과가 실제로 없는 경우에만 품목 추가 우선순위를 정하기 위해 정리된 검색어, 검색 횟수, 최초·최근 검색 시각을 집계할 수 있습니다.</p><p>footer의 TODAY는 한국 날짜별 익명 브라우저 탭 세션 방문 횟수로, 정확한 고유 사용자 수가 아닌 참고 수치입니다. 같은 탭에서 중복 증가를 막기 위해 sessionStorage에 해당 날짜의 임시·완료 표시만 보관합니다. 이 정보는 탭 세션 범위에서만 사용하며 localStorage나 식별용 쿠키를 만들지 않습니다.</p><p>버림뚝딱 애플리케이션 데이터베이스에는 이름, 이메일 주소, IP 주소, User-Agent 원문, 쿠키 식별자, fingerprint 또는 정확한 위치를 저장하지 않습니다. TODAY 집계에는 날짜·횟수·마지막 갱신 시각만 저장합니다. Cloudflare 등 외부 서비스의 인프라 수준 데이터 처리는 각 서비스의 정책에 따라 별도로 처리될 수 있습니다.</p><h2>외부 링크</h2><p>정부기관과 폐가전 수거기관 등 외부 사이트 링크를 열면 해당 사이트의 개인정보처리방침이 적용됩니다.</p>`, 'noindex,follow'));
+  write('affiliate-disclosure/index.html', policyPage('제휴 마케팅 안내', '버림뚝딱의 제휴 마케팅 운영 여부와 경제적 이해관계를 안내합니다.', '/affiliate-disclosure/', `<p>홈과 색인 가능한 verified 품목 상세페이지에는 쿠팡 파트너스 캐러셀 광고가 표시될 수 있습니다. 배너가 실제로 표시될 때 해당 위치에 광고 표시와 경제적 이해관계 고지를 함께 제공합니다.</p><p>이 사이트는 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받을 수 있습니다. 광고 상품은 품목의 공식 배출 기준이나 상품 적합성을 뜻하지 않습니다.</p><p>가구 hold 페이지, 검색·카테고리·정책·404 페이지에는 쿠팡 배너를 표시하지 않습니다. 개별 상품 추천이나 품목별 제휴 링크는 제공하지 않습니다.</p><p>Google AdSense 스크립트는 유지하지만 AdSense 광고 슬롯과 Auto ads는 활성화하지 않았습니다.</p>`, 'noindex,follow'));
   write('search/index.html', searchPage());
   write('404.html', layout({ title: '페이지를 찾을 수 없습니다 | 버림뚝딱', description: '요청한 페이지를 찾을 수 없습니다. 버림뚝딱에서 품목을 다시 검색해 주세요.', robots: 'noindex,nofollow', mainClass: 'narrow not-found', search: true, content: `<p class="eyebrow">404</p><h1>찾으시는 페이지가 없어요.</h1><p>주소를 다시 확인하거나 아래에서 물건을 검색해 주세요.</p>${searchBox()}<h2>자주 찾는 품목</h2><ul class="related-list"><li><a href="/item/frying-pan/">후라이팬</a></li><li><a href="/item/battery/">건전지</a></li><li><a href="/item/refrigerator/">냉장고</a></li></ul>` }));
 
@@ -180,6 +182,7 @@ export function buildSite() {
   cpSync(new URL('../public/', import.meta.url), output, { recursive: true });
   cpSync(new URL('../src/styles.css', import.meta.url), new URL(`assets/${styleAsset}`, output));
   cpSync(new URL('../src/today-visitors.mjs', import.meta.url), new URL(`assets/${visitorAsset}`, output));
+  cpSync(new URL('../src/coupang-carousel.mjs', import.meta.url), new URL(`assets/${carouselAsset}`, output));
   write(`assets/${searchAssets.app}`, readFileSync(new URL('../src/app.mjs', import.meta.url), 'utf8')
     .replace("'./search.js'", `'./${searchAssets.search}'`)
     .replace("'./missing-search.js'", `'./${searchAssets.reporter}'`)

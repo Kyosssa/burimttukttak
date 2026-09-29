@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
+import { carouselAsset } from '../scripts/lib/html.mjs';
+import { isIndexable } from '../scripts/lib/index-quality.mjs';
 import { itemPage } from '../scripts/build-site.mjs';
 import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock } from '../scripts/lib/monetization.mjs';
 
@@ -19,10 +21,26 @@ const enabledOffers = {
   affiliate: { enabled: true, disclosure: '고지', resolveOffers: () => [{ label: '설정된 제휴 링크', href: 'https://shop.example/product' }] },
 };
 
-test('generic Coupang carousel and loader are absent from all generated HTML and JS', () => {
-  const pages = ['index.html', ...verified.map(item => `item/${item.slug}/index.html`), ...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html'];
-  for (const path of pages) assert.doesNotMatch(html(path), /CoupangCarousel|ads-partners\.coupang\.com|coupang-carousel|data-coupang/i, path);
-  assert.ok(!readdirSync('dist/assets').some(file => file.includes('coupang')));
+test('one hidden carousel and hashed client appear only on home and 89 indexable details', () => {
+  const targets = ['index.html', ...verified.filter(isIndexable).map(item => `item/${item.slug}/index.html`)];
+  const excluded = [...verified.filter(item => !isIndexable(item)).map(item => `item/${item.slug}/index.html`), ...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html'];
+  assert.equal(targets.length, 90);
+  assert.equal(excluded.length, 25);
+  for (const path of targets) {
+    const page = html(path);
+    assert.equal((page.match(/data-coupang-carousel/g) ?? []).length, 1, path);
+    assert.equal((page.match(new RegExp(`src="/assets/${carouselAsset}"`, 'g')) ?? []).length, 1, path);
+    assert.match(page, /data-coupang-carousel hidden/);
+    assert.match(page, /광고 상품은 폐기물 배출 기준이나 품목별 상품 적합성을 뜻하지 않습니다/);
+    const banner = page.indexOf('data-coupang-carousel');
+    const mainEnd = page.indexOf('</main>');
+    assert.ok(banner > 0 && banner < mainEnd && mainEnd < page.indexOf('<footer>'), path);
+    if (path !== 'index.html') {
+      for (const marker of ['class="answer-card"', 'class="warning"', 'data-section="related-items"', 'id="official-sources"']) assert.ok(page.indexOf(marker) < banner, `${path}: ${marker}`);
+    } else assert.ok(page.indexOf('class="trust"') < banner);
+  }
+  for (const path of excluded) assert.doesNotMatch(html(path), /coupang-carousel|data-coupang|ads-partners\.coupang/i, path);
+  assert.deepEqual(readdirSync('dist/assets').filter(file => file.includes('coupang')), [carouselAsset]);
   assert.equal(monetizationConfig.affiliate.enabled, false);
 });
 
@@ -35,7 +53,7 @@ test('inactive ad and product-link components remain guarded', () => {
   assert.match(renderAffiliateBlock(withKeywords, enabledOffers), /data-component="AffiliateBlock"/);
 });
 
-test('answer precedes steps and related items with no empty monetization region', () => {
+test('answer precedes steps and related items with no inactive monetization region', () => {
   const page = itemPage(withKeywords, categoryFor(withKeywords), bySlug, monetizationConfig);
   const positions = [page.indexOf('class="answer-card"'), page.indexOf('class="steps"'), page.indexOf('data-section="related-items"')];
   assert.ok(positions.every(position => position >= 0), positions);
@@ -43,7 +61,8 @@ test('answer precedes steps and related items with no empty monetization region'
   assert.doesNotMatch(page, /data-component="(?:AdSlotTop|AdSlotBottom|AffiliateBlock)"/);
 });
 
-test('legal pages describe the actual inactive affiliate state', () => {
-  assert.match(html('affiliate-disclosure/index.html'), /쿠팡 파트너스 배너나 개별 상품 추천·제휴 링크를 표시하지 않습니다/);
-  assert.doesNotMatch(html('privacy/index.html'), /쿠팡의 외부 스크립트|쿠팡 파트너스 캐러셀/);
+test('legal pages describe the actual scoped affiliate state', () => {
+  assert.match(html('affiliate-disclosure/index.html'), /홈과 색인 가능한 verified 품목 상세페이지에는 쿠팡 파트너스 캐러셀 광고가 표시될 수 있습니다/);
+  assert.match(html('affiliate-disclosure/index.html'), /일정액의 수수료를 제공받을 수 있습니다/);
+  assert.match(html('privacy/index.html'), /쿠팡 파트너스 배너 스크립트를 불러올 수 있으며/);
 });

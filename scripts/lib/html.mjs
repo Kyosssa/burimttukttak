@@ -5,6 +5,8 @@ const styleSource = readFileSync(new URL('../../src/styles.css', import.meta.url
 export const styleAsset = `style-${createHash('sha256').update(styleSource).digest('hex').slice(0, 12)}.css`;
 const visitorSource = readFileSync(new URL('../../src/today-visitors.mjs', import.meta.url));
 export const visitorAsset = `today-visitors-${createHash('sha256').update(visitorSource).digest('hex').slice(0, 12)}.js`;
+const carouselSource = readFileSync(new URL('../../src/coupang-carousel.mjs', import.meta.url));
+export const carouselAsset = `coupang-carousel-${createHash('sha256').update(carouselSource).digest('hex').slice(0, 12)}.js`;
 const searchSources = [
   '../../src/app.mjs', '../../src/search.mjs', '../../src/missing-search.mjs',
   '../../docs/prebuild/burimttukttak-seed-v1.1.json',
