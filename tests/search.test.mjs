@@ -17,9 +17,9 @@ for (const [i, fixture] of fixtures.cases.entries()) {
   });
 }
 
-test('all 120 canonical names and every alias resolve to their own item', () => {
-  assert.equal(seed.items.filter(item => item.verification_status === 'verified').length, 100);
-  assert.equal(seed.items.filter(item => item.verification_status === 'needs_research').length, 20);
+test('all 137 canonical names and every alias resolve to their own item', () => {
+  assert.equal(seed.items.filter(item => item.verification_status === 'verified').length, 119);
+  assert.equal(seed.items.filter(item => item.verification_status === 'needs_research').length, 18);
   for (const item of seed.items) {
     for (const query of [item.name, ...item.aliases]) {
       const result = search(index, query);
@@ -99,7 +99,7 @@ test('invalid/short input cannot trigger missing collection; known one-character
 });
 
 test('index and results contain no disposal content, even from contaminated unverified input', () => {
-  const item = structuredClone(seed.items.find(i => i.slug === 'tea-bag'));
+  const item = structuredClone(seed.items.find(i => i.verification_status === 'needs_research'));
   // Sentinel text only: no invented disposal guidance.
   item.summary = 'PRIVATE_SENTINEL';
   item.steps = ['PRIVATE_SENTINEL'];

@@ -21,9 +21,9 @@ function files(directory = root) {
   });
 }
 
-test('generates exactly 100 verified item pages and zero unverified item pages', () => {
+test('generates exactly 119 verified item pages and zero unverified item pages', () => {
   const itemPages = files(join(root, 'item')).filter(path => path.endsWith('index.html'));
-  assert.equal(itemPages.length, 100);
+  assert.equal(itemPages.length, 119);
   for (const item of verified) assert.ok(existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
   for (const item of unverified) assert.ok(!existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
 });
@@ -50,7 +50,7 @@ test('item pages contain required Seed-backed sections and CTA only when eligibl
 
 test('generated search index exposes no disposal guidance and keeps all known items', () => {
   const data = JSON.parse(html(`assets/${searchAssets.index}`));
-  assert.equal(data.length, 120);
+  assert.equal(data.length, 137);
   const allowed = ['aliases', 'category', 'id', 'keywords', 'name', 'normalizedName', 'slug', 'verification_status'];
   for (const item of data) assert.deepEqual(Object.keys(item).sort(), allowed);
   assert.ok(!html(`assets/${searchAssets.index}`).includes('summary'));

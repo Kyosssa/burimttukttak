@@ -4,12 +4,13 @@ import { fileURLToPath } from 'node:url';
 import { loadInputs } from './lib/inputs.mjs';
 import { carouselAsset, SITE_URL } from './lib/html.mjs';
 import { isIndexable } from './lib/index-quality.mjs';
+import { guidePaths } from './lib/guides.mjs';
 import { createPreviewServer } from './preview.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const { seed, categories } = loadInputs();
 const verified = seed.items.filter(item => item.verification_status === 'verified');
-const expectedPaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/'];
+const expectedPaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', ...guidePaths];
 const carouselPaths = new Set(['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`)]);
 const ADSENSE_LOADER = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564661082214740';
 
@@ -77,7 +78,7 @@ export async function auditDist() {
   if (missingLinks.length) fail(`broken internal links\n${missingLinks.join('\n')}`);
   if (automaticExternalRequests.length) fail(`automatic external requests\n${automaticExternalRequests.join('\n')}`);
   if (permittedAdSenseRequests.length !== htmlFiles.length) fail('official AdSense loader count');
-  if (carouselPages !== 90 || !existsSync(join(root, 'assets', carouselAsset))) fail('Coupang carousel target or asset count');
+  if (carouselPages !== carouselPaths.size || !existsSync(join(root, 'assets', carouselAsset))) fail('Coupang carousel target or asset count');
   const carouselSource = readFileSync(join(root, 'assets', carouselAsset), 'utf8');
   if (!carouselSource.includes('https://ads-partners.coupang.com/g.js')) fail('Coupang loader missing from hashed asset');
 

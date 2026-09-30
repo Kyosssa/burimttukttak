@@ -4,6 +4,7 @@ import { loadInputs } from './lib/inputs.mjs';
 import { sourceContext } from './lib/source-context.mjs';
 import { relatedItems } from './lib/related-items.mjs';
 import { isIndexable } from './lib/index-quality.mjs';
+import { guideData, guidePaths, recentItems, validateGuides } from './lib/guides.mjs';
 import { breadcrumb, carouselAsset, escapeHtml, formatDate, layout, searchAssets, SITE_URL, styleAsset, visitorAsset } from './lib/html.mjs';
 import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock } from './lib/monetization.mjs';
 import { createSearchIndex } from '../src/search.mjs';
@@ -42,6 +43,8 @@ const crumbData = parts => ({
 });
 
 function home(seed, categories, bySlug) {
+  const changes = JSON.parse(readFileSync(new URL('../data/changelog.json', import.meta.url), 'utf8'));
+  const recent = recentItems(seed, changes);
   const popular = ['frying-pan', 'battery', 'clear-pet-bottle', 'refrigerator', 'styrofoam', 'power-bank'].map(slug => bySlug.get(slug));
   const categoryCards = categories.map(category => `<li><a class="category-card" href="/category/${escapeHtml(category.slug)}/"><span class="category-icon" aria-hidden="true">${category.icon}</span><strong>${escapeHtml(category.name)}</strong><span>${escapeHtml(category.description)}</span></a></li>`).join('');
   const title = '버림뚝딱 | 생활폐기물 배출방법 검색';
@@ -53,6 +56,8 @@ function home(seed, categories, bySlug) {
     <section class="hero wide"><p class="eyebrow">공식 자료로 확인한 생활폐기물 안내</p><h1>이거, 어떻게 버리지?</h1><p>버릴 물건을 검색하면 배출방법을 바로 알려드려요.</p>${searchBox()}</section>
     <section class="wide section"><div class="section-heading"><h2>자주 찾는 품목</h2><p>공식 자료로 확인된 품목부터 안내합니다.</p></div><ul class="card-grid item-grid">${popular.map(card).join('')}</ul></section>
     <section id="categories" class="wide section"><div class="section-heading"><h2>카테고리로 찾기</h2><p>생활 속 물건을 종류별로 살펴보세요.</p></div><ul class="card-grid category-grid">${categoryCards}</ul></section>
+    <section class="wide section" data-section="guides"><div class="section-heading"><h2>상황에 맞춰 확인하기</h2><p>물건 이름만으로 결정하기 어려울 때 확인 순서부터 살펴보세요.</p></div><ul class="card-grid">${guideData.guides.map(guide => `<li><a class="item-card" href="/guides/${guide.slug}/"><strong>${escapeHtml(guide.title)}</strong><span>${escapeHtml(guide.description)}</span></a></li>`).join('')}</ul><a class="browse-link" href="/guides/">상황별 가이드 모두 보기</a></section>
+    <section class="wide section" data-section="recent-items"><div class="section-heading"><h2>최근 추가·수정한 품목</h2><p>공식 근거를 확인하고 기록한 변경 이력입니다.</p></div><ul class="card-grid item-grid">${recent.map(({ item, change }) => `<li><a class="item-card" href="/item/${item.slug}/"><strong>${escapeHtml(item.name)}</strong><span>${formatDate(change.date)} · ${change.type === 'verified' ? '추가·검증' : '내용 검토·수정'}</span><span>${escapeHtml(change.summary)}</span></a></li>`).join('')}</ul></section>
     <section class="trust"><div class="wide"><div><p class="eyebrow">정보 원칙</p><h2>확인된 정보만 답합니다</h2></div><p>공식 출처를 확인한 품목에만 배출방법을 제공합니다. 지역마다 달라질 수 있는 내용은 관할 지방자치단체의 최신 안내를 함께 확인해 주세요.</p><a href="/source-policy/">정보 출처 및 검증 정책 보기</a></div></section>${carousel()}` });
 }
 
@@ -104,6 +109,26 @@ function policyPage(title, description, path, sections, robots = 'index,follow')
   return layout({ title: `${title} | 버림뚝딱`, description, canonical: path, robots, mainClass: 'narrow policy', content: `${breadcrumb([{ label: '홈', href: '/' }, { label: title }])}<h1>${escapeHtml(title)}</h1>${sections}` });
 }
 
+function guidePage(guide, registry, bySlug) {
+  const path = `/guides/${guide.slug}/`;
+  const sourceIds = [...new Set(guide.steps.flatMap(step => step.sources))];
+  const sources = sourceIds.map(id => registry.sources.find(source => source.id === id));
+  const sourceLinks = ids => ids.map(id => `<a href="#guide-source-${escapeHtml(id)}">${escapeHtml(registry.sources.find(source => source.id === id).name)}</a>`).join(' · ');
+  return layout({ title: `${guide.title} | 버림뚝딱`, description: guide.description, canonical: path, mainClass: 'narrow guide-page', jsonLd: [
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: guide.title, description: guide.description, url: absolute(path), dateModified: guideData.checked_at, inLanguage: 'ko-KR' },
+    { '@context': 'https://schema.org', ...crumbData([{ name: '홈', path: '/' }, { name: '상황별 가이드', path: '/guides/' }, { name: guide.title, path }]) },
+  ], content: `${breadcrumb([{ label: '홈', href: '/' }, { label: '상황별 가이드', href: '/guides/' }, { label: guide.title }])}<h1>${escapeHtml(guide.title)}</h1><p>${escapeHtml(guide.intro)}</p><aside class="notice"><p>아래 연결된 품목마다 적용 재질·지역·조건이 다를 수 있어요. 거주 지역의 공식 배출 안내가 우선이며, 이 가이드가 수거 가능 여부나 비용을 확정하지는 않습니다.</p></aside>${guide.steps.map((step, n) => `<section class="content-card"><h2>${n + 1}. ${escapeHtml(step.title)}</h2><p>${escapeHtml(step.text)}</p><ul class="related-list">${step.items.map(slug => `<li><a href="/item/${slug}/">${escapeHtml(bySlug.get(slug).name)} 상세 조건 확인</a></li>`).join('')}</ul><p class="guide-evidence">이 확인 단계의 근거: ${sourceLinks(step.sources)}</p></section>`).join('')}<section class="content-card sources"><h2>공식 근거와 적용 범위</h2><ul>${sources.map(source => `<li id="guide-source-${source.id}"><div><strong>${escapeHtml(source.name)}</strong><span>출처 기관: ${escapeHtml(source.authority)}</span><span>적용 범위: ${escapeHtml(source.geographic_scope === 'local' ? source.jurisdiction : '전국 단위 자료 · 원문의 품목·조건 범위')}</span><span>확인일: ${formatDate(guideData.checked_at)}</span></div><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.authority)}의 ${escapeHtml(source.name)} 원문 보기<span class="sr-only"> (새 창)</span></a></li>`).join('')}</ul></section><a class="browse-link" href="/guides/">다른 상황별 가이드 보기</a>` });
+}
+
+function guidesHub() {
+  const title = '상황별 배출 확인 가이드';
+  const description = '택배 포장재, 이사 전 가구·가전, 음식물 구분처럼 여러 품목을 함께 확인해야 할 때의 탐색 순서를 안내합니다.';
+  return layout({ title: `${title} | 버림뚝딱`, description, canonical: '/guides/', mainClass: 'narrow guide-page', jsonLd: [
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, description, url: absolute('/guides/'), inLanguage: 'ko-KR' },
+    { '@context': 'https://schema.org', ...crumbData([{ name: '홈', path: '/' }, { name: title, path: '/guides/' }]) },
+  ], content: `${breadcrumb([{ label: '홈', href: '/' }, { label: title }])}<h1>${title}</h1><p>${description}</p><ul class="card-grid">${guideData.guides.map(guide => `<li><a class="item-card" href="/guides/${guide.slug}/"><strong>${escapeHtml(guide.title)}</strong><span>${escapeHtml(guide.description)}</span></a></li>`).join('')}</ul>` });
+}
+
 function searchPage() {
   const description = '버림뚝딱에서 생활폐기물 품목을 검색합니다.';
   return layout({ title: '품목 검색 | 버림뚝딱', description, robots: 'noindex,follow', mainClass: 'narrow policy', search: true, content: `${breadcrumb([{ label: '홈', href: '/' }, { label: '품목 검색' }])}<h1>품목 검색</h1><p>버릴 물건의 이름을 입력해 주세요. 공식 자료로 확인된 품목만 상세 배출방법을 제공합니다.</p>${searchBox()}` });
@@ -152,6 +177,7 @@ function redirectsFile(publicPaths) {
 
 export function buildSite() {
   const { seed, categories: categoryData, registry } = loadInputs();
+  validateGuides(seed, registry);
   const verified = seed.items.filter(item => item.verification_status === 'verified');
   const categories = categoryData.categories;
   const bySlug = new Map(seed.items.map(item => [item.slug, item]));
@@ -160,6 +186,8 @@ export function buildSite() {
   mkdirSync(output, { recursive: true });
 
   write('index.html', home(seed, categories, bySlug));
+  write('guides/index.html', guidesHub());
+  for (const guide of guideData.guides) write(pagePath('guides', guide.slug), guidePage(guide, registry, bySlug));
   for (const item of verified) write(pagePath('item', item.slug), itemPage(item, byCategory.get(item.category), bySlug, monetizationConfig, registry));
   for (const category of categories) write(pagePath('category', category.slug), categoryPage(category, verified.filter(item => item.category === category.source_label)));
 
@@ -170,8 +198,8 @@ export function buildSite() {
   write('search/index.html', searchPage());
   write('404.html', layout({ title: '페이지를 찾을 수 없습니다 | 버림뚝딱', description: '요청한 페이지를 찾을 수 없습니다. 버림뚝딱에서 품목을 다시 검색해 주세요.', robots: 'noindex,nofollow', mainClass: 'narrow not-found', search: true, content: `<p class="eyebrow">404</p><h1>찾으시는 페이지가 없어요.</h1><p>주소를 다시 확인하거나 아래에서 물건을 검색해 주세요.</p>${searchBox()}<h2>자주 찾는 품목</h2><ul class="related-list"><li><a href="/item/frying-pan/">후라이팬</a></li><li><a href="/item/battery/">건전지</a></li><li><a href="/item/refrigerator/">냉장고</a></li></ul>` }));
 
-  const indexablePaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/'];
-  const publicPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/'];
+  const indexablePaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', ...guidePaths];
+  const publicPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/', ...guidePaths];
   write('sitemap.xml', sitemap(indexablePaths, verified));
   write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   write('ads.txt', 'google.com, pub-7564661082214740, DIRECT, f08c47fec0942fa0\n');
@@ -190,7 +218,7 @@ export function buildSite() {
   write(`assets/${searchAssets.reporter}`, readFileSync(new URL('../src/missing-search.mjs', import.meta.url), 'utf8').replace("'./search.mjs'", `'./${searchAssets.search}'`));
   cpSync(new URL('../src/search.mjs', import.meta.url), new URL(`assets/${searchAssets.search}`, output));
   write(`assets/${searchAssets.index}`, JSON.stringify(createSearchIndex(seed.items)));
-  return { items: verified.length, categories: categories.length, other: 8, sitemap: indexablePaths.length };
+  return { items: verified.length, categories: categories.length, guides: guideData.guides.length, other: 9, sitemap: indexablePaths.length };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) console.log(buildSite());

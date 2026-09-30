@@ -6,14 +6,15 @@ import { fileURLToPath } from 'node:url';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
 import { SITE_URL } from '../scripts/lib/html.mjs';
 import { isIndexable } from '../scripts/lib/index-quality.mjs';
+import { guidePaths } from '../scripts/lib/guides.mjs';
 import { createPreviewServer } from '../scripts/preview.mjs';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const { seed, categories } = loadInputs();
 const verified = seed.items.filter(item => item.verification_status === 'verified');
 const unverified = seed.items.filter(item => item.verification_status === 'needs_research');
-const publicPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/'];
-const indexablePaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/'];
+const publicPaths = ['/', ...verified.map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', '/privacy/', '/affiliate-disclosure/', ...guidePaths];
+const indexablePaths = ['/', ...verified.filter(isIndexable).map(item => `/item/${item.slug}/`), ...categories.categories.map(category => `/category/${category.slug}/`), '/about/', '/source-policy/', ...guidePaths];
 const fileFor = path => path === '/' ? join(root, 'index.html') : join(root, path.slice(1), 'index.html');
 const contentFor = path => readFileSync(fileFor(path), 'utf8');
 const attr = (content, pattern) => content.match(pattern)?.[1] ?? null;
@@ -38,8 +39,8 @@ test('every public canonical page has unique absolute canonical, metadata, OG an
     titles.add(title);
     descriptions.add(description);
   }
-  assert.equal(canonicals.size, 100);
-  assert.equal(descriptions.size, 100);
+  assert.equal(canonicals.size, 123);
+  assert.equal(descriptions.size, 123);
 });
 
 test('every generated HTML page has exactly one Naver site verification tag', () => {
@@ -98,11 +99,11 @@ test('search and 404 are noindex and have no canonical or JSON-LD', () => {
   }
 });
 
-test('sitemap has exactly 100 unique, indexable canonical URLs', () => {
+test('sitemap has exactly 123 unique, indexable canonical URLs', () => {
   const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
   const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-  assert.equal(urls.length, 100);
-  assert.equal(new Set(urls).size, 100);
+  assert.equal(urls.length, 123);
+  assert.equal(new Set(urls).size, 123);
   assert.deepEqual(new Set(urls), new Set(indexablePaths.map(path => `${SITE_URL}${path}`)));
   assert.ok(!urls.some(url => url.includes('/search/') || url.includes('404')));
   for (const item of unverified) assert.ok(!urls.includes(`${SITE_URL}/item/${item.slug}/`), item.slug);

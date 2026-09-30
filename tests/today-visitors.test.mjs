@@ -131,7 +131,7 @@ test('API failures keep fallback and a provisional tab claim prevents ambiguous 
 
 test('every generated HTML footer has TODAY and exactly one immutable visitor asset', () => {
   const files = readdirSync(root, { recursive: true }).filter(path => path.endsWith('.html'));
-  assert.equal(files.length, 115);
+  assert.equal(files.length, 138);
   for (const path of files) {
     const content = readFileSync(join(root, path), 'utf8');
     assert.match(content, /<footer>[\s\S]*id="today-visitors"[^>]*>TODAY —<\/p>/, path);

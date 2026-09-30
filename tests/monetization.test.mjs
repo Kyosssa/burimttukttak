@@ -5,6 +5,7 @@ import { join } from 'node:path';
 import { loadInputs } from '../scripts/lib/inputs.mjs';
 import { carouselAsset } from '../scripts/lib/html.mjs';
 import { isIndexable } from '../scripts/lib/index-quality.mjs';
+import { guidePaths } from '../scripts/lib/guides.mjs';
 import { itemPage } from '../scripts/build-site.mjs';
 import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock } from '../scripts/lib/monetization.mjs';
 
@@ -21,11 +22,11 @@ const enabledOffers = {
   affiliate: { enabled: true, disclosure: '고지', resolveOffers: () => [{ label: '설정된 제휴 링크', href: 'https://shop.example/product' }] },
 };
 
-test('one hidden carousel and hashed client appear only on home and 89 indexable details', () => {
+test('one hidden carousel and hashed client appear only on home and 108 indexable details', () => {
   const targets = ['index.html', ...verified.filter(isIndexable).map(item => `item/${item.slug}/index.html`)];
-  const excluded = [...verified.filter(item => !isIndexable(item)).map(item => `item/${item.slug}/index.html`), ...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html'];
-  assert.equal(targets.length, 90);
-  assert.equal(excluded.length, 25);
+  const excluded = [...verified.filter(item => !isIndexable(item)).map(item => `item/${item.slug}/index.html`), ...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html', ...guidePaths.map(path => `${path.slice(1)}index.html`)];
+  assert.equal(targets.length, 109);
+  assert.equal(excluded.length, 29);
   for (const path of targets) {
     const page = html(path);
     assert.equal((page.match(/data-coupang-carousel/g) ?? []).length, 1, path);

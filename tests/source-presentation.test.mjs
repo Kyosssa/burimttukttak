@@ -9,7 +9,7 @@ const { seed, registry } = loadInputs();
 const html = path => readFileSync(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 const verified = seed.items.filter(item => item.verification_status === 'verified');
 
-test('all 100 verified pages show registry-derived scope and complete source provenance', () => {
+test('all 119 verified pages show registry-derived scope and complete source provenance', () => {
   let local = 0;
   for (const item of verified) {
     const page = html(`item/${item.slug}/index.html`);
@@ -37,16 +37,16 @@ test('all 100 verified pages show registry-derived scope and complete source pro
       assert.ok(page.includes(`href="${source.url}" target="_blank" rel="noopener noreferrer">${source.authority}의 ${source.name} 원문 보기`), item.slug);
     }
   }
-  assert.equal(verified.length, 100);
+  assert.equal(verified.length, 119);
   assert.equal(local, 20);
 });
 
-test('non-detail pages have no regional card and quality-gated sitemap has 100 URLs', () => {
+test('non-detail pages have no regional card and quality-gated sitemap has 123 URLs', () => {
   for (const path of ['index.html', 'search/index.html', 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', '404.html']) {
     assert.ok(!html(path).includes('regional-notice'), path);
   }
   for (const item of seed.items.filter(item => item.verification_status === 'needs_research')) {
     assert.ok(!html('sitemap.xml').includes(`/item/${item.slug}/`), item.slug);
   }
-  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 100);
+  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 123);
 });

@@ -5,13 +5,13 @@ import { createValidator, duplicateDisposalBodies } from '../scripts/lib/validat
 
 const inputs = loadInputs();
 const validate = createValidator(inputs);
-test('Phase 8 baseline: 120 / 100 / 20, validation does not mutate Seed', () => {
+test('Expansion baseline: 137 / 119 / 18, validation does not mutate Seed', () => {
   const seed = structuredClone(inputs.seed);
   assert.deepEqual(validate(seed), []);
   assert.deepEqual(seed, inputs.seed);
-  assert.equal(seed.items.length, 120);
-  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 100);
-  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 20);
+  assert.equal(seed.items.length, 137);
+  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 119);
+  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 18);
 });
 
 const mutations = [
@@ -84,7 +84,7 @@ test('registry identity, official URL, review schedule and local jurisdiction ar
   for (const [mutate, code] of [
     [r => { r.sources[0].url = 'https://example.org/'; }, 'registry_url'],
     [r => { r.sources[0].review_interval_days = 0; }, 'review_interval'],
-    [r => { r.sources.at(-1).jurisdiction = ''; }, 'source_scope'],
+    [r => { r.sources.find(source => source.geographic_scope === 'local').jurisdiction = ''; }, 'source_scope'],
   ]) {
     const changed = structuredClone(inputs);
     mutate(changed.registry);

@@ -10,8 +10,8 @@ const { seed } = loadInputs();
 const indexable = seed.items.filter(isIndexable);
 const page = slug => readFileSync(new URL(`../dist/item/${slug}/index.html`, import.meta.url), 'utf8');
 
-test('all 89 indexable answers have substantive steps, cautions, official provenance and valid discovery links', () => {
-  assert.equal(indexable.length, 89);
+test('all 108 indexable answers have substantive steps, cautions, official provenance and valid discovery links', () => {
+  assert.equal(indexable.length, 108);
   const fingerprints = new Set();
   for (const item of indexable) {
     const html = page(item.slug);

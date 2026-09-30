@@ -1197,5 +1197,176 @@
       "me-recycling-guideline",
       "ewaste-pickup"
     ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "scrubber",
+    "type": "verified",
+    "summary": "공식 품목사전 직접 근거를 확인해 승격",
+    "source_ids": [
+      "official-dictionary-485"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "tea-bag",
+    "type": "verified",
+    "summary": "공식 품목사전 직접 근거를 확인해 승격",
+    "source_ids": [
+      "official-dictionary-419"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "hand-cream-container",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-800"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "shipping-label",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-718"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "thermal-receipt",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-730"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "vinyl-zip-bag",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-630"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "paper-bag",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-561"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "pill-blister-pack",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-400"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "fruit-protection-net",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-746"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "masking-tape",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-714"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "dishcloth",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-728"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "food-desiccant",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-457"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "broth-bag",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-744"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "herbal-medicine-residue",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-745"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "tea-leaves",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-420"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "foil-plate",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-741"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "metal-can-opener",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-791"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "kitchen-paper-core",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-560"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "item_slug": "mixed-toothbrush-holder",
+    "type": "verified",
+    "summary": "공식 품목사전의 재질·조건을 확인해 신규 추가",
+    "source_ids": [
+      "official-dictionary-790"
+    ]
   }
 ]

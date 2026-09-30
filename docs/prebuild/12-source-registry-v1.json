@@ -145,6 +145,291 @@
       "expected_content": [
         "품목별 대형폐기물 수수료 및 배출신청"
       ]
+    },
+    {
+      "id": "official-dictionary-485",
+      "name": "분리의 정석 품목사전 - 수세미",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=485",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "수세미"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-419",
+      "name": "분리의 정석 품목사전 - 티백",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=419",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "티백"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-800",
+      "name": "분리의 정석 품목사전 - 핸드크림(도포·첩합)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=800",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "핸드크림용기"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-718",
+      "name": "분리의 정석 품목사전 - 택배 송장",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=718",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "택배송장"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-730",
+      "name": "분리의 정석 품목사전 - 영수증",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=730",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "영수증"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-630",
+      "name": "분리의 정석 품목사전 - 지퍼백(비닐)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=630",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "비닐지퍼백"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-561",
+      "name": "분리의 정석 품목사전 - 종이가방",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=561",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "종이가방"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-400",
+      "name": "분리의 정석 품목사전 - 알약 포장재",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=400",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "알약포장재"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-746",
+      "name": "분리의 정석 품목사전 - 과일그물망",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=746",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "과일그물망"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-714",
+      "name": "분리의 정석 품목사전 - 마스킹테이프",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=714",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "마스킹테이프"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-728",
+      "name": "분리의 정석 품목사전 - 행주",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=728",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "행주"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-457",
+      "name": "분리의 정석 품목사전 - 방습제",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=457",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "식품방습제"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-744",
+      "name": "분리의 정석 품목사전 - 육수팩",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=744",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "육수팩"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-745",
+      "name": "분리의 정석 품목사전 - 한약 찌꺼기",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=745",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "한약찌꺼기"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-420",
+      "name": "분리의 정석 품목사전 - 녹차잎",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=420",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "녹차잎"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-741",
+      "name": "분리의 정석 품목사전 - 은박 접시",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=741",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "은박접시"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-791",
+      "name": "분리의 정석 품목사전 - 캔따개(금속 단일 재질)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=791",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "금속캔따개"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-560",
+      "name": "분리의 정석 품목사전 - 키친타올 심",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=560",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "키친타올심"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-790",
+      "name": "분리의 정석 품목사전 - 칫솔꽂이(복합 재질)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=790",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "복합재질칫솔꽂이"
+      ],
+      "geographic_scope": "national"
     }
   ]
 }
