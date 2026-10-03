@@ -21,8 +21,8 @@ test('expansion is 17 new and 2 promoted, keeping all 11 holds', () => {
   assert.equal(new Set(expansion.candidates.map(candidate => candidate.name.normalize('NFKC').replace(/\s/g, ''))).size, 50);
   assert.equal(expansion.records.filter(record => record.action === 'added').length, 17);
   assert.equal(expansion.records.filter(record => record.action === 'promoted').length, 2);
-  assert.equal(seed.items.length, 137);
-  assert.equal(seed.items.filter(isIndexable).length, 108);
+  assert.equal(seed.items.length, 149);
+  assert.equal(seed.items.filter(isIndexable).length, 124);
   assert.equal(heldSlugs.size, 11);
   for (const record of expansion.records) {
     const item = seed.items.find(item => item.slug === record.slug);
@@ -49,8 +49,8 @@ test('every expanded canonical name and alias finds the right item and performs 
   }
 });
 
-test('three distinct guides use registered official sources and only indexable canonical item links', () => {
-  assert.equal(guideData.guides.length, 3);
+test('five distinct guides use registered official sources and only indexable canonical item links', () => {
+  assert.equal(guideData.guides.length, 5);
   assert.doesNotThrow(() => validateGuides(seed, registry));
   for (const guide of guideData.guides) {
     const page = read(`guides/${guide.slug}/index.html`);
@@ -83,7 +83,7 @@ test('guide hub is reachable from home and recent items reflect real dated chang
   assert.deepEqual(recentItems(seed, [...changes].reverse()), recent);
   for (const {item, change} of recent) {
     assert.ok(isIndexable(item));
-    assert.equal(change.date, '2026-09-30');
+    assert.equal(change.date, '2026-10-03');
     assert.ok(home.includes(`href="/item/${item.slug}/"`));
   }
 });

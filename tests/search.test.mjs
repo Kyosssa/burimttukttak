@@ -17,9 +17,9 @@ for (const [i, fixture] of fixtures.cases.entries()) {
   });
 }
 
-test('all 137 canonical names and every alias resolve to their own item', () => {
-  assert.equal(seed.items.filter(item => item.verification_status === 'verified').length, 119);
-  assert.equal(seed.items.filter(item => item.verification_status === 'needs_research').length, 18);
+test('all 149 canonical names and every alias resolve to their own item', () => {
+  assert.equal(seed.items.filter(item => item.verification_status === 'verified').length, 135);
+  assert.equal(seed.items.filter(item => item.verification_status === 'needs_research').length, 14);
   for (const item of seed.items) {
     for (const query of [item.name, ...item.aliases]) {
       const result = search(index, query);

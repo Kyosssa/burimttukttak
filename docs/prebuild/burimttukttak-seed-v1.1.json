@@ -2,7 +2,7 @@
   "project": "버림뚝딱",
   "version": "seed-v1.1",
   "generated_on": "2026-09-22",
-  "item_count": 137,
+  "item_count": 149,
   "priority_legend": {
     "A": "출시 1차: 검색 의도가 강하고 헷갈림이 큰 핵심 품목",
     "B": "출시 2차: 충분히 유용하지만 A 다음으로 검증",
@@ -173,18 +173,45 @@
         "식칼",
         "부엌칼"
       ],
-      "verification_status": "needs_research",
-      "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "공식 품목사전은 칼의 날카로운 부분을 충분히 감싼 뒤 종량제봉투로 배출하도록 안내합니다. 금속이라는 이유만으로 고철류에 넣는 기준은 아닙니다.",
+      "steps": [
+        "칼의 날카로운 부분이 밖으로 노출되지 않게 용기에 담거나 신문지·테이프 등으로 충분히 감싸세요.",
+        "감싼 칼은 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "날카로운 부분에 수거 작업자가 찔리거나 베이지 않도록 보호하는 것이 원문의 조건입니다. 금속 단일재질 가위의 별도 기준을 칼에 적용하지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 칼",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=711",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "scissors",
+        "razor",
+        "metal-can-opener"
+      ],
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "주방칼 버리는 법 | 버림뚝딱",
+        "description": "주방칼의 재질·상태와 배출 조건을 확인하세요. 공식 품목사전은 칼의 날카로운 부분을 충분히 감싼 뒤 종량제봉투로 배출하도록 안내합니다. 금속이라는 이유만으로 고철류에 넣는 기준은 아닙니다."
+      }
     },
     {
       "id": "item-004",
@@ -193,18 +220,52 @@
       "category": "주방/조리도구",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
-      "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "conditional_recycling",
+      "disposal_label": "재질·구성품별 확인",
+      "summary": "날과 손잡이 등 부품이 모두 금속인 가위는 고철류입니다. 여러 재질이 섞인 가위는 날카로운 부분을 감싸 종량제봉투로 배출하도록 공식 품목사전이 구분합니다.",
+      "steps": [
+        "날과 손잡이까지 금속 단일재질인지, 여러 재질이 섞였는지 확인하세요.",
+        "금속 단일재질 가위는 고철 수거함으로 배출하세요.",
+        "복합재질 가위는 날이 노출되지 않도록 용기·신문지·테이프 등으로 충분히 감싼 뒤 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "가위의 재질 분기를 칼 전체의 기준으로 확대하지 마세요. 복합재질 가위는 날 보호 조건을 빠뜨리지 마세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 가위(금속 단일 재질)",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=762",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        },
+        {
+          "name": "분리의 정석 품목사전 - 가위(복합 재질)",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=306",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "kitchen-knife",
+        "metal-can-opener"
+      ],
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "가위 버리는 법 | 버림뚝딱",
+        "description": "가위의 재질·상태와 배출 조건을 확인하세요. 날과 손잡이 등 부품이 모두 금속인 가위는 고철류입니다. 여러 재질이 섞인 가위는 날카로운 부분을 감싸 종량제봉투로 배출하도록 공식 품목사전이 구분합니다."
+      }
     },
     {
       "id": "item-005",
@@ -4960,18 +5021,53 @@
       "category": "생활/의류/욕실",
       "priority": "B",
       "aliases": [],
-      "verification_status": "needs_research",
-      "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "conditional_reuse",
+      "disposal_label": "상태·크기별 확인",
+      "summary": "상태가 좋은 가방은 의류수거함의 허용 품목을 먼저 확인합니다. 해지거나 오염돼 재사용이 어려운 가방은 종량제봉투로, 크기가 커 봉투 배출이 어려운 경우에는 대형폐기물로 안내합니다.",
+      "steps": [
+        "가방이 다른 사람이 재사용할 수 있는 상태인지 확인하세요.",
+        "상태가 좋다면 해당 의류수거함에서 가방을 받는지 확인한 뒤 배출하세요.",
+        "해지거나 오염된 가방은 종량제봉투로, 크기가 커 봉투 배출이 어려우면 관할 대형폐기물 기준을 확인하세요."
+      ],
+      "warnings": [
+        "수거함마다 허용 품목이 정해져 있습니다. 바퀴 달린 가방·골프가방은 의류수거함 대상이 아닌 공식 지침이 있으므로 모든 가방의 수거를 보장하지 않습니다."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 가방",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=150",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        },
+        {
+          "name": "분리의 정석 - 재활용가능자원의 분리수거 등에 관한 지침",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "authority": "기후에너지환경부",
+          "effective_date": "2026-01-01",
+          "checked_at": "2026-10-03"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "clothes",
+        "blanket",
+        "pillow"
+      ],
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "가방 버리는 법 | 버림뚝딱",
+        "description": "가방의 재질·상태와 배출 조건을 확인하세요. 상태가 좋은 가방은 의류수거함의 허용 품목을 먼저 확인합니다. 해지거나 오염돼 재사용이 어려운 가방은 종량제봉투로, 크기가 커 봉투 배출이 어려운 경우에는 대형폐기물로 안내합니다."
+      }
     },
     {
       "id": "item-100",
@@ -5221,18 +5317,45 @@
         "일회용면도기",
         "수동면도기"
       ],
-      "verification_status": "needs_research",
-      "research_track": "national_recycling_guide",
-      "disposal_type": null,
-      "disposal_label": null,
-      "summary": null,
-      "steps": [],
-      "warnings": [],
-      "regional_variation": null,
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "플라스틱과 금속이 섞인 일회용 면도기는 칼날이 노출되지 않도록 충분히 감싼 후 종량제봉투로 배출하도록 공식 품목사전이 안내합니다.",
+      "steps": [
+        "플라스틱·금속 복합재질의 일회용 면도기인지 확인하세요.",
+        "칼날이 노출되지 않게 용기에 담거나 신문지·테이프 등으로 충분히 감싸세요.",
+        "보호한 일회용 면도기를 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "전기면도기나 금속 단일재질 면도기의 기준이 아닙니다. 수동 제품이라도 이 일회용 복합재질 조건에 해당하는지 먼저 확인하세요."
+      ],
+      "regional_variation": true,
       "free_collection": null,
-      "sources": [],
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 일회용면도기",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=331",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
       "shopping_keywords": [],
-      "related_items": []
+      "related_items": [
+        "kitchen-knife",
+        "toothbrush"
+      ],
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "collection_service": {
+        "type": "none"
+      },
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "면도기 버리는 법 | 버림뚝딱",
+        "description": "면도기의 재질·상태와 배출 조건을 확인하세요. 플라스틱과 금속이 섞인 일회용 면도기는 칼날이 노출되지 않도록 충분히 감싼 후 종량제봉투로 배출하도록 공식 품목사전이 안내합니다."
+      }
     },
     {
       "id": "item-106",
@@ -6637,10 +6760,612 @@
         "title": "복합재질칫솔꽂이 버리는 법 | 버림뚝딱",
         "description": "복합재질칫솔꽂이의 배출 조건을 확인하세요. 플라스틱·금속·고무 등이 섞인 복합재질 칫솔꽂이는 재활용이 어려워 종량제봉투로 배출하도록 공식 품목사전이 안내합니다."
       }
+    },
+    {
+      "id": "item-138",
+      "name": "물티슈",
+      "slug": "wet-wipes",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "물 티슈"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "폴리에스터·부직포 등으로 만든 물티슈는 재활용이 어려워 종량제봉투로 배출하도록 공식 품목사전이 안내합니다.",
+      "steps": [
+        "물티슈와 포장 비닐·플라스틱 캡을 구분하세요.",
+        "물티슈 본체는 종량제봉투로 배출하세요.",
+        "포장 비닐은 비닐류, PP 캡은 플라스틱으로 구분해 배출하세요."
+      ],
+      "warnings": [
+        "포장재와 물티슈 본체를 같은 재질로 취급하지 마세요. 다른 재질의 용기는 해당 재질의 기준을 확인하세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 물티슈",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=375",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "cotton-pad",
+        "plastic-film",
+        "plastic-container"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "물티슈 버리는 법 | 버림뚝딱",
+        "description": "물티슈의 재질·상태와 배출 조건을 확인하세요. 폴리에스터·부직포 등으로 만든 물티슈는 재활용이 어려워 종량제봉투로 배출하도록 공식 품목사전이 안내합니다."
+      }
+    },
+    {
+      "id": "item-139",
+      "name": "화장솜",
+      "slug": "cotton-pad",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "화장 솜"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "면 또는 펄프·레이온 혼방 재질의 화장솜은 공식 품목사전에서 종량제봉투 배출 대상으로 안내합니다.",
+      "steps": [
+        "화장솜 본체인지 용기·포장재인지 구분하세요.",
+        "면 또는 펄프·레이온 혼방 화장솜은 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "솜이라는 이름만으로 의류수거함이나 종이류 대상이라고 판단하지 마세요. 이 안내는 화장솜 본체의 기준입니다."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 화장솜",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=733",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "wet-wipes",
+        "toothbrush"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "화장솜 버리는 법 | 버림뚝딱",
+        "description": "화장솜의 재질·상태와 배출 조건을 확인하세요. 면 또는 펄프·레이온 혼방 재질의 화장솜은 공식 품목사전에서 종량제봉투 배출 대상으로 안내합니다."
+      }
+    },
+    {
+      "id": "item-140",
+      "name": "치실",
+      "slug": "dental-floss",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "손잡이 치실"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "공식 품목사전은 플라스틱 손잡이에 나일론·폴리에스테르 실이 부착된 치실을 재질별 분리가 어려운 종량제봉투 대상으로 안내합니다.",
+      "steps": [
+        "플라스틱 손잡이와 섬유 실이 결합된 치실인지 확인하세요.",
+        "해당 치실은 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "치실통이나 전동 구강세정기의 기준으로 확대하지 마세요. 원문에서 설명하지 않은 제품은 재질과 관할 기준을 따로 확인하세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 치실",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=725",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "toothbrush",
+        "toothpaste-tube",
+        "mixed-toothbrush-holder"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "치실 버리는 법 | 버림뚝딱",
+        "description": "치실의 재질·상태와 배출 조건을 확인하세요. 공식 품목사전은 플라스틱 손잡이에 나일론·폴리에스테르 실이 부착된 치실을 재질별 분리가 어려운 종량제봉투 대상으로 안내합니다."
+      }
+    },
+    {
+      "id": "item-141",
+      "name": "종이호일",
+      "slug": "baking-paper",
+      "category": "주방/조리도구",
+      "priority": "B",
+      "aliases": [
+        "종이 호일"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "실리콘을 코팅한 종이호일은 내수성·내유성·내열성을 가진 코팅 때문에 재활용이 어려워 종량제봉투로 배출하도록 공식 품목사전이 안내합니다.",
+      "steps": [
+        "실리콘 코팅 종이호일인지 확인하세요.",
+        "종이호일은 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "종이라는 이유로 종이류 수거함에 넣지 마세요. 알루미늄 호일이나 실리콘 조리도구 전체의 기준은 아닙니다."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 종이호일",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=410",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "foil-plate",
+        "food-wrap",
+        "air-fryer"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "종이호일 버리는 법 | 버림뚝딱",
+        "description": "종이호일의 재질·상태와 배출 조건을 확인하세요. 실리콘을 코팅한 종이호일은 내수성·내유성·내열성을 가진 코팅 때문에 재활용이 어려워 종량제봉투로 배출하도록 공식 품목사전이 안내합니다."
+      }
+    },
+    {
+      "id": "item-142",
+      "name": "에어캡",
+      "slug": "bubble-wrap",
+      "category": "포장재/재활용",
+      "priority": "B",
+      "aliases": [
+        "뽁뽁이",
+        "버블랩"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "film_recycling",
+      "disposal_label": "비닐류·이물질 확인",
+      "summary": "공식 품목사전은 에어캡을 이물질을 제거한 후 비닐류 수거함으로 배출하도록 안내합니다.",
+      "steps": [
+        "에어캡에 묻은 이물질을 제거하세요.",
+        "에어캡은 비닐류 수거함으로 배출하세요."
+      ],
+      "warnings": [
+        "이 안내를 EPE 과일그물망이나 은박·복합재질 보냉 포장재에 확대하지 마세요. 이물질 제거 조건을 확인하세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 에어캡",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=106",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "fruit-protection-net",
+        "vinyl-zip-bag",
+        "cardboard-box"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "에어캡 버리는 법 | 버림뚝딱",
+        "description": "에어캡의 재질·상태와 배출 조건을 확인하세요. 공식 품목사전은 에어캡을 이물질을 제거한 후 비닐류 수거함으로 배출하도록 안내합니다."
+      }
+    },
+    {
+      "id": "item-143",
+      "name": "흡수패드",
+      "slug": "food-absorbent-pad",
+      "category": "포장재/재활용",
+      "priority": "B",
+      "aliases": [
+        "식품 흡수패드",
+        "고기 흡수패드"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "육류·생선 포장에서 핏물이나 물기를 흡수하는 종이·부직포·고흡수성수지(SAP) 혼합 패드는 공식 품목사전의 종량제봉투 대상입니다.",
+      "steps": [
+        "식품 포장 안의 흡수패드와 바깥 용기를 구분하세요.",
+        "종이·부직포·SAP 혼합 흡수패드는 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "식품 방습제나 아이스팩과 같은 제품으로 판단하지 마세요. 이 안내는 육류·생선 포장용 흡수패드에 한정됩니다."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 흡수패드",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=454",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "food-desiccant",
+        "ice-pack",
+        "plastic-container"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "흡수패드 버리는 법 | 버림뚝딱",
+        "description": "흡수패드의 재질·상태와 배출 조건을 확인하세요. 육류·생선 포장에서 핏물이나 물기를 흡수하는 종이·부직포·고흡수성수지(SAP) 혼합 패드는 공식 품목사전의 종량제봉투 대상입니다."
+      }
+    },
+    {
+      "id": "item-144",
+      "name": "식품포장랩",
+      "slug": "food-wrap",
+      "category": "포장재/재활용",
+      "priority": "B",
+      "aliases": [
+        "랩",
+        "비닐랩",
+        "식품 랩"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "conditional_recycling",
+      "disposal_label": "재질·구성품별 확인",
+      "summary": "가정용 PE 랩은 이물질을 제거한 깨끗한 상태에서 비닐류로 배출합니다. 오염된 랩은 일반쓰레기이며, 공식 품목사전은 배달·마트 포장용 PVC 랩을 재활용 불가로 구분합니다.",
+      "steps": [
+        "가정용 PE 랩인지 포장용 PVC 랩인지 재질을 확인하세요.",
+        "PE 랩은 물로 헹구는 등 이물질을 제거한 깨끗한 상태에서 비닐류 수거함에 배출하세요.",
+        "음식물 등으로 오염된 랩은 일반쓰레기로 구분하세요."
+      ],
+      "warnings": [
+        "배달음식·마트 포장용 PVC 랩은 재활용 불가 안내가 있으므로 모든 랩을 비닐류로 배출하지 마세요. 재질이 불명확하면 관할 기준을 확인하세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 랩",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=119",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "baking-paper",
+        "plastic-film",
+        "vinyl-zip-bag"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "식품포장랩 버리는 법 | 버림뚝딱",
+        "description": "식품포장랩의 재질·상태와 배출 조건을 확인하세요. 가정용 PE 랩은 이물질을 제거한 깨끗한 상태에서 비닐류로 배출합니다. 오염된 랩은 일반쓰레기이며, 공식 품목사전은 배달·마트 포장용 PVC 랩을 재활용 불가로 구분합니다."
+      }
+    },
+    {
+      "id": "item-145",
+      "name": "청소세제용기",
+      "slug": "cleaner-container",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "청소 세제 용기"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "plastic_recycling",
+      "disposal_label": "플라스틱·빈 용기",
+      "summary": "내용물을 완전히 제거한 HDPE·PET 등 플라스틱 청소세제 용기는 물로 헹구는 등 깨끗한 상태로 플라스틱 수거함에 배출하도록 공식 품목사전이 안내합니다.",
+      "steps": [
+        "용기가 플라스틱 재질인지 확인하세요.",
+        "내용물이 완전히 제거된 용기를 물로 헹구는 등 깨끗하게 하세요.",
+        "펌프를 제거한 용기는 플라스틱 수거함으로 배출하세요."
+      ],
+      "warnings": [
+        "남은 액체 세제의 폐기 방법을 안내하는 페이지가 아닙니다. 내용물이 남았다면 제조사·관할 지자체에 처리 방법을 별도로 확인하세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 청소 세제",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=595",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "powder-detergent",
+        "plastic-container",
+        "hand-cream-container"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "청소세제용기 버리는 법 | 버림뚝딱",
+        "description": "청소세제용기의 재질·상태와 배출 조건을 확인하세요. 내용물을 완전히 제거한 HDPE·PET 등 플라스틱 청소세제 용기는 물로 헹구는 등 깨끗한 상태로 플라스틱 수거함에 배출하도록 공식 품목사전이 안내합니다."
+      }
+    },
+    {
+      "id": "item-146",
+      "name": "가루세제",
+      "slug": "powder-detergent",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "분말세제"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "가루세제 내용물은 흩날리지 않도록 비닐에 담아 종량제봉투로 배출하도록 공식 품목사전이 안내합니다. 가루세제와 빈 포장재는 구분합니다.",
+      "steps": [
+        "가루세제를 흩날리지 않게 비닐에 담으세요.",
+        "종량제봉투에 담아 배출하세요. 양이 많아 봉투가 찢어질 우려가 있으면 나눠 담으세요.",
+        "빈 포장재는 재질에 맞게 비닐 또는 플라스틱으로 구분하세요."
+      ],
+      "warnings": [
+        "가루세제는 하수로 배출하지 않도록 공식 원문이 안내합니다. 이 기준을 액체 세제·락스 등 다른 내용물에 확대하지 마세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 가루세제",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=399",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "cleaner-container",
+        "plastic-film"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "가루세제 버리는 법 | 버림뚝딱",
+        "description": "가루세제의 재질·상태와 배출 조건을 확인하세요. 가루세제 내용물은 흩날리지 않도록 비닐에 담아 종량제봉투로 배출하도록 공식 품목사전이 안내합니다. 가루세제와 빈 포장재는 구분합니다."
+      }
+    },
+    {
+      "id": "item-147",
+      "name": "샤워커튼",
+      "slug": "shower-curtain",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "욕실 샤워커튼"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "general_waste",
+      "disposal_label": "일반쓰레기·조건 확인",
+      "summary": "면·폴리에스테르·PVC·PEVA 등이 혼합된 샤워커튼은 재활용이 어려워 종량제봉투로 배출하도록 공식 품목사전이 안내합니다.",
+      "steps": [
+        "샤워커튼을 접어서 부피를 줄이세요.",
+        "원문에서 안내하는 복합재질 샤워커튼은 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "PVC 비닐은 일반 비닐과 물성이 달라 비닐류로 배출해도 재활용되지 않는다는 안내가 있습니다. 일반 천 커튼 전체에 이 기준을 적용하지 마세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 샤워커튼",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=398",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "shower-cap",
+        "wet-wipes"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "샤워커튼 버리는 법 | 버림뚝딱",
+        "description": "샤워커튼의 재질·상태와 배출 조건을 확인하세요. 면·폴리에스테르·PVC·PEVA 등이 혼합된 샤워커튼은 재활용이 어려워 종량제봉투로 배출하도록 공식 품목사전이 안내합니다."
+      }
+    },
+    {
+      "id": "item-148",
+      "name": "샤워캡",
+      "slug": "shower-cap",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "샤워 캡"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "conditional_recycling",
+      "disposal_label": "재질·구성품별 확인",
+      "summary": "비닐 단일재질 샤워캡은 비닐류로, 실리콘이나 섬유·고무 등이 섞인 복합재질 샤워캡은 종량제봉투로 배출하도록 공식 품목사전이 구분합니다.",
+      "steps": [
+        "샤워캡의 비닐 단일재질·실리콘·복합재질 여부를 확인하세요.",
+        "비닐 단일재질 샤워캡은 비닐류 수거함으로 배출하세요.",
+        "실리콘 또는 섬유·고무 등이 섞인 샤워캡은 종량제봉투로 배출하세요."
+      ],
+      "warnings": [
+        "같은 샤워캡이라도 재질에 따라 배출 경로가 다릅니다. 실리콘 제품을 비닐류나 플라스틱류로 판단하지 마세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 샤워캡(비닐)",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=397",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        },
+        {
+          "name": "분리의 정석 품목사전 - 샤워캡(실리콘)",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=769",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "shower-curtain",
+        "plastic-film"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "샤워캡 버리는 법 | 버림뚝딱",
+        "description": "샤워캡의 재질·상태와 배출 조건을 확인하세요. 비닐 단일재질 샤워캡은 비닐류로, 실리콘이나 섬유·고무 등이 섞인 복합재질 샤워캡은 종량제봉투로 배출하도록 공식 품목사전이 구분합니다."
+      }
+    },
+    {
+      "id": "item-149",
+      "name": "테이프클리너",
+      "slug": "lint-roller",
+      "category": "생활/의류/욕실",
+      "priority": "B",
+      "aliases": [
+        "돌돌이",
+        "테이프 클리너"
+      ],
+      "verification_status": "verified",
+      "research_track": "official_disposal_dictionary",
+      "disposal_type": "conditional_recycling",
+      "disposal_label": "재질·구성품별 확인",
+      "summary": "플라스틱 몸체와 테이프로 구성된 테이프클리너는 테이프를 제거해 몸체는 플라스틱으로, 테이프는 일반쓰레기로 나누도록 공식 품목사전이 안내합니다.",
+      "steps": [
+        "테이프클리너의 테이프를 플라스틱 몸체에서 제거하세요.",
+        "플라스틱 몸체는 플라스틱 수거함에 배출하세요.",
+        "분리한 테이프는 일반쓰레기로 배출하세요."
+      ],
+      "warnings": [
+        "이 안내는 플라스틱 몸체와 테이프가 결합된 제품의 기준입니다. 전동 제품이나 다른 재질 몸체로 확대하지 마세요."
+      ],
+      "regional_variation": true,
+      "regional_note": "전국 단위 공식 품목사전의 해당 재질·조건을 참고한 안내입니다. 거주 지역 지자체가 별도 방법을 정했다면 그 방법을 우선 확인하세요.",
+      "free_collection": null,
+      "collection_service": {
+        "type": "none"
+      },
+      "sources": [
+        {
+          "name": "분리의 정석 품목사전 - 테이프 클리너",
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=120",
+          "authority": "기후에너지환경부",
+          "effective_date": null,
+          "checked_at": "2026-10-03"
+        }
+      ],
+      "shopping_keywords": [],
+      "related_items": [
+        "clothes",
+        "blanket",
+        "plastic-container"
+      ],
+      "verification_level": "official_item_guidance",
+      "verified_at": "2026-10-03",
+      "seo": {
+        "title": "테이프클리너 버리는 법 | 버림뚝딱",
+        "description": "테이프클리너의 재질·상태와 배출 조건을 확인하세요. 플라스틱 몸체와 테이프로 구성된 테이프클리너는 테이프를 제거해 몸체는 플라스틱으로, 테이프는 일반쓰레기로 나누도록 공식 품목사전이 안내합니다."
+      }
     }
   ],
-  "verified_item_count": 119,
-  "needs_research_count": 18,
+  "verified_item_count": 135,
+  "needs_research_count": 14,
   "verification_policy": {
     "verified": "현재 공식 지침·공식 서비스 자료로 배출 원칙을 확인한 품목",
     "official_category_rule": "품목 전용 문구보다 해당 재질/분류의 최신 공식 배출 규칙으로 검증",

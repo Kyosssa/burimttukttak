@@ -1368,5 +1368,152 @@
     "source_ids": [
       "official-dictionary-790"
     ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "wet-wipes",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-375"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "cotton-pad",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-733"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "dental-floss",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-725"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "baking-paper",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-410"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "bubble-wrap",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-106"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "food-absorbent-pad",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-454"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "food-wrap",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-119"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "cleaner-container",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-595"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "powder-detergent",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-399"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "shower-curtain",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-398"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "shower-cap",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-397",
+      "official-dictionary-769"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "lint-roller",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 추가",
+    "source_ids": [
+      "official-dictionary-120"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "kitchen-knife",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 승격",
+    "source_ids": [
+      "official-dictionary-711"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "scissors",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 승격",
+    "source_ids": [
+      "official-dictionary-762",
+      "official-dictionary-306"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "razor",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 승격",
+    "source_ids": [
+      "official-dictionary-331"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "bag",
+    "type": "verified",
+    "summary": "2차 확장: 공식 품목 원문의 재질·상태 조건을 확인해 승격",
+    "source_ids": [
+      "official-dictionary-150",
+      "me-recycling-guideline"
+    ]
   }
 ]

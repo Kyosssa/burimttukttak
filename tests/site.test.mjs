@@ -21,9 +21,9 @@ function files(directory = root) {
   });
 }
 
-test('generates exactly 119 verified item pages and zero unverified item pages', () => {
+test('generates exactly 135 verified item pages and zero unverified item pages', () => {
   const itemPages = files(join(root, 'item')).filter(path => path.endsWith('index.html'));
-  assert.equal(itemPages.length, 119);
+  assert.equal(itemPages.length, 135);
   for (const item of verified) assert.ok(existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
   for (const item of unverified) assert.ok(!existsSync(join(root, 'item', item.slug, 'index.html')), item.slug);
 });
@@ -50,7 +50,7 @@ test('item pages contain required Seed-backed sections and CTA only when eligibl
 
 test('generated search index exposes no disposal guidance and keeps all known items', () => {
   const data = JSON.parse(html(`assets/${searchAssets.index}`));
-  assert.equal(data.length, 137);
+  assert.equal(data.length, 149);
   const allowed = ['aliases', 'category', 'id', 'keywords', 'name', 'normalizedName', 'slug', 'verification_status'];
   for (const item of data) assert.deepEqual(Object.keys(item).sort(), allowed);
   assert.ok(!html(`assets/${searchAssets.index}`).includes('summary'));
@@ -134,7 +134,7 @@ test('local preview returns real 404 status and serves the custom page', async (
     const { port } = server.address();
     const found = await fetch(`http://127.0.0.1:${port}/item/frying-pan/`);
     const missing = await fetch(`http://127.0.0.1:${port}/definitely-missing/`);
-    const unverified = await fetch(`http://127.0.0.1:${port}/item/kitchen-knife/`);
+    const unverified = await fetch(`http://127.0.0.1:${port}/item/shoes/`);
     assert.equal(found.status, 200);
     assert.equal(missing.status, 404);
     assert.equal(unverified.status, 404);

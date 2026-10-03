@@ -430,6 +430,276 @@
         "복합재질칫솔꽂이"
       ],
       "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-375",
+      "name": "분리의 정석 품목사전 - 물티슈",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=375",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "물티슈"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-733",
+      "name": "분리의 정석 품목사전 - 화장솜",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=733",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "화장솜"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-725",
+      "name": "분리의 정석 품목사전 - 치실",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=725",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "치실"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-410",
+      "name": "분리의 정석 품목사전 - 종이호일",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=410",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "종이호일"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-106",
+      "name": "분리의 정석 품목사전 - 에어캡",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=106",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "에어캡"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-454",
+      "name": "분리의 정석 품목사전 - 흡수패드",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=454",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "흡수패드"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-119",
+      "name": "분리의 정석 품목사전 - 랩",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=119",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "식품포장랩"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-595",
+      "name": "분리의 정석 품목사전 - 청소 세제",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=595",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "청소세제용기"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-399",
+      "name": "분리의 정석 품목사전 - 가루세제",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=399",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "가루세제"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-398",
+      "name": "분리의 정석 품목사전 - 샤워커튼",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=398",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "샤워커튼"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-397",
+      "name": "분리의 정석 품목사전 - 샤워캡(비닐)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=397",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "샤워캡"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-769",
+      "name": "분리의 정석 품목사전 - 샤워캡(실리콘)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=769",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "샤워캡"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-120",
+      "name": "분리의 정석 품목사전 - 테이프 클리너",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=120",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "테이프클리너"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-711",
+      "name": "분리의 정석 품목사전 - 칼",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=711",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "주방칼"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-762",
+      "name": "분리의 정석 품목사전 - 가위(금속 단일 재질)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=762",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "가위"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-306",
+      "name": "분리의 정석 품목사전 - 가위(복합 재질)",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=306",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "가위"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-331",
+      "name": "분리의 정석 품목사전 - 일회용면도기",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=331",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "면도기"
+      ],
+      "geographic_scope": "national"
+    },
+    {
+      "id": "official-dictionary-150",
+      "name": "분리의 정석 품목사전 - 가방",
+      "authority": "기후에너지환경부",
+      "tier": 1,
+      "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=150",
+      "review_interval_days": 30,
+      "expected_content": [
+        "배출방법"
+      ],
+      "used_for": [
+        "가방"
+      ],
+      "geographic_scope": "national"
     }
   ]
 }

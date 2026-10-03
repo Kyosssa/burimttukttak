@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30",
+  "checked_at": "2026-10-03",
   "guides": [
     {
       "slug": "parcel-components",
@@ -131,6 +131,101 @@
           ],
           "sources": [
             "official-dictionary-744"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bathroom-cleanup",
+      "title": "욕실 정리, 내용물·용기·소모품부터 구분하기",
+      "description": "남은 내용물과 빈 용기, 재질이 다른 샤워용품을 구분하며 공식 품목 기준으로 확인하는 욕실 정리 순서입니다.",
+      "intro": "욕실에서 나온 물건을 모두 플라스틱이나 일반쓰레기로 묶지 마세요. 내용물이 남았는지, 몸체와 부속품의 재질이 무엇인지 확인한 뒤 해당 상세로 이동하세요.",
+      "steps": [
+        {
+          "title": "남은 내용물과 빈 용기를 구분하세요",
+          "text": "청소세제용기 안내는 내용물을 완전히 제거한 플라스틱 용기 조건입니다. 남은 액체 세제나 화장품의 폐기법까지 뜻하지 않으므로 제조사·관할 지자체에 별도로 확인하세요. 가루세제는 액체와 구분한 원문이 있습니다.",
+          "items": [
+            "cleaner-container",
+            "powder-detergent",
+            "hand-cream-container"
+          ],
+          "sources": [
+            "official-dictionary-595",
+            "official-dictionary-399",
+            "official-dictionary-800"
+          ]
+        },
+        {
+          "title": "소모품과 포장재를 나눠 확인하세요",
+          "text": "물티슈 본체와 포장 비닐·PP 캡의 배출 경로가 다릅니다. 손잡이 치실의 복합재질 조건과 화장솜 본체의 기준도 각각 확인하세요. 일회용 면도기는 원문의 칼날 보호 조건이 있습니다.",
+          "items": [
+            "wet-wipes",
+            "cotton-pad",
+            "dental-floss",
+            "razor"
+          ],
+          "sources": [
+            "official-dictionary-375",
+            "official-dictionary-733",
+            "official-dictionary-725",
+            "official-dictionary-331"
+          ]
+        },
+        {
+          "title": "샤워용품은 이름보다 재질을 확인하세요",
+          "text": "샤워캡은 비닐 단일재질과 실리콘·복합재질의 기준이 다릅니다. 샤워커튼에는 복합재질과 PVC의 별도 설명이 있으므로 비닐처럼 보인다는 이유로 같은 기준을 적용하지 마세요.",
+          "items": [
+            "shower-cap",
+            "shower-curtain"
+          ],
+          "sources": [
+            "official-dictionary-397",
+            "official-dictionary-769",
+            "official-dictionary-398"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "before-clothing-bin",
+      "title": "헌옷 수거함에 넣기 전, 품목·상태 확인하기",
+      "description": "의류수거함의 허용 품목과 재사용 상태, 침구·가방의 예외를 구분하고 관할 기준으로 연결하는 확인 순서입니다.",
+      "intro": "헌옷 수거함은 모든 섬유제품을 넣는 곳이 아닙니다. 수거함 운영 주체의 허용 품목과 물건의 상태를 먼저 확인하고, 제외 품목은 관할 지자체 안내로 확인하세요.",
+      "steps": [
+        {
+          "title": "먼저 수거함의 허용 품목을 확인하세요",
+          "text": "공식 지침은 지자체 또는 민간 재활용사업자의 폐의류 전용수거함과 지역별 문전수거 방식을 구분합니다. 가방도 수거함의 허용 대상을 확인해야 하므로 의류라는 이유만으로 수거를 보장하지 않습니다.",
+          "items": [
+            "clothes",
+            "bag"
+          ],
+          "sources": [
+            "me-recycling-guideline",
+            "official-dictionary-150"
+          ]
+        },
+        {
+          "title": "다시 사용할 수 있는 상태인지 확인하세요",
+          "text": "해지거나 오염돼 다시 사용할 수 없는 의류·잡화는 공식 지침의 수거함 비대상 품목입니다. 종량제봉투 또는 대형폐기물 등 지자체 조례에 따른 경로를 확인하세요. 가방은 크기가 커 봉투 배출이 어려운 경우의 조건도 구분합니다.",
+          "items": [
+            "clothes",
+            "bag"
+          ],
+          "sources": [
+            "me-recycling-guideline",
+            "official-dictionary-150"
+          ]
+        },
+        {
+          "title": "침구·특수 잡화는 별도 기준으로 이동하세요",
+          "text": "이불·베개·방석·인형·골프가방·매트류·가죽 부츠·롱부츠·바퀴 달린 가방은 공식 지침의 의류수거함 비대상 목록에 있습니다. 전부 일반쓰레기라고 단정하지 말고 해당 상세의 적용 지역과 관할 배출 방법을 확인하세요.",
+          "items": [
+            "blanket",
+            "pillow",
+            "carpet"
+          ],
+          "sources": [
+            "me-recycling-guideline"
           ]
         }
       ]

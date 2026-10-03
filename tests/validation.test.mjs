@@ -5,13 +5,13 @@ import { createValidator, duplicateDisposalBodies } from '../scripts/lib/validat
 
 const inputs = loadInputs();
 const validate = createValidator(inputs);
-test('Expansion baseline: 137 / 119 / 18, validation does not mutate Seed', () => {
+test('Expansion baseline: 149 / 135 / 14, validation does not mutate Seed', () => {
   const seed = structuredClone(inputs.seed);
   assert.deepEqual(validate(seed), []);
   assert.deepEqual(seed, inputs.seed);
-  assert.equal(seed.items.length, 137);
-  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 119);
-  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 18);
+  assert.equal(seed.items.length, 149);
+  assert.equal(seed.items.filter(i => i.verification_status === 'verified').length, 135);
+  assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 14);
 });
 
 const mutations = [
@@ -27,7 +27,7 @@ const mutations = [
   ['duplicate related slug', s => { s.items[0].related_items.push('pot'); }, 'schema'],
   ['unknown category', s => { s.items[0].category = 'unknown'; }, 'category'],
   ['invalid keywords', s => { s.items[0].search_keywords = 'wrong'; }, 'keywords'],
-  ['wrong metadata count', s => { s.item_count = 119; }, 'count'],
+  ['wrong metadata count', s => { s.item_count = 135; }, 'count'],
   ['wrong verified count', s => { s.verified_item_count = 79; }, 'count'],
   ['wrong research count', s => { s.needs_research_count = 41; }, 'count'],
   ['missing required field', s => { delete s.items[0].aliases; }, 'schema'],
@@ -56,9 +56,9 @@ const mutations = [
   ['unsafe collection URL', s => { s.items[0].collection_service.url = 'javascript:alert(1)'; }, 'collection_url'],
   ['missing regional note', s => { s.items[0].regional_note = null; }, 'verified_required'],
   ['unknown regional variation', s => { s.items[0].regional_variation = null; }, 'verified_required'],
-  ['unverified summary contamination', s => { s.items[2].summary = 'PRIVATE_SENTINEL'; }, 'unverified_content'],
-  ['unverified steps contamination', s => { s.items[2].steps = ['PRIVATE_SENTINEL']; }, 'unverified_content'],
-  ['unverified collection contamination', s => { s.items[2].collection_service = { type: 'PRIVATE_SENTINEL' }; }, 'unverified_content'],
+  ['unverified summary contamination', s => { s.items.find(i => i.verification_status === 'needs_research').summary = 'PRIVATE_SENTINEL'; }, 'unverified_content'],
+  ['unverified steps contamination', s => { s.items.find(i => i.verification_status === 'needs_research').steps = ['PRIVATE_SENTINEL']; }, 'unverified_content'],
+  ['unverified collection contamination', s => { s.items.find(i => i.verification_status === 'needs_research').collection_service = { type: 'PRIVATE_SENTINEL' }; }, 'unverified_content'],
 ];
 for (const [label, mutate, expectedCode] of mutations) {
   test(`reject: ${label}`, () => {

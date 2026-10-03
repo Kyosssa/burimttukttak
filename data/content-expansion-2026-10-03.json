@@ -1,0 +1,614 @@
+{
+  "date": "2026-10-03",
+  "baseline": {
+    "commit": "0220bd642475c32b3f4111f8272a5289ce42e9bd",
+    "verified": 119,
+    "needs_research": 18,
+    "hold": 11,
+    "sitemap": 123
+  },
+  "records": [
+    {
+      "slug": "wet-wipes",
+      "name": "물티슈",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-375"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=375"
+      ]
+    },
+    {
+      "slug": "cotton-pad",
+      "name": "화장솜",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-733"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=733"
+      ]
+    },
+    {
+      "slug": "dental-floss",
+      "name": "치실",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-725"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=725"
+      ]
+    },
+    {
+      "slug": "baking-paper",
+      "name": "종이호일",
+      "action": "added",
+      "category": "주방/조리도구",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-410"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=410"
+      ]
+    },
+    {
+      "slug": "bubble-wrap",
+      "name": "에어캡",
+      "action": "added",
+      "category": "포장재/재활용",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-106"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=106"
+      ]
+    },
+    {
+      "slug": "food-absorbent-pad",
+      "name": "흡수패드",
+      "action": "added",
+      "category": "포장재/재활용",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-454"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=454"
+      ]
+    },
+    {
+      "slug": "food-wrap",
+      "name": "식품포장랩",
+      "action": "added",
+      "category": "포장재/재활용",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-119"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=119"
+      ]
+    },
+    {
+      "slug": "cleaner-container",
+      "name": "청소세제용기",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-595"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=595"
+      ]
+    },
+    {
+      "slug": "powder-detergent",
+      "name": "가루세제",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-399"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=399"
+      ]
+    },
+    {
+      "slug": "shower-curtain",
+      "name": "샤워커튼",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-398"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=398"
+      ]
+    },
+    {
+      "slug": "shower-cap",
+      "name": "샤워캡",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-397",
+        "official-dictionary-769"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=397",
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=769"
+      ]
+    },
+    {
+      "slug": "lint-roller",
+      "name": "테이프클리너",
+      "action": "added",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-120"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=120"
+      ]
+    },
+    {
+      "slug": "kitchen-knife",
+      "name": "주방칼",
+      "action": "promoted",
+      "category": "주방/조리도구",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=711"
+      ]
+    },
+    {
+      "slug": "scissors",
+      "name": "가위",
+      "action": "promoted",
+      "category": "주방/조리도구",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-762",
+        "official-dictionary-306"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=762",
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=306"
+      ]
+    },
+    {
+      "slug": "razor",
+      "name": "면도기",
+      "action": "promoted",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-331"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=331"
+      ]
+    },
+    {
+      "slug": "bag",
+      "name": "가방",
+      "action": "promoted",
+      "category": "생활/의류/욕실",
+      "checked_at": "2026-10-03",
+      "source_ids": [
+        "official-dictionary-150",
+        "me-recycling-guideline"
+      ],
+      "urls": [
+        "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=150",
+        "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+      ]
+    }
+  ],
+  "preserved_verified_slugs": [
+    "frying-pan",
+    "pot",
+    "cutting-board",
+    "plate",
+    "ceramic-mug",
+    "food-container",
+    "rubber-gloves",
+    "scrubber",
+    "styrofoam",
+    "plastic-film",
+    "cardboard-box",
+    "paper-cup",
+    "plastic-cup",
+    "clear-pet-bottle",
+    "colored-pet-bottle",
+    "plastic-container",
+    "takeout-container",
+    "disposable-lunchbox",
+    "milk-carton",
+    "aseptic-carton",
+    "glass-bottle",
+    "metal-can",
+    "eggshell",
+    "chicken-bone",
+    "pork-bone",
+    "fish-bone",
+    "shellfish-shell",
+    "crab-shell",
+    "banana-peel",
+    "onion-skin",
+    "garlic-skin",
+    "corn-husk",
+    "corn-cob",
+    "peach-pit",
+    "watermelon-rind",
+    "tea-bag",
+    "refrigerator",
+    "kimchi-refrigerator",
+    "washing-machine",
+    "dryer",
+    "air-conditioner",
+    "television",
+    "microwave",
+    "electric-oven",
+    "dishwasher",
+    "air-purifier",
+    "dehumidifier",
+    "water-purifier",
+    "water-dispenser",
+    "treadmill",
+    "copier",
+    "electric-fan",
+    "humidifier",
+    "rice-cooker",
+    "vacuum-cleaner",
+    "air-fryer",
+    "laptop",
+    "desktop-computer",
+    "computer-monitor",
+    "printer",
+    "mobile-phone",
+    "tablet",
+    "wifi-router",
+    "game-console",
+    "hair-dryer",
+    "electric-iron",
+    "coffee-maker",
+    "blender",
+    "electric-kettle",
+    "battery",
+    "power-bank",
+    "mattress",
+    "bed-frame",
+    "sofa",
+    "chair",
+    "desk",
+    "dining-table",
+    "drawer-chest",
+    "wardrobe",
+    "bookshelf",
+    "vanity-table",
+    "shoe-cabinet",
+    "mirror",
+    "carpet",
+    "drying-rack",
+    "stroller",
+    "umbrella",
+    "clothes",
+    "blanket",
+    "pillow",
+    "clothes-hanger",
+    "toothbrush",
+    "toothpaste-tube",
+    "flower-pot",
+    "toy",
+    "ice-pack",
+    "broken-glass",
+    "fluorescent-lamp",
+    "led-bulb",
+    "butane-can",
+    "aerosol-can",
+    "unused-medicine",
+    "hand-cream-container",
+    "shipping-label",
+    "thermal-receipt",
+    "vinyl-zip-bag",
+    "paper-bag",
+    "pill-blister-pack",
+    "fruit-protection-net",
+    "masking-tape",
+    "dishcloth",
+    "food-desiccant",
+    "broth-bag",
+    "herbal-medicine-residue",
+    "tea-leaves",
+    "foil-plate",
+    "metal-can-opener",
+    "kitchen-paper-core",
+    "mixed-toothbrush-holder"
+  ],
+  "preserved_verified_sha256": "e3a1d81b31fbbdd74912d4358f30d5daa3683654f9f3b974be99005693406509",
+  "preserved_registry_sha256": "e8e3f75c06527893cc058d8a23c379c0f26453ed72ccbdb34f98ed3715dc6d28",
+  "preserved_research_sha256": "e8668053aef0c7f87e6698d270dd23b66855851156b9cfdef1c6e7157d596147",
+  "prior_candidates": [
+    {
+      "name": "주방칼",
+      "slug": "kitchen-knife",
+      "origin": "existing",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "날·손잡이 재질과 안전 포장 조건을 한 답변으로 검증하지 못함."
+    },
+    {
+      "name": "가위",
+      "slug": "scissors",
+      "origin": "existing",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "금속 단일재질 원문만으로 기존 일반 가위 후보의 복합재질까지 확정할 수 없음."
+    },
+    {
+      "name": "수저",
+      "slug": "cutlery",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "금속·플라스틱·목재를 포함하는 이름이므로 단일 답변 보류.",
+      "previous_reason": "금속·플라스틱·목재를 포함하는 이름이므로 단일 답변 보류."
+    },
+    {
+      "name": "젓가락",
+      "slug": "chopsticks",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "금속·나무·플라스틱과 사용 상태별 조건 원문 확인 부족.",
+      "previous_reason": "금속·나무·플라스틱과 사용 상태별 조건 원문 확인 부족."
+    },
+    {
+      "name": "유리컵",
+      "slug": "glass-cup",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "내열·강화·일반 유리를 포괄하는 기존 이름에 필요한 조건 확인 부족.",
+      "previous_reason": "내열·강화·일반 유리를 포괄하는 기존 이름에 필요한 조건 확인 부족."
+    },
+    {
+      "name": "텀블러",
+      "slug": "tumbler",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "혼합 재질 제품을 한 가지 경로로 확정할 수 없음.",
+      "previous_reason": "혼합 재질 제품을 한 가지 경로로 확정할 수 없음."
+    },
+    {
+      "name": "보온병",
+      "slug": "thermos",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "진공 구조·혼합 재질의 직접 근거가 이번 조사에서 부족.",
+      "previous_reason": "진공 구조·혼합 재질의 직접 근거가 이번 조사에서 부족."
+    },
+    {
+      "name": "택배봉투",
+      "slug": "shipping-bag",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "비닐·복합재질·보냉 구조를 포괄하여 이름만으로 판단 불가.",
+      "previous_reason": "비닐·복합재질·보냉 구조를 포괄하여 이름만으로 판단 불가."
+    },
+    {
+      "name": "새우껍질",
+      "slug": "shrimp-shell",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "지역 차이를 포함한 해당 품목의 직접 원문을 이번에 확보하지 못함.",
+      "previous_reason": "지역 차이를 포함한 해당 품목의 직접 원문을 이번에 확보하지 못함."
+    },
+    {
+      "name": "신발",
+      "slug": "shoes",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "공식 검색에서 고무신·운동화·부츠 등 재질별 구분이 확인되어 일반 신발을 일괄 승격하지 않음.",
+      "previous_reason": "공식 검색에서 고무신·운동화·부츠 등 재질별 구분이 확인되어 일반 신발을 일괄 승격하지 않음."
+    },
+    {
+      "name": "가방",
+      "slug": "bag",
+      "origin": "existing",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "천·가죽·복합재질·바퀴 구조별 조건이 달라 기존 일반 후보 유지."
+    },
+    {
+      "name": "면도기",
+      "slug": "razor",
+      "origin": "existing",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "수동·일회용과 전기제품이 섞이지 않도록 직접 근거 추가 필요."
+    },
+    {
+      "name": "샤워기헤드",
+      "slug": "shower-head",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "단일·복합재질을 구분할 직접 근거 부족.",
+      "previous_reason": "단일·복합재질을 구분할 직접 근거 부족."
+    },
+    {
+      "name": "변기커버",
+      "slug": "toilet-seat",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "재질·수거 경로의 직접 원문 확인 부족.",
+      "previous_reason": "재질·수거 경로의 직접 원문 확인 부족."
+    },
+    {
+      "name": "라이터",
+      "slug": "lighter",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "잔류 연료와 제품 조건을 뒷받침하는 직접 공식 근거 부족.",
+      "previous_reason": "잔류 연료와 제품 조건을 뒷받침하는 직접 공식 근거 부족."
+    },
+    {
+      "name": "화장품",
+      "slug": "cosmetics",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "내용물과 용기 재질이 다른 포괄 항목이므로 유지. 새 핸드크림용기는 도포·첩합 표시 조건만 안내.",
+      "previous_reason": "내용물과 용기 재질이 다른 포괄 항목이므로 유지. 새 핸드크림용기는 도포·첩합 표시 조건만 안내."
+    },
+    {
+      "name": "향수",
+      "slug": "perfume",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "잔류 내용물과 용기 처리 조건의 직접 근거 부족.",
+      "previous_reason": "잔류 내용물과 용기 처리 조건의 직접 근거 부족."
+    },
+    {
+      "name": "매니큐어",
+      "slug": "nail-polish",
+      "origin": "existing",
+      "result": "deferred",
+      "reason": "잔류액 및 용기 조건의 공식 원문 확인 부족.",
+      "previous_reason": "잔류액 및 용기 조건의 공식 원문 확인 부족."
+    },
+    {
+      "name": "염색약용기",
+      "origin": "new",
+      "result": "deferred",
+      "reason": "도포·첩합 원문(niIdx=799)을 확인했지만 이번 핸드크림용기와 동일 재질 규칙이고 남은 염색약 처리는 확인되지 않아 별도 유사 페이지 보류.",
+      "previous_reason": "도포·첩합 원문(niIdx=799)을 확인했지만 이번 핸드크림용기와 동일 재질 규칙이고 남은 염색약 처리는 확인되지 않아 별도 유사 페이지 보류."
+    },
+    {
+      "name": "걸레",
+      "origin": "new",
+      "result": "deferred",
+      "reason": "원문(niIdx=342)은 행주·수건 등 천과 오염·파손 조건을 설명. 이번 행주와 겹치는 질문이므로 별도 페이지를 만들지 않음.",
+      "previous_reason": "원문(niIdx=342)은 행주·수건 등 천과 오염·파손 조건을 설명. 이번 행주와 겹치는 질문이므로 별도 페이지를 만들지 않음."
+    },
+    {
+      "name": "종이호일",
+      "origin": "new",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "코팅·사용 상태 조건을 직접 품목 원문으로 추가 확인해야 함."
+    },
+    {
+      "name": "비닐랩",
+      "origin": "new",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "이번 지퍼백 근거를 랩까지 확대하지 않음."
+    },
+    {
+      "name": "화장솜",
+      "origin": "new",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "성분·오염 상태별 직접 공식 근거 미확보."
+    },
+    {
+      "name": "물티슈",
+      "origin": "new",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "직접 원문 미확인. 유사품목 목록만으로 승격하지 않음."
+    },
+    {
+      "name": "치실",
+      "origin": "new",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "직접 원문 미확인. 칫솔꽂이 검색어 목록은 처리 근거가 아님."
+    },
+    {
+      "name": "샤워볼",
+      "origin": "new",
+      "result": "deferred",
+      "reason": "직접 원문 미확인. 수세미와 같은 방법이라고 추정하지 않음.",
+      "previous_reason": "직접 원문 미확인. 수세미와 같은 방법이라고 추정하지 않음."
+    },
+    {
+      "name": "샤워기필터",
+      "origin": "new",
+      "result": "deferred",
+      "reason": "직접 원문 미확인. 수세미 유사품목 목록만으로 상세를 만들지 않음.",
+      "previous_reason": "직접 원문 미확인. 수세미 유사품목 목록만으로 상세를 만들지 않음."
+    },
+    {
+      "name": "향초",
+      "origin": "new",
+      "result": "deferred",
+      "reason": "잔류 왁스와 용기 재질별 원문 근거 필요.",
+      "previous_reason": "잔류 왁스와 용기 재질별 원문 근거 필요."
+    },
+    {
+      "name": "에어캡",
+      "origin": "new",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "재질·오염 조건의 직접 품목 원문 추가 확인 필요."
+    },
+    {
+      "name": "튀김기름",
+      "origin": "new",
+      "result": "deferred",
+      "reason": "공식 지침의 폐식용유 수거 원칙은 확인했지만 생활 배출 경로와 관할 수거 조건을 충분히 확인하지 못함.",
+      "previous_reason": "공식 지침의 폐식용유 수거 원칙은 확인했지만 생활 배출 경로와 관할 수거 조건을 충분히 확인하지 못함."
+    },
+    {
+      "name": "흡수패드",
+      "origin": "new",
+      "result": "resolved",
+      "reason": "직접 공식 품목 원문을 확인했고 재질·상태 조건을 상세에 제한하여 반영. 기존 근거 부족 사유 해소.",
+      "previous_reason": "식품 방습제와 같은 것으로 일반화할 수 없으며 직접 원문 미확인."
+    }
+  ],
+  "additional_candidates": [
+    {
+      "name": "청소세제용기",
+      "slug": "cleaner-container",
+      "result": "added"
+    },
+    {
+      "name": "가루세제",
+      "slug": "powder-detergent",
+      "result": "added"
+    },
+    {
+      "name": "샤워커튼",
+      "slug": "shower-curtain",
+      "result": "added"
+    },
+    {
+      "name": "샤워캡",
+      "slug": "shower-cap",
+      "result": "added"
+    },
+    {
+      "name": "테이프클리너",
+      "slug": "lint-roller",
+      "result": "added"
+    }
+  ]
+}

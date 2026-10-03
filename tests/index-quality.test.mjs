@@ -9,8 +9,8 @@ const verified = seed.items.filter(item => item.verification_status === 'verifie
 const held = verified.filter(item => !isIndexable(item));
 
 test('11 furniture pages are held while verified and research counts match the expansion', () => {
-  assert.equal(verified.length, 119);
-  assert.equal(seed.items.filter(item => item.verification_status === 'needs_research').length, 18);
+  assert.equal(verified.length, 135);
+  assert.equal(seed.items.filter(item => item.verification_status === 'needs_research').length, 14);
   assert.equal(held.length, 11);
   assert.deepEqual(new Set(held.map(item => item.slug)), heldSlugs);
   assert.deepEqual(indexQualityErrors(seed), []);
@@ -20,7 +20,7 @@ test('every exact duplicate disposal body is entirely held from indexing', () =>
   const groups = duplicateGroups(verified);
   assert.equal(groups.length, 1);
   for (const group of groups) assert.ok(group.every(slug => heldSlugs.has(slug)), group.join(', '));
-  assert.equal(new Set(verified.filter(isIndexable).map(disposalFingerprint)).size, 108);
+  assert.equal(new Set(verified.filter(isIndexable).map(disposalFingerprint)).size, 124);
 });
 
 test('a newly duplicated indexable disposal body fails the data quality gate', () => {
