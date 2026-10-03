@@ -1,0 +1,1869 @@
+{
+  "checked_at": "2026-10-03",
+  "method": "공개 Google 자동완성 11개 입력 묶음과 공식 FAQ. 개인 Search Console·Naver 데이터 및 검색량 미사용. 제안 노출은 검색량·인기도 증거가 아님.",
+  "observations": [
+    {
+      "seed": "페트병 분리수거",
+      "queries": [
+        "페트병 분리수거",
+        "페트병 분리수거 방법",
+        "페트병 분리수거 포인트",
+        "페트병 분리수거 구겨서",
+        "페트병 분리수거 기계",
+        "페트병 분리수거 뚜껑",
+        "페트병 분리수거 봉투",
+        "페트병 분리수거 라벨",
+        "페트병 분리수거 세척",
+        "플라스틱 페트병 분리수거"
+      ]
+    },
+    {
+      "seed": "폐가전 무상수거",
+      "queries": [
+        "폐가전 무상수거",
+        "폐가전 무상수거 서비스",
+        "폐가전 무상수거 품목",
+        "폐가전 무상수거 신청",
+        "폐가전 무상수거 후기",
+        "폐가전 무상수거 냉장고",
+        "폐가전 무상수거 디시",
+        "폐가전 무상수거 컴퓨터",
+        "폐가전 무상수거 사다리차",
+        "폐가전 무상수거 선풍기"
+      ]
+    },
+    {
+      "seed": "칼 버리는 법",
+      "queries": [
+        "칼 버리는 법",
+        "칼 버리는 법 디시",
+        "부엌 칼 버리는 법",
+        "커터 칼 버리는 법",
+        "주방 칼 버리는 법",
+        "눈썹 칼 버리는 법",
+        "가위 칼 버리는 법",
+        "세라믹 칼 버리는 법",
+        "녹슨 칼 버리는 법",
+        "감자 칼 버리는 법"
+      ]
+    },
+    {
+      "seed": "우유팩 분리수거",
+      "queries": [
+        "우유팩 분리수거",
+        "우유팩 분리수거 방법",
+        "우유팩 분리수거 의무화",
+        "우유팩 분리수거 디시",
+        "우유팩 분리수거함",
+        "우유팩 분리수거 종이",
+        "우유팩 분리수거 의무",
+        "멸균 우유팩 분리수거",
+        "일본 우유팩 분리수거",
+        "독일 우유팩 분리수거"
+      ]
+    },
+    {
+      "seed": "아이스팩 버리는법",
+      "queries": [
+        "아이스팩 버리는법",
+        "아이스팩 내용물 버리는법",
+        "아이스팩 버리는 방법",
+        "젤 아이스팩 버리는법",
+        "젤리 아이스팩 버리는법",
+        "프리미엄 아이스팩 버리는법",
+        "젤형 아이스팩 버리는법",
+        "곡물 아이스팩 버리는법",
+        "pcm 아이스팩 버리는법",
+        "성심당 아이스팩 버리는법"
+      ]
+    },
+    {
+      "seed": "보조배터리 버리는법",
+      "queries": [
+        "보조배터리 버리는법",
+        "보조배터리 버리는법 디시",
+        "일회용 보조배터리 버리는법",
+        "1회용 보조배터리 버리는법",
+        "고장난 보조배터리 버리는법",
+        "부푼 보조배터리 버리는법",
+        "휴대폰 보조배터리 버리는법",
+        "편의점 일회용 보조배터리 버리는법",
+        "편의점 보조배터리 버리는법",
+        "부풀어오른 보조배터리 버리는법"
+      ]
+    },
+    {
+      "seed": "헌옷수거함",
+      "queries": [
+        "헌옷수거함",
+        "헌옷수거함 이불",
+        "헌옷수거함 신발",
+        "헌옷수거함 위치",
+        "헌옷수거함 가방",
+        "헌옷수거함 수건",
+        "헌옷수거함 인형",
+        "헌옷수거함 베개",
+        "헌옷수거함 양말",
+        "헌옷수거함 득템"
+      ]
+    },
+    {
+      "seed": "화장품 버리는법",
+      "queries": [
+        "화장품 버리는법",
+        "화장품 버리는법 디시",
+        "화장품 쿠션 버리는법",
+        "화장품 토너 버리는법",
+        "화장품 남은거 버리는법",
+        "유통기한지난 화장품 버리는법",
+        "남은 화장품 버리는법",
+        "액체 화장품 버리는법",
+        "오래된 화장품 버리는법",
+        "안쓰는 화장품 버리는법"
+      ]
+    },
+    {
+      "seed": "종이호일 분리수거",
+      "queries": [
+        "종이호일 분리수거",
+        "종이호일 재활용",
+        "종이호일 버리기"
+      ]
+    },
+    {
+      "seed": "가위 버리는법",
+      "queries": [
+        "칼 가위 버리는법",
+        "가위 버리는 방법"
+      ]
+    },
+    {
+      "seed": "소형가전 버리기",
+      "queries": [
+        "소형가전 버리기",
+        "소형가전 버리기 아파트",
+        "소형가전 버리기 디시",
+        "소형가전 버리는방법",
+        "소형가전 버릴때",
+        "소형가전 버리는법",
+        "성동구 소형가전 버리기",
+        "일본 소형가전 버리기"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "query": "페트병 분리수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "페트병 분리수거 방법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "페트병 분리수거 포인트",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "페트병 분리수거 구겨서",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "페트병 분리수거 기계",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "페트병 분리수거 뚜껑",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "페트병 분리수거 봉투",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "페트병 분리수거 라벨",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "페트병 분리수거 세척",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "플라스틱 페트병 분리수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8E%98%ED%8A%B8%EB%B3%91%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "pet-components",
+      "user_question": "투명 PET 대상과 뚜껑·라벨·세척 조건은?",
+      "current_url": "/item/clear-pet-bottle/",
+      "content_gap": "조건이 기존 단계에 있으나 세부 검색어로 바로 연결되지 않음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "폐가전 무상수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "폐가전 무상수거 서비스",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "폐가전 무상수거 품목",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "폐가전 무상수거 신청",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "폐가전 무상수거 후기",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "폐가전 무상수거 냉장고",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "폐가전 무상수거 디시",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "폐가전 무상수거 컴퓨터",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "폐가전 무상수거 사다리차",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "폐가전 무상수거 선풍기",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%8F%90%EA%B0%80%EC%A0%84%20%EB%AC%B4%EC%83%81%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "제품·규격·수량·상태별 방문수거 조건은?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "이사 경로 안내와 세부 접수 조건의 질문이 섞임",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "칼 버리는 법 디시",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "부엌 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "커터 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "B",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "별도 재질·제품 범위 확인이 필요; 이번에는 직접 근거와 기존 칼의 중복 검토가 완료되지 않아 미구현"
+    },
+    {
+      "query": "주방 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "눈썹 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "B",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "별도 재질·제품 범위 확인이 필요; 이번에는 직접 근거와 기존 칼의 중복 검토가 완료되지 않아 미구현"
+    },
+    {
+      "query": "가위 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "세라믹 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "B",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "별도 재질·제품 범위 확인이 필요; 이번에는 직접 근거와 기존 칼의 중복 검토가 완료되지 않아 미구현"
+    },
+    {
+      "query": "녹슨 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "B",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "별도 재질·제품 범위 확인이 필요; 이번에는 직접 근거와 기존 칼의 중복 검토가 완료되지 않아 미구현"
+    },
+    {
+      "query": "감자 칼 버리는 법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%B9%BC%20%EB%B2%84%EB%A6%AC%EB%8A%94%20%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "칼 종류·가위 재질 차이를 어떻게 확인하나?",
+      "current_url": "/item/kitchen-knife/",
+      "content_gap": "금속 가위와 칼을 같은 기준으로 오해할 가능성",
+      "classification": "B",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-dictionary-711"
+      ],
+      "decision": "별도 재질·제품 범위 확인이 필요; 이번에는 직접 근거와 기존 칼의 중복 검토가 완료되지 않아 미구현"
+    },
+    {
+      "query": "우유팩 분리수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "우유팩 분리수거 방법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "우유팩 분리수거 의무화",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "우유팩 분리수거 디시",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "우유팩 분리수거함",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "우유팩 분리수거 종이",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "우유팩 분리수거 의무",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "멸균 우유팩 분리수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "일본 우유팩 분리수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "독일 우유팩 분리수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%9A%B0%EC%9C%A0%ED%8C%A9%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "carton-streams",
+      "user_question": "일반 종이·멸균팩·전용수거함을 구분해야 하나?",
+      "current_url": "/item/milk-carton/",
+      "content_gap": "일반팩·멸균팩을 비교하는 확인 순서 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "아이스팩 내용물 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "아이스팩 버리는 방법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "젤 아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "젤리 아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "프리미엄 아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "젤형 아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "곡물 아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "pcm 아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "성심당 아이스팩 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8C%A9%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "ice-pack-contents",
+      "user_question": "물·젤·PCM 등 내용물별 방법과 회수 장소는?",
+      "current_url": "/item/ice-pack/",
+      "content_gap": "현재 근거는 지역별 회수 장소 지도이며 내용물 처리법이 아님",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "official-disposal-location-map"
+      ],
+      "decision": "지도 근거는 회수 장소에 한정; 내용물 폐기법은 미확보"
+    },
+    {
+      "query": "보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "보조배터리 버리는법 디시",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "일회용 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "상태·제품별 수거 가능 여부를 기존 일반 지침만으로 확정하지 않음"
+    },
+    {
+      "query": "1회용 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "상태·제품별 수거 가능 여부를 기존 일반 지침만으로 확정하지 않음"
+    },
+    {
+      "query": "고장난 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "부푼 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "상태·제품별 수거 가능 여부를 기존 일반 지침만으로 확정하지 않음"
+    },
+    {
+      "query": "휴대폰 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "편의점 일회용 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "상태·제품별 수거 가능 여부를 기존 일반 지침만으로 확정하지 않음"
+    },
+    {
+      "query": "편의점 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "상태·제품별 수거 가능 여부를 기존 일반 지침만으로 확정하지 않음"
+    },
+    {
+      "query": "부풀어오른 보조배터리 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EB%B3%B4%EC%A1%B0%EB%B0%B0%ED%84%B0%EB%A6%AC%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "battery-condition",
+      "user_question": "일회용·고장·팽창 배터리의 회수 조건은?",
+      "current_url": "/item/power-bank/",
+      "content_gap": "전지와 완제품의 범위를 구분할 필요; 상태별 직접 근거 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "상태·제품별 수거 가능 여부를 기존 일반 지침만으로 확정하지 않음"
+    },
+    {
+      "query": "헌옷수거함",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "헌옷수거함 이불",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "헌옷수거함 신발",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "해당 품목·상태의 직접 근거와 수거함 운영 조건 확인 필요"
+    },
+    {
+      "query": "헌옷수거함 위치",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "헌옷수거함 가방",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "헌옷수거함 수건",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "헌옷수거함 인형",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "해당 품목·상태의 직접 근거와 수거함 운영 조건 확인 필요"
+    },
+    {
+      "query": "헌옷수거함 베개",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "헌옷수거함 양말",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "해당 품목·상태의 직접 근거와 수거함 운영 조건 확인 필요"
+    },
+    {
+      "query": "헌옷수거함 득템",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%97%8C%EC%98%B7%EC%88%98%EA%B1%B0%ED%95%A8",
+      "observed_at": "2026-10-03",
+      "group": "clothing-bin-conditions",
+      "user_question": "어떤 품목·상태가 해당 수거함의 허용 대상인가?",
+      "current_url": "/guides/before-clothing-bin/",
+      "content_gap": "기존 가이드로 일부 답함; 신발·양말·인형의 직접 근거는 부족",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "me-recycling-guideline"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "화장품 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "화장품 버리는법 디시",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "화장품 쿠션 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "화장품 토너 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "화장품 남은거 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "유통기한지난 화장품 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "남은 화장품 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "액체 화장품 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "오래된 화장품 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "안쓰는 화장품 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%A5%ED%92%88%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "remaining-cosmetics",
+      "user_question": "남은 액체·토너·쿠션 등 내용물은 어떻게 처리하나?",
+      "current_url": "/search/?q=화장품",
+      "content_gap": "needs_research이며 용기 일부 근거를 내용물에 적용할 수 없음",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [],
+      "decision": "내용물·제형별 직접 공식 근거 미확보, researching 유지"
+    },
+    {
+      "query": "종이호일 분리수거",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%A2%85%EC%9D%B4%ED%98%B8%EC%9D%BC%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "paper-treatment",
+      "user_question": "실리콘 코팅 종이가 깨끗하면 재활용 가능한가?",
+      "current_url": "/item/baking-paper/",
+      "content_gap": "종이 겉모습과 코팅 조건을 비교하는 탐색 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-410"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "종이호일 재활용",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%A2%85%EC%9D%B4%ED%98%B8%EC%9D%BC%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "paper-treatment",
+      "user_question": "실리콘 코팅 종이가 깨끗하면 재활용 가능한가?",
+      "current_url": "/item/baking-paper/",
+      "content_gap": "종이 겉모습과 코팅 조건을 비교하는 탐색 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-410"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "종이호일 버리기",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%A2%85%EC%9D%B4%ED%98%B8%EC%9D%BC%20%EB%B6%84%EB%A6%AC%EC%88%98%EA%B1%B0",
+      "observed_at": "2026-10-03",
+      "group": "paper-treatment",
+      "user_question": "실리콘 코팅 종이가 깨끗하면 재활용 가능한가?",
+      "current_url": "/item/baking-paper/",
+      "content_gap": "종이 겉모습과 코팅 조건을 비교하는 탐색 없음",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-410"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "칼 가위 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EA%B0%80%EC%9C%84%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "가위 손잡이까지 금속인가, 복합재질인가?",
+      "current_url": "/item/scissors/",
+      "content_gap": "재질 분기는 기존 상세에 있음; 칼과 비교 탐색 보강",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-762"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "가위 버리는 방법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EA%B0%80%EC%9C%84%20%EB%B2%84%EB%A6%AC%EB%8A%94%EB%B2%95",
+      "observed_at": "2026-10-03",
+      "group": "sharp-materials",
+      "user_question": "가위 손잡이까지 금속인가, 복합재질인가?",
+      "current_url": "/item/scissors/",
+      "content_gap": "재질 분기는 기존 상세에 있음; 칼과 비교 탐색 보강",
+      "classification": "A",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "official-dictionary-762"
+      ],
+      "decision": "기존 상세의 조건 질문 또는 현재 가이드로 대응"
+    },
+    {
+      "query": "소형가전 버리기",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "소형가전 버리기 아파트",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "소형가전 버리기 디시",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "소형가전 버리는방법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "소형가전 버릴때",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "소형가전 버리는법",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "C",
+      "evidence_available": "기존 검증 출처 재사용 가능",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "일반 이사 안내와 구별되는 규격·수량 확인 순서"
+    },
+    {
+      "query": "성동구 소형가전 버리기",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "일본 소형가전 버리기",
+      "observation": "observed",
+      "discovery": "Google 공개 자동완성",
+      "discovery_url": "https://www.google.com/search?q=%EC%86%8C%ED%98%95%EA%B0%80%EC%A0%84%20%EB%B2%84%EB%A6%AC%EA%B8%B0",
+      "observed_at": "2026-10-03",
+      "group": "appliance-service",
+      "user_question": "가전 한 개와 여러 개의 경로를 어떻게 구분하나?",
+      "current_url": "/guides/before-moving/",
+      "content_gap": "치수·중량·수량의 결정 순서를 별도 안내할 필요",
+      "classification": "D",
+      "evidence_available": "부족 또는 별도 검증 필요",
+      "source_ids": [
+        "ewaste-pickup"
+      ],
+      "decision": "커뮤니티·외국·혜택·지역 위치 질문은 이번 검증된 배출 조건과 다름"
+    },
+    {
+      "query": "고장난 제품 수거 가능한가요?",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "고장난 제품 수거 가능한가요?",
+      "current_url": "/item/refrigerator/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "A",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "고장·완제품·부속품·설치 조건으로 구현"
+    },
+    {
+      "query": "훼손된 제품 수거 가능한가요?",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "훼손된 제품 수거 가능한가요?",
+      "current_url": "/item/refrigerator/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "A",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "고장·완제품·부속품·설치 조건으로 구현"
+    },
+    {
+      "query": "냉장고 도어(문짝)만 수거되나요?",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "냉장고 도어(문짝)만 수거되나요?",
+      "current_url": "/item/refrigerator/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "A",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "고장·완제품·부속품·설치 조건으로 구현"
+    },
+    {
+      "query": "제품 철거해서 가져가시나요?",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "제품 철거해서 가져가시나요?",
+      "current_url": "/item/air-conditioner/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "A",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "고장·완제품·부속품·설치 조건으로 구현"
+    },
+    {
+      "query": "계단으로 수거 가능한가요?",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "계단으로 수거 가능한가요?",
+      "current_url": "/item/refrigerator/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "D",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "이번에 새 절차 페이지를 만들지 않음; 공식 FAQ 직접 확인 경로 유지"
+    },
+    {
+      "query": "운동기구(실내자전거, 스토퍼 등) 수거되나요?",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "운동기구(실내자전거, 스토퍼 등) 수거되나요?",
+      "current_url": "/item/treadmill/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "D",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "이번에 새 절차 페이지를 만들지 않음; 공식 FAQ 직접 확인 경로 유지"
+    },
+    {
+      "query": "수거확인서 발급문의",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "수거확인서 발급문의",
+      "current_url": "/item/refrigerator/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "D",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "이번에 새 절차 페이지를 만들지 않음; 공식 FAQ 직접 확인 경로 유지"
+    },
+    {
+      "query": "수거예약 수정(변경, 취소)방법",
+      "observation": "observed",
+      "discovery": "E-순환거버넌스 공식 FAQ 질문",
+      "discovery_url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "observed_at": "2026-10-03",
+      "group": "appliance-faq",
+      "user_question": "수거예약 수정(변경, 취소)방법",
+      "current_url": "/item/refrigerator/",
+      "content_gap": "품목 안내와 서비스 절차의 질문 구분",
+      "classification": "D",
+      "evidence_available": "직접 원문 확인",
+      "source_ids": [
+        "ewaste-faq"
+      ],
+      "decision": "이번에 새 절차 페이지를 만들지 않음; 공식 FAQ 직접 확인 경로 유지"
+    }
+  ],
+  "editorial_ideas": [
+    {
+      "query": "건전지와 배터리 내장 제품 차이",
+      "observation": "idea",
+      "discovery": "기존 전지·휴대폰 상세의 경로 비교",
+      "classification": "C",
+      "implemented_guide": "battery-and-device"
+    },
+    {
+      "query": "종이처럼 보이는 영수증·송장·종이호일 차이",
+      "observation": "idea",
+      "discovery": "기존 코팅·접착 조건의 비교",
+      "classification": "C",
+      "implemented_guide": "paper-coating-and-adhesive"
+    }
+  ]
+}

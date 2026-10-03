@@ -700,6 +700,25 @@
         "가방"
       ],
       "geographic_scope": "national"
+    },
+    {
+      "id": "ewaste-faq",
+      "name": "폐가전 무상방문수거 자주 묻는 질문",
+      "authority": "E-순환거버넌스",
+      "tier": 2,
+      "url": "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do",
+      "review_interval_days": 14,
+      "expected_content": [
+        "고장난 제품",
+        "부속품",
+        "철거"
+      ],
+      "used_for": [
+        "제품 상태",
+        "부속품 단독 수거",
+        "설치 제품"
+      ],
+      "geographic_scope": "national"
     }
   ]
 }

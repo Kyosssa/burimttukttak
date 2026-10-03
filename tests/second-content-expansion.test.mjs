@@ -24,7 +24,7 @@ test('second expansion adds 12 and promotes 4, preserves the original verified d
   assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 14);
   assert.equal(seed.items.filter(isIndexable).length, 124);
   assert.equal(heldSlugs.size, 11);
-  assert.equal(hash(seed.items.filter(i => expansion.preserved_verified_slugs.includes(i.slug))), expansion.preserved_verified_sha256);
+  assert.equal(hash(seed.items.filter(i => expansion.preserved_verified_slugs.includes(i.slug)).map(({ search_keywords, ...facts }) => facts)), expansion.preserved_verified_sha256);
   assert.equal(hash(registry.sources.slice(0, 27)), expansion.preserved_registry_sha256);
   assert.equal(hash(seed.items.filter(i => i.verification_status === 'needs_research')), expansion.preserved_research_sha256);
   for (const record of expansion.records) {
@@ -69,7 +69,7 @@ test('material and contents branches remain inside single pages without extrapol
 });
 
 test('bathroom and clothing-bin guides provide distinct check sequences with no affiliate loader', () => {
-  assert.equal(guideData.guides.length, 5);
+  assert.equal(guideData.guides.length, 11);
   for (const slug of ['bathroom-cleanup', 'before-clothing-bin']) {
     const guide = guideData.guides.find(g => g.slug === slug);
     assert.equal(guide.steps.length, 3);
@@ -79,5 +79,5 @@ test('bathroom and clothing-bin guides provide distinct check sequences with no 
   }
   assert.match(html('guides/before-clothing-bin/index.html'), /전부 일반쓰레기라고 단정하지/);
   assert.match(html('guides/bathroom-cleanup/index.html'), /남은 액체 세제나/);
-  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 141);
+  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 147);
 });

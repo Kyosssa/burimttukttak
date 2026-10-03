@@ -49,8 +49,8 @@ test('every expanded canonical name and alias finds the right item and performs 
   }
 });
 
-test('five distinct guides use registered official sources and only indexable canonical item links', () => {
-  assert.equal(guideData.guides.length, 5);
+test('eleven distinct guides use registered official sources and only indexable canonical item links', () => {
+  assert.equal(guideData.guides.length, 11);
   assert.doesNotThrow(() => validateGuides(seed, registry));
   for (const guide of guideData.guides) {
     const page = read(`guides/${guide.slug}/index.html`);

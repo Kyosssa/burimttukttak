@@ -24,7 +24,12 @@ export function validateGuides(seed, registry, data = guideData) {
 export function recentItems(seed, changes, limit = 6) {
   const bySlug = new Map(seed.items.filter(isIndexable).map(item => [item.slug, item]));
   const selected = new Map();
-  const sorted = [...changes].sort((a, b) => b.date.localeCompare(a.date) || a.item_slug.localeCompare(b.item_slug));
+  // On the same day, a content update describes the current page more precisely
+  // than its initial verification. Final text tie-break keeps input order irrelevant.
+  const sorted = [...changes].sort((a, b) => b.date.localeCompare(a.date)
+    || a.item_slug.localeCompare(b.item_slug)
+    || Number(a.type === 'verified') - Number(b.type === 'verified')
+    || a.summary.localeCompare(b.summary));
   for (const change of sorted) {
     if (bySlug.has(change.item_slug) && !selected.has(change.item_slug)) selected.set(change.item_slug, { item: bySlug.get(change.item_slug), change });
     if (selected.size === limit) break;

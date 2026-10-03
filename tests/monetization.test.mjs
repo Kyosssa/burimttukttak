@@ -26,7 +26,7 @@ test('one hidden carousel and hashed client appear only on home and 124 indexabl
   const targets = ['index.html', ...verified.filter(isIndexable).map(item => `item/${item.slug}/index.html`)];
   const excluded = [...verified.filter(item => !isIndexable(item)).map(item => `item/${item.slug}/index.html`), ...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html', ...guidePaths.map(path => `${path.slice(1)}index.html`)];
   assert.equal(targets.length, 125);
-  assert.equal(excluded.length, 31);
+  assert.equal(excluded.length, 37);
   for (const path of targets) {
     const page = html(path);
     assert.equal((page.match(/data-coupang-carousel/g) ?? []).length, 1, path);

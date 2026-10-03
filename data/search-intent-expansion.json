@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-03",
+  "baseline": {
+    "commit": "7285f0d6f93d01f32604acb690d3330c5cbb6522",
+    "items_sha256": "1546c8b9544c31477227267309b65367eb93d27123cd06d6db176bc60049c8d9",
+    "registry_sha256": "860579af9df4916943c500fe39a9e767f9f430f2c3ea2d37ccaf1fc373787612",
+    "guides_sha256": "4db90ae66bc884331c55500ec72d00f3046a4e89c636a0b3ccd9fd910902b3b4",
+    "registry_count": 45,
+    "guide_count": 5
+  },
+  "new_guides": [
+    "appliance-count-and-size",
+    "appliance-condition-and-parts",
+    "bottles-and-cartons",
+    "paper-coating-and-adhesive",
+    "sharp-tools-and-materials",
+    "battery-and-device"
+  ],
+  "enhanced_items": [
+    "clear-pet-bottle",
+    "milk-carton",
+    "aseptic-carton",
+    "baking-paper",
+    "thermal-receipt",
+    "shipping-label",
+    "kitchen-knife",
+    "scissors",
+    "razor",
+    "battery",
+    "power-bank",
+    "mobile-phone",
+    "computer-monitor",
+    "electric-fan",
+    "rice-cooker",
+    "vacuum-cleaner",
+    "refrigerator",
+    "air-conditioner"
+  ]
+}

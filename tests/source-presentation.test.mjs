@@ -41,12 +41,12 @@ test('all 135 verified pages show registry-derived scope and complete source pro
   assert.equal(local, 20);
 });
 
-test('non-detail pages have no regional card and quality-gated sitemap has 141 URLs', () => {
+test('non-detail pages have no regional card and quality-gated sitemap has 147 URLs', () => {
   for (const path of ['index.html', 'search/index.html', 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', '404.html']) {
     assert.ok(!html(path).includes('regional-notice'), path);
   }
   for (const item of seed.items.filter(item => item.verification_status === 'needs_research')) {
     assert.ok(!html('sitemap.xml').includes(`/item/${item.slug}/`), item.slug);
   }
-  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 141);
+  assert.equal((html('sitemap.xml').match(/<loc>/g) ?? []).length, 147);
 });

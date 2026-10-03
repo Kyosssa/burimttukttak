@@ -1515,5 +1515,171 @@
       "official-dictionary-150",
       "me-recycling-guideline"
     ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "clear-pet-bottle",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "milk-carton",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "aseptic-carton",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "baking-paper",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "official-dictionary-410"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "thermal-receipt",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "official-dictionary-730"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "shipping-label",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "official-dictionary-718"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "kitchen-knife",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "official-dictionary-711"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "scissors",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "official-dictionary-762",
+      "official-dictionary-306"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "razor",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "official-dictionary-331"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "battery",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "power-bank",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "mobile-phone",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "me-recycling-guideline",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "computer-monitor",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "electric-fan",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "ewaste-pickup",
+      "me-recycling-guideline"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "rice-cooker",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "ewaste-faq"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "vacuum-cleaner",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "ewaste-faq"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "refrigerator",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "ewaste-faq",
+      "ewaste-pickup"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "item_slug": "air-conditioner",
+    "type": "content_update",
+    "summary": "조건 질문과 공식 근거·상황별 가이드 연결 보강",
+    "source_ids": [
+      "ewaste-faq"
+    ]
   }
 ]

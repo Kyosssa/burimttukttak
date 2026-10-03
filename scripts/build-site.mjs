@@ -5,6 +5,7 @@ import { sourceContext } from './lib/source-context.mjs';
 import { relatedItems } from './lib/related-items.mjs';
 import { isIndexable } from './lib/index-quality.mjs';
 import { guideData, guidePaths, recentItems, validateGuides } from './lib/guides.mjs';
+import { questionData, validateItemQuestions } from './lib/item-questions.mjs';
 import { breadcrumb, carouselAsset, escapeHtml, formatDate, layout, searchAssets, SITE_URL, styleAsset, visitorAsset } from './lib/html.mjs';
 import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock } from './lib/monetization.mjs';
 import { createSearchIndex } from '../src/search.mjs';
@@ -69,6 +70,8 @@ export function itemPage(item, category, bySlug, monetization = monetizationConf
   const sources = context.sources.map(source => `<li><div><strong>${escapeHtml(source.name)}</strong><span>출처 기관: ${escapeHtml(source.authority)}</span><span>적용 범위: ${escapeHtml(source.scope === 'local' ? source.jurisdiction : '전국 기준')}</span><span>확인일: ${formatDate(source.checked_at)}</span><span>다음 검토 예정일: ${formatDate(source.nextReview)}</span></div><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.authority)}의 ${escapeHtml(source.name)} 원문 보기<span class="sr-only"> (새 창)</span></a></li>`).join('');
   const regional = context.jurisdiction ? `<aside class="notice regional-notice" aria-labelledby="regional-notice-title"><h2 id="regional-notice-title">${escapeHtml(context.jurisdiction)} 기준을 확인해 주세요</h2><p>이 페이지는 ${escapeHtml(context.jurisdiction)} 공식 자료를 참고합니다. 다른 지역에서는 배출 방식·신고 방법·수수료가 다를 수 있어요.</p><p>${escapeHtml(item.regional_note)}</p><p>거주 지역의 시·군·구 홈페이지에서도 확인해 주세요.</p><a href="#official-sources">이 페이지의 공식 출처로 이동</a></aside>` : '';
   const warnings = item.warnings.length ? `<section class="content-card warning"><h2>주의사항</h2><ul>${item.warnings.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ul></section>` : '';
+  const question = questionData.questions.find(q => q.slug === item.slug);
+  const questionBlock = question ? `<section class="content-card condition-question" data-section="condition-question"><h2>${escapeHtml(question.question)}</h2><p>${escapeHtml(question.answer)}</p><p class="guide-evidence">이 답변의 공식 근거: ${question.source_ids.map(id => { const source = registry.sources.find(s => s.id === id); return `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.authority)} · ${escapeHtml(source.name)}<span class="sr-only"> (새 창)</span></a>`; }).join(' · ')}</p><p class="updated">질문 답변 확인: ${formatDate(question.checked_at)} · 원문의 품목·조건 범위</p><a class="browse-link" href="/guides/${question.guide_slug}/">관련 조건을 순서대로 확인하기</a></section>` : '';
   const cta = item.collection_service?.type === 'free_home_pickup' ? `<section class="collection-card"><p class="eyebrow">공식 수거 서비스</p><h2>🔌 폐가전 무상방문수거</h2><p>${item.collection_service.eligible === true ? '무료 방문수거 대상입니다.' : '조건에 따라 무료수거가 가능합니다.'}</p>${item.collection_service.eligible === 'conditional' ? '<p>제품 크기 또는 수량 조건을 공식 사이트에서 확인하세요.</p>' : ''}<a class="button secondary" href="${escapeHtml(item.collection_service.url)}" target="_blank" rel="noopener noreferrer">공식 사이트에서 신청 조건 확인<span class="sr-only"> (새 창)</span></a></section>` : '';
   const relatedBlock = related.length ? `<section class="content-card" data-section="related-items"><h2>함께 찾는 품목</h2><p>같은 배출 분류나 품목 관계로 연결된 확인된 품목이에요. 세부 기준은 각 페이지에서 확인해 주세요.</p><ul class="related-list">${related.map(target => `<li><a href="/item/${escapeHtml(target.slug)}/">${escapeHtml(target.name)} <span>${escapeHtml(target.disposal_label)}</span></a></li>`).join('')}</ul><a class="browse-link" href="/category/${escapeHtml(category.slug)}/">${escapeHtml(category.name)} 더 보기</a></section>` : `<section class="content-card" data-section="related-items"><h2>다른 품목 찾아보기</h2><p>이 품목과 직접 연결된 확인 품목은 아직 없어요.</p><a class="browse-link" href="/category/${escapeHtml(category.slug)}/">${escapeHtml(category.name)} 품목 둘러보기</a></section>`;
   const adSlotTop = renderAdSlotTop(monetization);
@@ -86,13 +89,16 @@ export function itemPage(item, category, bySlug, monetization = monetizationConf
     <section class="answer-card"><p class="eyebrow">한눈에 보는 배출방법</p><h2>✓ ${escapeHtml(item.disposal_label)}</h2><p>${escapeHtml(item.summary)}</p><p class="source-scope">${escapeHtml(scopeLabel)}</p>${evidenceBasis}</section>
     ${adSlotTop}${regional}
     <section class="content-card"><h2>버리는 순서</h2><ol class="steps">${item.steps.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ol></section>
-    ${warnings}${cta}${relatedBlock}${affiliateBlock}${adSlotBottom}
+    ${warnings}${questionBlock}${cta}${relatedBlock}${affiliateBlock}${adSlotBottom}
     <section class="content-card sources" id="official-sources"><h2>공식 출처</h2><ul>${sources}</ul><p class="updated">정보 확인: ${formatDate(item.verified_at)}</p></section>
     ${isIndexable(item) ? carousel() : ''}
     ` });
 }
 
 function categoryPage(category, items) {
+  const itemSlugs = new Set(items.filter(isIndexable).map(item => item.slug));
+  const relatedGuides = guideData.guides.filter(guide => guide.steps.some(step => step.items.some(slug => itemSlugs.has(slug))));
+  const guideBlock = relatedGuides.length ? `<section class="section"><h2>조건을 함께 확인하는 가이드</h2><ul class="related-list">${relatedGuides.map(guide => `<li><a href="/guides/${guide.slug}/">${escapeHtml(guide.title)}</a></li>`).join('')}</ul></section>` : '';
   const path = `/category/${category.slug}/`;
   const title = `${category.name} 배출방법 | 버림뚝딱`;
   const description = category.description;
@@ -101,7 +107,7 @@ function categoryPage(category, items) {
     { '@context': 'https://schema.org', ...crumbData([{ name: '홈', path: '/' }, { name: category.name, path }]) },
   ], content: `
     ${breadcrumb([{ label: '홈', href: '/' }, { label: category.name }])}
-    <header class="page-intro"><span class="category-icon" aria-hidden="true">${category.icon}</span><h1>${escapeHtml(category.name)}</h1><p>${escapeHtml(category.description)}</p></header>
+    <header class="page-intro"><span class="category-icon" aria-hidden="true">${category.icon}</span><h1>${escapeHtml(category.name)}</h1><p>${escapeHtml(category.description)}</p></header>${guideBlock}
     <section class="section"><div class="section-heading"><h2>확인된 품목</h2><p>${items.length ? `공식 자료로 확인된 ${items.length}개 품목입니다.` : '현재 공식 자료를 확인한 품목을 준비하고 있습니다.'}</p></div>${items.length ? `<ul class="card-grid item-grid">${items.map(card).join('')}</ul>` : '<div class="empty-state"><p>확인되지 않은 배출방법은 안내하지 않습니다.</p><a href="/">홈에서 다른 품목 검색하기</a></div>'}</section>` });
 }
 
@@ -178,6 +184,7 @@ function redirectsFile(publicPaths) {
 export function buildSite() {
   const { seed, categories: categoryData, registry } = loadInputs();
   validateGuides(seed, registry);
+  validateItemQuestions(seed, registry, guideData);
   const verified = seed.items.filter(item => item.verification_status === 'verified');
   const categories = categoryData.categories;
   const bySlug = new Map(seed.items.map(item => [item.slug, item]));
