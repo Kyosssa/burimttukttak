@@ -9,6 +9,7 @@ import { heldSlugs, isIndexable } from '../scripts/lib/index-quality.mjs';
 import { createSearchIndex, search } from '../src/search.mjs';
 import { createMissingSearchApi } from '../functions/api/missing-search-core.mjs';
 import { SITE_URL } from '../scripts/lib/html.mjs';
+import { beforeDocumentedCorrections } from '../scripts/lib/source-rechecks.mjs';
 
 const {seed,registry}=loadInputs();
 const manifest=JSON.parse(readFileSync('data/search-intent-expansion.json','utf8'));
@@ -17,8 +18,8 @@ const fixtures=JSON.parse(readFileSync('docs/prebuild/14-search-quality-fixtures
 const hash=v=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
 const html=p=>readFileSync(`dist/${p}`,'utf8');
 
-test('sub-keyword expansion preserves every item fact, status, alias and prior guide/source',()=>{
-  assert.equal(hash(seed.items.map(({search_keywords,...facts})=>facts)),manifest.baseline.items_sha256);
+test('sub-keyword baseline preserves every field outside explicitly documented source corrections',()=>{
+  assert.equal(hash(beforeDocumentedCorrections(seed.items).map(({search_keywords,...facts})=>facts)),manifest.baseline.items_sha256);
   assert.equal(hash(registry.sources.slice(0,manifest.baseline.registry_count)),manifest.baseline.registry_sha256);
   assert.equal(hash(guideData.guides.slice(0,manifest.baseline.guide_count)),manifest.baseline.guides_sha256);
   assert.equal(seed.items.filter(i=>i.verification_status==='verified').length,135);

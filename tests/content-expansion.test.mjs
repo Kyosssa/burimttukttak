@@ -83,7 +83,7 @@ test('guide hub is reachable from home and recent items reflect real dated chang
   assert.deepEqual(recentItems(seed, [...changes].reverse()), recent);
   for (const {item, change} of recent) {
     assert.ok(isIndexable(item));
-    assert.equal(change.date, '2026-10-03');
+    assert.equal(change.date, '2026-10-17');
     assert.ok(home.includes(`href="/item/${item.slug}/"`));
   }
 });

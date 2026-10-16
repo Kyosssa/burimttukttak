@@ -1,0 +1,204 @@
+{
+  "checked_at": "2026-10-17",
+  "items": [
+    {
+      "slug": "wifi-router",
+      "step_notes": [
+        {
+          "step": 0,
+          "text": "이 페이지의 대상은 공유기 본체입니다. 별도 어댑터·케이블만 남은 경우의 배출법은 현재 공유기 근거로 확정하지 않습니다. 부속품만 따로 내놓는 경우에는 완제품 대상 방문수거와 구분해 확인하세요.",
+          "source_ids": [
+            "ewaste-faq"
+          ]
+        },
+        {
+          "step": 2,
+          "text": "방문수거는 전용수거함과 다른 경로입니다. 공식 서비스는 실제 치수·중량과 수량으로 단일·다량·추가 품목을 나누므로, 공유기 한 대만으로 방문수거가 된다고 판단하지 마세요. 아래 수량·규격 가이드에서 확인 순서를 볼 수 있습니다.",
+          "source_ids": [
+            "ewaste-pickup"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/guides/appliance-count-and-size/",
+          "label": "공유기 한 대를 내놓기 전: 수량·규격별 접수 조건 확인"
+        },
+        {
+          "path": "/guides/appliance-condition-and-parts/",
+          "label": "본체 없이 부속품만 남았다면: 완제품 수거 범위 확인"
+        }
+      ]
+    },
+    {
+      "slug": "bag",
+      "step_notes": [
+        {
+          "step": 0,
+          "text": "판단의 첫 기준은 원료 재활용이 아니라 다른 사람이 다시 사용할 수 있는지입니다. 공식 원문은 가죽·천·금속 등이 섞인 가방의 재활용 어려움과, 상태가 좋은 제품을 선별해 재사용하는 의류수거함 경로를 구분합니다. 천처럼 보인다는 이유만으로 일반 재활용품으로 분류하지 마세요.",
+          "source_ids": [
+            "official-dictionary-150"
+          ]
+        },
+        {
+          "step": 2,
+          "text": "종량제봉투와 대형폐기물의 분기는 재사용이 어려운 가방에 대한 안내입니다. 원문은 봉투 배출이 어려운 큰 가방을 대형폐기물로 구분하지만, 전국 공통 크기 수치나 수수료를 제시하지 않습니다. 해당 가방의 지역 품목·규격을 확인하세요.",
+          "source_ids": [
+            "official-dictionary-150"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/guides/before-clothing-bin/",
+          "label": "가방·침구를 수거함에 넣기 전: 허용 품목과 재사용 상태 비교"
+        }
+      ]
+    },
+    {
+      "slug": "foil-plate",
+      "step_notes": [
+        {
+          "step": 0,
+          "text": "은색으로 보이는 모든 용기를 뜻하지 않습니다. 이 답변은 공식 품목사전의 은박 접시 범위이며, 알루미늄 캔이나 다른 금속 용기의 분류와 구분합니다. 다른 모양의 용기까지 이 답변으로 확정하지 마세요.",
+          "source_ids": [
+            "official-dictionary-741"
+          ]
+        },
+        {
+          "step": 1,
+          "text": "공식 원문이 드는 이유는 단순 오염이 아니라 선별의 어려움입니다. 씻어서 깨끗해졌다는 이유만으로 금속캔·고철 경로로 바꾸는 안내는 아닙니다. 지자체가 별도 방법을 정했다면 그 지역 안내를 우선 확인하세요.",
+          "source_ids": [
+            "official-dictionary-741"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/item/metal-can/",
+          "label": "금속캔을 버리는 경우에는: 접시가 아닌 캔의 준비 조건 확인"
+        },
+        {
+          "path": "/guides/paper-coating-and-adhesive/",
+          "label": "종이·은박처럼 보이는 포장재를 이름만으로 판단하기 어려울 때"
+        }
+      ]
+    },
+    {
+      "slug": "food-absorbent-pad",
+      "step_notes": [
+        {
+          "step": 0,
+          "text": "바깥 용기와 안쪽 패드를 한 가지 재질로 보지 마세요. 이 답변이 다루는 것은 육류·생선의 핏물·물기를 흡수하는 포장용 패드입니다. 바깥 용기는 실제 재질에 맞는 별도 상세에서 확인하세요.",
+          "source_ids": [
+            "official-dictionary-454"
+          ]
+        },
+        {
+          "step": 1,
+          "text": "겉면이 종이처럼 보여도 원문은 종이·부직포·SAP 등이 섞인 복합재질로 설명합니다. 종이류로 재활용하는 기준이 아닙니다. 이 근거에서 패드 내용물을 따로 꺼내거나 하수구로 버리는 방법은 확인하지 않았습니다.",
+          "source_ids": [
+            "official-dictionary-454"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/item/plastic-container/",
+          "label": "바깥 용기가 플라스틱인 경우: 내용물·다른 재질 제거 조건"
+        },
+        {
+          "path": "/item/styrofoam/",
+          "label": "바깥 용기가 스티로폼인 경우: 별도 용기 기준"
+        },
+        {
+          "path": "/item/food-desiccant/",
+          "label": "작은 식품 방습제 봉지라면: 흡수패드와 다른 대상 확인"
+        }
+      ]
+    },
+    {
+      "slug": "lint-roller",
+      "step_notes": [
+        {
+          "step": 0,
+          "text": "플라스틱 몸체와 붙어 있는 테이프가 서로 다른 배출 대상입니다. 테이프에 종이가 들어 있는 것처럼 보여도 원문이 안내하는 경로는 일반쓰레기이며 몸체와 함께 플라스틱 수거함에 넣는 기준이 아닙니다.",
+          "source_ids": [
+            "official-dictionary-120"
+          ]
+        },
+        {
+          "step": 1,
+          "text": "플라스틱 몸체라는 제품 조건을 확인하세요. 금속 몸체·전동 청소기 등 다른 구조까지 이 기준으로 확대하거나, 원문에 없는 분해 방법을 적용하지 않습니다.",
+          "source_ids": [
+            "official-dictionary-120"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/item/masking-tape/",
+          "label": "몸체 없는 다른 테이프를 버리려면: 마스킹테이프의 별도 대상 확인"
+        },
+        {
+          "path": "/guides/bathroom-cleanup/",
+          "label": "청소용품을 함께 정리한다면: 용기·내용물·소모품 구분 순서"
+        }
+      ]
+    },
+    {
+      "slug": "razor",
+      "step_notes": [
+        {
+          "step": 1,
+          "text": "원문이 요구하는 것은 날카로운 부분이 밖으로 노출되지 않도록 보호하는 것입니다. 플라스틱과 금속을 나누기 위해 칼날을 떼어내라는 지침으로 해석하지 마세요. 교체형 카트리지만 따로 남은 경우의 처리법도 이 원문만으로 확정하지 않습니다.",
+          "source_ids": [
+            "official-dictionary-331"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/guides/appliance-count-and-size/",
+          "label": "전기면도기는 다른 경로: 공식 서비스의 추가 품목·접수 조건 확인"
+        }
+      ]
+    },
+    {
+      "slug": "treadmill",
+      "step_notes": [
+        {
+          "step": 0,
+          "text": "운동기구라고 모두 같은 접수 대상은 아닙니다. 공식 FAQ는 전기로 작동하는 제품과, 사람이 움직이고 건전지 계기판만 달린 운동기구를 구분합니다. 러닝머신 완제품의 실제 규격·상태도 함께 확인하세요.",
+          "source_ids": [
+            "ewaste-faq"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/guides/appliance-condition-and-parts/",
+          "label": "운동기구의 완제품·제품 상태와 공식 서비스 범위 확인"
+        }
+      ]
+    },
+    {
+      "slug": "tablet",
+      "step_notes": [
+        {
+          "step": 2,
+          "text": "공식 이용안내는 태블릿PC를 다량 품목 표에 열거하며 다량 품목은 5개 이상부터 안내합니다. 전용수거함 배출과 방문수거 접수는 다른 경로이므로 실제 제품 구분을 공식 접수 기준과 대조하세요.",
+          "source_ids": [
+            "ewaste-pickup"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "path": "/guides/appliance-count-and-size/",
+          "label": "태블릿 방문수거를 선택할 때: 다량 품목과 수량 조건 확인"
+        }
+      ]
+    }
+  ]
+}

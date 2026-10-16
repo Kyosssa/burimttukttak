@@ -1,0 +1,3694 @@
+{
+  "mode": "offline_manual_review_only",
+  "indexableItems": 124,
+  "guides": 11,
+  "categories": [
+    {
+      "category": "주방/조리도구",
+      "count": 13
+    },
+    {
+      "category": "포장재/재활용",
+      "count": 28
+    },
+    {
+      "category": "음식물/식재료",
+      "count": 17
+    },
+    {
+      "category": "대형/생활가전",
+      "count": 20
+    },
+    {
+      "category": "소형전자/배터리",
+      "count": 15
+    },
+    {
+      "category": "가구/대형폐기물",
+      "count": 4
+    },
+    {
+      "category": "생활/의류/욕실",
+      "count": 21
+    },
+    {
+      "category": "특수/주의품목",
+      "count": 6
+    }
+  ],
+  "items": [
+    {
+      "slug": "frying-pan",
+      "category": "주방/조리도구",
+      "answerCharacters": 114,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "pot",
+      "category": "주방/조리도구",
+      "answerCharacters": 107,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "kitchen-knife",
+      "category": "주방/조리도구",
+      "answerCharacters": 113,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=711",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "scissors",
+      "category": "주방/조리도구",
+      "answerCharacters": 151,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=762",
+          "registered": true
+        },
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=306",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "cutting-board",
+      "category": "주방/조리도구",
+      "answerCharacters": 78,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "plate",
+      "category": "주방/조리도구",
+      "answerCharacters": 92,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "ceramic-mug",
+      "category": "주방/조리도구",
+      "answerCharacters": 91,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "food-container",
+      "category": "주방/조리도구",
+      "answerCharacters": 112,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "rubber-gloves",
+      "category": "주방/조리도구",
+      "answerCharacters": 98,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "scrubber",
+      "category": "주방/조리도구",
+      "answerCharacters": 80,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=485",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "styrofoam",
+      "category": "포장재/재활용",
+      "answerCharacters": 90,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "plastic-film",
+      "category": "포장재/재활용",
+      "answerCharacters": 85,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "cardboard-box",
+      "category": "포장재/재활용",
+      "answerCharacters": 93,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "paper-cup",
+      "category": "포장재/재활용",
+      "answerCharacters": 79,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "plastic-cup",
+      "category": "포장재/재활용",
+      "answerCharacters": 89,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "clear-pet-bottle",
+      "category": "포장재/재활용",
+      "answerCharacters": 99,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "colored-pet-bottle",
+      "category": "포장재/재활용",
+      "answerCharacters": 124,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "plastic-container",
+      "category": "포장재/재활용",
+      "answerCharacters": 107,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "takeout-container",
+      "category": "포장재/재활용",
+      "answerCharacters": 108,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "disposable-lunchbox",
+      "category": "포장재/재활용",
+      "answerCharacters": 131,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "milk-carton",
+      "category": "포장재/재활용",
+      "answerCharacters": 81,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "aseptic-carton",
+      "category": "포장재/재활용",
+      "answerCharacters": 94,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "glass-bottle",
+      "category": "포장재/재활용",
+      "answerCharacters": 70,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "metal-can",
+      "category": "포장재/재활용",
+      "answerCharacters": 89,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "eggshell",
+      "category": "음식물/식재료",
+      "answerCharacters": 64,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "chicken-bone",
+      "category": "음식물/식재료",
+      "answerCharacters": 49,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "pork-bone",
+      "category": "음식물/식재료",
+      "answerCharacters": 56,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "fish-bone",
+      "category": "음식물/식재료",
+      "answerCharacters": 48,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "shellfish-shell",
+      "category": "음식물/식재료",
+      "answerCharacters": 57,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "crab-shell",
+      "category": "음식물/식재료",
+      "answerCharacters": 60,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "banana-peel",
+      "category": "음식물/식재료",
+      "answerCharacters": 74,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_06.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "onion-skin",
+      "category": "음식물/식재료",
+      "answerCharacters": 60,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "garlic-skin",
+      "category": "음식물/식재료",
+      "answerCharacters": 59,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "corn-husk",
+      "category": "음식물/식재료",
+      "answerCharacters": 55,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "corn-cob",
+      "category": "음식물/식재료",
+      "answerCharacters": 58,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "peach-pit",
+      "category": "음식물/식재료",
+      "answerCharacters": 62,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.seocho.go.kr/site/seocho/04/10413030600002020072410.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "watermelon-rind",
+      "category": "음식물/식재료",
+      "answerCharacters": 70,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_06.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "tea-bag",
+      "category": "음식물/식재료",
+      "answerCharacters": 77,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=419",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "refrigerator",
+      "category": "대형/생활가전",
+      "answerCharacters": 112,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 5,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "kimchi-refrigerator",
+      "category": "대형/생활가전",
+      "answerCharacters": 133,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "washing-machine",
+      "category": "대형/생활가전",
+      "answerCharacters": 101,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 5,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "dryer",
+      "category": "대형/생활가전",
+      "answerCharacters": 124,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 5,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "air-conditioner",
+      "category": "대형/생활가전",
+      "answerCharacters": 79,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "television",
+      "category": "대형/생활가전",
+      "answerCharacters": 116,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "microwave",
+      "category": "대형/생활가전",
+      "answerCharacters": 120,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 5,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "electric-oven",
+      "category": "대형/생활가전",
+      "answerCharacters": 144,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 3,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "dishwasher",
+      "category": "대형/생활가전",
+      "answerCharacters": 144,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 3,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "air-purifier",
+      "category": "대형/생활가전",
+      "answerCharacters": 120,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 5,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "dehumidifier",
+      "category": "대형/생활가전",
+      "answerCharacters": 120,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 5,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "water-purifier",
+      "category": "대형/생활가전",
+      "answerCharacters": 135,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "water-dispenser",
+      "category": "대형/생활가전",
+      "answerCharacters": 132,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "treadmill",
+      "category": "대형/생활가전",
+      "answerCharacters": 144,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 3,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "copier",
+      "category": "대형/생활가전",
+      "answerCharacters": 144,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 3,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "electric-fan",
+      "category": "대형/생활가전",
+      "answerCharacters": 158,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "humidifier",
+      "category": "대형/생활가전",
+      "answerCharacters": 158,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "rice-cooker",
+      "category": "대형/생활가전",
+      "answerCharacters": 158,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "vacuum-cleaner",
+      "category": "대형/생활가전",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "air-fryer",
+      "category": "대형/생활가전",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "laptop",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "desktop-computer",
+      "category": "소형전자/배터리",
+      "answerCharacters": 138,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "computer-monitor",
+      "category": "소형전자/배터리",
+      "answerCharacters": 149,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "printer",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "mobile-phone",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "tablet",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "wifi-router",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": true
+    },
+    {
+      "slug": "game-console",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "hair-dryer",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "electric-iron",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "coffee-maker",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "blender",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "electric-kettle",
+      "category": "소형전자/배터리",
+      "answerCharacters": 122,
+      "sourceBasis": "official_current_service",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 15,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "battery",
+      "category": "소형전자/배터리",
+      "answerCharacters": 92,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "power-bank",
+      "category": "소형전자/배터리",
+      "answerCharacters": 87,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "mattress",
+      "category": "가구/대형폐기물",
+      "answerCharacters": 63,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "carpet",
+      "category": "가구/대형폐기물",
+      "answerCharacters": 58,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "drying-rack",
+      "category": "가구/대형폐기물",
+      "answerCharacters": 55,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "stroller",
+      "category": "가구/대형폐기물",
+      "answerCharacters": 70,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "umbrella",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 56,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "clothes",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 69,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "bag",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 164,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=150",
+          "registered": true
+        },
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 2,
+      "hasPracticalNotes": true
+    },
+    {
+      "slug": "blanket",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 99,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 2,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "pillow",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 99,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 2,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "clothes-hanger",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 89,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "toothbrush",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 82,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "toothpaste-tube",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 106,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "razor",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 123,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=331",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": true
+    },
+    {
+      "slug": "flower-pot",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 74,
+      "sourceBasis": "official_local_item_rule",
+      "officialSources": [
+        {
+          "url": "https://www.paju.go.kr/www/www_02/environment/environment_05/environment_05_01/environment_05_01_04.jsp",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "toy",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 155,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "ice-pack",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 125,
+      "sourceBasis": "official_local_service",
+      "officialSources": [
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/front/region/location.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "broken-glass",
+      "category": "특수/주의품목",
+      "answerCharacters": 94,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "fluorescent-lamp",
+      "category": "특수/주의품목",
+      "answerCharacters": 43,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "led-bulb",
+      "category": "특수/주의품목",
+      "answerCharacters": 63,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "butane-can",
+      "category": "특수/주의품목",
+      "answerCharacters": 109,
+      "sourceBasis": "official_current_guideline",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        },
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "aerosol-can",
+      "category": "특수/주의품목",
+      "answerCharacters": 157,
+      "sourceBasis": "official_category_rule",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "unused-medicine",
+      "category": "특수/주의품목",
+      "answerCharacters": 119,
+      "sourceBasis": "official_local_service",
+      "officialSources": [
+        {
+          "url": "https://xn--oy2b29bd3a601b.kr/front/region/location.do",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 1,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "hand-cream-container",
+      "category": "포장재/재활용",
+      "answerCharacters": 126,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=800",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "shipping-label",
+      "category": "포장재/재활용",
+      "answerCharacters": 95,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=718",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "thermal-receipt",
+      "category": "포장재/재활용",
+      "answerCharacters": 74,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=730",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "vinyl-zip-bag",
+      "category": "포장재/재활용",
+      "answerCharacters": 94,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=630",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "paper-bag",
+      "category": "포장재/재활용",
+      "answerCharacters": 116,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=561",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "pill-blister-pack",
+      "category": "포장재/재활용",
+      "answerCharacters": 85,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=400",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "fruit-protection-net",
+      "category": "포장재/재활용",
+      "answerCharacters": 92,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=746",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "masking-tape",
+      "category": "포장재/재활용",
+      "answerCharacters": 64,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=714",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "dishcloth",
+      "category": "주방/조리도구",
+      "answerCharacters": 87,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=728",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "food-desiccant",
+      "category": "포장재/재활용",
+      "answerCharacters": 87,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=457",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "broth-bag",
+      "category": "음식물/식재료",
+      "answerCharacters": 129,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=744",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "herbal-medicine-residue",
+      "category": "음식물/식재료",
+      "answerCharacters": 82,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=745",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "tea-leaves",
+      "category": "음식물/식재료",
+      "answerCharacters": 93,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=420",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "foil-plate",
+      "category": "포장재/재활용",
+      "answerCharacters": 64,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=741",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": true
+    },
+    {
+      "slug": "metal-can-opener",
+      "category": "주방/조리도구",
+      "answerCharacters": 73,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=791",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "kitchen-paper-core",
+      "category": "포장재/재활용",
+      "answerCharacters": 105,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=560",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "mixed-toothbrush-holder",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 86,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=790",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "wet-wipes",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 100,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=375",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "cotton-pad",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 76,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=733",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "dental-floss",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 89,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=725",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "baking-paper",
+      "category": "주방/조리도구",
+      "answerCharacters": 79,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=410",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "bubble-wrap",
+      "category": "포장재/재활용",
+      "answerCharacters": 60,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=106",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "food-absorbent-pad",
+      "category": "포장재/재활용",
+      "answerCharacters": 94,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=454",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": true
+    },
+    {
+      "slug": "food-wrap",
+      "category": "포장재/재활용",
+      "answerCharacters": 148,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=119",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "cleaner-container",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 131,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=595",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "powder-detergent",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 124,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=399",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "shower-curtain",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 85,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=398",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "shower-cap",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 119,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=397",
+          "registered": true
+        },
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=769",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": false
+    },
+    {
+      "slug": "lint-roller",
+      "category": "생활/의류/욕실",
+      "answerCharacters": 113,
+      "sourceBasis": "official_item_guidance",
+      "officialSources": [
+        {
+          "url": "https://www.xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=120",
+          "registered": true
+        }
+      ],
+      "reviewPairs": 0,
+      "hasPracticalNotes": true
+    }
+  ],
+  "disposalFamilies": [
+    {
+      "key": "주방/조리도구:metal_recycling",
+      "slugs": [
+        "frying-pan",
+        "pot",
+        "metal-can-opener"
+      ]
+    },
+    {
+      "key": "주방/조리도구:general_waste",
+      "slugs": [
+        "kitchen-knife",
+        "scrubber",
+        "dishcloth",
+        "baking-paper"
+      ]
+    },
+    {
+      "key": "주방/조리도구:conditional_recycling",
+      "slugs": [
+        "scissors"
+      ]
+    },
+    {
+      "key": "주방/조리도구:bulky_waste_local",
+      "slugs": [
+        "cutting-board"
+      ]
+    },
+    {
+      "key": "주방/조리도구:general_waste_local",
+      "slugs": [
+        "plate",
+        "ceramic-mug",
+        "rubber-gloves"
+      ]
+    },
+    {
+      "key": "주방/조리도구:plastic_container",
+      "slugs": [
+        "food-container"
+      ]
+    },
+    {
+      "key": "포장재/재활용:styrofoam",
+      "slugs": [
+        "styrofoam"
+      ]
+    },
+    {
+      "key": "포장재/재활용:plastic_film",
+      "slugs": [
+        "plastic-film"
+      ]
+    },
+    {
+      "key": "포장재/재활용:paper",
+      "slugs": [
+        "cardboard-box",
+        "paper-cup"
+      ]
+    },
+    {
+      "key": "포장재/재활용:plastic_container",
+      "slugs": [
+        "plastic-cup",
+        "colored-pet-bottle",
+        "plastic-container",
+        "takeout-container"
+      ]
+    },
+    {
+      "key": "포장재/재활용:transparent_pet",
+      "slugs": [
+        "clear-pet-bottle"
+      ]
+    },
+    {
+      "key": "포장재/재활용:material_based_container",
+      "slugs": [
+        "disposable-lunchbox"
+      ]
+    },
+    {
+      "key": "포장재/재활용:paper_pack",
+      "slugs": [
+        "milk-carton",
+        "aseptic-carton"
+      ]
+    },
+    {
+      "key": "포장재/재활용:glass_bottle",
+      "slugs": [
+        "glass-bottle"
+      ]
+    },
+    {
+      "key": "포장재/재활용:metal_can",
+      "slugs": [
+        "metal-can"
+      ]
+    },
+    {
+      "key": "음식물/식재료:general_waste_local",
+      "slugs": [
+        "eggshell",
+        "chicken-bone",
+        "pork-bone",
+        "fish-bone",
+        "shellfish-shell",
+        "crab-shell",
+        "onion-skin",
+        "garlic-skin",
+        "corn-husk",
+        "corn-cob",
+        "peach-pit"
+      ]
+    },
+    {
+      "key": "음식물/식재료:food_waste_local",
+      "slugs": [
+        "banana-peel",
+        "watermelon-rind"
+      ]
+    },
+    {
+      "key": "음식물/식재료:general_waste",
+      "slugs": [
+        "tea-bag",
+        "broth-bag",
+        "herbal-medicine-residue",
+        "tea-leaves"
+      ]
+    },
+    {
+      "key": "대형/생활가전:large_e_waste",
+      "slugs": [
+        "refrigerator",
+        "kimchi-refrigerator",
+        "washing-machine",
+        "dryer",
+        "air-conditioner",
+        "television",
+        "microwave",
+        "electric-oven",
+        "dishwasher",
+        "air-purifier",
+        "dehumidifier",
+        "water-purifier",
+        "water-dispenser",
+        "treadmill",
+        "copier"
+      ]
+    },
+    {
+      "key": "대형/생활가전:small_e_waste",
+      "slugs": [
+        "electric-fan",
+        "humidifier",
+        "rice-cooker",
+        "vacuum-cleaner",
+        "air-fryer"
+      ]
+    },
+    {
+      "key": "소형전자/배터리:small_e_waste",
+      "slugs": [
+        "laptop",
+        "desktop-computer",
+        "computer-monitor",
+        "printer",
+        "mobile-phone",
+        "tablet",
+        "wifi-router",
+        "game-console",
+        "hair-dryer",
+        "electric-iron",
+        "coffee-maker",
+        "blender",
+        "electric-kettle"
+      ]
+    },
+    {
+      "key": "소형전자/배터리:battery",
+      "slugs": [
+        "battery",
+        "power-bank"
+      ]
+    },
+    {
+      "key": "가구/대형폐기물:bulky_waste_local",
+      "slugs": [
+        "mattress",
+        "carpet",
+        "drying-rack",
+        "stroller"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:bulky_waste_local",
+      "slugs": [
+        "umbrella",
+        "flower-pot"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:clothing",
+      "slugs": [
+        "clothes"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:conditional_reuse",
+      "slugs": [
+        "bag"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:general_waste_local",
+      "slugs": [
+        "blanket",
+        "pillow",
+        "clothes-hanger",
+        "toothbrush"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:plastic_container",
+      "slugs": [
+        "toothpaste-tube"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:general_waste",
+      "slugs": [
+        "razor",
+        "mixed-toothbrush-holder",
+        "wet-wipes",
+        "cotton-pad",
+        "dental-floss",
+        "powder-detergent",
+        "shower-curtain"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:plastic_or_e_waste",
+      "slugs": [
+        "toy"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:local_collection_point",
+      "slugs": [
+        "ice-pack"
+      ]
+    },
+    {
+      "key": "특수/주의품목:general_waste_local",
+      "slugs": [
+        "broken-glass"
+      ]
+    },
+    {
+      "key": "특수/주의품목:lighting",
+      "slugs": [
+        "fluorescent-lamp",
+        "led-bulb"
+      ]
+    },
+    {
+      "key": "특수/주의품목:metal_can",
+      "slugs": [
+        "butane-can"
+      ]
+    },
+    {
+      "key": "특수/주의품목:metal_can_or_hazardous_waste",
+      "slugs": [
+        "aerosol-can"
+      ]
+    },
+    {
+      "key": "특수/주의품목:local_collection_point",
+      "slugs": [
+        "unused-medicine"
+      ]
+    },
+    {
+      "key": "포장재/재활용:general_waste",
+      "slugs": [
+        "hand-cream-container",
+        "shipping-label",
+        "thermal-receipt",
+        "pill-blister-pack",
+        "fruit-protection-net",
+        "masking-tape",
+        "food-desiccant",
+        "foil-plate",
+        "food-absorbent-pad"
+      ]
+    },
+    {
+      "key": "포장재/재활용:vinyl_recycling",
+      "slugs": [
+        "vinyl-zip-bag"
+      ]
+    },
+    {
+      "key": "포장재/재활용:paper_recycling",
+      "slugs": [
+        "paper-bag",
+        "kitchen-paper-core"
+      ]
+    },
+    {
+      "key": "포장재/재활용:film_recycling",
+      "slugs": [
+        "bubble-wrap"
+      ]
+    },
+    {
+      "key": "포장재/재활용:conditional_recycling",
+      "slugs": [
+        "food-wrap"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:plastic_recycling",
+      "slugs": [
+        "cleaner-container"
+      ]
+    },
+    {
+      "key": "생활/의류/욕실:conditional_recycling",
+      "slugs": [
+        "shower-cap",
+        "lint-roller"
+      ]
+    }
+  ],
+  "reviewPairs": [
+    {
+      "slugs": [
+        "microwave",
+        "air-purifier"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "microwave",
+        "dehumidifier"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "electric-oven",
+        "treadmill"
+      ],
+      "similarity": 1,
+      "sameActions": false,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "dishwasher",
+        "copier"
+      ],
+      "similarity": 1,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "air-purifier",
+        "dehumidifier"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "humidifier"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "air-fryer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "printer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "wifi-router"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "game-console"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "hair-dryer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "electric-iron"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "coffee-maker"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "printer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "wifi-router"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "game-console"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "hair-dryer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "electric-iron"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "coffee-maker"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "laptop",
+        "mobile-phone"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "laptop",
+        "tablet"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "printer",
+        "wifi-router"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "game-console"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "hair-dryer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "electric-iron"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "coffee-maker"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "tablet"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "wifi-router",
+        "game-console"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "wifi-router",
+        "hair-dryer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "wifi-router",
+        "electric-iron"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "wifi-router",
+        "coffee-maker"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "wifi-router",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "wifi-router",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "game-console",
+        "hair-dryer"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "game-console",
+        "electric-iron"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "game-console",
+        "coffee-maker"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "game-console",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "game-console",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "hair-dryer",
+        "electric-iron"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "hair-dryer",
+        "coffee-maker"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "hair-dryer",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "hair-dryer",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "electric-iron",
+        "coffee-maker"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "electric-iron",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "electric-iron",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "coffee-maker",
+        "blender"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "coffee-maker",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "blender",
+        "electric-kettle"
+      ],
+      "similarity": 1,
+      "sameActions": true,
+      "caughtByExistingNameGate": true
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "rice-cooker"
+      ],
+      "similarity": 0.991,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "rice-cooker"
+      ],
+      "similarity": 0.991,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-oven",
+        "dishwasher"
+      ],
+      "similarity": 0.984,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-oven",
+        "copier"
+      ],
+      "similarity": 0.984,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "dishwasher",
+        "treadmill"
+      ],
+      "similarity": 0.984,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "treadmill",
+        "copier"
+      ],
+      "similarity": 0.984,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "laptop"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "mobile-phone"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "vacuum-cleaner",
+        "tablet"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "laptop"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "mobile-phone"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "air-fryer",
+        "tablet"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "printer"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "wifi-router"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "game-console"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "hair-dryer"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "electric-iron"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "coffee-maker"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "blender"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "laptop",
+        "electric-kettle"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "mobile-phone"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "printer",
+        "tablet"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "wifi-router"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "game-console"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "hair-dryer"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "electric-iron"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "coffee-maker"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "blender"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "mobile-phone",
+        "electric-kettle"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "tablet",
+        "wifi-router"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "tablet",
+        "game-console"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "tablet",
+        "hair-dryer"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "tablet",
+        "electric-iron"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "tablet",
+        "coffee-maker"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "tablet",
+        "blender"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "tablet",
+        "electric-kettle"
+      ],
+      "similarity": 0.977,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "blanket",
+        "pillow"
+      ],
+      "similarity": 0.974,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "refrigerator",
+        "washing-machine"
+      ],
+      "similarity": 0.759,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "food-container",
+        "plastic-cup"
+      ],
+      "similarity": 0.693,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "ice-pack",
+        "unused-medicine"
+      ],
+      "similarity": 0.688,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "drying-rack",
+        "umbrella"
+      ],
+      "similarity": 0.685,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "clothes-hanger",
+        "toothbrush"
+      ],
+      "similarity": 0.656,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "banana-peel",
+        "watermelon-rind"
+      ],
+      "similarity": 0.654,
+      "sameActions": false,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "dryer",
+        "microwave"
+      ],
+      "similarity": 0.63,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "dryer",
+        "air-purifier"
+      ],
+      "similarity": 0.63,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "dryer",
+        "dehumidifier"
+      ],
+      "similarity": 0.63,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "washing-machine",
+        "dryer"
+      ],
+      "similarity": 0.534,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "washing-machine",
+        "microwave"
+      ],
+      "similarity": 0.531,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "washing-machine",
+        "air-purifier"
+      ],
+      "similarity": 0.531,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "washing-machine",
+        "dehumidifier"
+      ],
+      "similarity": 0.531,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "refrigerator",
+        "dryer"
+      ],
+      "similarity": 0.496,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "refrigerator",
+        "microwave"
+      ],
+      "similarity": 0.493,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "refrigerator",
+        "air-purifier"
+      ],
+      "similarity": 0.493,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "refrigerator",
+        "dehumidifier"
+      ],
+      "similarity": 0.493,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "laptop"
+      ],
+      "similarity": 0.354,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "mobile-phone"
+      ],
+      "similarity": 0.354,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "tablet"
+      ],
+      "similarity": 0.354,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "vacuum-cleaner"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "air-fryer"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "laptop"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "printer"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "mobile-phone"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "tablet"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "wifi-router"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "game-console"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "hair-dryer"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "electric-iron"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "coffee-maker"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "blender"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "electric-fan",
+        "electric-kettle"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "vacuum-cleaner"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "air-fryer"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "laptop"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "printer"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "mobile-phone"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "tablet"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "wifi-router"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "game-console"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "hair-dryer"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "electric-iron"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "coffee-maker"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "blender"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "humidifier",
+        "electric-kettle"
+      ],
+      "similarity": 0.351,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "vacuum-cleaner"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "air-fryer"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "printer"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "wifi-router"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "game-console"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "hair-dryer"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "electric-iron"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "coffee-maker"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "blender"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "rice-cooker",
+        "electric-kettle"
+      ],
+      "similarity": 0.345,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "kitchen-knife",
+        "razor"
+      ],
+      "similarity": 0.303,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "bag",
+        "blanket"
+      ],
+      "similarity": 0.087,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    },
+    {
+      "slugs": [
+        "bag",
+        "pillow"
+      ],
+      "similarity": 0.081,
+      "sameActions": true,
+      "caughtByExistingNameGate": false
+    }
+  ],
+  "notCaughtByExistingNameGate": 106,
+  "guideReviewPairs": [],
+  "guideOverlapPairs": [
+    {
+      "slugs": [
+        "parcel-components",
+        "paper-coating-and-adhesive"
+      ],
+      "sharedItems": [
+        "cardboard-box",
+        "shipping-label"
+      ],
+      "note": "Shared targets require a manual check of distinct question and decision order."
+    },
+    {
+      "slugs": [
+        "before-moving",
+        "appliance-count-and-size"
+      ],
+      "sharedItems": [
+        "television",
+        "computer-monitor",
+        "electric-fan"
+      ],
+      "note": "Shared targets require a manual check of distinct question and decision order."
+    },
+    {
+      "slugs": [
+        "before-moving",
+        "appliance-condition-and-parts"
+      ],
+      "sharedItems": [
+        "refrigerator",
+        "television",
+        "air-conditioner",
+        "washing-machine"
+      ],
+      "note": "Shared targets require a manual check of distinct question and decision order."
+    },
+    {
+      "slugs": [
+        "appliance-count-and-size",
+        "appliance-condition-and-parts"
+      ],
+      "sharedItems": [
+        "television",
+        "rice-cooker"
+      ],
+      "note": "Shared targets require a manual check of distinct question and decision order."
+    }
+  ],
+  "limitation": "Heuristic review candidates only; no embeddings, traffic data, AdSense diagnosis or automatic hold/status changes."
+}

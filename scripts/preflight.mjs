@@ -10,6 +10,7 @@ const checks = [
   ['Production build', process.execPath, ['scripts/build.mjs']],
   ['Full tests', process.execPath, ['--test', ...testFiles]],
   ['Generated artifact audit', process.execPath, ['scripts/audit-dist.mjs']],
+  ['Content similarity review (report only)', process.execPath, ['scripts/audit-content.mjs']],
   ['Source review schedule', process.execPath, ['scripts/source-health.mjs']],
 ];
 

@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { loadInputs, pack } from './lib/inputs.mjs';
+import { recheckedDate } from './lib/source-rechecks.mjs';
 
 const DAY_MS = 86_400_000;
 const registryPath = new URL('12-source-registry-v1.json', pack);
@@ -15,7 +16,7 @@ export function createSourceHealthReport({ asOf = new Date() } = {}) {
   const sources = registry.sources.map(source => {
     const usages = verified.flatMap(item => item.sources
       .filter(itemSource => itemSource.url === source.url)
-      .map(itemSource => ({ slug: item.slug, name: item.name, checkedAt: itemSource.checked_at })));
+      .map(itemSource => ({ slug: item.slug, name: item.name, checkedAt: recheckedDate(item, itemSource, isoDate(reportDate)) ?? itemSource.checked_at })));
     if (!usages.length) return { id: source.id, name: source.name, status: 'not_in_verified_seed', reviewIntervalDays: source.review_interval_days, itemCount: 0, url: source.url };
     const oldestCheckedAt = usages.map(usage => usage.checkedAt).sort()[0];
     const nextReview = new Date(dateOnly(oldestCheckedAt).getTime() + source.review_interval_days * DAY_MS);

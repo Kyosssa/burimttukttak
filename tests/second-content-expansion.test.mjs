@@ -8,6 +8,7 @@ import { guideData } from '../scripts/lib/guides.mjs';
 import { createSearchIndex, search } from '../src/search.mjs';
 import { createMissingSearchApi } from '../functions/api/missing-search-core.mjs';
 import { SITE_URL } from '../scripts/lib/html.mjs';
+import { beforeDocumentedCorrections } from '../scripts/lib/source-rechecks.mjs';
 
 const { seed, registry } = loadInputs();
 const expansion = JSON.parse(readFileSync(new URL('../data/content-expansion-2026-10-03.json', import.meta.url)));
@@ -15,7 +16,7 @@ const fixtures = JSON.parse(readFileSync(new URL('../docs/prebuild/14-search-qua
 const html = path => readFileSync(new URL(`../dist/${path}`, import.meta.url), 'utf8');
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
-test('second expansion adds 12 and promotes 4, preserves the original verified data, registry and holds', () => {
+test('second expansion baseline is preserved outside documented source corrections, including registry and holds', () => {
   assert.equal(expansion.records.length, 16);
   assert.equal(expansion.records.filter(r => r.action === 'added').length, 12);
   assert.equal(expansion.records.filter(r => r.action === 'promoted').length, 4);
@@ -24,7 +25,7 @@ test('second expansion adds 12 and promotes 4, preserves the original verified d
   assert.equal(seed.items.filter(i => i.verification_status === 'needs_research').length, 14);
   assert.equal(seed.items.filter(isIndexable).length, 124);
   assert.equal(heldSlugs.size, 11);
-  assert.equal(hash(seed.items.filter(i => expansion.preserved_verified_slugs.includes(i.slug)).map(({ search_keywords, ...facts }) => facts)), expansion.preserved_verified_sha256);
+  assert.equal(hash(beforeDocumentedCorrections(seed.items.filter(i => expansion.preserved_verified_slugs.includes(i.slug))).map(({ search_keywords, ...facts }) => facts)), expansion.preserved_verified_sha256);
   assert.equal(hash(registry.sources.slice(0, 27)), expansion.preserved_registry_sha256);
   assert.equal(hash(seed.items.filter(i => i.verification_status === 'needs_research')), expansion.preserved_research_sha256);
   for (const record of expansion.records) {

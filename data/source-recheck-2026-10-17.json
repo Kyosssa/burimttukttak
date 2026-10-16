@@ -1,0 +1,1243 @@
+{
+  "reviewed_at": "2026-10-17",
+  "mode": "manual_source_comparison_no_live_location_or_model_approval",
+  "baseline_commit": "7544e1920d2dde91307da450bc849710e57dc4b0",
+  "sources": [
+    {
+      "id": "official-disposal-portal",
+      "url": "https://xn--oy2b29bd3a601b.kr/",
+      "authority": "기후에너지환경부",
+      "http_status": 200,
+      "final_url": "https://xn--oy2b29bd3a601b.kr/",
+      "html_sha256": "97f172c1c92d42071133cacf6381eb481fba3dd0dd8cddf30099038a4553db2b",
+      "reviewed_at": "2026-10-17",
+      "availability": "accessible",
+      "policy_change_found": false,
+      "scope": "공식 누리집의 존재·관련 지침/FAQ로의 연결과 아래 품목 원칙을 대조. 홈 자체를 모든 주장의 직접 근거로 취급하지 않음.",
+      "references": [
+        {
+          "slug": "frying-pan",
+          "name": "후라이팬",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 공식 분리배출 지침의 해당 재질·전지·가스용기 조건과 대조. 홈은 보조 진입 근거.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/",
+            "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+          ],
+          "claim_sha256": "4b30659ae3088096f492cb26dee1008cf87602e5dfeece01e8c027f29464446d"
+        },
+        {
+          "slug": "pot",
+          "name": "냄비",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 공식 분리배출 지침의 해당 재질·전지·가스용기 조건과 대조. 홈은 보조 진입 근거.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/",
+            "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+          ],
+          "claim_sha256": "9c914949a4b73eb15d33575f8a873da0b4ac3d8a3d7c8ca18597d496991f947b"
+        },
+        {
+          "slug": "clear-pet-bottle",
+          "name": "투명페트병",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 공식 분리배출 지침의 해당 재질·전지·가스용기 조건과 대조. 홈은 보조 진입 근거.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/",
+            "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+          ],
+          "claim_sha256": "f9eb2627cbee61c94b9b6ac9f57f7dee3d962178acf7b6757b2c2603efb0b3aa"
+        },
+        {
+          "slug": "takeout-container",
+          "name": "배달용기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 공식 분리배출 지침의 해당 재질·전지·가스용기 조건과 대조. 홈은 보조 진입 근거.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/",
+            "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+          ],
+          "claim_sha256": "7939f24026fd0f28544af5f2bb40022a73e1e822e23dd7bbd668c3a8b1f6c360"
+        },
+        {
+          "slug": "battery",
+          "name": "건전지",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 공식 분리배출 지침의 해당 재질·전지·가스용기 조건과 대조. 홈은 보조 진입 근거.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/",
+            "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+          ],
+          "claim_sha256": "c62200e0bb4c400ad947490ff1eedefe0c7be1c652c0f2c98a2327fff3351697"
+        },
+        {
+          "slug": "power-bank",
+          "name": "보조배터리",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "분리 불가 내장전지는 제품 그대로 배출하고, 절연 조건은 분리된 전지의 노출 단자에 한정. 모든 보조배터리의 외부 단자를 절연해야 한다는 일반화와 직접 근거가 없는 누르기·펴기 지침을 제거.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/",
+            "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+          ],
+          "claim_sha256": "29fea9f4e5cbe25b94fefabb468185cf35bb4efab6dff83b4aba514ecd94639f"
+        },
+        {
+          "slug": "butane-can",
+          "name": "부탄가스",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 공식 분리배출 지침의 해당 재질·전지·가스용기 조건과 대조. 홈은 보조 진입 근거.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/",
+            "https://www.xn--oy2b29bd3a601b.kr/front/bbsList.do?bbsId=BBS_0003"
+          ],
+          "claim_sha256": "10c0b70b07a80668848fcd17ddc029bfe411b2a3c34f776e2967f00c18d127f5"
+        }
+      ]
+    },
+    {
+      "id": "ewaste-pickup",
+      "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+      "authority": "E-순환거버넌스",
+      "http_status": 200,
+      "final_url": "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+      "html_sha256": "75c469e82ae291c658716abd41af840e484f1a5c0e28873c78ea6176664a6f21",
+      "reviewed_at": "2026-10-17",
+      "availability": "accessible",
+      "policy_change_found": false,
+      "scope": "현재 표시된 단일·다량·추가/제외/설치/원형·완제품 조건. 주석 처리된 구버전 표 제외. 모델별 실제 접수 승인 확인 아님.",
+      "references": [
+        {
+          "slug": "refrigerator",
+          "name": "냉장고",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현행 직접 열거 품목 또는 화면 크기 분기와 일치. 기타 접수·원형·설치 조건은 별도 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "3dc23863f68435e27fac1fb76ed5be33d0d2669c696d0728dafbb2cfb8943f4f"
+        },
+        {
+          "slug": "kimchi-refrigerator",
+          "name": "김치냉장고",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "ec28baebbe1630c63a79ce79779991dea875fb2d71d3438654f0b629b123a18f"
+        },
+        {
+          "slug": "washing-machine",
+          "name": "세탁기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현행 직접 열거 품목 또는 화면 크기 분기와 일치. 기타 접수·원형·설치 조건은 별도 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "7f2da45cff9028757fdf9fd4b915405772141f6e772f5d4c3551ec8a2df3cc0f"
+        },
+        {
+          "slug": "dryer",
+          "name": "건조기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "54f3eb4e9bf528171b5414a69666d6fbc26d0c1c2cc1e9ba79a648666f513b76"
+        },
+        {
+          "slug": "air-conditioner",
+          "name": "에어컨",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "현행 직접 열거 품목 또는 화면 크기 분기와 일치. 기타 접수·원형·설치 조건은 별도 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "b87ab116cc2755f0bc50226605c10774020b82bb73765cd21abcd58a91c80971"
+        },
+        {
+          "slug": "television",
+          "name": "TV",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-28",
+          "reviewed_at": "2026-10-17",
+          "finding": "현행 직접 열거 품목 또는 화면 크기 분기와 일치. 기타 접수·원형·설치 조건은 별도 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "669a1d023d613465641c2b6360d26bee1f1f439810dc808edb2b1d33988b4fc4"
+        },
+        {
+          "slug": "microwave",
+          "name": "전자레인지",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "c9711c73c1e4c0aa5df47b915bf8e589d927bed0de3776b4c450a90325aaa816"
+        },
+        {
+          "slug": "electric-oven",
+          "name": "전기오븐",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "6e98456d64611de7c89a22867399d0edfe8fe431ce8466763f585da3767df007"
+        },
+        {
+          "slug": "dishwasher",
+          "name": "식기세척기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "d5aeb53b500fae74c196fc77bcc466f8243016267480439d74e0e55ff36e10a0"
+        },
+        {
+          "slug": "air-purifier",
+          "name": "공기청정기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "470f9215309c406a2a17e92391f56158bd1db3b316e3963f2fb45b77831ca38e"
+        },
+        {
+          "slug": "dehumidifier",
+          "name": "제습기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "5c80515f3e6c24dc783687ab329ae467bf68f458db7f6f32980de5bdfd58c7d7"
+        },
+        {
+          "slug": "water-purifier",
+          "name": "정수기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "29659c1abc4eba875b6d46ae7ef640c1132d4b1accde4c934d39fc2ededf0f83"
+        },
+        {
+          "slug": "water-dispenser",
+          "name": "냉온수기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "7a079f0430cd33314d2ee7ad7c49fa86f895b0c58dd23165d83b7e7955ffb72a"
+        },
+        {
+          "slug": "treadmill",
+          "name": "러닝머신",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "e643147fd75d43b2eb1f4f4844c59946dda203f40fcce111e89555bb893d92af"
+        },
+        {
+          "slug": "copier",
+          "name": "복사기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-28",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "cb5c1e46e2a5a8e93d7178420ec14a3abbd6df6110e9fb15aaf6d094e0678ff8"
+        },
+        {
+          "slug": "electric-fan",
+          "name": "선풍기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "다량 5개 기준을 제품명 전체에 일반화하지 않고 현재 서비스의 규격·중량 조건으로 한정.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "3429cce48fa501fea32512dbcdfd4f230b64d58497da41a32f36618c37c09990"
+        },
+        {
+          "slug": "humidifier",
+          "name": "가습기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "다량 5개 기준을 제품명 전체에 일반화하지 않고 현재 서비스의 규격·중량 조건으로 한정.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "831cc255fec4abcbcfdc05d7a913171b8912aefad08a7ab3bb49ba3c50f429c9"
+        },
+        {
+          "slug": "rice-cooker",
+          "name": "전기밥솥",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-22",
+          "reviewed_at": "2026-10-17",
+          "finding": "다량 5개 기준을 제품명 전체에 일반화하지 않고 현재 서비스의 규격·중량 조건으로 한정.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "ac167b203a005e8de5c9145cd11ced1526fa342681747534716f12324a155a1e"
+        },
+        {
+          "slug": "vacuum-cleaner",
+          "name": "청소기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "c2d11c22a6af8e8e0b25b592cae5436e0138d40d99de575939f60ea4e6116df6"
+        },
+        {
+          "slug": "air-fryer",
+          "name": "에어프라이어",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "6baf510919a9a39c98b901a88455dd61146873dbfc22c319dfdccf62f723cff1"
+        },
+        {
+          "slug": "laptop",
+          "name": "노트북",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "cee175f3332758bc5b43055e65b6a6791f939c1c915c10622fcbec88f7e236f8"
+        },
+        {
+          "slug": "desktop-computer",
+          "name": "데스크탑컴퓨터",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "분리배출 지침의 PC 세트 예시를 현재 서비스의 단일 수거 근거와 혼동한 문구를 수정. 개인정보 삭제 방법·일반 부속품 제거도 이 출처로 확정하지 않음.",
+          "correction_applied": true,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "269d3089804ae4c7ab55715508494acdf97f8345ffc717dcb0fa38de850d8c61"
+        },
+        {
+          "slug": "computer-monitor",
+          "name": "컴퓨터모니터",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-28",
+          "reviewed_at": "2026-10-17",
+          "finding": "현행 직접 열거 품목 또는 화면 크기 분기와 일치. 기타 접수·원형·설치 조건은 별도 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "3932c353ff4bdd2ccd2f9eacf542b8cd828d2ab27d1121e730508a0a7675589c"
+        },
+        {
+          "slug": "printer",
+          "name": "프린터",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-28",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "5816b4e50e67964dd621e2b50f630b9465263cee1ba7e1f820dfad9ea5a7f7cd"
+        },
+        {
+          "slug": "mobile-phone",
+          "name": "휴대폰",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "7e397364554b81b8440ac52948d4ccf100d4e59fbeda452dc4101055d4078db1"
+        },
+        {
+          "slug": "tablet",
+          "name": "태블릿",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "495366c5c9cce48b0eb72bd32a60a84579719656f63612679f5ea7d947005244"
+        },
+        {
+          "slug": "wifi-router",
+          "name": "공유기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "d0dc70f67c8d8a4622d63e899c2f01544a45642f1895500f1279de54a669c29f"
+        },
+        {
+          "slug": "game-console",
+          "name": "게임기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "47abffe6312effa7090c5671e26c78166b5f34ba2bbc58db47f4dcdaa7033f57"
+        },
+        {
+          "slug": "hair-dryer",
+          "name": "헤어드라이어",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "734ad8100ec28d91c04820d47b46a883fde9304a5f309a89547bdfd96342a576"
+        },
+        {
+          "slug": "electric-iron",
+          "name": "전기다리미",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "a214091f82cdc135c26288fda875f12da53425856c60069614ba1ef77725c446"
+        },
+        {
+          "slug": "coffee-maker",
+          "name": "커피메이커",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "bb983fe3cf1c4c41b37a757582331b31dbccddc3c14e9977fd806d5b06017038"
+        },
+        {
+          "slug": "blender",
+          "name": "믹서기",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "d1934f07b42ab145c73e34b663935bd09abfa63e1247292288237b197276f957"
+        },
+        {
+          "slug": "electric-kettle",
+          "name": "전기주전자",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "공통 전기전자제품 분류와 실제 규격·수량·설치 조건 확인 범위로 일치. 모델/부속품별 배출법을 모두 확인한 것은 아님.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1081ff0da9d3b369385f0cafb4c5de786ab402e28cabaedff5b4483d3483b160"
+        },
+        {
+          "slug": "bed-frame",
+          "name": "침대프레임",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "sofa",
+          "name": "소파",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "chair",
+          "name": "의자",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "desk",
+          "name": "책상",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "dining-table",
+          "name": "식탁",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "drawer-chest",
+          "name": "서랍장",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "wardrobe",
+          "name": "옷장",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "bookshelf",
+          "name": "책장",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "vanity-table",
+          "name": "화장대",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "shoe-cabinet",
+          "name": "신발장",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        },
+        {
+          "slug": "mirror",
+          "name": "거울",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "현재 서비스의 가구 제외 규정과 일치. hold 유지.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://www.15990903.or.kr/portal/cnts/userGuide.do",
+            "https://www.15990903.or.kr/portal/faq/selectPageListFaq.do"
+          ],
+          "claim_sha256": "1247feeda81c1a5f65c6ca1fa7d842d4d3fb937283d0e97a118ab03d97676740"
+        }
+      ]
+    },
+    {
+      "id": "official-disposal-location-map",
+      "url": "https://xn--oy2b29bd3a601b.kr/front/region/location.do",
+      "authority": "기후에너지환경부",
+      "http_status": 200,
+      "final_url": "https://xn--oy2b29bd3a601b.kr/front/region/location.do",
+      "html_sha256": "56d487cb01de2a0ebd369f60160898ccca03b311950901d5272a2df677723904",
+      "reviewed_at": "2026-10-17",
+      "availability": "accessible",
+      "policy_change_found": false,
+      "scope": "지도 문서의 시·도/군·구 선택과 아이스팩·폐의약품 카테고리 존재. 실제 장소 데이터·운영 여부·지도 상호작용 검증 아님.",
+      "references": [
+        {
+          "slug": "ice-pack",
+          "name": "아이스팩",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "문서의 지역 선택/수거 카테고리와 일치. 특정 장소나 전국 수거 가능성을 주장하지 않음.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/front/region/location.do"
+          ],
+          "claim_sha256": "c9084dcbb6eb758bccc6cb1a5801b5cb4797f88b7de52da75d993a1b55f625a9"
+        },
+        {
+          "slug": "unused-medicine",
+          "name": "폐의약품",
+          "status": "verified_with_scope",
+          "original_checked_at": "2026-09-23",
+          "reviewed_at": "2026-10-17",
+          "finding": "문서의 지역 선택/수거 카테고리와 일치. 특정 장소나 전국 수거 가능성을 주장하지 않음.",
+          "correction_applied": false,
+          "evidence_urls": [
+            "https://xn--oy2b29bd3a601b.kr/front/region/location.do"
+          ],
+          "claim_sha256": "a3117d5009f4ea259e6122c459d1ccde4ef39288832e9957f9d43c9b19143b01"
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "slug": "kimchi-refrigerator",
+      "fields": {
+        "steps": {
+          "before": [
+            "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "제품 안의 음식물·쓰레기와 박스·스티로폼 등 포장재를 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        }
+      },
+      "reason": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "electric-oven",
+      "fields": {
+        "steps": {
+          "before": [
+            "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "제품 안의 음식물·쓰레기와 박스·스티로폼 등 포장재를 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        }
+      },
+      "reason": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "dishwasher",
+      "fields": {
+        "steps": {
+          "before": [
+            "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "제품 안의 음식물·쓰레기와 박스·스티로폼 등 포장재를 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        }
+      },
+      "reason": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "water-purifier",
+      "fields": {
+        "steps": {
+          "before": [
+            "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "제품 안의 음식물·쓰레기와 박스·스티로폼 등 포장재를 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        }
+      },
+      "reason": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "water-dispenser",
+      "fields": {
+        "steps": {
+          "before": [
+            "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "제품 안의 음식물·쓰레기와 박스·스티로폼 등 포장재를 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        }
+      },
+      "reason": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "treadmill",
+      "fields": {
+        "steps": {
+          "before": [
+            "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "제품 안의 음식물·쓰레기와 박스·스티로폼 등 포장재를 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        }
+      },
+      "reason": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "copier",
+      "fields": {
+        "steps": {
+          "before": [
+            "제품 안의 내용물과 분리 가능한 부속품을 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "제품 안의 음식물·쓰레기와 박스·스티로폼 등 포장재를 제거합니다.",
+            "설치·고정된 제품은 수거 가능한 상태인지 확인합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        }
+      },
+      "reason": "현재 서비스 원문은 내용물·폐기물·포장재 제거를 안내하며 일반적인 부속품 제거를 요구하지 않음. 완제품 원형 훼손 방지와 구분.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "electric-fan",
+      "fields": {
+        "summary": {
+          "before": "선풍기는 소형 전기·전자제품으로 전용수거함에 배출하는 것이 기본이며, 전용수거함이 없으면 무상방문수거의 다량 배출 조건 또는 지자체 방법을 이용합니다.",
+          "after": "선풍기는 소형 전기·전자제품으로 전용수거함에 배출하는 것이 기본입니다. 전용수거함이 없으면 제품 규격에 따른 무상방문수거 조건 또는 지자체 방법을 확인합니다."
+        },
+        "steps": {
+          "before": [
+            "제품에 분리 가능한 전지가 있으면 전지를 분리해 전지수거함에 배출합니다.",
+            "제품은 소형전기·전자제품 전용수거함에 배출합니다.",
+            "전용수거함을 이용하기 어려우면 지자체 안내 또는 폐가전 무상방문수거의 다량 배출 조건을 확인합니다."
+          ],
+          "after": [
+            "제품에 분리 가능한 전지가 있으면 전지를 분리해 전지수거함에 배출합니다.",
+            "제품은 소형전기·전자제품 전용수거함에 배출합니다.",
+            "전용수거함을 이용하기 어려우면 지자체 안내 또는 제품의 치수·중량에 따른 무상방문수거 조건을 확인합니다."
+          ]
+        },
+        "warnings": {
+          "before": [
+            "소형 폐가전의 무상방문수거는 현재 다량 품목 기준(일반적으로 5개 이상)을 확인해야 합니다."
+          ],
+          "after": [
+            "방문수거의 다량 품목은 5개 이상 조건이지만, 모든 제품이 다량 품목인 것은 아닙니다. 실제 치수·중량에 따라 단일·다량·추가 구분을 확인하세요."
+          ]
+        }
+      },
+      "reason": "다량 5개 기준을 제품명 전체에 일반화하지 않고 현재 서비스의 규격·중량 조건으로 한정.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "humidifier",
+      "fields": {
+        "summary": {
+          "before": "가습기는 소형 전기·전자제품으로 전용수거함에 배출하는 것이 기본이며, 전용수거함이 없으면 무상방문수거의 다량 배출 조건 또는 지자체 방법을 이용합니다.",
+          "after": "가습기는 소형 전기·전자제품으로 전용수거함에 배출하는 것이 기본입니다. 전용수거함이 없으면 제품 규격에 따른 무상방문수거 조건 또는 지자체 방법을 확인합니다."
+        },
+        "steps": {
+          "before": [
+            "제품에 분리 가능한 전지가 있으면 전지를 분리해 전지수거함에 배출합니다.",
+            "제품은 소형전기·전자제품 전용수거함에 배출합니다.",
+            "전용수거함을 이용하기 어려우면 지자체 안내 또는 폐가전 무상방문수거의 다량 배출 조건을 확인합니다."
+          ],
+          "after": [
+            "제품에 분리 가능한 전지가 있으면 전지를 분리해 전지수거함에 배출합니다.",
+            "제품은 소형전기·전자제품 전용수거함에 배출합니다.",
+            "전용수거함을 이용하기 어려우면 지자체 안내 또는 제품의 치수·중량에 따른 무상방문수거 조건을 확인합니다."
+          ]
+        },
+        "warnings": {
+          "before": [
+            "소형 폐가전의 무상방문수거는 현재 다량 품목 기준(일반적으로 5개 이상)을 확인해야 합니다."
+          ],
+          "after": [
+            "방문수거의 다량 품목은 5개 이상 조건이지만, 모든 제품이 다량 품목인 것은 아닙니다. 실제 치수·중량에 따라 단일·다량·추가 구분을 확인하세요."
+          ]
+        }
+      },
+      "reason": "다량 5개 기준을 제품명 전체에 일반화하지 않고 현재 서비스의 규격·중량 조건으로 한정.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "rice-cooker",
+      "fields": {
+        "summary": {
+          "before": "전기밥솥은 소형 전기·전자제품으로 전용수거함에 배출하는 것이 기본이며, 전용수거함이 없으면 무상방문수거의 다량 배출 조건 또는 지자체 방법을 이용합니다.",
+          "after": "전기밥솥은 소형 전기·전자제품으로 전용수거함에 배출하는 것이 기본입니다. 전용수거함이 없으면 제품 규격에 따른 무상방문수거 조건 또는 지자체 방법을 확인합니다."
+        },
+        "steps": {
+          "before": [
+            "제품에 분리 가능한 전지가 있으면 전지를 분리해 전지수거함에 배출합니다.",
+            "제품은 소형전기·전자제품 전용수거함에 배출합니다.",
+            "전용수거함을 이용하기 어려우면 지자체 안내 또는 폐가전 무상방문수거의 다량 배출 조건을 확인합니다."
+          ],
+          "after": [
+            "제품에 분리 가능한 전지가 있으면 전지를 분리해 전지수거함에 배출합니다.",
+            "제품은 소형전기·전자제품 전용수거함에 배출합니다.",
+            "전용수거함을 이용하기 어려우면 지자체 안내 또는 제품의 치수·중량에 따른 무상방문수거 조건을 확인합니다."
+          ]
+        },
+        "warnings": {
+          "before": [
+            "소형 폐가전의 무상방문수거는 현재 다량 품목 기준(일반적으로 5개 이상)을 확인해야 합니다."
+          ],
+          "after": [
+            "방문수거의 다량 품목은 5개 이상 조건이지만, 모든 제품이 다량 품목인 것은 아닙니다. 실제 치수·중량에 따라 단일·다량·추가 구분을 확인하세요."
+          ]
+        }
+      },
+      "reason": "다량 5개 기준을 제품명 전체에 일반화하지 않고 현재 서비스의 규격·중량 조건으로 한정.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "desktop-computer",
+      "fields": {
+        "summary": {
+          "before": "데스크탑컴퓨터는 본체와 모니터를 함께 배출하는 데스크탑 PC 세트가 공식 무상방문수거 기준에 명시되어 있습니다. 세트가 아닌 경우에는 제품의 크기·중량과 관할 수거 기준을 확인하세요.",
+          "after": "공식 분리배출 지침은 본체와 모니터를 함께 보는 데스크탑 PC 세트를 예시합니다. 이 예시가 무상방문수거의 단일 접수 조건을 확정하는 것은 아닙니다. 본체의 규격·중량과 모니터의 화면 크기에 맞는 현재 접수 기준을 각각 확인하세요."
+        },
+        "steps": {
+          "before": [
+            "본체와 모니터를 함께 배출할 수 있는지 확인합니다.",
+            "제품 안의 개인정보를 삭제하고 부속품·내용물을 제거합니다.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ],
+          "after": [
+            "본체와 모니터를 함께 배출할 수 있는지 확인합니다.",
+            "제품 안의 쓰레기와 포장재를 제거합니다. 저장된 정보의 삭제·초기화 방법은 해당 제품 제조사 안내를 확인하세요.",
+            "무상방문수거 또는 관할 지자체의 현재 접수 기준을 확인해 배출합니다."
+          ]
+        },
+        "warnings": {
+          "before": [
+            "무상방문수거 가능 여부와 수거 기준은 제품 규격·설치 상태에 따라 달라질 수 있습니다."
+          ],
+          "after": [
+            "분리배출 지침의 품목 예시와 무상방문수거의 단일·다량·추가 접수 기준은 다릅니다."
+          ]
+        }
+      },
+      "reason": "분리배출 지침의 PC 세트 예시를 현재 서비스의 단일 수거 근거와 혼동한 문구를 수정. 개인정보 삭제 방법·일반 부속품 제거도 이 출처로 확정하지 않음.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    },
+    {
+      "slug": "power-bank",
+      "fields": {
+        "warnings": {
+          "before": [
+            "부푼 배터리는 눌러 펴거나 분해하지 말고, 화재 위험 때문에 지역의 전지 수거 지침을 우선 확인하세요."
+          ],
+          "after": [
+            "지침의 단자 절연 조치는 분리된 전지의 단자가 노출된 경우에 대한 조건입니다. 부푼 상태의 제품은 지역 수거기관의 접수·배출 준비 안내를 확인하세요."
+          ]
+        },
+        "steps": {
+          "before": [
+            "가능하면 단자를 절연테이프로 막습니다.",
+            "전지수거함 또는 소형전기전자제품 전용수거함을 이용합니다."
+          ],
+          "after": [
+            "분리할 수 없는 내장 전지는 꺼내지 말고 제품 그대로 준비합니다.",
+            "전지수거함 또는 소형전기전자제품 전용수거함을 이용합니다."
+          ]
+        }
+      },
+      "reason": "분리 불가 내장전지는 제품 그대로 배출하고, 절연 조건은 분리된 전지의 노출 단자에 한정. 모든 보조배터리의 외부 단자를 절연해야 한다는 일반화와 직접 근거가 없는 누르기·펴기 지침을 제거.",
+      "evidence_ids": [
+        "ewaste-pickup",
+        "ewaste-faq"
+      ]
+    }
+  ],
+  "appliance_review": [
+    {
+      "slug": "microwave",
+      "decision": "명칭만으로 단독 수거 확정 불가. 현재 규격·중량 공통 조건 유지. 부품별 폐기법 근거 없어 추가하지 않음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "air-purifier",
+      "decision": "필터·집진부의 재질별 배출법은 현재 세 출처로 확인되지 않음. 완제품 규격·설치 조건만 유지.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "dehumidifier",
+      "decision": "완제품 규격·원형·설치 공통 조건 유지. 물통·냉매 처리 등 미확인 지침을 추가하지 않음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "electric-oven",
+      "decision": "설치/빌트인 제품은 수거 가능한 상태여야 함. 일반 부속품 제거 지시는 포장재 제거로 정정.",
+      "new_explanation": false,
+      "core_corrected": true
+    },
+    {
+      "slug": "treadmill",
+      "decision": "FAQ의 전기로 작동하는 운동기구와 수동/건전지 계기판 운동기구 구분을 짧게 보강. 규격 조건 유지.",
+      "new_explanation": true,
+      "core_corrected": true
+    },
+    {
+      "slug": "dishwasher",
+      "decision": "설치 제품이면 사전 철거·규격 확인. 일반 부속품 제거 지시 정정. 분해 방법은 확인하지 않음.",
+      "new_explanation": false,
+      "core_corrected": true
+    },
+    {
+      "slug": "copier",
+      "decision": "현재 잉크·토너 탈착 후 밀봉 주의사항은 직접 근거와 일치해 유지. 일반 부속품 제거는 별개이므로 정정.",
+      "new_explanation": false,
+      "core_corrected": true
+    },
+    {
+      "slug": "electric-fan",
+      "decision": "제품명 전체를 다량 5개로 취급하지 않도록 수정. 기존 수량 가이드/조건 답변 유지.",
+      "new_explanation": false,
+      "core_corrected": true
+    },
+    {
+      "slug": "humidifier",
+      "decision": "다량 5개 일반화 수정. 가습기 부품별 처리법은 별도 근거 없으므로 추가하지 않음.",
+      "new_explanation": false,
+      "core_corrected": true
+    },
+    {
+      "slug": "vacuum-cleaner",
+      "decision": "브러시 단독은 완제품 방문수거 비대상이라는 기존 FAQ 유지. 브러시의 다른 폐기법은 미확정.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "air-fryer",
+      "decision": "완제품·규격 공통 조건 유지. 바스켓/트레이의 재질별 처리법은 별도 근거가 필요.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "printer",
+      "decision": "잉크·토너 탈착 후 밀봉은 현재 직접 근거와 일치. 기존 경고만으로 차이가 드러나므로 추가 문장 없음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "wifi-router",
+      "decision": "기존 로컬 보강의 본체/부속품 단독·한 대 수거 비보장 범위 유지. 어댑터/케이블 단독 방법은 미확정.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "game-console",
+      "decision": "모델별 저장매체·컨트롤러·내장전지 분리법 근거 없음. 완제품 공통 절차 유지.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "hair-dryer",
+      "decision": "규격·수량 공통 조건 외 확인된 모델 차이 없음. 분해·코드 절단 안내 없음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "electric-iron",
+      "decision": "규격·수량 공통 조건 외 확인된 모델 차이 없음. 물통/금속 분리 안내 없음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "coffee-maker",
+      "decision": "규격·수량 공통 조건 외 확인된 모델 차이 없음. 유리 용기·필터 등 부속품 방법은 미확정.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "blender",
+      "decision": "규격·수량 공통 조건 유지. 칼날·컵 분리/배출법은 근거 없이 추가하지 않음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "electric-kettle",
+      "decision": "분리 가능한 전지일 때만 분리 원칙 유지. 가열부/받침대 등 부속품별 폐기법은 미확정.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "laptop",
+      "decision": "분리 불가 내장전지는 제품 그대로라는 지침 범위. 모델별 분해·정보 삭제 방법은 추가하지 않음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "mobile-phone",
+      "decision": "분리 불가 내장전지 원칙과 기존 수량 질문/가이드 유지. 모든 모델의 배터리 분리를 권하지 않음.",
+      "new_explanation": false,
+      "core_corrected": false
+    },
+    {
+      "slug": "tablet",
+      "decision": "현재 서비스의 다량 품목 표에 태블릿PC가 직접 적힌 점과 접수 조건을 짧게 보강. 내장전지 임의 분해 지침 없음.",
+      "new_explanation": true,
+      "core_corrected": false
+    }
+  ]
+}

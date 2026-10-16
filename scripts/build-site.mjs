@@ -6,6 +6,8 @@ import { relatedItems } from './lib/related-items.mjs';
 import { isIndexable } from './lib/index-quality.mjs';
 import { guideData, guidePaths, recentItems, validateGuides } from './lib/guides.mjs';
 import { questionData, validateItemQuestions } from './lib/item-questions.mjs';
+import { improvements, validateImprovements } from './lib/content-improvements.mjs';
+import { contentModifiedDate } from './lib/source-rechecks.mjs';
 import { breadcrumb, carouselAsset, escapeHtml, formatDate, layout, searchAssets, SITE_URL, styleAsset, visitorAsset } from './lib/html.mjs';
 import { monetizationConfig, renderAdSlotBottom, renderAdSlotTop, renderAffiliateBlock } from './lib/monetization.mjs';
 import { createSearchIndex } from '../src/search.mjs';
@@ -55,7 +57,7 @@ function home(seed, categories, bySlug) {
     { '@context': 'https://schema.org', '@type': 'Organization', name: '버림뚝딱', url: SITE_URL },
   ], content: `
     <section class="hero wide"><p class="eyebrow">공식 자료로 확인한 생활폐기물 안내</p><h1>이거, 어떻게 버리지?</h1><p>버릴 물건을 검색하면 배출방법을 바로 알려드려요.</p>${searchBox()}</section>
-    <section class="wide section"><div class="section-heading"><h2>자주 찾는 품목</h2><p>공식 자료로 확인된 품목부터 안내합니다.</p></div><ul class="card-grid item-grid">${popular.map(card).join('')}</ul></section>
+    <section class="wide section"><div class="section-heading"><h2>먼저 살펴볼 품목</h2><p>서로 다른 배출 분류를 확인할 수 있는 대표 품목입니다.</p></div><ul class="card-grid item-grid">${popular.map(card).join('')}</ul></section>
     <section id="categories" class="wide section"><div class="section-heading"><h2>카테고리로 찾기</h2><p>생활 속 물건을 종류별로 살펴보세요.</p></div><ul class="card-grid category-grid">${categoryCards}</ul></section>
     <section class="wide section" data-section="guides"><div class="section-heading"><h2>상황에 맞춰 확인하기</h2><p>물건 이름만으로 결정하기 어려울 때 확인 순서부터 살펴보세요.</p></div><ul class="card-grid">${guideData.guides.map(guide => `<li><a class="item-card" href="/guides/${guide.slug}/"><strong>${escapeHtml(guide.title)}</strong><span>${escapeHtml(guide.description)}</span></a></li>`).join('')}</ul><a class="browse-link" href="/guides/">상황별 가이드 모두 보기</a></section>
     <section class="wide section" data-section="recent-items"><div class="section-heading"><h2>최근 추가·수정한 품목</h2><p>공식 근거를 확인하고 기록한 변경 이력입니다.</p></div><ul class="card-grid item-grid">${recent.map(({ item, change }) => `<li><a class="item-card" href="/item/${item.slug}/"><strong>${escapeHtml(item.name)}</strong><span>${formatDate(change.date)} · ${change.type === 'verified' ? '추가·검증' : '내용 검토·수정'}</span><span>${escapeHtml(change.summary)}</span></a></li>`).join('')}</ul></section>
@@ -63,6 +65,10 @@ function home(seed, categories, bySlug) {
 }
 
 export function itemPage(item, category, bySlug, monetization = monetizationConfig, registry = loadInputs().registry) {
+  const improvement = improvements.items.find(entry => entry.slug === item.slug);
+  const evidenceLinks = ids => ids.map(id => { const source = registry.sources.find(s => s.id === id); return `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.authority)} · ${escapeHtml(source.name)}<span class="sr-only"> (새 창)</span></a>`; }).join(' · ');
+  const stepHtml = item.steps.map((value, n) => { const note = improvement?.step_notes.find(note => note.step === n); return `<li>${escapeHtml(value)}${note ? `<div class="step-explanation" data-content-improvement><p>${escapeHtml(note.text)}</p><p class="guide-evidence">이 판단의 공식 근거: ${evidenceLinks(note.source_ids)}</p></div>` : ''}</li>`; }).join('');
+  const practicalLinks = improvement ? `<p class="updated">조건 설명 확인: ${formatDate(improvements.checked_at)}</p><nav aria-label="${escapeHtml(item.name)}의 다음 확인"><ul class="related-list">${improvement.links.map(link => `<li><a href="${escapeHtml(link.path)}">${escapeHtml(link.label)}</a></li>`).join('')}</ul></nav>` : '';
   const related = relatedItems(item, [...bySlug.values()]);
   const context = sourceContext(item, registry);
   const scopeLabel = context.jurisdiction ? `${context.jurisdiction} 공식 기준이에요. 거주 지역에 따라 다를 수 있어요.` : '전국 단위 공식 자료를 기준으로 안내해요.';
@@ -81,14 +87,14 @@ export function itemPage(item, category, bySlug, monetization = monetizationConf
   const title = item.seo.title;
   const description = item.seo.description;
   return layout({ title, description, canonical: path, robots: isIndexable(item) ? 'index,follow' : 'noindex,follow', mainClass: 'detail narrow', jsonLd: [
-    { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: absolute(path), inLanguage: 'ko-KR', isPartOf: { '@type': 'WebSite', name: '버림뚝딱', url: SITE_URL }, dateModified: item.verified_at },
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: absolute(path), inLanguage: 'ko-KR', isPartOf: { '@type': 'WebSite', name: '버림뚝딱', url: SITE_URL }, dateModified: improvement ? improvements.checked_at : contentModifiedDate(item) },
     { '@context': 'https://schema.org', ...crumbData([{ name: '홈', path: '/' }, { name: category.name, path: `/category/${category.slug}/` }, { name: item.name, path }]) },
   ], content: `
     ${breadcrumb([{ label: '홈', href: '/' }, { label: category.name, href: `/category/${category.slug}/` }, { label: item.name }])}
     <h1>${escapeHtml(item.name)} 버리는 법</h1>
     <section class="answer-card"><p class="eyebrow">한눈에 보는 배출방법</p><h2>✓ ${escapeHtml(item.disposal_label)}</h2><p>${escapeHtml(item.summary)}</p><p class="source-scope">${escapeHtml(scopeLabel)}</p>${evidenceBasis}</section>
     ${adSlotTop}${regional}
-    <section class="content-card"><h2>버리는 순서</h2><ol class="steps">${item.steps.map(value => `<li>${escapeHtml(value)}</li>`).join('')}</ol></section>
+    <section class="content-card"><h2>버리는 순서</h2><ol class="steps">${stepHtml}</ol>${practicalLinks}</section>
     ${warnings}${questionBlock}${cta}${relatedBlock}${affiliateBlock}${adSlotBottom}
     <section class="content-card sources" id="official-sources"><h2>공식 출처</h2><ul>${sources}</ul><p class="updated">정보 확인: ${formatDate(item.verified_at)}</p></section>
     ${isIndexable(item) ? carousel() : ''}
@@ -141,7 +147,7 @@ function searchPage() {
 }
 
 function sitemap(paths, items) {
-  const dates = new Map(items.map(item => [`/item/${item.slug}/`, item.verified_at]));
+  const dates = new Map(items.map(item => [`/item/${item.slug}/`, improvements.items.some(entry => entry.slug === item.slug) ? improvements.checked_at : contentModifiedDate(item)]));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${paths.map(path => `  <url>\n    <loc>${absolute(path)}</loc>${dates.has(path) ? `\n    <lastmod>${dates.get(path)}</lastmod>` : ''}\n  </url>`).join('\n')}\n</urlset>\n`;
 }
 
@@ -185,6 +191,7 @@ export function buildSite() {
   const { seed, categories: categoryData, registry } = loadInputs();
   validateGuides(seed, registry);
   validateItemQuestions(seed, registry, guideData);
+  validateImprovements(seed, registry, guideData);
   const verified = seed.items.filter(item => item.verification_status === 'verified');
   const categories = categoryData.categories;
   const bySlug = new Map(seed.items.map(item => [item.slug, item]));
@@ -198,8 +205,8 @@ export function buildSite() {
   for (const item of verified) write(pagePath('item', item.slug), itemPage(item, byCategory.get(item.category), bySlug, monetizationConfig, registry));
   for (const category of categories) write(pagePath('category', category.slug), categoryPage(category, verified.filter(item => item.category === category.source_label)));
 
-  write('about/index.html', policyPage('버림뚝딱 소개', '공식 자료를 바탕으로 생활폐기물 배출방법을 안내하는 버림뚝딱 서비스를 소개합니다.', '/about/', `<p>버림뚝딱은 생활 속에서 버리기 어려운 물건의 배출방법을 빠르게 찾을 수 있도록 공식 기관의 공개 자료를 이해하기 쉬운 형태로 정리하는 생활정보 서비스입니다.</p><p>품목별 기본 배출원칙, 주의사항, 폐가전 수거 가능 여부와 공식 출처를 함께 제공합니다.</p><p>폐기물 배출 요일, 수거 장소, 대형폐기물 수수료 등은 지역에 따라 다를 수 있으므로 지역별 정보가 필요한 경우 거주지 지방자치단체의 최신 안내도 함께 확인해 주세요.</p>`));
-  write('source-policy/index.html', policyPage('정보 출처 및 검증 정책', '버림뚝딱이 공식 출처를 확인하고 생활폐기물 정보를 관리하는 원칙을 안내합니다.', '/source-policy/', `<p>버림뚝딱은 다음 원칙으로 정보를 관리합니다.</p><ol><li>기후에너지환경부, 지방자치단체, E-순환거버넌스 등 공식 자료를 우선 사용합니다.</li><li>출처를 확인하지 못한 배출방법을 임의로 생성하지 않습니다.</li><li>검증된 품목에는 출처와 확인일을 표시합니다.</li><li>지역에 따라 달라질 수 있는 내용은 전국 공통사항처럼 단정하지 않습니다.</li><li>공식 기준이 변경된 경우 확인 후 정보를 갱신합니다.</li><li>배출방법 본문이 여러 품목에서 완전히 중복될 경우 품목별 근거를 검토하고, 차이를 확인할 수 없으면 해당 페이지의 검색엔진 색인을 보류합니다.</li></ol><p>버림뚝딱의 정보는 생활 편의를 위한 안내이며, 실제 수거 가능 여부·배출일·수수료는 관할 지방자치단체 또는 수거기관의 최신 기준이 우선합니다.</p>`));
+  write('about/index.html', policyPage('버림뚝딱 소개', '공식 자료를 바탕으로 생활폐기물 배출방법을 안내하는 버림뚝딱 서비스를 소개합니다.', '/about/', `<p>버림뚝딱은 생활 속에서 버리기 어려운 물건의 배출방법을 빠르게 찾을 수 있도록 공식 기관의 공개 자료를 이해하기 쉬운 형태로 정리하는 생활정보 서비스입니다.</p><p>품목별 기본 배출원칙, 주의사항, 폐가전 수거 가능 여부와 공식 출처를 함께 제공합니다.</p><p>품목 상세는 해당 물건의 기준을, 상황별 가이드는 여러 물건이나 조건을 나눠 확인하는 순서를 안내합니다. 버림뚝딱이 수거를 접수하거나 수거 가능 여부를 확정하는 서비스는 아닙니다. 신청이 필요한 경우 공식 수거기관으로 연결합니다.</p><p>폐기물 배출 요일, 수거 장소, 대형폐기물 수수료 등은 지역에 따라 다를 수 있으므로 지역별 정보가 필요한 경우 거주지 지방자치단체의 최신 안내도 함께 확인해 주세요.</p>`));
+  write('source-policy/index.html', policyPage('정보 출처 및 검증 정책', '버림뚝딱이 공식 출처를 확인하고 생활폐기물 정보를 관리하는 원칙을 안내합니다.', '/source-policy/', `<p>버림뚝딱은 다음 원칙으로 정보를 관리합니다.</p><ol><li>기후에너지환경부, 지방자치단체, E-순환거버넌스 등 공식 자료를 우선 사용합니다.</li><li>출처를 확인하지 못한 배출방법을 임의로 생성하지 않습니다.</li><li>검증된 품목에는 출처와 확인일을 표시합니다.</li><li>지역에 따라 달라질 수 있는 내용은 전국 공통사항처럼 단정하지 않습니다.</li><li>공식 기준이 변경된 경우 확인 후 정보를 갱신합니다.</li><li>배출방법 본문이 여러 품목에서 완전히 중복될 경우 품목별 근거를 검토하고, 차이를 확인할 수 없으면 해당 페이지의 검색엔진 색인을 보류합니다.</li></ol><p>검증 표시는 기록한 공식 자료의 품목·재질·지역·서비스 조건을 확인했다는 뜻입니다. 모든 모델과 부속품의 답변을 확인했다는 뜻은 아닙니다. 자료에 없는 경우는 확인 범위를 표시하며 방법을 추정하지 않습니다.</p><p>확인일은 원문을 검토한 날짜이고 다음 검토 예정일은 수동 재검토 일정입니다. 외부 원문을 실시간으로 자동 반영하지 않습니다. 공통 절차가 같은 품목은 근거 없이 다르게 쓰지 않으며, 문구 유사성은 원문과 실제 해결 질문을 함께 비교해 검토합니다.</p><p>버림뚝딱의 정보는 생활 편의를 위한 안내이며, 실제 수거 가능 여부·배출일·수수료는 관할 지방자치단체 또는 수거기관의 최신 기준이 우선합니다.</p>`));
   write('privacy/index.html', policyPage('개인정보처리방침', '버림뚝딱의 개인정보 처리 범위와 외부 링크 정책을 안내합니다.', '/privacy/', `<p>버림뚝딱은 서비스 운영에 필요한 범위에서 최소한의 정보만 처리하는 것을 원칙으로 합니다.</p><h2>현재 처리하는 정보</h2><p>현재 사이트는 회원가입, 로그인과 외부 분석 도구를 사용하지 않습니다. Google AdSense 스크립트를 불러오며, Google의 데이터 처리는 Google의 정책에 따릅니다. 현재 사이트에는 AdSense 광고 슬롯이나 Auto ads를 활성화하지 않았습니다. 홈과 색인 가능한 verified 품목 상세에서는 쿠팡 파트너스 배너 스크립트를 불러올 수 있으며, 쿠팡 측의 데이터 처리는 쿠팡의 정책에 따릅니다. 사이트 검색은 브라우저에서 처리합니다. 검색 결과가 실제로 없는 경우에만 품목 추가 우선순위를 정하기 위해 정리된 검색어, 검색 횟수, 최초·최근 검색 시각을 집계할 수 있습니다.</p><p>footer의 TODAY는 한국 날짜별 익명 브라우저 탭 세션 방문 횟수로, 정확한 고유 사용자 수가 아닌 참고 수치입니다. 같은 탭에서 중복 증가를 막기 위해 sessionStorage에 해당 날짜의 임시·완료 표시만 보관합니다. 이 정보는 탭 세션 범위에서만 사용하며 localStorage나 식별용 쿠키를 만들지 않습니다.</p><p>버림뚝딱 애플리케이션 데이터베이스에는 이름, 이메일 주소, IP 주소, User-Agent 원문, 쿠키 식별자, fingerprint 또는 정확한 위치를 저장하지 않습니다. TODAY 집계에는 날짜·횟수·마지막 갱신 시각만 저장합니다. Cloudflare 등 외부 서비스의 인프라 수준 데이터 처리는 각 서비스의 정책에 따라 별도로 처리될 수 있습니다.</p><h2>외부 링크</h2><p>정부기관과 폐가전 수거기관 등 외부 사이트 링크를 열면 해당 사이트의 개인정보처리방침이 적용됩니다.</p>`, 'noindex,follow'));
   write('affiliate-disclosure/index.html', policyPage('제휴 마케팅 안내', '버림뚝딱의 제휴 마케팅 운영 여부와 경제적 이해관계를 안내합니다.', '/affiliate-disclosure/', `<p>홈과 색인 가능한 verified 품목 상세페이지에는 쿠팡 파트너스 캐러셀 광고가 표시될 수 있습니다. 배너가 실제로 표시될 때 해당 위치에 광고 표시와 경제적 이해관계 고지를 함께 제공합니다.</p><p>이 사이트는 쿠팡 파트너스 활동의 일환으로 이에 따른 일정액의 수수료를 제공받을 수 있습니다. 광고 상품은 품목의 공식 배출 기준이나 상품 적합성을 뜻하지 않습니다.</p><p>가구 hold 페이지, 검색·카테고리·정책·404 페이지에는 쿠팡 배너를 표시하지 않습니다. 개별 상품 추천이나 품목별 제휴 링크는 제공하지 않습니다.</p><p>Google AdSense 스크립트는 유지하지만 AdSense 광고 슬롯과 Auto ads는 활성화하지 않았습니다.</p>`, 'noindex,follow'));
   write('search/index.html', searchPage());
