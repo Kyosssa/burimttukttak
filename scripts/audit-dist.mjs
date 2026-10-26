@@ -52,7 +52,7 @@ export async function auditDist() {
     if (wrappers !== Number(shouldShowCarousel) || clients !== Number(shouldShowCarousel)) fail(`Coupang target or loader count: ${path}`);
     if (shouldShowCarousel) {
       carouselPages++;
-      if (!/data-coupang-carousel"? hidden/.test(content)) fail(`Coupang must start hidden: ${path}`);
+      if (!/data-coupang-state="pending"/.test(content)) fail(`Coupang must reserve space before load: ${path}`);
       const mainEnd = content.indexOf('</main>');
       const banner = content.indexOf('data-coupang-carousel');
       const footer = content.indexOf('<footer>');

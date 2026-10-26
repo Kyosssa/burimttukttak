@@ -22,7 +22,7 @@ const enabledOffers = {
   affiliate: { enabled: true, disclosure: '고지', resolveOffers: () => [{ label: '설정된 제휴 링크', href: 'https://shop.example/product' }] },
 };
 
-test('one hidden carousel and hashed client appear only on home and 124 indexable details', () => {
+test('one reserved carousel and hashed client appear only on home and 124 indexable details', () => {
   const targets = ['index.html', ...verified.filter(isIndexable).map(item => `item/${item.slug}/index.html`)];
   const excluded = [...verified.filter(item => !isIndexable(item)).map(item => `item/${item.slug}/index.html`), ...categories.categories.map(category => `category/${category.slug}/index.html`), 'about/index.html', 'source-policy/index.html', 'privacy/index.html', 'affiliate-disclosure/index.html', 'search/index.html', '404.html', ...guidePaths.map(path => `${path.slice(1)}index.html`)];
   assert.equal(targets.length, 125);
@@ -31,7 +31,7 @@ test('one hidden carousel and hashed client appear only on home and 124 indexabl
     const page = html(path);
     assert.equal((page.match(/data-coupang-carousel/g) ?? []).length, 1, path);
     assert.equal((page.match(new RegExp(`src="/assets/${carouselAsset}"`, 'g')) ?? []).length, 1, path);
-    assert.match(page, /data-coupang-carousel hidden/);
+    assert.match(page, /data-coupang-carousel data-coupang-state="pending"/);
     assert.match(page, /광고 상품은 폐기물 배출 기준이나 품목별 상품 적합성을 뜻하지 않습니다/);
     const banner = page.indexOf('data-coupang-carousel');
     const mainEnd = page.indexOf('</main>');
@@ -64,6 +64,6 @@ test('answer precedes steps and related items with no inactive monetization regi
 
 test('legal pages describe the actual scoped affiliate state', () => {
   assert.match(html('affiliate-disclosure/index.html'), /홈과 색인 가능한 verified 품목 상세페이지에는 쿠팡 파트너스 캐러셀 광고가 표시될 수 있습니다/);
-  assert.match(html('affiliate-disclosure/index.html'), /일정액의 수수료를 제공받을 수 있습니다/);
+  assert.match(html('affiliate-disclosure/index.html'), /일정액의 수수료를 제공받습니다/);
   assert.match(html('privacy/index.html'), /쿠팡 파트너스 배너 스크립트를 불러올 수 있으며/);
 });

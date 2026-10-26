@@ -2,105 +2,53 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
-
 const source = readFileSync(new URL('../src/coupang-carousel.mjs', import.meta.url), 'utf8');
-
-function harness(width = 1280) {
-  let callback;
-  let deadline;
-  let loader;
-  let active = true;
-  const bodyFrames = [];
-  const slotFrames = [];
-  class Frame {
-    nodeType = 1;
-    id = '';
-    src = '';
-    removed = false;
-    matches(selector) { return selector === 'iframe'; }
-    querySelectorAll() { return []; }
-    remove() { this.removed = true; }
-  }
-  const slot = { replaceChildren(frame) {
-    bodyFrames.splice(bodyFrames.indexOf(frame), 1);
-    slotFrames.splice(0, slotFrames.length, frame);
-    callback?.([{ addedNodes: [frame] }]);
-  } };
-  const banner = { hidden: true, removed: false, closest: () => ({}), querySelector: () => slot, remove() { this.removed = true; } };
+function harness(width = 728, mode = 'loaded') {
+  let loader, deadline, config, calls = 0;
+  const status = { textContent: '광고 영역', hidden: false };
+  const frame = {};
+  const stage = { style: {}, querySelector: () => frame, replaceChildren() { this.cleared = true; } };
+  const slot = { getBoundingClientRect: () => ({ width }), append() {}, querySelector: () => status };
+  const banner = { isConnected: true, dataset: {}, closest: () => ({}), querySelector: () => slot };
+  const handlers = {};
   const document = {
-    body: {},
-    head: { append(node) { loader = node; } },
-    querySelectorAll(selector) {
-      if (selector === '[data-coupang-carousel]') return [banner];
-      if (selector === 'iframe') return [...bodyFrames, ...slotFrames];
-      return [];
-    },
-    createElement: () => ({}),
+    querySelectorAll: () => [banner], querySelector: () => null,
+    createElement: tag => tag === 'div' ? stage : { addEventListener(name, callback) { handlers[name] = callback; } },
+    head: { append(value) { loader = value; } },
   };
-  class Observer {
-    constructor(fn) { callback = fn; }
-    observe() {}
-    disconnect() { active = false; }
-  }
-  let config;
-  const window = {
-    matchMedia: () => ({ matches: width <= 720 }),
-    setTimeout(fn, ms) { assert.equal(ms, 5000); deadline = fn; return 1; },
-    clearTimeout() { deadline = undefined; },
-    PartnersCoupang: { G: class {
-      constructor(value) {
-        config = value;
-        const frame = new Frame();
-        frame.id = `${value.id}-banner`;
-        bodyFrames.push(frame);
-        if (active) callback?.([{ addedNodes: [frame] }]);
-      }
-    } },
-  };
-  runInNewContext(source, { document, window, HTMLIFrameElement: Frame, MutationObserver: Observer, Node: { ELEMENT_NODE: 1 } });
-  return {
-    banner, bodyFrames, slotFrames, get loader() { return loader; }, get config() { return config; },
-    timeout() { deadline?.(); },
-    addDuplicate() {
-      const frame = new Frame();
-      frame.id = `${config.id}-duplicate`;
-      bodyFrames.push(frame);
-      if (active) callback?.([{ addedNodes: [frame] }]);
-      return frame;
-    },
+  const window = { setTimeout(fn) { deadline = fn; }, clearTimeout() {}, addEventListener() {} };
+  const run = () => runInNewContext(source, { document, window, Promise });
+  run();
+  const sdk = () => { window.PartnersCoupang = { G: class { constructor(options) { calls++; config = options; if (mode === 'throw') throw Error('blocked'); if (mode !== 'timeout') options.onLoaded(mode !== 'empty'); } } }; };
+  return { banner, slot, stage, status, frame, run, get calls() { return calls; }, get config() { return config; }, get loader() { return loader; },
+    async load() { sdk(); handlers.load(); await Promise.resolve(); },
+    async fail() { handlers.error(); await Promise.resolve(); }, timeout() { deadline(); },
   };
 }
-
-test('Coupang stays absent on blocked loader and five-second timeout', () => {
-  const blocked = harness();
-  assert.equal(blocked.banner.hidden, true);
-  assert.equal(blocked.loader.src, 'https://ads-partners.coupang.com/g.js');
-  blocked.loader.onerror();
-  assert.equal(blocked.banner.removed, true);
-  const late = harness();
-  late.timeout();
-  assert.equal(late.banner.removed, true);
-  late.loader.onload();
-  assert.equal(late.slotFrames.length, 0);
-});
-
-for (const [width, id, frameWidth, frameHeight] of [[1280, 1034259, '728', '90'], [390, 1032289, '320', '100'], [360, 1032289, '320', '100']]) {
-  test(`Coupang moves one ${frameWidth}x${frameHeight} iframe into the slot at ${width}px`, () => {
-    const page = harness(width);
-    page.loader.onload();
-    assert.equal(page.config.id, id);
-    assert.equal(page.config.trackingCode, 'AF4293553');
-    assert.equal(page.slotFrames.length, 1);
-    assert.equal(page.bodyFrames.length, 0);
-    assert.equal(page.slotFrames[0].width, frameWidth);
-    assert.equal(page.slotFrames[0].height, frameHeight);
-    assert.equal(page.banner.hidden, false);
-    const extra = page.addDuplicate();
-    assert.equal(extra.removed, true);
-    assert.equal(page.slotFrames.length, 1);
+for (const width of [288, 320, 375, 390, 430, 727, 728, 1280, 1920]) {
+  test(`one correctly configured creative fits ${width}px container`, async () => {
+    const page = harness(width); await page.load(); page.run();
+    assert.equal(page.calls, 1);
+    assert.equal(page.config.id, width >= 728 ? 1034259 : 1032289);
+    assert.equal(page.config.trackingCode, 'AF4293553'); assert.equal(page.config.tsource, '');
+    assert.equal(page.config.template, 'carousel');
+    assert.equal(page.config.container, page.stage); assert.equal(page.banner.dataset.coupangState, 'loaded');
+    assert.equal(page.frame.title, '쿠팡 파트너스 광고');
+    if (width < 320) assert.match(page.stage.style.transform, /scale\(0\.9\)/);
   });
 }
-
-test('carousel client never reads browser identity or storage', () => {
-  assert.doesNotMatch(source, /document\.cookie|localStorage|sessionStorage|navigator\.|geolocation|fetch\(/);
+for (const mode of ['throw','empty','timeout','network']) {
+  test(`advertising ${mode} failure keeps reserved slot and stops late render`, async () => {
+    const page = harness(728, mode);
+    if (mode === 'network') await page.fail();
+    else if (mode === 'timeout') { page.timeout(); await page.load(); assert.equal(page.calls, 0); }
+    else await page.load();
+    assert.equal(page.banner.dataset.coupangState, 'unavailable');
+    assert.equal(page.stage.cleared, true);
+    assert.equal(page.status.textContent, '광고를 불러오지 못했습니다.');
+    assert.equal(page.slot.getBoundingClientRect().width, 728);
+  });
+}
+test('client does not access tool data or browser storage', () => {
+  assert.doesNotMatch(source, /document\.cookie|localStorage|sessionStorage|\.files|FormData|fetch\(/);
 });
